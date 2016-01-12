@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Imac | Accueil</title>
+        <title>Imac | About</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -33,12 +33,17 @@
             .title {
                 font-size: 96px;
             }
+
+            .subtitle {
+                font-size:45px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">IMAC</div>
+                <div class="title">Hi my name is : {{ $first }} {{ $last }}</div>
+                <div class="subtitle">Image - Multimedia - Audiovisuel - Communication</div>
             </div>
         </div>
     </body>

@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::any('foo', function() // répond à n'importe quelle requête
+// Route::match(['get','post'],'foo',function() // répond à plusieurs types de requêtes (get et post)
+
+//Pour passer un paramètre :
+    //Standard : Route::get('foo/{bar}',function($bar)
+    //With default : Route::get('foo/{bar?}',function($bar = null)
+
+Route::get('/','PagesController@index');
+Route::get('about','PagesController@about');
+
 
 /*
 |--------------------------------------------------------------------------
