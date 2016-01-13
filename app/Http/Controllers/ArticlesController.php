@@ -10,15 +10,19 @@ use Imac\Http\Requests\ArticleRequest;
 use Imac\Http\Controllers\Controller;
 
 class ArticlesController extends Controller {
+
+    public function __construct(){
+        $this->middleware('auth', ['only' => 'create']);
+    }
+
     public function index(){
+
         $articles = Article::latest('published_at')->published()->get();
 
         return view('articles.index', compact('articles'));
     }
 
     public function show($id){
-        Carbon::setLocale('fr');
-
         $article = Article::findOrFail($id);
 
         return view('articles.show', compact('article'));
@@ -29,8 +33,8 @@ class ArticlesController extends Controller {
     }
 
     public function store(ArticleRequest $request){
-        Article::create($request->all());
-
+        $article = new Article($request->all());
+        \Auth::user()->articles()->save($article);
         return redirect('articles');
     }
 
