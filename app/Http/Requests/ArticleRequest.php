@@ -4,7 +4,7 @@ namespace Imac\Http\Requests;
 
 use Imac\Http\Requests\Request;
 
-class CreateArticle extends Request
+class ArticleRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
