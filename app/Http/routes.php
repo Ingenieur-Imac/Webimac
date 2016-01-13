@@ -23,25 +23,13 @@ Route::get('about','PagesController@about');
 
 Route::group(['middleware' => ['web']], function () {
     Route::resource('articles','ArticlesController');
+
+    Route::controllers([
+        'auth' => 'Auth\AuthController',
+        'password' => 'Auth\PasswordController',
+    ]);
+    Route::get('auth/register', 'Auth\AuthController@getRegister');
+    Route::post('auth/register', 'Auth\AuthController@postRegister');
 });
 
-
-
-
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
-
-Route::group(['middleware' => ['web']], function () {
-    //
-});
+?>
