@@ -1,3 +1,29 @@
+# Install
+
+You need to install Vagrant then get the Laravel Box
+
+```
+  vagrant box add laravel/homestead
+```
+
+If you're not familiar with any of these elements i suggest you go to the requirement section and follow the following link : 
+[Install Homestead](https://laravel.com/docs/5.2/homestead) & [Install Laravel](https://laravel.com/docs/5.2/installation) 
+
+## Requirement 
+
+  - Wamp or other local server containing a php.exe 
+  - Curl : http://curl.haxx.se/download.html
+  - Composer : https://getcomposer.org/
+  - Virtual Box : http://download.virtualbox.org/virtualbox/5.0.12/VirtualBox-5.0.12-104815-Win.exe
+  - Vagrant : http://www.vagrantup.com/downloads.html
+  - Cmdr : http://cmder.net/ (it's just a terminal with Linux shell command)
+  - 
+## Issues
+
+ - To modfiy the hosts files (Windows/System32/drivers/etc/hosts) you need to launch a Text Editor in Admin mode, then open the hosts file. It could occur that your Antivirus (Avira for me) lock the possibility to set this files. You have to find how to desactivate this security before moving forward. 
+ - Don't forget to generate a key in Homestead.yaml 
+ - Surely miss something !
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
@@ -25,20 +51,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
-# Install
-
-## Requirement 
-
-  - Wamp or other local server containing a php.exe 
-  - Curl : http://curl.haxx.se/download.html
-  - Composer : https://getcomposer.org/
-  - Virtual Box : http://download.virtualbox.org/virtualbox/5.0.12/VirtualBox-5.0.12-104815-Win.exe
-  - Vagrant : http://www.vagrantup.com/downloads.html
-  - Cmdr : http://cmder.net/
-  - 
-## Issues
-
- - To modfiy the hosts files (Windows/System32/drivers/etc/hosts) you need to launch a Text Editor in Admin mode, then open the hosts file. It could occur that your Antivirus (Avira for me) lock the possibility to set this files. You have to find how to desactivate this security before moving forward. 
- - Don't forget to generate a key in Homestead.yaml 
- - Surely miss something !
