@@ -6,7 +6,16 @@ You need to install Vagrant then get the Laravel Box
   vagrant box add laravel/homestead
 ```
 
-If you're not familiar with any of these elements i suggest you go to the requirement section and follow the following link : 
+When the box is installed 
+
+```
+  composer global require "laravel/installer"
+  laravel new site
+```
+
+Should do it. 
+
+If you're not familiar with any of these elements, or my instructions don't work i suggest you go to the requirement section and follow the following link : 
 [Install Homestead](https://laravel.com/docs/5.2/homestead) & [Install Laravel](https://laravel.com/docs/5.2/installation) 
 
 ## Requirement 
