@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imac | Accueil</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen" title="bootstrap" charset="utf-8">
+        <link rel="stylesheet" href="{{URL::asset('css/master.admin.css')}}" media="screen" title ="bootstrap" charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <div class="list-group">
+                  <a href="{{action('AdminPagesController@admHome')}}" class="list-group-item active">
+                    Accueil
+                  </a>
+                  <a href="#" class="list-group-item">Projets</a>
+                  <a href="{{action('AdminPagesController@logout')}}" class="list-group-item">Se déconnecter</a>
+                  <a href="{{action('PagesController@index')}}" class="list-group-item">Retour au site</a>
+                </div>
+            </div>
+            <section>
+                @yield('content')
+            </section>
+            <footer>
+                @yield('footer')
+            </footer>
+        </div>
+    </body>
+</html>

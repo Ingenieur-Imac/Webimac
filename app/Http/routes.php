@@ -19,20 +19,30 @@
     //With default : Route::get('foo/{bar?}',function($bar = null)
 
 Route::get('/','PagesController@index');
-Route::get('about','PagesController@about');
-
-Route::group(['middleware' => ['web']], function () {
-    Route::resource('articles','ArticlesController');
+// Route::get('about','PagesController@about');
+//
+// Route::group(['middleware' => ['web']], function () {
+//     Route::resource('articles','ArticlesController');
+//
+//     Route::controllers([
+//         'auth' => 'Auth\AuthController',
+//         'password' => 'Auth\PasswordController',
+//     ]);
+//     Route::get('auth/register', 'Auth\AuthController@getRegister');
+//     Route::post('auth/register', 'Auth\AuthController@postRegister');
+//     Route::get('foo',['middleware' => 'manager',function(){
+//         return 'this page may only be viewed by managers';
+//     }]);
+// });
 
     Route::controllers([
         'auth' => 'Auth\AuthController',
         'password' => 'Auth\PasswordController',
     ]);
-    Route::get('auth/register', 'Auth\AuthController@getRegister');
-    Route::post('auth/register', 'Auth\AuthController@postRegister');
-    Route::get('foo',['middleware' => 'manager',function(){
-        return 'this page may only be viewed by managers';
-    }]);
-});
+
+    Route::get('admin/','AdminPagesController@login');
+    Route::get('admin/home','AdminPagesController@admHome');
+    Route::get('admin/logout','AdminPagesController@logout');
+
 
 ?>

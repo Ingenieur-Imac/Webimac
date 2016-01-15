@@ -1,0 +1,13 @@
+.login {
+    margin-top: 100px;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.menu {
+    display: inline-block;
+    width: 200px;
+    position: fixed;
+}

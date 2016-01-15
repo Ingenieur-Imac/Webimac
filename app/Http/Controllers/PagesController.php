@@ -24,4 +24,6 @@ class PagesController extends Controller{
             'last' => 'Rousset'
         ]);
     }
+
+
 }
