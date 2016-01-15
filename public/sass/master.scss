@@ -1,0 +1,241 @@
+// Fonts
+$body-font: 'Open Sans Pro'; // Name only
+$body-font-path: '../fonts/sourcesanspro-regular-webfont'; // File name without extention
+
+$title-font: Bebas;
+$title-font-path: '../fonts/bebasneue_regular-webfont';
+$title-font-light-path: '../fonts/bebasneue_book-webfont';
+$title-font-bold-path: '../fonts/bebasneue_bold-webfont';
+
+$body-font-stack: $body-font, sans-serif;
+$title-font-stack: $title-font, sans-serif;
+
+// Colors
+$main-color: #fff;
+$light-color: #dadbd9;
+$medium-color: #848484;
+$dark-color: #333;
+
+$primary-color: #50d33d;
+$secondary-color: #f73c3c;
+
+$main-font-size: 15px;
+$title-font-size: 20px;
+
+
+@font-face {
+  font-family: quote($body-font);
+  src: url($body-font-path + '.eot');
+  src: url($body-font-path + '.eot?#iefix') format('embedded-opentype'),
+       url($body-font-path + '.woff2') format('woff2'),
+       url($body-font-path + '.woff') format('woff'),
+       url($body-font-path + '.ttf') format('truetype'),
+       url($body-font-path + '.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: quote($title-font);
+  src: url($title-font-path + '.eot');
+  src: url($title-font-path + '.eot?#iefix') format('embedded-opentype'),
+       url($title-font-path + '.woff2') format('woff2'),
+       url($title-font-path + '.woff') format('woff'),
+       url($title-font-path + '.ttf') format('truetype'),
+       url($title-font-path + '.svg') format('svg');
+  font-weight: normal;
+}
+@font-face {
+  font-family: quote($title-font);
+  src: url($title-font-light-path + '.eot');
+  src: url($title-font-light-path + '.eot?#iefix') format('embedded-opentype'),
+       url($title-font-light-path + '.woff2') format('woff2'),
+       url($title-font-light-path + '.woff') format('woff'),
+       url($title-font-light-path + '.ttf') format('truetype'),
+       url($title-font-light-path + '.svg') format('svg');
+  font-weight: 300;
+}
+@font-face {
+  font-family: quote($title-font);
+  src: url($title-font-bold-path + '.eot');
+  src: url($title-font-bold-path + '.eot?#iefix') format('embedded-opentype'),
+       url($title-font-bold-path + '.woff2') format('woff2'),
+       url($title-font-bold-path + '.woff') format('woff'),
+       url($title-font-bold-path + '.ttf') format('truetype'),
+       url($title-font-bold-path + '.svg') format('svg');
+  font-weight: bold;
+}
+
+
+body {
+  background: $main-color;
+  color: $dark-color;
+  font: $main-font-size $body-font-stack;
+}
+
+header {
+  background: $light-color;
+}
+
+nav {
+	background: $dark-color;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	height: 60px;
+	padding: 0 10%;
+  width: 100%;
+  z-index: 1;
+
+  ul {
+    width: 1170px;
+
+    a {
+    	color: $main-color;
+    	border-bottom: transparent 3px solid;
+    	-webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    	box-sizing: border-box;
+    	display: inline-block;
+    	font: 1.4em Bebas;
+    	height: 60px;
+    	line-height: 2.9;
+    	padding: 0 10px;
+    }
+
+    a:hover {
+    	border-color: $primary-color;
+    	color: $primary-color;
+    }
+  }
+
+  li {
+    float: left;
+  }
+}
+nav ul
+nav .current-menu-item a,
+nav .current-menu-item a:hover {
+	background: #337e8d;
+	color: #291b39;
+}
+
+.title-2 {
+  font: 300 2em $title-font-stack;
+}
+
+.title-3 {
+  font: 300 1.5em $title-font-stack;
+}
+
+h1 {
+  font: 300 3.4em $title-font-stack;
+}
+
+.btn {
+  border: transparent 1px solid;
+	display: inline-block;
+	margin: 15px 5px;
+	padding: 10px 16px;
+	text-align: center;
+	transition: all 0.5s ease-out;
+}
+.btn:hover {
+}
+.primary-btn {
+  @extend .btn;
+	background: $primary-color;
+  color: $main-color;
+}
+.simple-primary-btn {
+  @extend .btn;
+  border-color: $primary-color;
+  color: $primary-color;
+}
+.secondary-btn {
+  @extend .btn;
+	background: $main-color;
+  color: $secondary-color;
+}
+.simple-btn {
+  @extend .btn;
+  border-color: $main-color;
+  color: $main-color;
+}
+
+.prefooter {
+  background: $secondary-color;
+  color: $main-color;
+  text-align: center;
+}
+
+footer {
+  background: $light-color;
+}
+.end-footer {
+  background: $dark-color;
+  color: $main-color;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  text-align: center;
+
+  a {
+    color: $main-color;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  margin: auto;
+  padding: 2.7% 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.col-2 {
+  display: inline-block;
+  width: 50%;
+}
+.col-3 {
+  display: inline-block;
+  width: 33.1%;
+}
+.col-2, .col-3 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.side-padding {
+  padding: 0 4%;
+}
+.img-banner {
+  background: url('../images/Groupe_IMAC.jpg') center;
+  background-size: cover !important;
+  color: $main-color;
+}
+
+
+// .title-1, .title-2, .title-3 {
+//   margin: 20px 0 10px 0;
+// }
