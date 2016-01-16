@@ -7,7 +7,10 @@
 }
 
 .menu {
-    display: inline-block;
     width: 200px;
     position: fixed;
+}
+
+section {
+    margin-left: 210px;
 }

@@ -12,7 +12,7 @@
                   <a href="{{action('AdminPagesController@admHome')}}" class="list-group-item active">
                     Accueil
                   </a>
-                  <a href="#" class="list-group-item">Projets</a>
+                  <a href="{{action('AdminProjectController@listAll')}}" class="list-group-item">Projets</a>
                   <a href="{{action('AdminPagesController@logout')}}" class="list-group-item">Se déconnecter</a>
                   <a href="{{action('PagesController@index')}}" class="list-group-item">Retour au site</a>
                 </div>

@@ -14,15 +14,15 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_gallery')->unique();
+            $table->integer('id_gallery')->unique()->nullable();
             $table->string('name');
             $table->string('description');
             $table->string('excerpt');
             $table->timestamp('date');
             $table->string('name_of_tutors');
-            $table->string('link_github')->nullable();
-            $table->string('link_web')->nullable();
-            $table->string('link_vimeo')->nullable();
+            $table->string('github_link')->nullable();
+            $table->string('web_link')->nullable();
+            $table->string('vimeo_link')->nullable();
             $table->timestamps();
         });
     }
