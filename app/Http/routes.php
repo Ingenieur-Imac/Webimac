@@ -29,6 +29,7 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::get('admin/project/create','AdminProjectController@create');
     Route::post('admin/project','AdminProjectController@store');
     Route::delete('admin/project/{id}','AdminProjectController@delete');
-
+    //View Student Testimonial
+    Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
 
 ?>

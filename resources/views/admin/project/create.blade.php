@@ -5,7 +5,7 @@
 
     <hr/>
 
-    {!! Form::open(['url' => 'admin/project']) !!}
+    {!! Form::open(['url' => 'admin/project',"enctype" => "multipart/form-data"]) !!}
 
         @include('admin.project._form', ['submitButtonText' => 'Créer un projet'])
 

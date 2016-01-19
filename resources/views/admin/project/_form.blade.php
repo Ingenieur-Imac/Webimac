@@ -15,6 +15,19 @@
     {!! Form::text('description',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- url_image form input -->
+@if (isset($old_url_image))
+    <div class="form-group">
+        {!! Form::label('url_image','URL de l\'image de présentation | Fichier Actuel : '.$old_url_image) !!}
+        {!! Form::file('url_image',['class' => 'form-control']) !!}
+    </div>
+@else
+    <div class="form-group">
+        {!! Form::label('url_image','URL de l\'image de présentation') !!}
+        {!! Form::file('url_image',['class' => 'form-control']) !!}
+    </div>
+@endif
+
 <!-- name_of_tutors form input -->
 <div class="form-group">
     {!! Form::label('name_of_tutors','Nom des tuteurs') !!}

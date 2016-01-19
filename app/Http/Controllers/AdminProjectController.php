@@ -30,15 +30,45 @@ class AdminProjectController extends Controller {
         return view('admin.project.create');
     }
 
+    // TODO: RETURN ERROR WHEN ELSE CONDITION IS LAUNCH
+
     public function store(ProjectRequest $request){
         $project = new Project($request->all());
+        $name = null;
+        if($request->hasFile('url_image')){
+            $file = $request->file('url_image');
+            if($file->isValid()){
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/images/projects/',$name);
+            }
+        }
+
+        $project->url_image = $name;
         $project->save();
-        return redirect('admin/project/list');
+        return redirect('admin/project/');
     }
+
+    // TODO: RETURN ERROR WHEN ELSE CONDITION IS LAUNCH
 
     public function update($id, ProjectRequest  $request){
         $project = Project::findOrFail($id);
+        $name = null;
+        if($request->hasFile('url_image')){
+            $file = $request->file('url_image');
+            if($file->isValid()){
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/images/projects/',$name);
+            } else {
+                echo('Fichier non valide');
+            }
+        } else {
+            echo('Request don\'t have file !');
+        }
+
+
         $project->update($request->all());
+        $project->url_image = $name;
+        $project->update();
         return redirect('admin/project');
     }
 

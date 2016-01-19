@@ -20,6 +20,8 @@ class CreateProjectsTable extends Migration
             $table->string('excerpt');
             $table->timestamp('date');
             $table->string('name_of_tutors');
+            $table->string('url_image')->nullable();
+            $table->string('url_video')->nullable();
             $table->string('github_link')->nullable();
             $table->string('web_link')->nullable();
             $table->string('vimeo_link')->nullable();
