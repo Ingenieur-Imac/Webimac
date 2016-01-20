@@ -5,7 +5,7 @@
 
     <hr/>
 
-    {!! Form::open(['url' => 'admin/studentTestimonial',"enctype" => "multipart/form-data"]) !!}
+    {!! Form::open(['url' => 'admin/StudentTestimonial',"enctype" => "multipart/form-data"]) !!}
 
         @include('admin.studentTestimonial._form', ['submitButtonText' => 'Créer une parole d\'ancien'])
 

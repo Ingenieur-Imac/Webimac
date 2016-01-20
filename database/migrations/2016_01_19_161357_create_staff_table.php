@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStudentTestimonialTable extends Migration
+class CreateStaffTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,14 @@ class CreateStudentTestimonialTable extends Migration
      */
     public function up()
     {
-        Schema::create('student_testimonials', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->increments('id');
+            $table->boolean('main');
             $table->string('name');
-            $table->string('job');
-            $table->integer('year')->unsigned()->nullable();
-            $table->string('overview');
+            $table->string('role');
+            $table->string('description');
+            $table->string('mail')->nullable();
+            $table->string('web_link')->nullable();
             $table->string('url_image')->nullable();
         });
     }
@@ -29,6 +31,6 @@ class CreateStudentTestimonialTable extends Migration
      */
     public function down()
     {
-        Schema::drop('student_testimonials');
+        Schema::drop('staff');
     }
 }

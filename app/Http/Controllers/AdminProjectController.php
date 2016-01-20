@@ -22,7 +22,6 @@ class AdminProjectController extends Controller {
 
     public function edit($id){
         $project = Project::findOrFail($id);
-
         return view('admin.project.edit',compact('project'));
     }
 
@@ -67,7 +66,8 @@ class AdminProjectController extends Controller {
 
 
         $project->update($request->all());
-        $project->url_image = $name;
+        if($name != null)
+            $project->url_image = $name;
         $project->update();
         return redirect('admin/project');
     }

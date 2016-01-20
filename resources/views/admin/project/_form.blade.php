@@ -12,7 +12,7 @@
 <!-- description form input -->
 <div class="form-group">
     {!! Form::label('description','Description :') !!}
-    {!! Form::text('description',null,['class' => 'form-control']) !!}
+    {!! Form::textarea('description',null,['class' => 'form-control']) !!}
 </div>
 
 <!-- url_image form input -->
@@ -27,6 +27,12 @@
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif
+
+<!-- contributor form input -->
+<div class="form-group">
+    {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
+    {!! Form::text('contributors',null,['class' => 'form-control']) !!}
+</div>
 
 <!-- name_of_tutors form input -->
 <div class="form-group">

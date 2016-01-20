@@ -1,17 +1,17 @@
 @extends('admin.admin')
 
 @section('content')
-    <h2>Vous êtes en train de modifier le Projet : {{$project->name}}</h2>
+    <h2>Vous êtes en train le Témoigne de : {{$studentTestimonial->name}}</h2>
 
-    {!! Form::model($project, ['method' => 'PATCH',"enctype" => "multipart/form-data", 'action' => ['AdminProjectController@update',$project->id]]) !!}
+    {!! Form::model($studentTestimonial, ['method' => 'PATCH',"enctype" => "multipart/form-data", 'action' => ['AdminStudentTestimonialController@update',$studentTestimonial->id]]) !!}
 
-        @include('admin.project._form', ['submitButtonText' => 'Modifier','old_url_image' => $project->url_image])
+        @include('admin.studentTestimonial._form', ['submitButtonText' => 'Modifier','old_url_image' => $studentTestimonial->url_image])
 
     {!! Form::close() !!}
 
-    {!! Form::model($project->id,['method' => 'DELETE','action' => ['AdminProjectController@delete', $project->id]]) !!}
+    {!! Form::model($studentTestimonial->id,['method' => 'DELETE','action' => ['AdminStudentTestimonialController@destroy', $studentTestimonial->id]]) !!}
         <div class="form-group">
-            {!! Form::submit('Supprimer le projet',['class' => 'btn btn-danger form-control']) !!}
+            {!! Form::submit('Supprimer le témoignage',['class' => 'btn btn-danger form-control']) !!}
         </div>
     {!! Form::close() !!}
 

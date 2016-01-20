@@ -10,6 +10,11 @@ use Imac\Http\Controllers\Controller;
 
 class AdminStudentTestimonialController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +41,19 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        //
+        $studentTestimonial = new StudentTestimonial($request->all());
+        $name = null;
+        if($request->hasFile('url_image')){
+            $file = $request->file('url_image');
+            if($file->isValid()){
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/images/studentTestimonial/',$name);
+            }
+        }
+
+        $studentTestimonial->url_image = $name;
+        $studentTestimonial->save();
+        return redirect('admin/StudentTestimonial/');
     }
 
     /**
@@ -56,7 +73,8 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id){
-        //
+        $studentTestimonial = studentTestimonial::findOrFail($id);
+        return view('admin.studentTestimonial.edit',compact('studentTestimonial'));
     }
 
     /**
@@ -67,7 +85,25 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id){
-        //
+        $studentTestimonial = studentTestimonial::findOrFail($id);
+        $name = null;
+        if($request->hasFile('url_image')){
+            $file = $request->file('url_image');
+            if($file->isValid()){
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/images/studentTestimonial/',$name);
+            } else {
+                echo('Fichier non valide');
+            }
+        } else {
+            echo('Request don\'t have file !');
+        }
+
+        $studentTestimonial->update($request->all());
+        if($name != null)
+            $studentTestimonial->url_image = $name;
+        $studentTestimonial->update();
+        return redirect('admin/StudentTestimonial');
     }
 
     /**
@@ -77,6 +113,8 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id){
-        //
+        $studentTestimonial = StudentTestimonial::findOrFail($id);
+        $studentTestimonial->delete();
+        return redirect('admin/StudentTestimonial');
     }
 }
