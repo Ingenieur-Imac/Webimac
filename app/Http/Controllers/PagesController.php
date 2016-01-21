@@ -20,6 +20,15 @@ class PagesController extends Controller{
       return view('pages.admission');
     }
 
+    public function project($id){
+      $project = Project::findOrFail($id);
+      return view('pages.project', compact('project'));
+    }
+
+    public function students(){
+      return view('pages.students');
+    }
+
     public function contact(){
       return view('pages.contact');
     }

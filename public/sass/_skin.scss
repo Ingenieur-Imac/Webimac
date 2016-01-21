@@ -2,6 +2,10 @@
 // Generic styles all pages use
 // =============================================================================
 
+a {
+  color: $secondary-color;
+  font-weight: normal;
+}
 blockquote {
   font-style: italic;
   margin: 0 40px;
