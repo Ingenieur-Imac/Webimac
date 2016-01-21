@@ -33,5 +33,10 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
+    //View others
+    Route::get('admin/others','AdminOthersController@index');
+    Route::post('admin/others/timer','AdminOthersController@updateTimer');
+//Partie Générale
+Route::get('timer','PagesController@timer');
 
 ?>
