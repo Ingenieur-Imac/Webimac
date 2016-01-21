@@ -11,28 +11,32 @@
 |
 */
 
-// Route::any('foo', function() // répond à n'importe quelle requête
-// Route::match(['get','post'],'foo',function() // répond à plusieurs types de requêtes (get et post)
-
-//Pour passer un paramètre :
-    //Standard : Route::get('foo/{bar}',function($bar)
-    //With default : Route::get('foo/{bar?}',function($bar = null)
-
 Route::get('/','PagesController@index');
-Route::get('about','PagesController@about');
 
-Route::group(['middleware' => ['web']], function () {
-    Route::resource('articles','ArticlesController');
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
 
-    Route::controllers([
-        'auth' => 'Auth\AuthController',
-        'password' => 'Auth\PasswordController',
-    ]);
-    Route::get('auth/register', 'Auth\AuthController@getRegister');
-    Route::post('auth/register', 'Auth\AuthController@postRegister');
-    Route::get('foo',['middleware' => 'manager',function(){
-        return 'this page may only be viewed by managers';
-    }]);
-});
+//Partie Admin
+Route::get('admin/','AdminPagesController@login');
+Route::get('admin/home','AdminPagesController@admHome');
+Route::get('admin/logout','AdminPagesController@logout');
+    //View Project
+    Route::get('admin/project','AdminProjectController@listAll');
+    Route::get('admin/project/edit/{id}','AdminProjectController@edit');
+    Route::patch('admin/project/update/{id}','AdminProjectController@update');
+    Route::get('admin/project/create','AdminProjectController@create');
+    Route::post('admin/project','AdminProjectController@store');
+    Route::delete('admin/project/{id}','AdminProjectController@delete');
+    //View Student Testimonial
+    Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
+    //View staff
+    Route::resource('admin/Staff','AdminStaffController');
+    //View others
+    Route::get('admin/others','AdminOthersController@index');
+    Route::post('admin/others/timer','AdminOthersController@updateTimer');
+//Partie Générale
+Route::get('timer','PagesController@timer');
 
 ?>
