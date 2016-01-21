@@ -1,0 +1,46 @@
+// =============================================================================
+// Generic styles all pages use
+// =============================================================================
+
+blockquote {
+  font-style: italic;
+  margin: 0 40px;
+  padding: 1.5% 0;
+  position: relative;
+  text-align: left;
+}
+blockquote:before {
+  content: "\201C";
+  font-size: 7em;
+  font-style: normal;
+  position: absolute;
+    left: -40px;
+    top: -20px;
+}
+blockquote:after {
+  content: "\201D";
+  font-size: 7em;
+  font-style: normal;
+  position: absolute;
+    right: -40px;
+    bottom: -20px;
+}
+em {
+  font-style: italic;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+strong {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.color {
+  color: $primary-color;
+}
+.light-row {
+  background: $light-color;
+}

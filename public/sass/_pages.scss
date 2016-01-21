@@ -1,0 +1,101 @@
+// =============================================================================
+// Specific to certain pages
+// =============================================================================
+
+.img-banner {
+  background: linear-gradient(rgba(255,255,255,0), rgba(0, 0, 0, 0.9)), url('../images/Groupe_IMAC.jpg') center;
+  background-size: cover !important;
+  color: $main-color;
+  position: relative;
+
+  p {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+  .col-x {
+    @include vertical-align();
+    width: 460px;
+  }
+  .container {
+    @include box-sizing(border-box);
+    height: 435px;
+    position: relative;
+    z-index: 1;
+  }
+  @media #{$small-screen} {
+    .slanted {
+      background: rgba(0, 0, 0, 0.25);
+      width: 725px;
+    }
+  }
+  @media #{$medium-screen} {
+    .slanted {
+      width: 815px;
+    }
+  }
+  @media #{$large-screen} {
+    .slanted {
+      width: 875px;
+    }
+  }
+}
+
+.testi-picture {
+  border-radius: 50%;
+  height: 160px;
+  width: auto;
+}
+.testi-body {
+}
+
+.testi-role {
+  font-weight: normal;
+}
+.testimonial {
+  text-align: center;
+}
+@media #{$small-screen} {
+  .testi-picture {
+    display: table-cell;
+  }
+  .testi-body {
+    display: table-cell;
+    padding-left: 70px;
+    vertical-align: middle;
+  }
+
+  .testi-role {
+    font-weight: normal;
+  }
+  .testimonial {
+    display: table;
+    margin: 15px auto 0 auto;
+    text-align: left;
+    width: 750px;
+  }
+}
+
+
+
+
+//========================
+// PROJECTS
+//========================
+.project {
+  text-align: center;
+  h3 {
+    text-align: left;
+  }
+  img {
+    margin: 15px 0 5px 0;
+  }
+}
+.tag {
+  border: $medium-color 1px solid;
+  color: $medium-color;
+  display: inline-block;;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 10px 0;
+  padding: 2px 4px;
+}
