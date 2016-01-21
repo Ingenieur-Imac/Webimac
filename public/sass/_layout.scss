@@ -16,6 +16,7 @@
 }
 .col-2,
 .col-3,
+.col-2-3,
 .col-x {
   @include box-sizing(border-box);
   float: left;
@@ -26,7 +27,8 @@
   }
 }
 .col-2:last-of-type,
-.col-3:last-of-type {
+.col-3:last-of-type,
+.col-2-3:last-of-type {
   margin-bottom: 0;
 }
 .clearfix {
@@ -47,6 +49,7 @@
 @media #{$small-screen} {
   .col-2,
   .col-3,
+  .col-2-3,
   .col-x {
     margin-bottom: 0;
   }
@@ -67,6 +70,9 @@
   }
 }
 @media #{$medium-screen} {
+  .col-2-3 {
+    width: 66.66666%;
+  }
   .container {
     width: 970px;
   }

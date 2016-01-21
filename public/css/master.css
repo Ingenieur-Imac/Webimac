@@ -104,6 +104,11 @@ body {
 h1 {
   font: 300 3.4em Bebas, sans-serif; }
 
+.title-1 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: center; }
+
 .title-2 {
   font: 300 2em Bebas, sans-serif;
   margin-bottom: 15px; }
@@ -115,6 +120,9 @@ h1 {
 .title-4 {
   font-size: 1.4em;
   font-weight: bold; }
+
+.title-5 {
+  font: 300 1.5em Bebas, sans-serif; }
 
 ul li {
   list-style: disc;
@@ -136,6 +144,7 @@ ul li {
 
 .col-2,
 .col-3,
+.col-2-3,
 .col-x {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -145,11 +154,13 @@ ul li {
   margin-bottom: 40px; }
   .col-2 p,
   .col-3 p,
+  .col-2-3 p,
   .col-x p {
     text-align: left; }
 
 .col-2:last-of-type,
-.col-3:last-of-type {
+.col-3:last-of-type,
+.col-2-3:last-of-type {
   margin-bottom: 0; }
 
 .clearfix {
@@ -170,6 +181,7 @@ ul li {
 @media (min-width: 768px) {
   .col-2,
   .col-3,
+  .col-2-3,
   .col-x {
     margin-bottom: 0; }
 
@@ -188,6 +200,9 @@ ul li {
     left: -125px;
     transform: skewX(30deg); } }
 @media (min-width: 992px) {
+  .col-2-3 {
+    width: 66.66666%; }
+
   .container {
     width: 970px; } }
 @media (min-width: 1200px) {
@@ -1199,6 +1214,10 @@ blockquote:after {
 
 em {
   font-style: italic; }
+
+iframe {
+  height: auto;
+  width: 100%; }
 
 img {
   height: auto;

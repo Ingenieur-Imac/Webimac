@@ -16,7 +16,7 @@ Imac | {{ $title }}
 <!-- @include('includes.ariane', array('title' => $title)) -->
 <div class="container center-content-padding">
     <div class="side-padding">
-        <h1>Les conditions d'admission</h1>
+        <h1 class="title-1">Les conditions d'admission</h1>
         <h2 class="title-2">Le profil des Imac</h2>
         <p class="lead">Nos étudiants possèdent une imagination et un désir de créer qui dépassent le clivage arts/sciences.</p>
 

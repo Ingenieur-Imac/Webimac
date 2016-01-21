@@ -13,6 +13,7 @@
 
 Route::get('/','PagesController@index');
 Route::get('/formation/admission','PagesController@admission');
+Route::get('/contact','PagesController@contact');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

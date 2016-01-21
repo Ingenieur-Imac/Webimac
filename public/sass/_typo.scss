@@ -97,6 +97,11 @@ body {
 h1 {
   font: 300 3.4em $title-font-stack;
 }
+.title-1 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: center;
+}
 .title-2 {
   font: 300 2em $title-font-stack;
   margin-bottom: 15px;
@@ -108,6 +113,9 @@ h1 {
 .title-4 {
   font-size: 1.4em;
   font-weight: bold;
+}
+.title-5 {
+  font: 300 1.5em $title-font-stack;
 }
 ul {
   li {

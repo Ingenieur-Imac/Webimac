@@ -13,12 +13,15 @@ class PagesController extends Controller{
     }
 
     public function index(){
-        return view('welcome');
+        return view('pages.home');
     }
-
 
     public function admission(){
       return view('pages.admission');
+    }
+
+    public function contact(){
+      return view('pages.contact');
     }
 
     public function about(){
