@@ -32,14 +32,25 @@ img {
   height: auto;
   width: 100%;
 }
+p {
+  margin-bottom: 10px;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
 strong {
   font-weight: bold;
 }
 .center {
+  clear: both;
   text-align: center;
 }
 .color {
   color: $primary-color;
+}
+.lead, .lead:last-of-type {
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
 .light-row {
   background: $light-color;

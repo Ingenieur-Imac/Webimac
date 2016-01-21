@@ -45,6 +45,11 @@
   clear: both;
 }
 @media #{$small-screen} {
+  .col-2,
+  .col-3,
+  .col-x {
+    margin-bottom: 0;
+  }
   .col-2 {
     width: 50%;
   }
@@ -74,6 +79,29 @@
 
 .side-padding {
   padding: 0 4%;
+}
+// .side-padding:first-of-type {
+//   padding-left: 0;
+// }
+.side-padding:last {
+  padding-right: 0;
+}
+.center-content-padding {
+  padding-left: 6%;
+  padding-right: 6%;
+  h1, .title-2 {
+    text-align: center;
+  }
+}
+.ariane {
+  border-bottom: $light-color 1px solid;
+  border-top: $light-color 1px solid;
+  color: $medium-color;
+  font-size: 0.93em;
+  .container {
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
 }
 
 // Header

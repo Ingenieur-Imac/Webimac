@@ -103,9 +103,15 @@ h1 {
 }
 .title-3 {
   font: 300 1.5em $title-font-stack;
-  margin: 15px 0;
+  margin-bottom: 10px;
 }
 .title-4 {
   font-size: 1.4em;
   font-weight: bold;
+}
+ul {
+  li {
+    list-style: disc;
+    margin-left: 40px;
+  }
 }

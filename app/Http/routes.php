@@ -12,6 +12,7 @@
 */
 
 Route::get('/','PagesController@index');
+Route::get('/formation/admission','PagesController@admission');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

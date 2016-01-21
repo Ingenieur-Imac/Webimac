@@ -110,11 +110,15 @@ h1 {
 
 .title-3 {
   font: 300 1.5em Bebas, sans-serif;
-  margin: 15px 0; }
+  margin-bottom: 10px; }
 
 .title-4 {
   font-size: 1.4em;
   font-weight: bold; }
+
+ul li {
+  list-style: disc;
+  margin-left: 40px; }
 
 .container {
   -webkit-box-sizing: border-box;
@@ -164,6 +168,11 @@ h1 {
   clear: both; }
 
 @media (min-width: 768px) {
+  .col-2,
+  .col-3,
+  .col-x {
+    margin-bottom: 0; }
+
   .col-2 {
     width: 50%; }
 
@@ -186,6 +195,24 @@ h1 {
     width: 1170px; } }
 .side-padding {
   padding: 0 4%; }
+
+.side-padding:last {
+  padding-right: 0; }
+
+.center-content-padding {
+  padding-left: 6%;
+  padding-right: 6%; }
+  .center-content-padding h1, .center-content-padding .title-2 {
+    text-align: center; }
+
+.ariane {
+  border-bottom: #dadbd9 1px solid;
+  border-top: #dadbd9 1px solid;
+  color: #848484;
+  font-size: 0.93em; }
+  .ariane .container {
+    padding-bottom: 4px;
+    padding-top: 4px; }
 
 header {
   background: #dadbd9;
@@ -1177,20 +1204,31 @@ img {
   height: auto;
   width: 100%; }
 
+p {
+  margin-bottom: 10px; }
+
+p:last-of-type {
+  margin-bottom: 0; }
+
 strong {
   font-weight: bold; }
 
 .center {
+  clear: both;
   text-align: center; }
 
 .color {
   color: #50d33d; }
 
+.lead, .lead:last-of-type {
+  font-size: 1.3em;
+  margin-bottom: 20px; }
+
 .light-row {
   background: #dadbd9; }
 
 .img-banner {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/Groupe_IMAC.jpg") center;
+  background: #848484;
   background-size: cover !important;
   color: #fff;
   position: relative; }
@@ -1251,6 +1289,52 @@ strong {
     margin: 15px auto 0 auto;
     text-align: left;
     width: 750px; } }
+.subnav {
+  background: #dadbd9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  height: 50px;
+  width: 100%; }
+  .subnav ul a {
+    color: #333;
+    border-bottom: transparent 3px solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: normal;
+    height: 50px;
+    line-height: 2.9; }
+  .subnav ul a:hover {
+    border-color: #50d33d; }
+  .subnav li {
+    display: inline-block; }
+  @media (min-width: 768px) {
+    .subnav ul {
+      margin: auto;
+      width: 750px; }
+    .subnav li {
+      margin: 0 14px; }
+    .subnav li:first-child {
+      margin-left: 0; }
+    .subnav li:last-child {
+      margin-right: 0; } }
+  @media (min-width: 992px) {
+    .subnav ul {
+      width: 970px; }
+    .subnav li {
+      margin: 0 23px; } }
+  @media (min-width: 1200px) {
+    .subnav ul {
+      width: 1170px; }
+    .subnav li {
+      margin: 0 20px; } }
+
 .project {
   text-align: center; }
   .project h3 {
