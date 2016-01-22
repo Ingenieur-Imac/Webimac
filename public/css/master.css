@@ -99,7 +99,8 @@ table {
 body {
   background: #fff;
   color: #333;
-  font: 300 15px "Open Sans Pro", sans-serif; }
+  font: 300 15px "Open Sans Pro", sans-serif;
+  letter-spacing: 0.02em; }
 
 h1 {
   font: 300 3.4em Bebas, sans-serif; }
@@ -312,7 +313,7 @@ nav {
     nav ul {
       width: 1170px; }
     nav li {
-      margin: 0 37px; } }
+      margin: 0 36px; } }
 
 .prefooter {
   background: #f73c3c;
@@ -1245,7 +1246,35 @@ strong {
 
 .framed {
   border: #dadbd9 1px solid;
-  padding: 10px 20px; }
+  padding: 30px 15px 10px 15px;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 25%;
+  z-index: 50; }
+  .framed p {
+    margin: 0;
+    text-align: center; }
+  .framed .big-number {
+    background: #fff;
+    display: inline;
+    font: bold 4.6em Bebas, sans-serif;
+    margin: auto;
+    left: 50%;
+    padding: 0 15px;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -35px;
+    z-index: -50; }
+
+.main-color-framed {
+  border-color: #fff; }
+  .main-color-framed .big-number {
+    background: #dadbd9; }
+
+.framed:nth-of-type(2) {
+  margin-left: 12.5%;
+  margin-right: 12.5%; }
 
 .lead, .lead:last-of-type {
   font-size: 1.3em;
