@@ -22,7 +22,7 @@
             <span class="lnr lnr-map-marker lnr-bigger color"></span>
             <p class="contact">
                 IMAC - ESIPE<br />
-                5 boulevard Copernic<br />
+                5 boulevard Descartes<br />
                 77420 Champs-sur-Marne
             </p>
         </div>

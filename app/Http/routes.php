@@ -12,6 +12,11 @@
 */
 
 Route::get('/','PagesController@index');
+Route::get('/formation/presentation','PagesController@presentation');
+Route::get('/formation/admission','PagesController@admission');
+Route::get('/nos-etudiants','PagesController@students');
+Route::get('/contact','PagesController@contact');
+Route::get('/realisations/{id}','PagesController@project');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
@@ -36,6 +41,7 @@ Route::get('admin/logout','AdminPagesController@logout');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
+    Route::post('admin/others/application','AdminOthersController@updateApplicationDates');
 //Partie Générale
 Route::get('timer','PagesController@timer');
 

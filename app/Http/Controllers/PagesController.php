@@ -9,11 +9,32 @@ use Imac\Http\Controllers\Controller;
 class PagesController extends Controller{
 
     public function __construct(){
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     public function index(){
-        return view('welcome');
+        return view('pages.home');
+    }
+
+    public function presentation(){
+      return view('pages.presentation');
+    }
+
+    public function admission(){
+      return view('pages.admission');
+    }
+
+    public function project($id){
+      $project = Project::findOrFail($id);
+      return view('pages.project', compact('project'));
+    }
+
+    public function students(){
+      return view('pages.students');
+    }
+
+    public function contact(){
+      return view('pages.contact');
     }
 
     public function about(){
