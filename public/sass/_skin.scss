@@ -3,7 +3,7 @@
 // =============================================================================
 
 a {
-  color: $secondary-color;
+  color: $primary-color;
   font-weight: normal;
 }
 blockquote {
@@ -55,6 +55,10 @@ strong {
 }
 .color {
   color: $primary-color;
+}
+.framed {
+  border: $light-color 1px solid;
+  padding: 10px 20px;
 }
 .lead, .lead:last-of-type {
   font-size: 1.3em;

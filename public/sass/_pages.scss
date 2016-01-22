@@ -94,7 +94,7 @@
     	height: 50px;
       line-height: 2.9;
     }
-    a:hover {
+    a:hover, .active {
     	border-color: $primary-color;
     }
   }

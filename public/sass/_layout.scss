@@ -177,7 +177,7 @@ nav {
     	//line-height: 2.9;
     	//margin: 0 33px;
     }
-    a:hover {
+    a:hover, .active {
     	border-color: $primary-color;
     	color: $primary-color;
     }

@@ -281,7 +281,7 @@ nav {
       box-sizing: border-box;
       display: inline-block;
       height: 60px; }
-    nav ul a:hover {
+    nav ul a:hover, nav ul .active {
       border-color: #50d33d;
       color: #50d33d; }
   nav li {
@@ -1190,7 +1190,7 @@ footer {
 
 /* '´î¼' */
 a {
-  color: #f73c3c;
+  color: #50d33d;
   font-weight: normal; }
 
 blockquote {
@@ -1242,6 +1242,10 @@ strong {
 
 .color {
   color: #50d33d; }
+
+.framed {
+  border: #dadbd9 1px solid;
+  padding: 10px 20px; }
 
 .lead, .lead:last-of-type {
   font-size: 1.3em;
@@ -1333,7 +1337,7 @@ strong {
     font-weight: normal;
     height: 50px;
     line-height: 2.9; }
-  .subnav ul a:hover {
+  .subnav ul a:hover, .subnav ul .active {
     border-color: #50d33d; }
   .subnav li {
     display: inline-block; }

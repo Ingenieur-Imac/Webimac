@@ -16,6 +16,10 @@ class PagesController extends Controller{
         return view('pages.home');
     }
 
+    public function presentation(){
+      return view('pages.presentation');
+    }
+
     public function admission(){
       return view('pages.admission');
     }
