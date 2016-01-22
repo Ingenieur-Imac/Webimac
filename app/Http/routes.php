@@ -36,6 +36,7 @@ Route::get('admin/logout','AdminPagesController@logout');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
+    Route::post('admin/others/application','AdminOthersController@updateApplicationDates');
 //Partie Générale
 Route::get('timer','PagesController@timer');
 
