@@ -13,36 +13,51 @@ class AdminOthersController extends Controller
     protected $pathToJson;
 
     function __construct(){
-        $this->pathToJson = public_path().'/json/timer.json';
+        $this->pathToTimerJson = public_path().'/json/timer.json';
+        $this->pathToApplicationJson = public_path().'/json/application.json';
     }
 
     function index(){
+        //Timestamp JPO
         $ts = null;
-        $json = json_decode(file_get_contents($this->pathToJson),TRUE);
-        if(isset($json['timer']['timestamp'])){
-            $ts = $json['timer']['timestamp'];
+        $date = null;
+        $timerJson = json_decode(file_get_contents($this->pathToTimerJson),TRUE);
+        if(isset($timerJson['timer']['timestamp'])){
+            $ts = $timerJson['timer']['timestamp'];
             $date = Carbon::createFromTimestamp($ts);
-        } else {
-            $date = Carbon::now();
         }
-        return view('admin.others.index',compact('date'));
+        //Application to the school
+        $applicationJson = json_decode(file_get_contents($this->pathToApplicationJson),TRUE);
+        $application_date = ['openning' => null,'first_session' => null,'second_session' => null];
+        if(isset($applicationJson['application']['openning']))
+            $application_date['openning'] = $applicationJson['application']['openning'];
+        if(isset($applicationJson['application']['first_session']))
+            $application_date['first_session'] = $applicationJson['application']['first_session'];
+        if(isset($applicationJson['application']['second_session']))
+            $application_date['second_session'] = $applicationJson['application']['second_session'];
+
+        return view('admin.others.index',compact('date','application_date'));
     }
 
     function updateTimer(Request $request){
         $result = $request->all();
         $date = Carbon::createFromFormat('Y-m-d H:i',$result['date'].' '.$result['time']);
-
-        // TEST POUR AFFICHER LE COMPTE A REBOURT
-
-        // $now = Carbon::now();
-        // $diffMonth = $date->diffInMonths($now);
-        // $diffDays = $date->diffInDays($now->addMonths($diffMonth));
-        // $diffHours = $date->diffInHours($now->addDays($diffDays));
-        // $diffMinutes = $date->diffInMinutes($now->addHours($diffHours));
-        // $diffSeconds = $date->diffInSeconds($now->addMinutes($diffMinutes));
-        $json = json_decode(file_get_contents($this->pathToJson),TRUE);
+        $json = json_decode(file_get_contents($this->pathToTimerJson),TRUE);
         $json['timer'] = array('timestamp' => $date->timestamp);
-        file_put_contents($this->pathToJson, json_encode($json,TRUE));
+        file_put_contents($this->pathToTimerJson, json_encode($json,TRUE));
+
+        return redirect('admin/others');
+    }
+
+    function updateApplicationDates(Request $request){
+        $result = $request->all();
+        $application_date['openning'] = $result['openning'];
+        $application_date['first_session'] = $result['first_session'];
+        $application_date['second_session'] = $result['second_session'];
+
+        $json = json_decode(file_get_contents($this->pathToApplicationJson),TRUE);
+        $json['application'] = $application_date;
+        file_put_contents($this->pathToApplicationJson,json_encode($json,TRUE));
 
         return redirect('admin/others');
     }
