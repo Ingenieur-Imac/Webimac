@@ -40,9 +40,9 @@
     <div class="light-row">
         <div class="container">
             <h2 class="title-2 center">Les <strong>projets</strong> à la une</h2>
-            <?php for ($i=0; $i < 2; $i++) { ?>
-                @include('includes.project')
-            <?php } ?>
+            <?php// for ($i=0; $i < 2; $i++) { ?>
+                @include('includes.project',$projects)
+            <?php //} ?>
         </div>
     </div>
 

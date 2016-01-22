@@ -27,8 +27,7 @@ class ProjectRequest extends Request
             'name' => 'required|min:3',
             'github_link' => 'active_url',
             'web_link' => 'active_url',
-            'vimeo_link' => 'active_url',
-            'url_video' => 'active_url'
+            'vimeo_link' => 'active_url'
         ];
     }
 }

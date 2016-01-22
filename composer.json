@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "doctrine/dbal": "^2.5",
         "laravelcollective/html" : "5.2.*",
-        "moment/moment": "^2.11"
+        "moment/moment": "^2.11",
+        "cocur/slugify": "^1.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
