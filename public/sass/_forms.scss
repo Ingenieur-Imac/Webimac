@@ -3,14 +3,16 @@
 // =============================================================================
 
 .btn {
+  @include box-sizing(border-box);
   border: transparent 1px solid;
 	display: inline-block;
   font-style: italic;
   font-weight: normal;
-	margin: 15px 5px 0 5px;
-	padding: 10px 16px;
+	margin: 30px 5px 0 5px;
+	padding: 10px;
 	text-align: center;
-	transition: all 0.5s ease-out;
+	// transition: all 0.5s ease-out;
+  width: 225px;
 }
 .primary-btn {
   @extend .btn;
