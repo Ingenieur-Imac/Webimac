@@ -5,6 +5,7 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
+use Imac\StudentTestimonial;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
 
@@ -16,7 +17,8 @@ class PagesController extends Controller{
 
     public function index(){
         $projects = Project::HomePage()->get();
-        return view('pages.home',compact('projects'));
+        $student_testimonial = StudentTestimonial::first();
+        return view('pages.home',compact('projects','student_testimonial'));
     }
 
     public function presentation(){

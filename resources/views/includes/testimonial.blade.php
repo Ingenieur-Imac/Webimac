@@ -1,10 +1,10 @@
 <div class="testimonial">
-    <img class="testi-picture" src="{{URL::asset('images/juju.jpg')}}" alt="Julie Pronzac" />
+    <img class="testi-picture" src="{{URL::asset('images/studentTestimonial/'.$student_testimonial->url_image)}}" alt="{{$student_testimonial->name}}" />
     <div class="testi-body">
-        <h3 class="title-4">Julie Pronzac</h3>
-        <p class="testi-role">UX Designer, à Nealite</p>
+        <h3 class="title-4">{{$student_testimonial->name}}</h3>
+        <p class="testi-role">{{$student_testimonial->job}}</p>
         <blockquote>
-          <p>Candy canes pastry lemon drops marshmallow donut dessert chupa chups icing muffin. Biscuit jelly icing cheesecake halvah. Carrot cake candy sesame snaps chupa chups donut dessert chupa chups cupcake. Pastry wafer chocolate soufflé muffin. Tootsie roll cheesecake brownie</p>
+          <p>{{$student_testimonial->overview}}</p>
         </blockquote>
     </div>
 </div>

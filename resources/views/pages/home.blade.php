@@ -40,16 +40,14 @@
     <div class="light-row">
         <div class="container">
             <h2 class="title-2 center">Les <strong>projets</strong> à la une</h2>
-            <?php// for ($i=0; $i < 2; $i++) { ?>
-                @include('includes.project',$projects)
-            <?php //} ?>
+            @include('includes.project',$projects)
         </div>
     </div>
 
     <div>
         <div class="container">
             <h2 class="title-2 center">Paroles d'anciens</h2>
-            @include('includes.testimonial')
+            @include('includes.testimonial',$student_testimonial)
         </div>
     </div>
 @endsection
