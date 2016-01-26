@@ -18,7 +18,7 @@ Route::get('/nos-etudiants','PagesController@students');
 Route::get('/international','PagesController@international');
 Route::get('/entreprises','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
-Route::get('/realisations/{id}','PagesController@project');
+Route::get('/realisations/{url}','PagesController@project');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

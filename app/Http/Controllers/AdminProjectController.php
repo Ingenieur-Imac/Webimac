@@ -41,7 +41,7 @@ class AdminProjectController extends Controller {
                 $file->move(public_path().'/images/projects/',$name);
             }
         }
-
+        $project->url_page = $project->getUrl($project->name);
         $project->url_image = $name;
         $project->save();
         return redirect('admin/project/');

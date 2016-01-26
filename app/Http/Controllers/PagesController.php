@@ -4,6 +4,9 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
+use Imac\Project;
+use Imac\StudentTestimonial;
+use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
 
 class PagesController extends Controller{
@@ -13,7 +16,9 @@ class PagesController extends Controller{
     }
 
     public function index(){
-        return view('pages.home');
+        $projects = Project::HomePage()->get();
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.home',compact('projects','student_testimonials'));
     }
 
     public function presentation(){
@@ -24,8 +29,10 @@ class PagesController extends Controller{
       return view('pages.admission');
     }
 
-    public function project($id){
-      $project = Project::findOrFail($id);
+    public function project($url){
+      $project = Project::where('url_page','=',$url)->get();
+      $project = $project->first();
+      $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
       return view('pages.project', compact('project'));
     }
 

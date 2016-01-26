@@ -1222,10 +1222,6 @@ blockquote:after {
 em {
   font-style: italic; }
 
-iframe {
-  height: auto;
-  width: 100%; }
-
 img {
   height: auto;
   width: 100%; }
@@ -1376,6 +1372,31 @@ p.lead + .frames {
 .testimonial {
   text-align: center; }
 
+.testi-arrow {
+  font-size: 5em;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.testi-arrow-left {
+  padding-right: 50px; }
+
+.testi-arrow-right {
+  padding-left: 50px; }
+
+.ctn-testimonial {
+  min-width: 920px;
+  display: inline-flex;
+  vertical-align: top; }
+
+.inner-testimonial {
+  display: table; }
+
+.master-testimonial {
+  width: 920px;
+  display: flex;
+  overflow: hidden; }
+
 @media (min-width: 768px) {
   .testi-picture {
     display: table-cell; }
@@ -1392,7 +1413,7 @@ p.lead + .frames {
     display: table;
     margin: 15px auto 0 auto;
     text-align: left;
-    width: 750px; } }
+    width: 920px; } }
 .subnav {
   background: #dadbd9;
   -webkit-box-sizing: border-box;
