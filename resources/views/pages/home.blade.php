@@ -11,6 +11,11 @@
     Imac | Accueil
 @endsection
 
+@section('script')
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('js/home.js')}}"></script>
+@endsection
+
 @section('content')
     @include('includes.banner', array('img' => $img, 'title' => $title, 'text' => $text))
 
@@ -47,7 +52,7 @@
     <div>
         <div class="container">
             <h2 class="title-2 center">Paroles d'anciens</h2>
-            @include('includes.testimonial',$student_testimonial)
+            @include('includes.testimonial',$student_testimonials)
         </div>
     </div>
 @endsection
