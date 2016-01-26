@@ -106,11 +106,11 @@
               <div class="lead lnr lnr-camera-video lnr-bigger center"></div>
               <p>
                   <span class="tag">dispositif interactif</span>
-                  <span class="tag">direction artistique</span>
-                  <span class="tag">nouvelles formes du cinéma</span>
                   <span class="tag">sound design</span>
-                  <span class="tag">post-production avancée</span>
+                  <span class="tag">direction artistique</span>
                   <span class="tag">scénographie</span>
+                  <span class="tag">nouvelles formes du cinéma</span>
+                  <span class="tag">post-production avancée</span>
                   <span class="tag">...</span>
               </p>
           </div>
@@ -120,20 +120,22 @@
     <div class="container center-content-padding">
         <h2 class="title-2">Les projets</h2>
         <p class="lead side-padding">Dans une logique de professionnalisation, les étudiants mettent en application leurs connaissances en réalisant de multiples projets.</p>
-        <div class="framed">
-            <p class="big-number">5</p>
-            <p class="title-4">projets par semestre</p>
-            <p>pouvant compter pour la totalité de la note de la matière</p>
-        </div>
-        <div class="framed">
-            <p class="big-number">1</p>
-            <p class="title-4">projet tuteuré</p>
-            <p>se déroulant tout au long de la deuxième année</p>
-        </div>
-        <div class="framed">
-            <p class="big-number">4</p>
-            <p class="title-4">heures de sommeil</p>
-            <p>les nuits précédant les rendus de projet</p>
+        <div class="frames">
+            <div class="framed">
+                <p class="big-number">5</p>
+                <p class="title-4">projets par semestre</p>
+                <p>pouvant compter pour la totalité de la note de la matière</p>
+            </div>
+            <div class="framed">
+                <p class="big-number">1</p>
+                <p class="title-4">projet tuteuré</p>
+                <p>se déroulant tout au long de la deuxième année</p>
+            </div>
+            <div class="framed">
+                <p class="big-number">4</p>
+                <p class="title-4">heures de sommeil</p>
+                <p>les nuits précédant les rendus de projet</p>
+            </div>
         </div>
         <div class="col-2 side-padding">
             <h3 class="title-3">Les projets à l'Imac</h3>
@@ -155,20 +157,22 @@
       <div class="container center-content-padding">
         <h2 class="title-2">Les stages</h2>
         <p class="lead side-padding">Véritable tremplin vers la vie active, les stages permettent aux étudiants de découvrir l’environnement dans lequel ils seront amenés à évoluer.</p>
-        <div class="col-3 framed">
-            <p class="big-number">3</p>
-            <p class="title-4">stages</p>
-            <p>dont 2 obligatoires en deuxième et en troisième année</p>
-        </div>
-        <div class="col-3 framed">
-            <p class="big-number">8</p>
-            <p class="title-4">mois</p>
-            <p>en moyenne passés en entreprise au cours de la formation</p>
-        </div>
-        <div class="col-3 framed">
-            <p class="big-number">60</p>
-            <p class="title-4">pourcents</p>
-            <p>de proposition d’embauche suite au stage de troisième année</p>
+        <div class="frames">
+            <div class="framed">
+                <p class="big-number">3</p>
+                <p class="title-4">stages</p>
+                <p>dont 2 obligatoires en deuxième et en troisième année</p>
+            </div>
+            <div class="framed">
+                <p class="big-number">8</p>
+                <p class="title-4">mois</p>
+                <p>en moyenne passés en entreprise au cours de la formation</p>
+            </div>
+            <div class="framed">
+                <p class="big-number">60</p>
+                <p class="title-4">pourcents</p>
+                <p>de proposition d’embauche suite au stage de troisième année</p>
+            </div>
         </div>
         <div class="col-2 side-padding">
             <h3 class="title-3">Save the date</h3>

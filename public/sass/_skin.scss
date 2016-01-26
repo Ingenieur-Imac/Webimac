@@ -65,9 +65,7 @@ strong {
   font-size: 0.93em;
   padding: 30px 15px 10px 15px;
   position: relative;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  margin: 20px auto 30px auto;
+  margin: auto;
   width: 235px;
   z-index: 1;
   p {
@@ -76,7 +74,7 @@ strong {
   }
   .big-number {
     background: $main-color;
-    display: inline;
+    display: inline-block;
     font: bold 4.6em $title-font-stack;
     margin: auto;
     left: 50%;
@@ -93,21 +91,36 @@ strong {
     background: $light-color;
   }
 }
-@media #{$small-screen} {
-  .framed {
-  }
+.framed + .framed {
+  margin-top: 50px;
+}
+
+.frames {
+  margin-top: 40px;
+  position: relative;
+}
+
+p.lead + .frames {
+  margin-bottom: 30px;
 }
 @media #{$medium-screen} {
-  .framed {
-    float: left;
+  .framed:first-child {
+    position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .framed:last-child {
+    position: absolute;
+      top: 0;
+      right: 0;
   }
   .framed + .framed {
-    margin-left: 62px;
+    margin-top: 0;
   }
 }
 @media #{$large-screen} {
   .framed + .framed {
-    margin-left: 141px;
+    //margin-left: 141px;
   }
 }
 

@@ -33,6 +33,10 @@ class PagesController extends Controller{
       return view('pages.students');
     }
 
+    public function international(){
+      return view('pages.international');
+    }
+
     public function contact(){
       return view('pages.contact');
     }
