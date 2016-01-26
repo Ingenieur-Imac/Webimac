@@ -9,6 +9,7 @@ $body-font-light-path: '../fonts/sourcesanspro-light-webfont';
 $body-font-bold-path: '../fonts/sourcesanspro-bold-webfont';
 $body-font-italic-path: '../fonts/sourcesanspro-it-webfont';
 $body-font-light-italic-path: '../fonts/sourcesanspro-lightit-webfont';
+$body-font-semi-bold-italic-path: '../sourcesanspro-semiboldit-webfont';
 
 // Title fonts
 $title-font: Bebas;
@@ -22,7 +23,7 @@ $title-font-stack: $title-font, sans-serif;
 
 // Shades of grey
 $main-color: #fff;
-$light-color: #dadbd9;
+$light-color: #dadbd9; //F7F7F7
 $medium-color: #848484;
 $dark-color: #333;
 

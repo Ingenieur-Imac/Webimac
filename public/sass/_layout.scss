@@ -21,7 +21,6 @@
   @include box-sizing(border-box);
   float: left;
   margin-bottom: 40px;
-
   p {
     text-align: left;
   }
@@ -134,21 +133,8 @@ header {
     margin-left: 30px;
     vertical-align: 50%;
   }
-  .slanted {
-    background: rgba(0, 0, 0, 0.12);
-  }
   .title-2 {
     margin-bottom: 0;
-  }
-  @media #{$medium-screen} {
-    .slanted {
-      width: 625px;
-    }
-  }
-  @media #{$large-screen} {
-    .slanted {
-      width: 690px;
-    }
   }
 }
 

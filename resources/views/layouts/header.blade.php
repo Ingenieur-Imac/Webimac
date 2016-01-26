@@ -1,4 +1,3 @@
-<div class="slanted"></div>
 <div class="container">
     <a href="{{ url('/') }}">
         <img src="{{URL::asset('images/imac_edit_fondBlanc.png')}}" alt="Logo IMAC" />

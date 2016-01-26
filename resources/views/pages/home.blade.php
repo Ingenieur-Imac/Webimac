@@ -36,7 +36,7 @@
             <div class="col-3 side-padding">
                 <span class="lnr lnr-rocket lnr-7x"></span>
                 <h2 class="title-3">Une <strong>insertion<br /> professionnelle</strong> assurée</h2>
-                <p>Leur profil polyvalent étant un atout considérable dans le monde du travail, les étudiants IMAC sont embauchés dans les six mois suivant l’obtention de leur diplôme. À l’image de la formation, les secteurs d’activité sont multiples.</p>
+                <p>Leur profil polyvalent étant un atout considérable dans le monde du travail, les étudiants IMAC sont embauchés dans les six mois suivant l’obtention de leur diplôme, une grande majorité des suites au stage de troisième année. À l’image de la formation, les secteurs d’activité sont multiples.</p>
                 <a class="primary-btn" href="#">Voir les débouchés</a>
             </div>
         </div>

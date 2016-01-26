@@ -58,6 +58,17 @@
   font-style: italic;
 }
 @font-face {
+  font-family: quote($body-font);
+  src: url($body-font-semi-bold-italic-path + '.eot');
+  src: url($body-font-semi-bold-italic-path + '.eot?#iefix') format('embedded-opentype'),
+       url($body-font-semi-bold-italic-path + '.woff2') format('woff2'),
+       url($body-font-semi-bold-italic-path + '.woff') format('woff'),
+       url($body-font-semi-bold-italic-path + '.ttf') format('truetype'),
+       url($body-font-semi-bold-italic-path + '.svg') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
   font-family: quote($title-font);
   src: url($title-font-path + '.eot');
   src: url($title-font-path + '.eot?#iefix') format('embedded-opentype'),
