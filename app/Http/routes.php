@@ -40,11 +40,15 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
+    //View promotions
+    Route::resource('admin/Promo','AdminPromoController');
+
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
     Route::post('admin/others/application','AdminOthersController@updateApplicationDates');
-//Partie Générale
+
+//TEST
 Route::get('timer','PagesController@timer');
 
 ?>

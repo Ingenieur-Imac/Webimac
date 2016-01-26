@@ -12,6 +12,7 @@
                   <a href="{{action('AdminPagesController@admHome')}}" class="list-group-item active">
                     Accueil
                   </a>
+                  <a href="{{action('AdminPromoController@index')}}" class="list-group-item">Promotions</a>
                   <a href="{{action('AdminProjectController@listAll')}}" class="list-group-item">Projets</a>
                   <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item">Paroles d'Anciens</a>
                   <a href="{{action('AdminStaffController@index')}}" class="list-group-item">Staff</a>
