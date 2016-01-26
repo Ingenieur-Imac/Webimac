@@ -16,6 +16,7 @@ Route::get('/formation/presentation','PagesController@presentation');
 Route::get('/formation/admission','PagesController@admission');
 Route::get('/nos-etudiants','PagesController@students');
 Route::get('/international','PagesController@international');
+Route::get('/entreprises','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{id}','PagesController@project');
 

@@ -37,6 +37,10 @@ class PagesController extends Controller{
       return view('pages.international');
     }
 
+    public function partnership(){
+      return view('pages.partnership');
+    }
+
     public function contact(){
       return view('pages.contact');
     }

@@ -248,3 +248,28 @@
   margin: 5px 10px 5px 0;
   padding: 2px 10px;
 }
+
+.grid-cell {
+  padding: 15px;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.grid-cell:nth-child(odd) {
+  background: red;
+}
+.grid-cell:nth-child(even) {
+  background: $light-color;
+}
+@media #{$medium-screen} {
+  .grid {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .grid-cell {
+    @include box-sizing(border-box);
+    margin: 5px;
+    width: 30%;
+  }
+}
