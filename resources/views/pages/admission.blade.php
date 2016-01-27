@@ -47,7 +47,7 @@
           <p class="lead side-padding">L'admission repose sur une évaluation du dossier et éventuellement un entretien individuel. Le jury s'intéresse aux connaissances acquises dans différents domaines : sciences (informatique et mathématiques) et aux créations artistiques diverses (multimédia, audiovisuel, créations plastiques...).</p>
           <div class="col-2 side-padding">
               <h3 class="title-3"><span class="lnr lnr-pencil lnr-bigger"></span> La procédure de candidature</h3>
-              <p>Les candidatures s'effectuent depuis <a href="http://candidatures.univ-mlv.fr" target="_blank"> le site de l'Université Paris-Est Marne-la-Vallée (UPEM)</a>, dont la formation dépend. Les candidatures pour la rentrée <?php echo date('Y'); ?>/<?php echo date('Y')+1; ?> seront ouvertes à partir du {{$dates['openning']}}.</p>
+              <p>Les candidatures s'effectuent depuis <a href="http://candidatures.univ-mlv.fr" target="_blank"> le site de l'Université Paris-Est Marne-la-Vallée (UPEM)</a>, dont la formation dépend. Les candidatures pour la rentrée {{$dates['year']}} seront ouvertes à partir du {{$dates['openning']}}.</p>
 
               <p>Date limite de dépôt des dossiers :</p>
     	        <ul>

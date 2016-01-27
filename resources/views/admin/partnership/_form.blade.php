@@ -3,6 +3,11 @@
     {!! Form::label('name','Nom :') !!}
     {!! Form::text('name',null,['class' => 'form-control']) !!}
 </div>
+<!-- type form input -->
+<div class="form-group">
+    {!! Form::label('type','Type de partenariat : ') !!}
+    {!! Form::text('type',null,['class' => 'form-control']) !!}
+</div>
 <!-- description form input -->
 <div class="form-group">
     {!! Form::label('description','Description :') !!}
@@ -20,6 +25,12 @@
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif
+
+<!-- url_web form input -->
+<div class="form-group">
+    {!! Form::label('url_web','Lien vers leur site web : ') !!}
+    {!! Form::text('url_web',null,['class' => 'form-control']) !!}
+</div>
 
 <!-- submit form input -->
 <div class="form-group">

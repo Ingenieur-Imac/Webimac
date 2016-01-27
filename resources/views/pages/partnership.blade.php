@@ -18,41 +18,15 @@
         </div>
     </div>
     <div class="container grid">
-        <div class="grid-cell">
-            <img src=".." alt="<Name logo>" />
-            <h2 class="title-4">Name</h2>
-            <p>Partnership-type</p>
-            <p>Description</p>
-            <p><a href="<URL>" target="_blank">Visiter le site de <Name></a></p>
-        </div>
-        <div class="grid-cell light-row">
-            <img src=".." alt="<Name logo>" />
-            <p class="title-4">Name</p>
-            <p>Partnership-type</p>
-            <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p><a href="<URL>" target="_blank">Visiter le site de <Name></a></p>
-        </div>
-        <div class="grid-cell">
-            <img src=".." alt="<Name logo>" />
-            <p class="title-4">Name</p>
-            <p>Partnership-type</p>
-            <p>Description</p>
-            <p><a href="<URL>" target="_blank">Visiter le site de <Name></a></p>
-        </div>
-        <div class="grid-cell light-row">
-            <img src=".." alt="<Name logo>" />
-            <p class="title-4">Name</p>
-            <p>Partnership-type</p>
-            <p>Description</p>
-            <p><a href="<URL>" target="_blank">Visiter le site de <Name></a></p>
-        </div>
-        <div class="grid-cell">
-            <img src=".." alt="<Name logo>" />
-            <p class="title-4">Name</p>
-            <p>Partnership-type</p>
-            <p>Description</p>
-            <p><a href="<URL>" target="_blank">Visiter le site de <Name></a></p>
-        </div>
+        @foreach ($partnerships as $partnership)
+            <div class="grid-cell">
+                <img src="{{URL::asset('../images/partnership/'.$partnership->url_image)}}" alt="{{$partnership->name}}" />
+                <h2 class="title-4">{{$partnership->name}}</h2>
+                <p>{{$partnership->type}}</p>
+                <p>{{$partnership->description}}</p>
+                <p><a href="{{$partnership->url_web}}" target="_blank">Visiter le site de {{$partnership->name}}</a></p>
+            </div>
+        @endforeach
         <div class="grid-cell center">
             <p class="title-5">Et vous ?</p>
             <a class="secondary-btn" href="#">Devenir partenaires</a>
