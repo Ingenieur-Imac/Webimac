@@ -24,7 +24,7 @@ class PagesController extends Controller{
 
     public function presentation(){
         $student_testimonials = StudentTestimonial::all()->random(3);
-        return view('pages.presentation',compact('student_testimonials'));
+        return view('pages.presentation', compact('student_testimonials'));
     }
 
     public function admission(){
@@ -32,6 +32,11 @@ class PagesController extends Controller{
         $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
         $dates = $dates['application'];
         return view('pages.admission',compact('student_testimonials','dates'));
+    }
+
+    public function openings(){
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.openings', compact('student_testimonials'));
     }
 
     public function project($url){
@@ -61,6 +66,10 @@ class PagesController extends Controller{
 
     public function contact(){
       return view('pages.contact');
+    }
+
+    public function legalNotice(){
+      return view('pages.legalNotice');
     }
 
     public function about(){

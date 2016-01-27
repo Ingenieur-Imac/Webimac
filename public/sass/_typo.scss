@@ -129,6 +129,9 @@ h1 {
 .title-5 {
   font: 300 1.5em $title-font-stack;
 }
+p + .title-5 {
+  margin-top: 20px;
+}
 ul {
   li {
     list-style: disc;

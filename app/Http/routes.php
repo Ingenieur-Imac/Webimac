@@ -14,11 +14,14 @@
 Route::get('/','PagesController@index');
 Route::get('/formation/presentation','PagesController@presentation');
 Route::get('/formation/admission','PagesController@admission');
+Route::get('/formation/debouches','PagesController@openings');
 Route::get('/nos-etudiants','PagesController@students');
 Route::get('/international','PagesController@international');
 Route::get('/entreprises','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{url}','PagesController@project');
+Route::get('/mentions-legales','PagesController@legalNotice');
+
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

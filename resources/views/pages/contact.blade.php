@@ -33,7 +33,9 @@
                 </p>
             </div>
             <div class="col-2-3 side-padding">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.1671561461085!2d2.5856766820983466!3d48.839747292836044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e3214540483%3A0x3261ce9b28031328!2s5+Boulevard+Descartes%2C+77420+Champs-sur-Marne!5e0!3m2!1sfr!2sfr!4v1453393530340" frameborder="0" style="border: 0; height: 325px;" allowfullscreen></iframe>
+                <div class="media-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.1671561461085!2d2.5856766820983466!3d48.839747292836044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e3214540483%3A0x3261ce9b28031328!2s5+Boulevard+Descartes%2C+77420+Champs-sur-Marne!5e0!3m2!1sfr!2sfr!4v1453393530340" frameborder="0" style="border: 0; height: 325px;" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
