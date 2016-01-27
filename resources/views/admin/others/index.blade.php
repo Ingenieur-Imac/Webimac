@@ -28,6 +28,14 @@
     <h2>Dates de Candidatures</h2>
     {!! Form::open(['url' => 'admin/others/application']) !!}
         <div class="form-group">
+            {!! Form::label('year','Année de Candidature') !!}
+            @if ($application_date['year'] != null)
+                {!! Form::text('year',$application_date['year'],['class' => 'form-control','placeholder' => 'Ex : 2016/2017']) !!}
+            @else
+                {!! Form::text('year',null,['class' => 'form-control','placeholder' => 'Ex : 2016/2017']) !!}
+            @endif
+        </div>
+        <div class="form-group">
             {!! Form::label('openning','Ouverture des Candidatures') !!}
             @if ($application_date['openning'] != null)
                 {!! Form::text('openning',$application_date['openning'],['class' => 'form-control']) !!}

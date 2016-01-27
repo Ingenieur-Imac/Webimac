@@ -21,8 +21,10 @@ class CreateProjectsTable extends Migration
             $table->timestamp('date');
             $table->string('contributors');
             $table->string('name_of_tutors');
+            $table->string('awards')->nullable();
             $table->string('url_page')->unique();
             $table->string('url_image')->nullable();
+            $table->string('platform')->nullable();
             $table->string('url_video')->nullable();
             $table->string('github_link')->nullable();
             $table->string('web_link')->nullable();

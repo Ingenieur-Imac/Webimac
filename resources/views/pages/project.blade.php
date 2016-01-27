@@ -11,7 +11,16 @@
             <h1 class="title-1">{{ $project->name }}</h1>
             <h2 class="title-2">{{ $project->date }}</h2>
             <div class="media-container">
-                <iframe src="//player.vimeo.com/video/{{$project->url_video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                @if ($project->platform == 'vimeo')
+                    <iframe src="//player.vimeo.com/video/{{$project->url_video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                @elseif($project->platform == 'youtube')
+                    <iframe src="https://www.youtube.com/embed/{{$project->url_video}}" frameborder="0" allowfullscreen></iframe>
+                @elseif($project->platform == 'dailymotion')
+                    <iframe frameborder="0" src="//www.dailymotion.com/embed/video/{{$project->url_video}}" allowfullscreen></iframe>
+                @else
+                    Pas de vidéo à afficher ...
+                @endif
+
             </div>
             <p>{{ $project->description }}</p>
         </div>

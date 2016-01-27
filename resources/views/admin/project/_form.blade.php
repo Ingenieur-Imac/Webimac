@@ -28,6 +28,12 @@
     </div>
 @endif
 
+<!-- awards form input -->
+<div class="form-group">
+    {!! Form::label('awards','Récompenses : ') !!}
+    {!! Form::text('awards',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- contributor form input -->
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
@@ -56,6 +62,17 @@
 <div class="form-group">
     {!! Form::label('vimeo_link','Lien vers Viméo') !!}
     {!! Form::text('vimeo_link',null,['class' => 'form-control']) !!}
+</div>
+
+<!-- platform form input -->
+<div class="form-group">
+    <p>Plateforme :</p>
+    {!! Form::label('vimeo','Viméo') !!}
+    {!! Form::radio('platform','vimeo',true) !!}
+    {!! Form::label('youtube','| Youtube') !!}
+    {!! Form::radio('platform','youtube') !!}
+    {!! Form::label('dailymotion','| Dailymotion') !!}
+    {!! Form::radio('platform','dailymotion') !!}
 </div>
 
 <!-- url_video form input -->

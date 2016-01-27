@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
 use Imac\Promo;
+use Imac\Partnership;
 use Imac\StudentTestimonial;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
@@ -61,7 +62,8 @@ class PagesController extends Controller{
     }
 
     public function partnership(){
-      return view('pages.partnership');
+        $partnerships = Partnership::all();
+        return view('pages.partnership',compact('partnerships'));
     }
 
     public function contact(){

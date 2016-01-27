@@ -28,13 +28,15 @@ class AdminOthersController extends Controller
         }
         //Application to the school
         $applicationJson = json_decode(file_get_contents($this->pathToApplicationJson),TRUE);
-        $application_date = ['openning' => null,'first_session' => null,'second_session' => null];
+        $application_date = ['openning' => null,'first_session' => null,'second_session' => null,'year' => null];
         if(isset($applicationJson['application']['openning']))
             $application_date['openning'] = $applicationJson['application']['openning'];
         if(isset($applicationJson['application']['first_session']))
             $application_date['first_session'] = $applicationJson['application']['first_session'];
         if(isset($applicationJson['application']['second_session']))
             $application_date['second_session'] = $applicationJson['application']['second_session'];
+        if(isset($applicationJson['application']['year']))
+            $application_date['year'] = $applicationJson['application']['year'];
 
         return view('admin.others.index',compact('date','application_date'));
     }
@@ -54,6 +56,7 @@ class AdminOthersController extends Controller
         $application_date['openning'] = $result['openning'];
         $application_date['first_session'] = $result['first_session'];
         $application_date['second_session'] = $result['second_session'];
+        $application_date['year'] = $result['year'];
 
         $json = json_decode(file_get_contents($this->pathToApplicationJson),TRUE);
         $json['application'] = $application_date;

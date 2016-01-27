@@ -15,7 +15,9 @@ class CreatePartnershipsTable extends Migration
         Schema::create('partnerships', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('type');
             $table->string('description');
+            $table->string('url_web');
             $table->string('url_image');
         });
     }
