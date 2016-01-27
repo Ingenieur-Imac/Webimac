@@ -5,6 +5,7 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
+use Imac\Promo;
 use Imac\StudentTestimonial;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
@@ -22,29 +23,37 @@ class PagesController extends Controller{
     }
 
     public function presentation(){
-      $student_testimonials = StudentTestimonial::all()->random(3);
-      return view('pages.presentation', compact('student_testimonials'));
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.presentation', compact('student_testimonials'));
     }
 
     public function admission(){
-      $student_testimonials = StudentTestimonial::all()->random(3);
-      return view('pages.admission', compact('student_testimonials'));
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
+        $dates = $dates['application'];
+        return view('pages.admission',compact('student_testimonials','dates'));
     }
 
     public function openings(){
-      $student_testimonials = StudentTestimonial::all()->random(3);
-      return view('pages.openings', compact('student_testimonials'));
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.openings', compact('student_testimonials'));
     }
 
     public function project($url){
-      $project = Project::where('url_page','=',$url)->get();
-      $project = $project->first();
-      $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
-      return view('pages.project', compact('project'));
+        $project = Project::where('url_page','=',$url)->get();
+        $project = $project->first();
+        $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
+        return view('pages.project', compact('project'));
     }
 
     public function students(){
-      return view('pages.students');
+        $promos = Promo::all();
+        //Table input
+        $select_year = array();
+        foreach($promos as $promo){
+            $select_year[$promo->year] = $promo->year;
+        }
+      return view('pages.students',compact('promos','select_year'));
     }
 
     public function international(){

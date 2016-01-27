@@ -10,6 +10,11 @@
     Imac | {{ $title }}
 @endsection
 
+@section('script')
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('../js/home.js')}}"></script>
+@endsection
+
 @section('content')
     @include('includes.banner', array('img' => $img, 'title' => $banner_title))
     @include('includes.subnav', array('img' => $img, 'title' => $title))
@@ -42,12 +47,12 @@
           <p class="lead side-padding">L'admission repose sur une évaluation du dossier et éventuellement un entretien individuel. Le jury s'intéresse aux connaissances acquises dans différents domaines : sciences (informatique et mathématiques) et aux créations artistiques diverses (multimédia, audiovisuel, créations plastiques...).</p>
           <div class="col-2 side-padding">
               <h3 class="title-3"><span class="lnr lnr-pencil lnr-bigger"></span> La procédure de candidature</h3>
-              <p>Les candidatures s'effectuent depuis <a href="http://candidatures.univ-mlv.fr" target="_blank"> le site de l'Université Paris-Est Marne-la-Vallée (UPEM)</a>, dont la formation dépend. Les candidatures pour la rentrée <?php echo date('Y'); ?>/<?php echo date('Y')+1; ?> seront ouvertes à partir du vendredi 4 avril 2015.</p>
+              <p>Les candidatures s'effectuent depuis <a href="http://candidatures.univ-mlv.fr" target="_blank"> le site de l'Université Paris-Est Marne-la-Vallée (UPEM)</a>, dont la formation dépend. Les candidatures pour la rentrée <?php echo date('Y'); ?>/<?php echo date('Y')+1; ?> seront ouvertes à partir du {{$dates['openning']}}.</p>
 
               <p>Date limite de dépôt des dossiers :</p>
     	        <ul>
-                  <li>1ère session : 3 Juin 2016</li>
-                  <li>2ème session : 1er septembre 2016</li>
+                  <li>1ère session : {{$dates['first_session']}}</li>
+                  <li>2ème session : {{$dates['second_session']}}</li>
           </div>
           <div class="col-2 side-padding">
               <h3 class="title-3"><span class="lnr lnr-paperclip lnr-bigger"></span> Le dossier à préparer</h3>

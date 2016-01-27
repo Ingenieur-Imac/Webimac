@@ -10,6 +10,11 @@
     Imac | {{ $title }}
 @endsection
 
+@section('script')
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('../js/home.js')}}"></script>
+@endsection
+
 @section('content')
     @include('includes.banner', array('img' => $img, 'title' => $banner_title))
     @include('includes.subnav', array('img' => $img, 'title' => $title))
