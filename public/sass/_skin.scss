@@ -154,7 +154,7 @@ p.lead + .frames {
 .media-container {
     height: 0;
     padding-bottom: 56.25%;
-    position: relative;    
+    position: relative;
 }
 
 .media-container iframe,
@@ -166,4 +166,8 @@ p.lead + .frames {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.media-container + p {
+  margin-top: 30px;
 }

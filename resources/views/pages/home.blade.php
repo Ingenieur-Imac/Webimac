@@ -45,7 +45,7 @@
     <div class="light-row">
         <div class="container">
             <h2 class="title-2 center">Les <strong>projets</strong> à la une</h2>
-            @include('includes.project', $projects)
+            @include('includes.projectHome', $projects)
         </div>
     </div>
 

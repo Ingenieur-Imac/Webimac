@@ -2,6 +2,9 @@
 // Form elements
 // =============================================================================
 
+.title2 ~ .btn {
+  margin-top: 1000px;
+}
 .btn {
   @include box-sizing(border-box);
   border: transparent 1px solid;
@@ -33,4 +36,9 @@
   @extend .btn;
   border-color: $main-color;
   color: $main-color;
+}
+@media #{$large-screen} {
+  .btn + .btn {
+    margin-left: 70px;
+  }
 }

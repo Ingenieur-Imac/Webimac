@@ -1,7 +1,7 @@
 <?php
   $title = 'Admission';
   $banner_title = 'La formation Imac';
-  $img = 'Groupe_IMAC.jpg';
+  $img = 'DSC00034.jpg';
 ?>
 
 @extends('layouts.default')
