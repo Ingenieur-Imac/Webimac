@@ -6,7 +6,8 @@
 .container {
   @include box-sizing(border-box);
   margin: auto;
-  padding: 40px 15px;
+  padding: 60px 15px;
+  position: relative;
 }
 .container-fluid {
   padding-right: 15px;

@@ -25,100 +25,108 @@
             <img src="{{URL::asset('images/banners/Groupe_IMAC.jpg')}}" alt="Des ingénieurs Imac" />
         </div>
         <div class="col-2 side-padding">
-            <p class="lead">L’IMAC est une formation d’ingénieur en trois ans certifiée par la CTI (Commission des Titres d’Ingénieur). Créée en 19xx, c’est la première formation d’ingénieur publique en France alliant arts et sciences.</p>
+            <p class="lead">L’IMAC est une formation d’ingénieur en trois ans certifiée par la CTI (Commission des Titres d’Ingénieur). Créée en 1986, c’est la première formation d’ingénieur publique en France alliant arts et sciences.</p>
             <p>En effet, notre pédagogie pluridisciplinaire nous permet d'associer esprit créatif et savoirs scientifiques. Nous formons des cadres supérieurs évoluant dans les domaines de l’Internet, des jeux vidéo, de l'audiovisuel, de la communication numérique...</p>
         </div>
     </div>
 
     <div class="light-row">
-      <div class="container center-content-padding">
+      <div class="container center-content-padding center">
           <h2 class="title-2">Trois ans pour devenir un ingénieur créatif</h2>
           <div class="ligne"><div class="circle"></div></div>
           <div class="strong-framed">
               <div class="year">Première année</div>
               <p class="title-2 color">Découvrir</p>
-              <p class="lead">Les étudiants recrutés par l’IMAC ont des cursus très variés. La première année de formation permet de donner une base commune et solide de connaissances à chacun.</p>
-              <p>
-                  <span class="tag">bases de la pratique vidéo</span>
-                  <span class="tag">histoire de l'art</span>
-                  <span class="tag">initiation à la programmation</span>
-                  <span class="tag">découverte du web</span>
-                  <span class="tag">approche de la synthèse d'images</span>
-                  <span class="tag">design</span>
-                  <span class="tag">mise à niveau en mathématiques</span>
-                  <span class="tag">histoire du cinéma</span>
-                  <span class="tag">...</span>
-              </p>
+              <div class="framed-content">
+                  <p class="lead">Les étudiants recrutés par l’IMAC ont des cursus très variés. La première année de formation permet de donner une base commune et solide de connaissances à chacun.</p>
+                  <p>
+                      <span class="tag">bases de la pratique vidéo</span>
+                      <span class="tag">histoire de l'art</span>
+                      <span class="tag">initiation à la programmation</span>
+                      <span class="tag">découverte du web</span>
+                      <span class="tag">approche de la synthèse d'images</span>
+                      <span class="tag">design</span>
+                      <span class="tag">mise à niveau en mathématiques</span>
+                      <span class="tag">histoire du cinéma</span>
+                      <span class="tag">...</span>
+                  </p>
+              </div>
           </div>
 
           <div class="ligne"><div class="circle"></div></div>
           <div class="strong-framed">
               <div class="year">Deuxième année</div>
               <p class="title-2 color">Approfondir</p>
-              <p class="lead">La deuxième année offre elle aussi un large panel de cours :</p>
-              <p>
-                  <span class="tag">programmation de jeux</span>
-                  <span class="tag">mathématiques pour l'informatique</span>
-                  <span class="tag">photographie</span>
-                  <span class="tag">administration réseaux</span>
-                  <span class="tag">web design</span>
-                  <span class="tag">audiovisuel</span>
-                  <span class="tag">...</span>
-              </p>
-              <p>Les projets tuteurés occupent une part importante de l’année. À cheval sur les deux semestres, ils permettent aux étudiants d’avoir une première approche d’un projet à mener sur le long terme.</p>
-              <p>Encadrés par des tuteurs professionnels, ils répondent à une demande client.</p>
+              <div class="framed-content">
+                  <p class="lead">La deuxième année offre elle aussi un large panel de cours :</p>
+                  <p>
+                      <span class="tag">programmation de jeux</span>
+                      <span class="tag">mathématiques pour l'informatique</span>
+                      <span class="tag">photographie</span>
+                      <span class="tag">administration réseaux</span>
+                      <span class="tag">web design</span>
+                      <span class="tag">audiovisuel</span>
+                      <span class="tag">...</span>
+                  </p>
+                  <p>Les projets tuteurés occupent une part importante de l’année. À cheval sur les deux semestres, ils permettent aux étudiants d’avoir une première approche d’un projet à mener sur le long terme.</p>
+                  <p>Encadrés par des tuteurs professionnels, ils répondent à une demande client.</p>
+              </div>
           </div>
 
           <div class="ligne"><div class="circle"></div></div>
           <div class="strong-framed">
               <div class="year">Troisième année</div>
               <p class="title-2 color">Se spécialiser</p>
-              <p class="lead">C’est en troisième année que les étudiants choisissent une spécialité. Trois possibilités s’offrent à eux : audiovisuel, 3D ou web.</p>
-              <p>En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double master cinéma ou un double master informatique.</p>
-              <p>Pour perfectionner leur spécialisation, les étudiants partent en stage à partir d’avril.</p>
+              <div class="framed-content">
+                  <p class="lead">C’est en troisième année que les étudiants choisissent une spécialité. Trois possibilités s’offrent à eux : audiovisuel, 3D ou web.</p>
+                  <p>En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double master cinéma ou un double master informatique.</p>
+                  <p>Pour perfectionner leur spécialisation, les étudiants partent en stage à partir d’avril.</p>
+              </div>
+
+              <div class="strong-framed framed-3">
+                  <h3 class="title-3 color center">Web</h3>
+                  <div class="lead lnr lnr-code lnr-bigger center"></div>
+                  <p>
+                      <span class="tag">e-marketing</span>
+                      <span class="tag">cloud computing</span>
+                      <span class="tag">technologies web et mobile</span>
+                      <span class="tag">design de service</span>
+                      <span class="tag">python</span>
+                      <span class="tag">data design</span>
+                      <span class="tag">...</span>
+                  </p>
+              </div>
+              <div class="strong-framed framed-3">
+                  <h3 class="title-3 color center">3D</h3>
+                  <div class="lead lnr lnr-layers lnr-bigger center"></div>
+                  <p>
+                      <span class="tag">GP/GPU</span>
+                      <span class="tag">programmation avancée</span>
+                      <span class="tag">réalité augmentée</span>
+                      <span class="tag">réalité virtuelle</span>
+                      <span class="tag">jeu vidéo</span>
+                      <span class="tag">moteur physique</span>
+                      <span class="tag">OpenGL avancé</span>
+                      <span class="tag">...</span>
+                  </p>
+              </div>
+              <div class="strong-framed framed-3">
+                  <h3 class="title-3 color center">Audiovisuel</h3>
+                  <div class="lead lnr lnr-camera-video lnr-bigger center"></div>
+                  <p>
+                      <span class="tag">dispositif interactif</span>
+                      <span class="tag">sound design</span>
+                      <span class="tag">direction artistique</span>
+                      <span class="tag">scénographie</span>
+                      <span class="tag">nouvelles formes du cinéma</span>
+                      <span class="tag">post-production avancée</span>
+                      <span class="tag">...</span>
+                  </p>
+              </div>
+
           </div>
 
-          <div class="ligne"></div>
-          <div class="strong-framed framed-3">
-              <h3 class="title-3 color center">Web</h3>
-              <div class="lead lnr lnr-code lnr-bigger center"></div>
-              <p>
-                  <span class="tag">e-marketing</span>
-                  <span class="tag">cloud computing</span>
-                  <span class="tag">technologies web et mobile</span>
-                  <span class="tag">design de service</span>
-                  <span class="tag">python</span>
-                  <span class="tag">data design</span>
-                  <span class="tag">...</span>
-              </p>
-          </div>
-          <div class="strong-framed framed-3">
-              <h3 class="title-3 color center">3D</h3>
-              <div class="lead lnr lnr-layers lnr-bigger center"></div>
-              <p>
-                  <span class="tag">GP/GPU</span>
-                  <span class="tag">programmation avancée</span>
-                  <span class="tag">réalité augmentée</span>
-                  <span class="tag">réalité virtuelle</span>
-                  <span class="tag">jeu vidéo</span>
-                  <span class="tag">moteur physique</span>
-                  <span class="tag">OpenGL avancé</span>
-                  <span class="tag">...</span>
-              </p>
-          </div>
-          <div class="strong-framed framed-3">
-              <h3 class="title-3 color center">Audiovisuel</h3>
-              <div class="lead lnr lnr-camera-video lnr-bigger center"></div>
-              <p>
-                  <span class="tag">dispositif interactif</span>
-                  <span class="tag">sound design</span>
-                  <span class="tag">direction artistique</span>
-                  <span class="tag">scénographie</span>
-                  <span class="tag">nouvelles formes du cinéma</span>
-                  <span class="tag">post-production avancée</span>
-                  <span class="tag">...</span>
-              </p>
-          </div>
+
       </div>
     </div>
 
