@@ -34,8 +34,33 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES ('2014_10_12_000000_create_users_table',1),('2014_10_12_100000_create_password_resets_table',1),('2016_01_15_174913_create_projects_table',1),('2016_01_18_155725_create_student_testimonial_table',1),('2016_01_19_161357_create_staff_table',1);
+INSERT INTO `migrations` VALUES ('2014_10_12_000000_create_users_table',1),('2014_10_12_100000_create_password_resets_table',1),('2016_01_15_174913_create_projects_table',1),('2016_01_18_155725_create_student_testimonial_table',1),('2016_01_19_161357_create_staff_table',1),('2016_01_26_175510_create_promos_table',2),('2016_01_26_234910_create_partnerships_table',3);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `partnerships`
+--
+
+DROP TABLE IF EXISTS `partnerships`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `partnerships` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `url_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `partnerships`
+--
+
+LOCK TABLES `partnerships` WRITE;
+/*!40000 ALTER TABLE `partnerships` DISABLE KEYS */;
+/*!40000 ALTER TABLE `partnerships` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -102,6 +127,31 @@ INSERT INTO `projects` VALUES (1,NULL,'Webimac','bla bla bla bla bla bla bla bla
 UNLOCK TABLES;
 
 --
+-- Table structure for table `promos`
+--
+
+DROP TABLE IF EXISTS `promos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `promos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `year` int(10) unsigned NOT NULL,
+  `url_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `promos`
+--
+
+LOCK TABLES `promos` WRITE;
+/*!40000 ALTER TABLE `promos` DISABLE KEYS */;
+INSERT INTO `promos` VALUES (1,2017,'imac2017.jpg'),(3,2016,'imac2016.JPG'),(4,2015,'imac2015.jpg');
+/*!40000 ALTER TABLE `promos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `staff`
 --
 
@@ -145,7 +195,7 @@ CREATE TABLE `student_testimonials` (
   `overview` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `url_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,6 +204,7 @@ CREATE TABLE `student_testimonials` (
 
 LOCK TABLES `student_testimonials` WRITE;
 /*!40000 ALTER TABLE `student_testimonials` DISABLE KEYS */;
+INSERT INTO `student_testimonials` VALUES (1,'Julie Chupee','UX Designer, à Nealite',2015,'Candy canes pastry lemon drops marshmallow donut dessert chupa chups icing muffin. Biscuit jelly icing cheesecake halvah. Carrot cake candy sesame snaps chupa chups donut dessert chupa chups cupcake. Pastry wafer chocolate soufflé muffin. Tootsie roll che','juju.jpg'),(2,'Julien Rousset','Étudiant à IMAC School',2017,'L\'imac c\'est vraiment de la merde trololololo','true_juju.jpg'),(3,'Tibo Bongo','King at Bongo',2016,'Faire du rendu c\'est long, et bonjour à Sylvie é.ê !','tib.jpg');
 /*!40000 ALTER TABLE `student_testimonials` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -194,4 +245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-22 20:05:16
+-- Dump completed on 2016-01-27 10:05:14

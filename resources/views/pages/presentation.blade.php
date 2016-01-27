@@ -194,7 +194,7 @@
     <div>
         <div class="container">
             <h2 class="title-2 center">Paroles d'anciens</h2>
-            @include('includes.testimonial')
+            @include('includes.testimonial', $student_testimonials)
         </div>
     </div>
 @endsection

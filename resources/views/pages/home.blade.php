@@ -45,14 +45,14 @@
     <div class="light-row">
         <div class="container">
             <h2 class="title-2 center">Les <strong>projets</strong> à la une</h2>
-            @include('includes.project',$projects)
+            @include('includes.project', $projects)
         </div>
     </div>
 
     <div>
         <div class="container">
             <h2 class="title-2 center">Paroles d'anciens</h2>
-            @include('includes.testimonial',$student_testimonials)
+            @include('includes.testimonial', $student_testimonials)
         </div>
     </div>
 @endsection

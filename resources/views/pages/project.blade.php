@@ -10,7 +10,9 @@
         <div class="side-padding">
             <h1 class="title-1">{{ $project->name }}</h1>
             <h2 class="title-2">{{ $project->date }}</h2>
-            <iframe src="//player.vimeo.com/video/{{$project->url_video}}" width="960" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="media-container">
+                <iframe src="//player.vimeo.com/video/{{$project->url_video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
             <p>{{ $project->description }}</p>
         </div>
     </div>

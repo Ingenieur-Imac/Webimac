@@ -22,11 +22,18 @@ class PagesController extends Controller{
     }
 
     public function presentation(){
-      return view('pages.presentation');
+      $student_testimonials = StudentTestimonial::all()->random(3);
+      return view('pages.presentation', compact('student_testimonials'));
     }
 
     public function admission(){
-      return view('pages.admission');
+      $student_testimonials = StudentTestimonial::all()->random(3);
+      return view('pages.admission', compact('student_testimonials'));
+    }
+
+    public function openings(){
+      $student_testimonials = StudentTestimonial::all()->random(3);
+      return view('pages.openings', compact('student_testimonials'));
     }
 
     public function project($url){
@@ -50,6 +57,10 @@ class PagesController extends Controller{
 
     public function contact(){
       return view('pages.contact');
+    }
+
+    public function legalNotice(){
+      return view('pages.legalNotice');
     }
 
     public function about(){
