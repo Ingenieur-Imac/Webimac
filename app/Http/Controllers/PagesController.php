@@ -39,6 +39,13 @@ class PagesController extends Controller{
         return view('pages.openings', compact('student_testimonials'));
     }
 
+    public function projects(){
+        $projects = Project::all();
+        //$project = $project->first();
+        //$project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
+        return view('pages.projects', compact('projects'));
+    }
+
     public function project($url){
         $project = Project::where('url_page','=',$url)->get();
         $project = $project->first();
