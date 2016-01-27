@@ -8,6 +8,11 @@
     Imac | {{ $title }}
 @endsection
 
+@section('script')
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('js/slider_promo.js')}}"></script>
+@endsection
+
 @section('content')
     <!-- @include('includes.ariane', array('title' => $title)) -->
     <div class="container center-content-padding">
@@ -17,5 +22,23 @@
             <p>Tout au long de l’année, <a href="#">le Bureau des Imac (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudImac, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens Imac sont aussi de la partie, et surtout de passer un bon moment !</p>
             <p>À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les Imacs !</p>
         </div>
+        <!-- SLIDER DE PROMO -->
+        <div class="side-padding">
+            <div class="select_year">
+                {{Form::select('year',$select_year)}}
+            </div>
+            <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span>
+            <div class="master-promo">
+                @foreach ($promos as $promo)
+                    <div class="inner-promo">
+                        <div class="ctn-img-promo">
+                            <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <span class="promo-arrow promo-arrow-right lnr lnr-chevron-right"></span>
+        </div>
+        <!-- END SLIDER -->
     </div>
 @endsection

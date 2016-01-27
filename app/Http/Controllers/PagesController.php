@@ -5,6 +5,7 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
+use Imac\Promo;
 use Imac\StudentTestimonial;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
@@ -41,7 +42,13 @@ class PagesController extends Controller{
     }
 
     public function students(){
-      return view('pages.students');
+        $promos = Promo::all();
+        //Table input
+        $select_year = array();
+        foreach($promos as $promo){
+            $select_year[$promo->year] = $promo->year;
+        }
+      return view('pages.students',compact('promos','select_year'));
     }
 
     public function international(){

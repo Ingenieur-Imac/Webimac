@@ -2,6 +2,49 @@
 // Specific to certain pages
 // =============================================================================
 
+
+// SLIDER PROMOTION
+//TODO : RESPONSIVE
+
+.select_year {
+    //METTRE EN FORME LE BOUTON
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.promo-arrow {
+    display:inline-block;
+    vertical-align: middle;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+.master-promo {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 640px;
+    overflow: hidden;
+}
+
+.inner-promo {
+    display: inline-block;
+    min-width: 640px;
+}
+
+.ctn-img-promo {
+    text-align: center;
+}
+
+.ctn-img-promo img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 640px;
+}
+
+
+//TODO : IL VA FALLOIR CLEAN CETTE FEUILLE A UN MOMENT
+
 .img-banner {
   background: $medium-color;
   background-size: cover !important;

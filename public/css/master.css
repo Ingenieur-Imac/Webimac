@@ -1327,6 +1327,35 @@ p.lead + .frames {
   position: relative;
   width: 4px; }
 
+.select_year {
+  width: 100%;
+  text-align: center;
+  margin: 20px; }
+
+.promo-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 5em;
+  cursor: pointer; }
+
+.master-promo {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 640px;
+  overflow: hidden; }
+
+.inner-promo {
+  display: inline-block;
+  min-width: 640px; }
+
+.ctn-img-promo {
+  text-align: center; }
+
+.ctn-img-promo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 640px; }
+
 .img-banner {
   background: #848484;
   background-size: cover !important;
