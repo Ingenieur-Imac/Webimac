@@ -22,18 +22,22 @@ class PagesController extends Controller{
     }
 
     public function presentation(){
-      return view('pages.presentation');
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.presentation',compact('student_testimonials'));
     }
 
     public function admission(){
-      return view('pages.admission');
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
+        $dates = $dates['application'];
+        return view('pages.admission',compact('student_testimonials','dates'));
     }
 
     public function project($url){
-      $project = Project::where('url_page','=',$url)->get();
-      $project = $project->first();
-      $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
-      return view('pages.project', compact('project'));
+        $project = Project::where('url_page','=',$url)->get();
+        $project = $project->first();
+        $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
+        return view('pages.project', compact('project'));
     }
 
     public function students(){

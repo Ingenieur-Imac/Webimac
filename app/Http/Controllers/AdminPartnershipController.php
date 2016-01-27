@@ -5,15 +5,11 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Imac\Http\Requests;
-use Imac\Promo;
+use Imac\Partnership;
 use Imac\Http\Controllers\Controller;
 
-class AdminPromoController extends Controller
+class AdminPartnershipController extends Controller
 {
-    public function __construct(){
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -21,8 +17,8 @@ class AdminPromoController extends Controller
      */
     public function index()
     {
-        $promos = Promo::all();
-        return view('admin.promo.list',compact('promos'));
+        $partnerships = Partnership::all();
+        return view('admin.partnership.list',compact('partnerships'));
     }
 
     /**
@@ -32,7 +28,7 @@ class AdminPromoController extends Controller
      */
     public function create()
     {
-        return view('admin.promo.create');
+        return view('admin.partnership.create');
     }
 
     /**
@@ -43,14 +39,14 @@ class AdminPromoController extends Controller
      */
     public function store(Request $request)
     {
-        $promo = new Promo($request->all());
+        $partnership = new Partnership($request->all());
         //Handling URL_IMAGE
         $name = null;
         if($request->hasFile('url_image')){
             $file = $request->file('url_image');
             if($file->isValid()){
                 $name = $file->getClientOriginalName();
-                $file->move(public_path().'/images/promo/',$name);
+                $file->move(public_path().'/images/partnership/',$name);
             } else {
                 echo('Fichier non valide');
             }
@@ -58,10 +54,10 @@ class AdminPromoController extends Controller
             echo('Request don\'t have file !');
         }
         if($name != null)
-            $promo->url_image = $name;
+            $partnership->url_image = $name;
 
-        $promo->save();
-        return redirect('admin/Promo');
+        $partnership->save();
+        return redirect('admin/Partnership');
     }
 
     /**
@@ -72,8 +68,8 @@ class AdminPromoController extends Controller
      */
     public function edit($id)
     {
-        $promo =Promo::findOrFail($id);
-        return view('admin.promo.edit',compact('promo'));
+        $partnership =Partnership::findOrFail($id);
+        return view('admin.partnership.edit',compact('partnership'));
     }
 
     /**
@@ -85,15 +81,15 @@ class AdminPromoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $promo = Promo::findOrFail($id);
+        $partnership = Partnership::findOrFail($id);
         $name = null;
-        $promo->update($request->all());
+        $partnership->update($request->all());
         //Handling URL_IMAGE
         if($request->hasFile('url_image')){
             $file = $request->file('url_image');
             if($file->isValid()){
                 $name = $file->getClientOriginalName();
-                $file->move(public_path().'/images/promo/',$name);
+                $file->move(public_path().'/images/partnership/',$name);
             } else {
                 echo('Fichier non valide');
             }
@@ -101,11 +97,11 @@ class AdminPromoController extends Controller
             echo('Request don\'t have file !');
         }
         if($name != null)
-            $promo->url_image = $name;
+            $partnership->url_image = $name;
 
         //Return handle result
-        $promo->update();
-        return redirect('admin/Promo');
+        $partnership->update();
+        return redirect('admin/Partnership');
     }
 
     /**
@@ -116,8 +112,8 @@ class AdminPromoController extends Controller
      */
     public function destroy($id)
     {
-        $promo = Promo::findOrFail($id);
-        $promo->delete();
-        return redirect('admin/Promo');
+        $partnership = Partnership::findOrFail($id);
+        $partnership->delete();
+        return redirect('admin/Partnership');
     }
 }

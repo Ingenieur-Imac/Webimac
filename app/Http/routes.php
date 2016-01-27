@@ -42,7 +42,8 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Staff','AdminStaffController');
     //View promotions
     Route::resource('admin/Promo','AdminPromoController');
-
+    //View partnership
+    Route::resource('admin/Partnership','AdminPartnershipController');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
