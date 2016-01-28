@@ -17,7 +17,7 @@ class CreateStudentTestimonialTable extends Migration
             $table->string('name');
             $table->string('job');
             $table->integer('year')->unsigned()->nullable();
-            $table->string('overview');
+            $table->longText('overview');
             $table->string('url_image')->nullable();
         });
     }

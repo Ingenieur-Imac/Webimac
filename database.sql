@@ -34,7 +34,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES ('2014_10_12_000000_create_users_table',1),('2014_10_12_100000_create_password_resets_table',1),('2016_01_15_174913_create_projects_table',1),('2016_01_18_155725_create_student_testimonial_table',1),('2016_01_19_161357_create_staff_table',1),('2016_01_26_175510_create_promos_table',2),('2016_01_26_234910_create_partnerships_table',3);
+INSERT INTO `migrations` VALUES ('2014_10_12_000000_create_users_table',1),('2014_10_12_100000_create_password_resets_table',1),('2016_01_15_174913_create_projects_table',1),('2016_01_18_155725_create_student_testimonial_table',1),('2016_01_19_161357_create_staff_table',1),('2016_01_26_175510_create_promos_table',1),('2016_01_26_234910_create_partnerships_table',1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -48,10 +48,12 @@ DROP TABLE IF EXISTS `partnerships`;
 CREATE TABLE `partnerships` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `url_web` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `url_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,13 +101,15 @@ CREATE TABLE `projects` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `id_gallery` int(11) DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8_unicode_ci NOT NULL,
   `excerpt` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `contributors` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name_of_tutors` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `awards` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `url_page` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `url_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `platform` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `url_video` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `github_link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `web_link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -113,7 +117,7 @@ CREATE TABLE `projects` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `projects_url_page_unique` (`url_page`),
   UNIQUE KEY `projects_id_gallery_unique` (`id_gallery`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +126,6 @@ CREATE TABLE `projects` (
 
 LOCK TABLES `projects` WRITE;
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
-INSERT INTO `projects` VALUES (1,NULL,'Webimac','bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla','Projet vraiment cool','2016-01-22 00:00:00','Léa Rozen-Sudry<br/>Charlotte Nortier<br/>Alexander Feller<br/>Julien Rousset','Vincent Nozick<br/>Julie Pronzac<br/>Valentin Bourguoin','webimac','super_dessert.jpg','65968243','','http://www.dev.ingenieur-imac.fr','');
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,7 +141,7 @@ CREATE TABLE `promos` (
   `year` int(10) unsigned NOT NULL,
   `url_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -147,7 +150,6 @@ CREATE TABLE `promos` (
 
 LOCK TABLES `promos` WRITE;
 /*!40000 ALTER TABLE `promos` DISABLE KEYS */;
-INSERT INTO `promos` VALUES (1,2017,'imac2017.jpg'),(3,2016,'imac2016.JPG'),(4,2015,'imac2015.jpg');
 /*!40000 ALTER TABLE `promos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -192,10 +194,10 @@ CREATE TABLE `student_testimonials` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `job` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `year` int(10) unsigned DEFAULT NULL,
-  `overview` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `overview` longtext COLLATE utf8_unicode_ci NOT NULL,
   `url_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +206,6 @@ CREATE TABLE `student_testimonials` (
 
 LOCK TABLES `student_testimonials` WRITE;
 /*!40000 ALTER TABLE `student_testimonials` DISABLE KEYS */;
-INSERT INTO `student_testimonials` VALUES (1,'Julie Chupee','UX Designer, à Nealite',2015,'Candy canes pastry lemon drops marshmallow donut dessert chupa chups icing muffin. Biscuit jelly icing cheesecake halvah. Carrot cake candy sesame snaps chupa chups donut dessert chupa chups cupcake. Pastry wafer chocolate soufflé muffin. Tootsie roll che','juju.jpg'),(2,'Julien Rousset','Étudiant à IMAC School',2017,'L\'imac c\'est vraiment de la merde trololololo','true_juju.jpg'),(3,'Tibo Bongo','King at Bongo',2016,'Faire du rendu c\'est long, et bonjour à Sylvie é.ê !','tib.jpg');
 /*!40000 ALTER TABLE `student_testimonials` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -223,7 +224,7 @@ CREATE TABLE `users` (
   `remember_token` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +233,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Julien','julien@imac.fr','$2y$10$pFbx573nKmHwAV.jzmbqNeQ/qn6E2eBn24oxJXg4rF12bVxO24Rh.',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -245,4 +245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-27 10:05:14
+-- Dump completed on 2016-01-28 11:18:22

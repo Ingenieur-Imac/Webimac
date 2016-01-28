@@ -5,7 +5,7 @@
 
     {!! Form::model($project, ['method' => 'PATCH',"enctype" => "multipart/form-data", 'action' => ['AdminProjectController@update',$project->id]]) !!}
 
-        @include('admin.project._form', ['submitButtonText' => 'Modifier','old_url_image' => $project->url_image])
+        @include('admin.project._form', ['submitButtonText' => 'Modifier','old_url_image' => $project->url_image,'old_date' => $old_date])
 
     {!! Form::close() !!}
 

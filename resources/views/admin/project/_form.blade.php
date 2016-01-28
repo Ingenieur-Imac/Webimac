@@ -81,10 +81,18 @@
     {!! Form::text('url_video',null,['class' => 'form-control']) !!}
 </div>
 
-<div class="form-group">
-    {!! Form::label('date','Crée le :') !!}
-    {!! Form::input('date','date',date('Y-m-d'),['class' => 'form-control']) !!}
-</div>
+@if (isset($old_date))
+    <div class="form-group">
+        {!! Form::label('date','Crée le :') !!}
+        {!! Form::input('date','date',$old_date,['class' => 'form-control']) !!}
+    </div>
+@else
+    <div class="form-group">
+        {!! Form::label('date','Crée le :') !!}
+        {!! Form::input('date','date',date('Y-m-d'),['class' => 'form-control']) !!}
+    </div>
+@endif
+
 
 <div class="form-group">
     {!! Form::submit($submitButtonText,['class' => 'btn btn-primary form-control']) !!}

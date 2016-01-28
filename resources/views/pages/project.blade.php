@@ -37,20 +37,20 @@
                     <p>{!! $project->name_of_tutors !!}</p>
                 </div>
             </div>
-            @if(!empty($project->awards || $project->name))
+            @if(!empty($project->awards))
             <div class="project-item">
                 <span class="lnr lnr-license lnr-2x"></span>
-                <p class="project-item-content">sec.imac[at]u-pem.fr</p>
+                <p class="project-item-content">{{$project->awards}}</p>
             </div>
             @endif
             <div class="center">
-                @if(!empty($project->web_link || $project->name))
+                @if(!empty($project->web_link))
                     <a class="primary-btn" href="{{ $project->web_link }}">Voir le projet en ligne</a>
                 @endif
-                @if(!empty($project->github_link || $project->name))
+                @if(!empty($project->github_link))
                     <a class="primary-btn" href="{{ $project->github_link }}">Voir le projet sur Github</a>
                 @endif
-                @if(!empty($project->vimeo_link || $project->name))
+                @if(!empty($project->vimeo_link))
                     <a class="primary-btn" href="{{ $project->vimeo_link }}">Voir le projet sur Viméo</a>
                 @endif
             </div>
