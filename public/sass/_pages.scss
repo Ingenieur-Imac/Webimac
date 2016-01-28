@@ -2,6 +2,63 @@
 // Specific to certain pages
 // =============================================================================
 
+// PAGES DEBOUCHÉS
+
+.activity-sectors-title {
+    background-color: white;
+    display: inline-block;
+    margin: 0.5em;
+    width: auto;
+    text-align: center;
+    border: 1px solid $secondary-color;
+    font-style:normal;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (min-width: 1200px){
+    .activity-sectors-title + .activity-sectors-title {
+        margin-left: 0;
+    }
+}
+
+.activity-sectors-title.selected {
+    background-color: $secondary-color;
+    color: white;
+    transition: all 0.2s;
+}
+.activity-panel-container {
+    text-align: center;
+}
+
+.activity-panel.selected {
+    display: block;
+    transition: all 0.5s;
+}
+
+.activity-panel {
+    margin-top: 1em;
+    position: relative !important;
+    width: 70%;
+    display: none;
+    transition: 0.5s;
+}
+
+.activity-panel-title {
+    background: #fff;
+    display: block;
+    font: 1.5em Bebas, sans-serif;
+    color: $secondary-color;
+    margin: auto !important;
+    width:inherit;
+    padding: 0;
+    margin-top: -2em !important;
+    margin-bottom: 1em !important;
+}
+
+.activity-panel-text {
+    font-size: 1.3em;
+}
 
 // SLIDER PROMOTION
 //TODO : RESPONSIVE
