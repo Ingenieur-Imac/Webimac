@@ -16,7 +16,7 @@ class CreateProjectsTable extends Migration
             $table->increments('id');
             $table->integer('id_gallery')->unique()->nullable();
             $table->string('name');
-            $table->string('description');
+            $table->longText('description');
             $table->string('excerpt');
             $table->timestamp('date');
             $table->string('contributors');

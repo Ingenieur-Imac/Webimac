@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Imac\Project;
 use Imac\Http\Requests;
+use Carbon\Carbon;
 use Imac\Http\Requests\ProjectRequest;
 use Imac\Http\Controllers\Controller;
 
@@ -22,7 +23,8 @@ class AdminProjectController extends Controller {
 
     public function edit($id){
         $project = Project::findOrFail($id);
-        return view('admin.project.edit',compact('project'));
+        $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');
+        return view('admin.project.edit',compact('project','old_date'));
     }
 
     public function create(){
