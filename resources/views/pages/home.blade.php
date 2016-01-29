@@ -12,8 +12,8 @@
 @endsection
 
 @section('script')
-    <script src="vendor/jquery/dist/jquery.js"></script>
-    <script src="{{URL::asset('js/home.js')}}"></script>
+    <!-- <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('js/home.js')}}"></script> -->
 @endsection
 
 @section('content')

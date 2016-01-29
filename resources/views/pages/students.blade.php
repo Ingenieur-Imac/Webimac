@@ -25,14 +25,16 @@
         <!-- SLIDER DE PROMO -->
             <div class="master-promo">
                 <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span>
-                <div class="content-promo">
-                    @foreach ($promos as $promo)
-                        <div class="inner-promo">
-                            <div class="ctn-img-promo">
-                                <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                <div style="overflow: hidden">
+                    <div class="content-promo" style="width: <?php echo count($promos)*100 ?>%">
+                        @foreach ($promos as $promo)
+                            <div class="inner-promo" style="width: <?php echo 100/count($promos) ?>%">
+                                <div class="ctn-img-promo">
+                                    <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
             <span class="promo-arrow promo-arrow-right lnr lnr-chevron-right"></span>
             </div>

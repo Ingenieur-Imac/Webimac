@@ -1,5 +1,5 @@
 <div class="testimonial">
-    <span class="testi-arrow testi-arrow-left lnr lnr-chevron-left"></span>
+    <!-- <span class="testi-arrow testi-arrow-left lnr lnr-chevron-left"></span> -->
     <div class="master-testimonial">
         @foreach ($student_testimonials as $student_testimonial)
             <div class="ctn-testimonial">
@@ -16,5 +16,5 @@
             </div>
         @endforeach
     </div>
-    <span class="testi-arrow testi-arrow-right lnr lnr-chevron-right"></span>
+    <!-- <span class="testi-arrow testi-arrow-right lnr lnr-chevron-right"></span> -->
 </div>
