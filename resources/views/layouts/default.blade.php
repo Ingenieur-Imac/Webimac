@@ -3,6 +3,7 @@
     <head>
         <title>@yield('title')</title>
         <link rel="stylesheet" href="{{URL::asset('css/master.css')}}" media="screen" title="no title" charset="utf-8">
+        <link rel="icon" href="{{URL::asset('images/favicon.png')}}">
         @yield('script')
     </head>
     <body>

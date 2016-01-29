@@ -37,7 +37,7 @@
     </div>
 
     <div class="col-x">
-        <img class="logo-imac" src="{{URL::asset('images/imac-vectoriel-black-legacy.png')}}" alt="Logo IMAC" />
+        <img class="logo-imac" src="{{URL::asset('images/logo_blanc.png')}}" alt="Logo IMAC" />
         <h2 class="title-2">Formation d'ingénieur Imac</h2>
         <p>La seule formation publique d'ingénieur alliant arts et sciences</p>
         <div class="col-3">
