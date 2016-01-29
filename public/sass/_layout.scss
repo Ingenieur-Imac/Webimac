@@ -65,7 +65,7 @@
   .slanted {
     height: 100%;
     position: absolute;
-      left: -125px;
+    left: -125px;
     transform: skewX(30deg);
   }
 }
@@ -314,6 +314,7 @@ nav {
     @extend .slanted;
     background: $darker-secondary-color;
     width: 577px;
+    margin-left: -15%;
   }
 }
 
