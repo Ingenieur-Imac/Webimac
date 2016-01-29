@@ -1,7 +1,10 @@
 @foreach ($projects as $project)
-    <div class="col-3 project">
+    <div class="project">
         <a href="realisations/{{$project->url_page}}">
-            <img src="{{URL::asset('images/projects/'.$project->url_image)}}" alt="{{$project->name}}" />
+            <div class="ctn-img-project">
+                <img src="{{URL::asset('images/projects/'.$project->url_image)}}" alt="{{$project->name}}" />
+                <div class="hover-project-img"><span class="inside-project-img"><span class="lnr lnr-plus-circle"></span></span></div>
+            </div>
         </a>
         <h3 class="title-4">{{$project->name}}</h3>
         <p>{{$project->excerpt}}</p>
