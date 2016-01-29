@@ -59,7 +59,7 @@ class PagesController extends Controller{
         //Table input
         $select_year = array();
         foreach($promos as $promo){
-            $select_year[$promo->year] = $promo->year;
+            $select_year[$promo->year] = 'Promotion '.$promo->year;
         }
       return view('pages.students',compact('promos','select_year'));
     }

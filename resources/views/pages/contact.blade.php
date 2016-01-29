@@ -1,15 +1,17 @@
 <?php
-  $title = 'Contact';
+  $banner_title = 'La formation IMAC';
+  $img = 'hand.jpg';
 ?>
 
 @extends('layouts.default')
 
 @section('title')
-    Imac | {{ $title }}
+    Nous contacter | IMAC ingénieur
 @endsection
 
 @section('content')
-    <!-- @include('includes.ariane', array('title' => $title)) -->
+    @include('includes.banner', array('img' => $img, 'title' => $banner_title))
+    <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container">
         <div class="side-padding">
             <h1 class="title-1">Nous contacter</h1>
@@ -27,10 +29,21 @@
                 <h2 class="title-5">Téléphone</h2>
                 <p>01.60.95.72.16</p>
                 <h2 class="title-5">Secrétariat</h2>
+                <p>Bâtiment Copernic - Bureau 1B025</p>
                 <p>
-                    Bâtiment Copernic - Bureau 1B025<br />
-                    Ouverture de 8h30 à 12h et de 13h à 16h
+                    Du lundi au vendredi : 7h45 - 12h45 et 13h45 - 16h<br />
+                    Fermé le vendredi après-midi
                 </p>
+                <h2 class="title-5">Nous suivre</h2>
+                <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
+                    <span class="icon-linkedin color"></span>
+                </a>
+                <a href="https://www.facebook.com/ingenieur.imac.officiel/" target="_blank">
+                    <span class="icon-facebook color"></span>
+                </a>
+                <a href="https://twitter.com/imac_ingenieur" target="_blank">
+                    <span class="icon-twitter-bird color"></span>
+                </a>
             </div>
             <div class="col-2-3 side-padding">
                 <div class="media-container">
