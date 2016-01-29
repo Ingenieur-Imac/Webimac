@@ -18,7 +18,7 @@ Route::get('/formation/debouches','PagesController@openings');
 Route::get('/realisations','PagesController@projects');
 Route::get('/nos-etudiants','PagesController@students');
 Route::get('/international','PagesController@international');
-Route::get('/entreprises','PagesController@partnership');
+Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{url}','PagesController@project');
 Route::get('/mentions-legales','PagesController@legalNotice');

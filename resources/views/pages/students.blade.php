@@ -1,11 +1,7 @@
-<?php
-  $title = 'Nos étudiants';
-?>
-
 @extends('layouts.default')
 
 @section('title')
-    Imac | {{ $title }}
+    Les IMAC | IMAC ingénieur
 @endsection
 
 @section('script')
@@ -14,31 +10,33 @@
 @endsection
 
 @section('content')
-    <!-- @include('includes.ariane', array('title' => $title)) -->
+    <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container center-content-padding">
         <div class="side-padding">
-            <h1 class="title-1">Qu'est-ce qu'un-e Imac ?</h1>
-            <p class="lead">Une abondance de personnalités, de l’entraide, du fun : l’Imac, c’est un peu comme une deuxième famille ! Avec des promotions de maximum cinquante étudiants, les liens se créent en effet très naturellement.</p>
-            <p>Tout au long de l’année, <a href="#">le Bureau des Imac (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudImac, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens Imac sont aussi de la partie, et surtout de passer un bon moment !</p>
-            <p>À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les Imacs !</p>
+            <h1 class="title-1">Qu'est-ce qu'un ou une IMAC ?</h1>
+            <p class="lead">Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille ! Avec des promotions de maximum cinquante étudiants où la parité filles/garçons règne, les liens se créent en effet très naturellement.</p>
+            <p>Tout au long de l’année, <a href="#">le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !</p>
+            <p>À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les IMAC !</p>
+
+            <div class="select-year">
+                {{Form::select('year', $select_year)}}
+            </div>
         </div>
         <!-- SLIDER DE PROMO -->
-        <div class="side-padding">
-            <div class="select_year">
-                {{Form::select('year',$select_year)}}
-            </div>
-            <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span>
             <div class="master-promo">
-                @foreach ($promos as $promo)
-                    <div class="inner-promo">
-                        <div class="ctn-img-promo">
-                            <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span>
+                <div class="content-promo">
+                    @foreach ($promos as $promo)
+                        <div class="inner-promo">
+                            <div class="ctn-img-promo">
+                                <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
             <span class="promo-arrow promo-arrow-right lnr lnr-chevron-right"></span>
-        </div>
+            </div>
+
         <!-- END SLIDER -->
     </div>
 @endsection

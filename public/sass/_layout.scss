@@ -111,69 +111,128 @@
 }
 
 // Header
+// Comments = former header with former logo
 header {
-  background: $light-color;
-  position: relative;
-
-  a {
-    color: $dark-color;
-    z-index: 1000;
-  }
-  img {
-    height: 50px;
-    width: auto;
-  }
-  .container {
-    padding: 20px 15px;
+  display: none;
+}
+@media #{$small-screen} {
+  header {
+    background: $extra-light-color;
+    display: block;
     position: relative;
-    z-index: 1;
-  }
-  .header-titles {
-    display: inline-block;
-    line-height: 0.5;
-    margin-left: 30px;
-    vertical-align: 50%;
-  }
-  .title-2 {
-    margin-bottom: 0;
+
+    a {
+      color: $dark-color;
+      z-index: 1000;
+    }
+    img {
+      //height: 50px;
+      display: inline-block;
+      height: 80px;
+      vertical-align: bottom;
+      width: auto;
+    }
+    .container {
+      padding: 20px 15px;
+      position: relative;
+      z-index: 1;
+    }
+    // .header-titles {
+    //   display: inline-block;
+    //   line-height: 0.5;
+    //   margin-left: 30px;
+    //   vertical-align: 50%;
+    // }
+    // .title-2 {
+    //   margin-bottom: 0;
+    // }
+    .header-titles {
+      border-left: 2px $dark-color solid;
+      display: inline-block;
+      font-weight: bold;
+      line-height: 1;
+      margin-left: 30px;
+      padding-left: 10px;
+      vertical-align: bottom;
+    }
   }
 }
 
 // Navigation
 nav {
-	background: $dark-color;
+	background: $extra-light-color;
 	@include box-sizing(border-box);
 	clear: both;
 	height: 60px;
-  overflow: hidden;
-  text-align: center;
   width: 100%;
-  z-index: 50;
-
+  img {
+    height: 100%;
+    width: auto;
+  }
   ul {
-    overflow: hidden;
-    //width: 1170px;
+    @include box-sizing(border-box);
+    background: $dark-color;
+    display: none;
+    padding: 0 15px;
+    position: static;
 
     a {
     	color: $main-color;
     	border-bottom: transparent 3px solid;
     	@include box-sizing(border-box);
     	display: inline-block;
-    	//font: 1.4em Bebas;
+    	font: 1.4em Bebas;
     	height: 60px;
-    	//line-height: 2.9;
+    	line-height: 2.9;
     	//margin: 0 33px;
+      width: 100%;
     }
     a:hover, .active {
     	border-color: $primary-color;
     	color: $primary-color;
     }
+    li {
+      width: 100%;
+    }
+    .lnr {
+      display: none;
+    }
   }
-  li {
-    display: inline-block;
+  label {
+    position: absolute;
+    right: 0;
   }
+  .show-menu {
+    @include box-sizing(border-box);
+		display: inline-block;
+    color: $dark-color;
+    cursor: pointer;
+    text-align: center;
+    height: 60px;
+    padding: 10px 15px;
+    vertical-align: middle;
+    .lnr {
+      font-size: 3em;
+    }
+	}
+  .show-menu:hover {
+    color: $primary-color;
+	}
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ ul {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  input[type=checkbox]:checked ~ .show-menu {
+    color: $primary-color;
+  }
+
   @media #{$small-screen} {
     ul {
+      display: static;
       margin: auto;
       width: 750px;
 
@@ -181,16 +240,33 @@ nav {
         font: 1.2em Bebas;
         height: 60px;
         line-height: 3.3;
+        width: auto;
+      }
+      li {
+        display: inline-block;
+        width: auto;
+      }
+      li:first-child {
+        margin-left: 0;
+      }
+      .lnr {
+        display: inline;
       }
     }
-    li {
-      margin: 0 14px;
+    li + li {
+      margin-left: 20px;
     }
-    li:first-child {
-      margin-left: 0;
+
+    .nav-text {
+      display: none;
     }
-    li:last-child {
-      margin-right: 0;
+    .show-menu {
+      display: none;
+    }
+    input[type=checkbox] ~ ul {
+      display: block;
+      position: relative;
+      z-index: 1000;
     }
   }
   @media #{$medium-screen} {
@@ -202,8 +278,8 @@ nav {
         line-height: 2.9;
       }
     }
-    li {
-      margin: 0 23px;
+    li + li {
+      margin-left: 38px;
     }
 
   }
@@ -211,11 +287,17 @@ nav {
     ul {
       width: 1170px;
     }
-    li {
-    	margin: 0 36px;
+    li + li {
+    	margin-left: 66px;
     }
   }
 }
+@media #{$small-screen} {
+  nav {
+    background: $dark-color;
+  }
+}
+
 
 // Prefooter
 .prefooter {

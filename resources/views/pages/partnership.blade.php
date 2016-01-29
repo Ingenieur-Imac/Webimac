@@ -1,15 +1,11 @@
-<?php
-  $title = 'Entreprises';
-?>
-
 @extends('layouts.default')
 
 @section('title')
-    Imac | {{ $title }}
+    Nos partenaires | IMAC ingénieur
 @endsection
 
 @section('content')
-    <!-- @include('includes.ariane', array('title' => $title)) -->
+    <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container center-content-padding">
         <div class="side-padding">
             <h1 class="title-1">Nos partenaires</h1>

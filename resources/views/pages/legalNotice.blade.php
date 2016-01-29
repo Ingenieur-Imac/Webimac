@@ -1,15 +1,11 @@
-<?php
-  $title = 'Mentions légales';
-?>
-
 @extends('layouts.default')
 
 @section('title')
-    Imac | {{ $title }}
+    Mentions légales | Ingénieur IMAC
 @endsection
 
 @section('content')
-    <!-- @include('includes.ariane', array('title' => $title)) -->
+    <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container center-content-padding">
         <div class="side-padding">
             <h1 class="title-1">Mentions légales</h1>

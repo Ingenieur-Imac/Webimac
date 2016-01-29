@@ -1,13 +1,13 @@
 <?php
   $title = 'Présentation';
-  $banner_title = 'La formation Imac';
-  $img = 'Groupe_IMAC.jpg';
+  $banner_title = 'La formation IMAC';
+  $img = 'Mégane_Marin-7027.jpg';
 ?>
 
 @extends('layouts.default')
 
 @section('title')
-    Imac | {{ $title }}
+    Devenir un ingénieur créatif | IMAC ingénieur
 @endsection
 
 @section('script')
@@ -20,13 +20,13 @@
     @include('includes.subnav', array('img' => $img, 'title' => $title))
     <!-- @include('includes.ariane', array('title' => $title)) -->
     <div class="container center-content-padding">
-        <h1 class="title-1">Qu'est-ce que l'Imac ?</h1>
+        <h1 class="title-1">Qu'est-ce que l'IMAC ?</h1>
         <div class="col-2 side-padding">
-            <img src="{{URL::asset('images/banners/Groupe_IMAC.jpg')}}" alt="Des ingénieurs Imac" />
+            <img src="{{URL::asset('images/banners/Groupe_IMAC.jpg')}}" alt="Des ingénieurs IMAC" />
         </div>
         <div class="col-2 side-padding">
-            <p class="lead">L’IMAC est une formation d’ingénieur en trois ans certifiée par la CTI (Commission des Titres d’Ingénieur). Créée en 1986, c’est la première formation d’ingénieur publique en France alliant arts et sciences.</p>
-            <p>En effet, notre pédagogie pluridisciplinaire nous permet d'associer esprit créatif et savoirs scientifiques. Nous formons des cadres supérieurs évoluant dans les domaines de l’Internet, des jeux vidéo, de l'audiovisuel, de la communication numérique...</p>
+            <p class="lead">L’IMAC est une formation d’ingénieur en trois ans certifiée par la <a href="http://www.cti-commission.fr/" target="_blank" >CTI (Commission des Titres d’Ingénieur)</a>. Créée en 1986, c’est la seule formation d’ingénieur publique en France alliant arts et sciences.</p>
+            <p>En effet, la pédagogie pluridisciplinaire de la formation associe esprit créatif et savoirs scientifiques. Nous formons des cadres supérieurs évoluant dans les domaines de l’Internet, des jeux vidéo, de l'audiovisuel, de la communication numérique...</p>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
               <div class="year">Deuxième année</div>
               <p class="title-2 color">Approfondir</p>
               <div class="framed-content">
-                  <p class="lead">La deuxième année offre elle aussi un large panel de cours :</p>
+                  <p class="lead">En deuxième année, les étudiants développent leurs compétences avec des cours plus ciblés.</p>
                   <p>
                       <span class="tag">programmation de jeux</span>
                       <span class="tag">mathématiques pour l'informatique</span>
@@ -78,9 +78,9 @@
               <div class="year">Troisième année</div>
               <p class="title-2 color">Se spécialiser</p>
               <div class="framed-content">
-                  <p class="lead">C’est en troisième année que les étudiants choisissent une spécialité. Trois possibilités s’offrent à eux : audiovisuel, 3D ou web.</p>
-                  <p>En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double master cinéma ou un double master informatique.</p>
-                  <p>Pour perfectionner leur spécialisation, les étudiants partent en stage à partir d’avril.</p>
+                  <p class="lead">C’est en troisième année que les étudiants s’orientent vers le domaine qui les passionnent. Trois thèmes principaux sont proposés, les enseignements peuvent être combinés.</p>
+                  <p>En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double diplôme cinéma ou un double diplôme informatique option image. Certains étudiants effectuent leur dernière année <a href="{{ url('/international') }}">à l’étranger</a>.</p>
+                  <p>Pour terminer leur spécialisation, les étudiants partent en stage à partir d’avril.</p>
               </div>
 
               <div class="strong-framed framed-3">
@@ -151,8 +151,8 @@
             </div>
         </div>
         <div class="col-2 side-padding">
-            <h3 class="title-3">Les projets à l'Imac</h3>
-            <p>Ceux-ci leur permettent de gagner en autonomie, d’acquérir de l’expérience en gestion de projet et de se familiariser avec le travail d’équipe. Ils se déroulent sur plusieurs semaines et sont parfois communs à plusieurs matières (OpenGL et C++, bases de données et HTML…).</p>
+            <h3 class="title-3">Les projets à l'IMAC</h3>
+            <p>Les projets permettent aux étudiants de gagner en autonomie, d’acquérir de l’expérience en gestion de projet et de se familiariser avec le travail d’équipe. Ils se déroulent sur plusieurs semaines et sont parfois communs à plusieurs matières (OpenGL et C++, bases de données et HTML…).</p>
         </div>
         <div class="col-2 side-padding">
             <h3 class="title-3">Notre équipement</h3>
@@ -174,7 +174,7 @@
             <div class="framed">
                 <p class="big-number">3</p>
                 <p class="title-4">stages</p>
-                <p>dont 2 obligatoires en deuxième et en troisième année</p>
+                <p>dont 2 obligatoires (l'un en IMAC2, l'autre en IMAC3)</p>
             </div>
             <div class="framed">
                 <p class="big-number">8</p>
@@ -182,23 +182,23 @@
                 <p>en moyenne passés en entreprise au cours de la formation</p>
             </div>
             <div class="framed">
-                <p class="big-number">60</p>
-                <p class="title-4">pourcents</p>
-                <p>de proposition d’embauche suite au stage de troisième année</p>
+                <p class="big-number">60%</p>
+                <p class="title-4">de proposition</p>
+                <p>d’embauche suite au stage de troisième année</p>
             </div>
         </div>
         <div class="col-2 side-padding">
-            <h3 class="title-3">Save the date</h3>
+            <h3 class="title-3">Les dates</h3>
             <p>Pour valider leur diplôme, ils doivent réaliser deux stages :</p>
             <ul>
-                <li>2 à 4 mois en deuxième année à partir du mois de juin</li>
-                <li>4 à 6 mois en dernière année à partir du mois d’avril</li>
+                <li>2 à 4 mois à partir de juin en IMAC2</li>
+                <li>4 à 6 mois à partir d’avril en IMAC3</li>
             </ul>
-            <p>Les élèves de première année ont eux aussi la possibilité d’accomplir un stage de deux mois durant les vacances d’été.</p>
+            <p>Les élèves de première année ont la possibilité de faire un stage de deux mois durant les vacances d’été.</p>
         </div>
         <div class="col-2 side-padding">
             <h3 class="title-3">Partir à l'étranger</h3>
-            <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid...</p>
+            <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid, Tôkyô...</p>
         </div>
         <p class="center"><a class="primary-btn" href="#">Déposer une offre</a></p>
       </div>
