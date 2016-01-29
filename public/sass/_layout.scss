@@ -325,7 +325,13 @@ footer {
   color: $main-color;
   position: relative;
   text-align: center;
-
+    .simple-primary-btn {
+        border-color: white;
+        color: white;
+    }
+    .color {
+        color: white;
+    }
   img {
     height: 45px;
     width: auto;
@@ -380,7 +386,8 @@ footer {
     text-align: left;
   }
   .useful-informations {
-    color: $dark-color;
+    //color: $dark-color;
+    color: white;
     margin-bottom: 20px;
   }
   .useful-links {
@@ -444,6 +451,7 @@ footer {
 }
 @media #{$small-screen} {
   footer {
-    background: $light-color;
+    //background: $light-color;
+    background-color: rgba(0,0,0,0.5);
   }
 }

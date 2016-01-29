@@ -1,11 +1,11 @@
-<div class="slanted"></div>
+<!--<div class="slanted"></div>-->
 
 <div class="container">
     <div class="useful-informations clearfix">
         <p class="title-2">Vous avez des questions ?</p>
         <div class="useful-links">
-            <a class="simple-primary-btn" href="#">FAQ</a>
-            <a class="simple-primary-btn" href="#">Contact</a>
+            <!--<a class="simple-primary-btn" href="#">FAQ</a>-->
+            <a class="simple-primary-btn" href="{{action('PagesController@contact')}}">Contact</a>
             <div class="social-media">
                 <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
                     <span class="icon-linkedin color"></span>
