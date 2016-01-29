@@ -20,7 +20,7 @@ function moveLeftRecursive(number){
     var current = $('.inner-promo:eq(0)');
     var last = $('.inner-promo:eq('+($('.inner-promo').length - 1)+')');
     last.parent().prepend(last);
-    last.css('marginLeft','-640px');
+    last.css('marginLeft','-100%');
     last.animate({
         marginLeft:"0"
     },500);
