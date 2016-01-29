@@ -56,6 +56,7 @@
           <span class="secondary-btn activity-sectors-title" alt="enseignrecherche">Enseignement & Recherche</span>
       </div>
     </div>
+    <div class="arrow-bottom"></div>
         <div class="container center-content-padding activity-panel-container">
             <div class="framed activity-panel selected" alt="informatiqueweb">
                 <p class="activity-panel-title">Métier de l'informatique et du Web</p>
@@ -119,16 +120,16 @@
         <div class="container center-content-padding">
             <h2 class="title-2">Les compétences reconnues en entreprise</h2>
         </div>
-        <div class="container center-content-padding">
-            <div class="col-2 side-padding">
+        <div class="container center-content-padding center ctn-inline-middle">
+            <div class="col-2 side-padding inline-middle">
                 <img src="{{URL::asset('images/banners/Groupe_IMAC.jpg')}}" alt="Des ingénieurs Imac" />
             </div>
-            <div class="col-2 side-padding">
+            <div class="col-2 side-padding inline-middle">
                 <ul class="lnr-ul">
-                    <li><span class="lnr lnr-checkmark-circle"></span>Profil pluridisciplinaire</li>
-                    <li><span class="lnr lnr-checkmark-circle"></span>Large spectre de compétences</li>
-                    <li><span class="lnr lnr-checkmark-circle"></span>Vision globale d'un projet</li>
-                    <li><span class="lnr lnr-checkmark-circle"></span>Esprit d'expertise</li>
+                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Profil pluridisciplinaire</li>
+                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Large spectre de compétences</li>
+                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Vision globale d'un projet</li>
+                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Esprit d'expertise</li>
                 </ul>
             </div>
         </div>

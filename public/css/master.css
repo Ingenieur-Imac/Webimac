@@ -1397,6 +1397,23 @@ p.lead + .frames {
 .media-container + p {
   margin-top: 30px; }
 
+.ctn-inline-middle {
+  font-size: 0;
+  padding-top: 0; }
+
+.inline-middle {
+  display: inline-block !important;
+  vertical-align: middle;
+  float: none;
+  font-size: 15px;
+  text-align: left; }
+
+.arrow-bottom {
+  width: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #dadbd9;
+  margin: auto; }
+
 .activity-sectors-title {
   background-color: white;
   display: inline-block;
@@ -1407,6 +1424,9 @@ p.lead + .frames {
   font-style: normal;
   cursor: pointer;
   transition: 0.5s; }
+
+.activity-sectors-title:hover {
+  background-color: initial; }
 
 @media (min-width: 1200px) {
   .activity-sectors-title + .activity-sectors-title {
@@ -1443,6 +1463,17 @@ p.lead + .frames {
 
 .activity-panel-text {
   font-size: 1.3em; }
+
+.list-puce {
+  color: #50d33d;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-right: 0.5em;
+  vertical-align: middle; }
+
+.list-competences {
+  list-style-type: none;
+  margin-bottom: 1em; }
 
 .select_year {
   width: 100%;
