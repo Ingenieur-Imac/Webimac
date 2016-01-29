@@ -45,13 +45,13 @@
             @endif
             <div class="center">
                 @if(!empty($project->web_link))
-                    <a class="primary-btn" href="{{ $project->web_link }}">Voir le projet en ligne</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->web_link }}">Voir le projet en ligne</a>
                 @endif
                 @if(!empty($project->github_link))
-                    <a class="primary-btn" href="{{ $project->github_link }}">Voir le projet sur Github</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->github_link }}">Voir le projet sur Github</a>
                 @endif
                 @if(!empty($project->vimeo_link))
-                    <a class="primary-btn" href="{{ $project->vimeo_link }}">Voir le projet sur Viméo</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->vimeo_link }}">Voir le projet sur Viméo</a>
                 @endif
             </div>
         </div>
