@@ -392,13 +392,19 @@ nav {
     z-index: 1; }
   .prefooter .slanted {
     background: #ed2626;
-    width: 577px; }
+    width: 577px;
+    margin-left: -15%; }
 
 footer {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   position: relative;
   text-align: center; }
+  footer .simple-primary-btn {
+    border-color: white;
+    color: white; }
+  footer .color {
+    color: white; }
   footer img {
     height: 45px;
     width: auto; }
@@ -440,7 +446,7 @@ footer {
     margin-bottom: 0;
     text-align: left; }
   footer .useful-informations {
-    color: #333;
+    color: white;
     margin-bottom: 20px; }
   footer .useful-links {
     margin: 5px 0 20px 0; }
@@ -485,7 +491,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    background: #dadbd9; } }
+    background-color: rgba(0, 0, 0, 0.5); } }
 .title2 ~ .btn, .title2 ~ .primary-btn, .title2 ~ .simple-primary-btn, .title2 ~ .secondary-btn, .title2 ~ .simple-btn {
   margin-top: 1000px; }
 

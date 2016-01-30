@@ -24,7 +24,7 @@
         </div>
         <!-- SLIDER DE PROMO -->
             <div class="master-promo">
-                <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span>
+                {{-- <span class="promo-arrow promo-arrow-left lnr lnr-chevron-left"></span> --}}
                 <div style="overflow: hidden">
                     <div class="content-promo" style="width: <?php echo count($promos)*100 ?>%">
                         @foreach ($promos as $promo)
@@ -36,7 +36,7 @@
                         @endforeach
                     </div>
                 </div>
-            <span class="promo-arrow promo-arrow-right lnr lnr-chevron-right"></span>
+            {{-- <span class="promo-arrow promo-arrow-right lnr lnr-chevron-right"></span> --}}
             </div>
 
         <!-- END SLIDER -->

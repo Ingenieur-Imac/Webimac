@@ -23,9 +23,9 @@
                 <p><a href="{{$partnership->url_web}}" target="_blank">Visiter le site de {{$partnership->name}}</a></p>
             </div>
         @endforeach
-        <div class="grid-cell center">
+        <!--<div class="grid-cell center">
             <p class="title-5">Et vous ?</p>
             <a class="secondary-btn" href="#">Devenir partenaires</a>
-        </div>
+        </div>-->
     </div>
 @endsection

@@ -65,7 +65,7 @@
   .slanted {
     height: 100%;
     position: absolute;
-      left: -125px;
+    left: -125px;
     transform: skewX(30deg);
   }
 }
@@ -314,6 +314,7 @@ nav {
     @extend .slanted;
     background: $darker-secondary-color;
     width: 577px;
+    margin-left: -15%;
   }
 }
 
@@ -324,7 +325,13 @@ footer {
   color: $main-color;
   position: relative;
   text-align: center;
-
+    .simple-primary-btn {
+        border-color: white;
+        color: white;
+    }
+    .color {
+        color: white;
+    }
   img {
     height: 45px;
     width: auto;
@@ -379,7 +386,8 @@ footer {
     text-align: left;
   }
   .useful-informations {
-    color: $dark-color;
+    //color: $dark-color;
+    color: white;
     margin-bottom: 20px;
   }
   .useful-links {
@@ -443,6 +451,7 @@ footer {
 }
 @media #{$small-screen} {
   footer {
-    background: $light-color;
+    //background: $light-color;
+    background-color: rgba(0,0,0,0.5);
   }
 }
