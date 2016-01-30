@@ -61,6 +61,6 @@
 <div class="end-footer">
     <p>&copy; IMAC <?php echo date('Y'); ?> |
         <a href="#">Plan du site</a> |
-        <a href="#">Mentions légales</a>
+        <a href="{{action('PagesController@legalNotice')}}">Mentions légales</a>
     </p>
 </div>
