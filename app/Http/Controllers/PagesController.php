@@ -19,9 +19,9 @@ class PagesController extends Controller{
 
     public function index(){
         $projects = Project::HomePage()->get();
-        $student_testimonials = array(StudentTestimonial::all()->random(1));
-        //$student_testimonials = StudentTestimonial::all()->random(3);
-        return view('pages.home',compact('projects','student_testimonials'));
+        //$student_testimonials = array(StudentTestimonial::all()->random(1));
+        $student_testimonials = StudentTestimonial::all()->random(3);
+        return view('pages.home', compact('projects','student_testimonials'));
     }
 
     public function presentation(){

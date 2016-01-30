@@ -1,12 +1,13 @@
 $(document).ready(function(){
     var isInActivity = false;
-    $('.testi-arrow-right').click(function(){
+    var nbSlides = $('.testimonial li').length;
+    var neededMargin = -100/nbSlides*(nbSlides-1)+'%';
+    var margin = {marginLeft: neededMargin};
+    $('.slider-arrow-right').click(function(){
         if(!isInActivity){
             isInActivity = true;
-            var current = $('.ctn-testimonial:eq(0)');
-            current.animate({
-                marginLeft: "-920px"
-            },1000,function(){
+            var current = $('.testimonial li:eq(0)');
+            current.animate(margin,1000,function(){
                 var next = $('.ctn-testimonial:eq(1)');
                 current.parent().append(current);
                 current.css('marginLeft',0);
@@ -15,13 +16,13 @@ $(document).ready(function(){
         }
     });
 
-    $('.testi-arrow-left').click(function(){
+    $('.slider-arrow-left').click(function(){
         if(!isInActivity){
             isInActivity = true;
-            var current = $('.ctn-testimonial:eq(0)');
-            var last = $('.ctn-testimonial:eq('+($('.ctn-testimonial').length - 1)+')');
+            var current = $('.testimonial li:eq(0)');
+            var last = $('.testimonial li:eq('+($('.testimonial li').length - 1)+')');
             last.parent().prepend(last);
-            last.css('marginLeft','-920px');
+            last.css('marginLeft',neededMargin);
             last.animate({
                 marginLeft:"0"
             },1000,function(){

@@ -1,10 +1,12 @@
 <div class="testimonial">
-    <!-- <span class="testi-arrow testi-arrow-left lnr lnr-chevron-left"></span> -->
-    <div class="master-testimonial">
-        @foreach ($student_testimonials as $student_testimonial)
-            <div class="ctn-testimonial">
-                <div class="inner-testimonial">
-                    <img class="testi-picture" src="{{URL::asset('images/studentTestimonial/'.$student_testimonial->url_image)}}" alt="{{$student_testimonial->name}}" />
+    <span class="slider-arrow slider-arrow-left lnr lnr-chevron-left"></span>
+    <div class="testi-show">
+        <ul style="width: {{ count($student_testimonials)*100 }}%">
+            @foreach ($student_testimonials as $student_testimonial)
+                <li style="width: {{ 100/count($student_testimonials) }}%">
+                    <div class="testi-picture">
+                        <img src="{{URL::asset('images/studentTestimonial/'.$student_testimonial->url_image)}}" alt="{{$student_testimonial->name}}" />
+                    </div>
                     <div class="testi-body">
                         <h3 class="title-4">{{$student_testimonial->name}}</h3>
                         <p class="testi-role">{{$student_testimonial->job}}</p>
@@ -12,9 +14,9 @@
                           <p>{{$student_testimonial->overview}}</p>
                         </blockquote>
                     </div>
-                </div>
-            </div>
-        @endforeach
+                </li>
+            @endforeach
+        </ul>
     </div>
-    <!-- <span class="testi-arrow testi-arrow-right lnr lnr-chevron-right"></span> -->
+    <span class="slider-arrow slider-arrow-right lnr lnr-chevron-right"></span>
 </div>
