@@ -1458,6 +1458,50 @@ p.lead + .frames {
 .media-container + p {
   margin-top: 30px; }
 
+.error404 {
+  display: block;
+  text-align: center; }
+  .error404 h1 {
+    font-size: 5em; }
+  .error404 p {
+    font-size: 2em; }
+  .error404 .inline-block {
+    display: inline-block;
+    vertical-align: middle; }
+  .error404 .btn, .error404 .primary-btn, .error404 .simple-primary-btn, .error404 .secondary-btn, .error404 .simple-btn {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 20em;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s; }
+  .error404 .btn::after, .error404 .primary-btn::after, .error404 .simple-primary-btn::after, .error404 .secondary-btn::after, .error404 .simple-btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #f73c3c;
+    height: 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: 0.5s;
+    opacity: 0; }
+  .error404 .btn:hover, .error404 .primary-btn:hover, .error404 .simple-primary-btn:hover, .error404 .secondary-btn:hover, .error404 .simple-btn:hover {
+    border: 1px solid #f73c3c;
+    transition: 0.5s; }
+  .error404 .btn:hover::after, .error404 .primary-btn:hover::after, .error404 .simple-primary-btn:hover::after, .error404 .secondary-btn:hover::after, .error404 .simple-btn:hover::after {
+    height: 1000%;
+    opacity: 1;
+    transition: 0.5s; }
+  .error404 .btn-black {
+    color: black; }
+  .error404 a {
+    color: black;
+    width: 100%; }
+
 .ctn-inline-middle {
   font-size: 0;
   padding-top: 0; }
@@ -1744,6 +1788,9 @@ p.lead + .frames {
     .subnav li {
       margin: 0 20px; } }
 
+.strong-framed.background-white {
+  background-color: white; }
+
 .strong-framed {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1812,16 +1859,19 @@ p.lead + .frames {
     background: #fff;
     color: #f73c3c;
     display: inline;
+    transform: translateX(-50%);
+    left: 50%;
     font-size: 0.94em;
     font-style: italic;
     margin: auto;
-    left: 50%;
     padding: 0 15px;
     position: absolute;
     text-align: center;
-    transform: translateX(-50%);
     top: -10px;
     z-index: -1; }
+  .secondary-color-framed .bottom {
+    top: 100%;
+    transform: translateY(-50%) translateX(-50%); }
 
 .ctn-projects {
   font-size: 0;

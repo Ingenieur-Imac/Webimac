@@ -2,6 +2,72 @@
 // Specific to certain pages
 // =============================================================================
 
+// Erreur 404
+
+.error404 {
+    display: block;
+    text-align: center;
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .inline-block {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .btn {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 1.2em;
+        width: 20em;
+        margin: 20px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #f73c3c;
+        height: 0;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .btn:hover {
+        border : 1px solid #f73c3c;
+        transition: 0.5s;
+    }
+
+    .btn:hover::after {
+        height: 1000%;
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .btn-black {
+        color: black;
+    }
+
+    a {
+        color: black;
+        width: 100%;
+    }
+}
+
+
 // PAGES DEBOUCHÉS
 
 .ctn-inline-middle {
@@ -452,6 +518,10 @@
   }
 }
 
+.strong-framed.background-white {
+    background-color: white;
+}
+
 .strong-framed {
   @include box-sizing(border-box);
   border: $main-color 4px solid;
@@ -531,16 +601,22 @@
     background: $main-color;
     color: $secondary-color;
     display: inline;
+    transform: translateX(-50%);
+    left: 50%;
     font-size: 0.94em;
     font-style: italic;
     margin: auto;
-    left: 50%;
     padding: 0 15px;
     position: absolute;
     text-align: center;
-    transform: translateX(-50%);
+
     top: -10px;
     z-index: -1;
+  }
+
+  .bottom {
+      top: 100%;
+      transform: translateY(-50%) translateX(-50%);
   }
 }
 
