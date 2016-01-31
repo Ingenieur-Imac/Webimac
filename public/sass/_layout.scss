@@ -316,6 +316,72 @@ nav {
     width: 577px;
     margin-left: -15%;
   }
+
+    .secondary-btn {
+        overflow: hidden;
+        position: relative;
+        background-color: initial;
+        transition: 0.5s;
+        border: 1px solid white;
+    }
+
+    .secondary-btn:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .secondary-btn::after {
+        content: '';
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 1000%;
+        opacity: 1;
+        background-color: white;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .secondary-btn:hover::after {
+        opacity: 0;
+        height: 0;
+        transition: 0.5s;
+    }
+
+    .simple-btn {
+        overflow: hidden;
+        position: relative;
+        background-color: initial;
+        transition: 0.5s;
+    }
+
+    .simple-btn:hover {
+        color: $secondary-color;
+        border-color: white;
+        transition: 0.5s;
+    }
+
+    .simple-btn::after {
+        content: '';
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        background-color: white;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .simple-btn:hover::after {
+        opacity: 1;
+        height: 1000%;
+        transition: 0.5s;
+    }
 }
 
 // Footer
@@ -328,9 +394,42 @@ footer {
     .simple-primary-btn {
         border-color: white;
         color: white;
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
     }
+
+    .simple-primary-btn:hover::after {
+        height: 1000%;
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .simple-primary-btn:hover {
+        border-color: $primary-color;
+        transition: 0.5s;
+    }
+
+    .simple-primary-btn:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        background-color: $primary-color;
+        transition: 0.5s;
+    }
+
     .color {
         color: white;
+        transition: 0.2s;
+    }
+    .color:hover {
+        color: $primary-color;
+        transition: 0.2s;
     }
   img {
     height: 45px;

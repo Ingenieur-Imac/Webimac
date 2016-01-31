@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@viewport {
+  width: device-width;
+  /* largeur du viewport */
+  zoom: 1;
+  /* zoom initial ├á 1.0 (et clin d'oeil aux fans d'IE6/7) */ }
 html, body {
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -394,6 +399,56 @@ nav {
     background: #ed2626;
     width: 577px;
     margin-left: -15%; }
+  .prefooter .secondary-btn {
+    overflow: hidden;
+    position: relative;
+    background-color: initial;
+    transition: 0.5s;
+    border: 1px solid white; }
+  .prefooter .secondary-btn:hover {
+    color: white;
+    transition: 0.5s; }
+  .prefooter .secondary-btn::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1000%;
+    opacity: 1;
+    background-color: white;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: 0.5s; }
+  .prefooter .secondary-btn:hover::after {
+    opacity: 0;
+    height: 0;
+    transition: 0.5s; }
+  .prefooter .simple-btn {
+    overflow: hidden;
+    position: relative;
+    background-color: initial;
+    transition: 0.5s; }
+  .prefooter .simple-btn:hover {
+    color: #f73c3c;
+    border-color: white;
+    transition: 0.5s; }
+  .prefooter .simple-btn::after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: white;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: 0.5s; }
+  .prefooter .simple-btn:hover::after {
+    opacity: 1;
+    height: 1000%;
+    transition: 0.5s; }
 
 footer {
   background: rgba(0, 0, 0, 0.5);
@@ -402,9 +457,34 @@ footer {
   text-align: center; }
   footer .simple-primary-btn {
     border-color: white;
-    color: white; }
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s; }
+  footer .simple-primary-btn:hover::after {
+    height: 1000%;
+    opacity: 1;
+    transition: 0.5s; }
+  footer .simple-primary-btn:hover {
+    border-color: #50d33d;
+    transition: 0.5s; }
+  footer .simple-primary-btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    background-color: #50d33d;
+    transition: 0.5s; }
   footer .color {
-    color: white; }
+    color: white;
+    transition: 0.2s; }
+  footer .color:hover {
+    color: #50d33d;
+    transition: 0.2s; }
   footer img {
     height: 45px;
     width: auto; }
@@ -1885,7 +1965,8 @@ p.lead + .frames {
 
 .ctn-projects {
   font-size: 0;
-  text-align: center; }
+  text-align: center;
+  margin-top: 25px; }
 
 .project {
   font-size: 15px;
