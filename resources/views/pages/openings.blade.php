@@ -70,7 +70,8 @@
                     Développeur BDD<br/>
                     Ingénieur informaticien<br/>
                     Chargé de production<br/>
-                    Développeur d'application embarqués et mobile
+                    Développeur d'application embarqués et mobile<br/>
+                    ...
                 </p>
             </div>
             <div class="framed activity-panel" alt="jeuvideo">
@@ -79,7 +80,8 @@
                     Ingénieur informaticien<br/>
                     Chef de projet web<br/>
                     Développeur R&D en post-production<br/>
-                    Directeur technique en post-production
+                    Directeur technique en post-production<br/>
+                    ...
                 </p>
             </div>
             <div class="framed activity-panel" alt="multimediaanimation">
@@ -88,7 +90,8 @@
                     Réalisateur multimédia<br/>
                     Directeur artistique<br/>
                     Directeur technique en post-production<br/>
-                    Chargé de production
+                    Chargé de production<br/>
+                    ...
                 </p>
             </div>
             <div class="framed activity-panel" alt="commmarketpub">
@@ -98,7 +101,8 @@
                     Cadre de l’événementiel<br/>
                     Consultant e-busines<br/>
                     Consultant en SSII<br/>
-                    Chargé de production
+                    Chargé de production<br/>
+                    ...
                 </p>
             </div>
             <div class="framed activity-panel" alt="audiovisuelspecnum">
@@ -106,14 +110,16 @@
                 <p class="activity-panel-text">
                     Ingénieur artistique<br/>
                     Intermittent du spectacle<br/>
-                    Directeur artistique
+                    Directeur artistique<br/>
+                    ...
                 </p>
             </div>
             <div class="framed activity-panel" alt="enseignrecherche">
                 <p class="activity-panel-title">Métier de l'Enseignement et de la Recherche</p>
                 <p class="activity-panel-text">
                     Enseignement<br/>
-                    Chercheur (R&D)
+                    Chercheur (R&D)<br/>
+                    ...
                 </p>
             </div>
         </div>

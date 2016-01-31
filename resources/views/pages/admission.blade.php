@@ -36,7 +36,7 @@
                 <p class="secondary-color-framed-title">Formations artistiques</p>
                 <p>BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…</p>
             </div>
-            <p class="secondary-color-framed-title">Les IMAC<br /><span class="lnr lnr-heart"></span></p>
+            <p class="secondary-color-framed-title bottom">Les IMAC<br /><span class="lnr lnr-heart"></span></p>
             <div style="clear: both;"></div>
         </div>
     </div>
@@ -58,7 +58,7 @@
               <p>Le candidat doit fournir obligatoirement son dossier scolaire (relevés de notes), une lettre de motivation et son CV. Il est également fortement conseillé de joindre un portfolio détaillé regroupant des créations ou bien de justifier de sa sensibilité artistique.</p>
               <p>Il est possible d'intégrer la formation directement en deuxième année si les diplômes attestent du niveau requis (Bac+3).</p>
           </div>
-          <p class="center"><a class="primary-btn" href="#">Déposer votre candidature</a></p>
+          <p class="center"><a class="primary-btn" target="_BLANK" href="https://candidatures.u-pem.fr/">Déposer votre candidature</a></p>
       </div>
     </div>
 

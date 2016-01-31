@@ -83,7 +83,7 @@
                   <p>Pour terminer leur spécialisation, les étudiants partent en stage à partir d’avril.</p>
               </div>
 
-              <div class="strong-framed framed-3">
+              <div class="strong-framed framed-3 background-white">
                   <h3 class="title-3 color center">Web</h3>
                   <div class="lead lnr lnr-code lnr-bigger center"></div>
                   <p>
@@ -96,7 +96,7 @@
                       <span class="tag">...</span>
                   </p>
               </div>
-              <div class="strong-framed framed-3">
+              <div class="strong-framed framed-3 background-white">
                   <h3 class="title-3 color center">3D</h3>
                   <div class="lead lnr lnr-layers lnr-bigger center"></div>
                   <p>
@@ -110,7 +110,7 @@
                       <span class="tag">...</span>
                   </p>
               </div>
-              <div class="strong-framed framed-3">
+              <div class="strong-framed framed-3 background-white">
                   <h3 class="title-3 color center">Audiovisuel</h3>
                   <div class="lead lnr lnr-camera-video lnr-bigger center"></div>
                   <p>
@@ -163,7 +163,7 @@
                 <li>un fond vert et un drône, Kinect, GoPro2, écran 3D stéréoscopique, Quadrotor, Camsmart, un casque de Réalité Virtuelle Oculus Rift...</li>
             </ul>
         </div>
-        <p class="center"><a class="primary-btn" href="#">Découvrir les projets</a></p>
+        <p class="center"><a class="primary-btn" href="{{action('PagesController@projects')}}">Découvrir les projets</a></p>
     </div>
 
     <div class="light-row">
@@ -200,7 +200,7 @@
             <h3 class="title-3">Partir à l'étranger</h3>
             <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid, Tôkyô...</p>
         </div>
-        <p class="center"><a class="primary-btn" href="#">Déposer une offre</a></p>
+        <!--<p class="center"><a class="primary-btn" href="#">Déposer une offre</a></p>-->
       </div>
     </div>
 
