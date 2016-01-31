@@ -256,21 +256,22 @@ header {
       z-index: 1000; }
     header img {
       display: inline-block;
-      height: 80px;
-      vertical-align: bottom;
+      height: 70px;
+      vertical-align: middle;
       width: auto; }
     header .container {
-      padding: 20px 15px;
+      padding: 15px;
       position: relative;
       z-index: 1; }
     header .header-titles {
-      border-left: 2px #333 solid;
       display: inline-block;
-      font-weight: bold;
-      line-height: 1;
+      line-height: 0.5;
       margin-left: 30px;
-      padding-left: 10px;
-      vertical-align: bottom; } }
+      vertical-align: middle; }
+      header .header-titles p {
+        margin-top: 0; }
+    header .title-2 {
+      margin-bottom: 0; } }
 nav {
   background: #f7f7f7;
   -webkit-box-sizing: border-box;
@@ -300,8 +301,9 @@ nav {
       -ms-box-sizing: border-box;
       box-sizing: border-box;
       display: inline-block;
-      font: 1.4em Bebas;
+      font: bold 1.6em Bebas, sans-serif;
       height: 60px;
+      letter-spacing: 0.04em;
       line-height: 2.9;
       width: 100%; }
     nav ul a:hover, nav ul .active {
@@ -339,45 +341,36 @@ nav {
   nav input[type=checkbox]:checked ~ .show-menu {
     color: #50d33d; }
   @media (min-width: 768px) {
+    nav input[type=checkbox]:checked ~ ul {
+      display: flex; }
     nav ul {
-      display: static;
+      display: flex;
+      justify-content: space-between;
       margin: auto;
       width: 750px; }
       nav ul a {
-        font: 1.2em Bebas;
+        font-size: 1.2em;
         height: 60px;
-        line-height: 3.3;
+        line-height: 3.5;
         width: auto; }
       nav ul li {
-        display: inline-block;
+        margin-left: 0;
         width: auto; }
-      nav ul li:first-child {
-        margin-left: 0; }
       nav ul .lnr {
         display: inline; }
-    nav li + li {
-      margin-left: 20px; }
     nav .nav-text {
       display: none; }
     nav .show-menu {
-      display: none; }
-    nav input[type=checkbox] ~ ul {
-      display: block;
-      position: relative;
-      z-index: 1000; } }
+      display: none; } }
   @media (min-width: 992px) {
     nav ul {
       width: 970px; }
       nav ul a {
-        font-size: 1.4em;
-        line-height: 2.9; }
-    nav li + li {
-      margin-left: 38px; } }
+        font-size: 1.6em;
+        line-height: 2.6; } }
   @media (min-width: 1200px) {
     nav ul {
-      width: 1170px; }
-    nav li + li {
-      margin-left: 66px; } }
+      width: 1170px; } }
 
 @media (min-width: 768px) {
   nav {

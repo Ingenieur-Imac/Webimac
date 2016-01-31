@@ -19,28 +19,24 @@ class PagesController extends Controller{
 
     public function index(){
         $projects = Project::HomePage()->get();
-        //$student_testimonials = array(StudentTestimonial::all()->random(1));
         $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.home', compact('projects','student_testimonials'));
     }
 
     public function presentation(){
-        $student_testimonials = array(StudentTestimonial::all()->random(1));
-        //$student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.presentation', compact('student_testimonials'));
     }
 
     public function admission(){
-        $student_testimonials = array(StudentTestimonial::all()->random(1));
-        //$student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all()->random(3);
         $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
         $dates = $dates['application'];
         return view('pages.admission',compact('student_testimonials','dates'));
     }
 
     public function openings(){
-        $student_testimonials = array(StudentTestimonial::all()->random(1));
-        //$student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.openings', compact('student_testimonials'));
     }
 

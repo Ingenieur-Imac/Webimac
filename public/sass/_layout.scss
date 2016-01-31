@@ -126,34 +126,27 @@ header {
       z-index: 1000;
     }
     img {
-      //height: 50px;
       display: inline-block;
-      height: 80px;
-      vertical-align: bottom;
+      height: 70px;
+      vertical-align: middle;
       width: auto;
     }
     .container {
-      padding: 20px 15px;
+      padding: 15px;
       position: relative;
       z-index: 1;
     }
-    // .header-titles {
-    //   display: inline-block;
-    //   line-height: 0.5;
-    //   margin-left: 30px;
-    //   vertical-align: 50%;
-    // }
-    // .title-2 {
-    //   margin-bottom: 0;
-    // }
     .header-titles {
-      border-left: 2px $dark-color solid;
       display: inline-block;
-      font-weight: bold;
-      line-height: 1;
+      line-height: 0.5;
       margin-left: 30px;
-      padding-left: 10px;
-      vertical-align: bottom;
+      vertical-align: middle;
+      p {
+        margin-top: 0;
+      }
+    }
+    .title-2 {
+      margin-bottom: 0;
     }
   }
 }
@@ -181,10 +174,10 @@ nav {
     	border-bottom: transparent 3px solid;
     	@include box-sizing(border-box);
     	display: inline-block;
-    	font: 1.4em Bebas;
+    	font: bold 1.6em $title-font-stack;
     	height: 60px;
+      letter-spacing: 0.04em;
     	line-height: 2.9;
-    	//margin: 0 33px;
       width: 100%;
     }
     a:hover, .active {
@@ -231,42 +224,34 @@ nav {
   }
 
   @media #{$small-screen} {
+    input[type=checkbox]:checked ~ ul {
+      display: flex;
+    }
     ul {
-      display: static;
+      display: flex;
+      justify-content: space-between;
       margin: auto;
       width: 750px;
 
       a {
-        font: 1.2em Bebas;
+        font-size: 1.2em;
         height: 60px;
-        line-height: 3.3;
+        line-height: 3.5;
         width: auto;
       }
       li {
-        display: inline-block;
-        width: auto;
-      }
-      li:first-child {
         margin-left: 0;
+        width: auto;
       }
       .lnr {
         display: inline;
       }
     }
-    li + li {
-      margin-left: 20px;
-    }
-
     .nav-text {
       display: none;
     }
     .show-menu {
       display: none;
-    }
-    input[type=checkbox] ~ ul {
-      display: block;
-      position: relative;
-      z-index: 1000;
     }
   }
   @media #{$medium-screen} {
@@ -274,21 +259,14 @@ nav {
       width: 970px;
 
       a {
-        font-size: 1.4em;
-        line-height: 2.9;
+        font-size: 1.6em;
+        line-height: 2.6;
       }
     }
-    li + li {
-      margin-left: 38px;
-    }
-
   }
   @media #{$large-screen} {
     ul {
       width: 1170px;
-    }
-    li + li {
-    	margin-left: 66px;
     }
   }
 }
