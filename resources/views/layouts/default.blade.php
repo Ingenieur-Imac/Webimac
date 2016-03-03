@@ -14,7 +14,6 @@
         <nav>
             @include('layouts.nav')
         </nav>
-        @include('includes.timerjpo')
         <div>
             @yield('content')
         </div>
