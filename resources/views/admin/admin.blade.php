@@ -16,6 +16,7 @@
                   <a href="{{action('AdminStudentController@index')}}" class="list-group-item">Etudiants</a>
                   <a href="{{action('AdminProjectController@listAll')}}" class="list-group-item">Projets</a>
                   <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item">Paroles d'Anciens</a>
+                  <a href="{{action('AdminStudentExchangeTestimonialController@index')}}" class="list-group-item">Paroles d'Anciens à l'étranger</a>
                   <a href="{{action('AdminStaffController@index')}}" class="list-group-item">Staff</a>
                   <a href="{{action('AdminPartnershipController@index')}}" class="list-group-item">Partenariats</a>
                   <a href="{{action('AdminOthersController@index')}}" class="list-group-item">Autres</a>
@@ -29,6 +30,8 @@
             <footer>
                 @yield('footer')
             </footer>
+            <script src="../../../vendor/jquery/dist/jquery.js"></script>
+            <script src="{{URL::asset('js/admin_file_upload.js')}}"></script>
         </div>
     </body>
 </html>
