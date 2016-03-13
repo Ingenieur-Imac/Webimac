@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'partnership'])
 
 @section('content')
     <h1> Liste des partenariats</h1>

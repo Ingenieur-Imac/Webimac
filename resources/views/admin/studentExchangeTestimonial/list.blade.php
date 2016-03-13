@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'studentExchangeTestimonial'])
 
 @section('content')
     <h1> Liste des Paroles d'Anciens à L'étranger</h1>

@@ -9,17 +9,17 @@
         <div class="container">
             <div class="menu">
                 <div class="list-group">
-                  <a href="{{action('AdminPagesController@admHome')}}" class="list-group-item active">
+                  <a href="{{action('AdminPagesController@admHome')}}" class="list-group-item @if($nav == 'home') active  @endif">
                     Accueil
                   </a>
-                  <a href="{{action('AdminPromoController@index')}}" class="list-group-item">Promotions</a>
-                  <a href="{{action('AdminStudentController@index')}}" class="list-group-item">Etudiants</a>
-                  <a href="{{action('AdminProjectController@listAll')}}" class="list-group-item">Projets</a>
-                  <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item">Paroles d'Anciens</a>
-                  <a href="{{action('AdminStudentExchangeTestimonialController@index')}}" class="list-group-item">Paroles d'Anciens à l'étranger</a>
-                  <a href="{{action('AdminStaffController@index')}}" class="list-group-item">Staff</a>
-                  <a href="{{action('AdminPartnershipController@index')}}" class="list-group-item">Partenariats</a>
-                  <a href="{{action('AdminOthersController@index')}}" class="list-group-item">Autres</a>
+                  <a href="{{action('AdminPromoController@index')}}" class="list-group-item @if($nav == 'promo') active  @endif">Promotions</a>
+                  <a href="{{action('AdminStudentController@index')}}" class="list-group-item @if($nav == 'student') active  @endif">Etudiants</a>
+                  <a href="{{action('AdminProjectController@listAll')}}" class="list-group-item @if($nav == 'project') active  @endif">Projets</a>
+                  <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item @if($nav == 'studentTestimonial') active  @endif">Paroles d'Anciens</a>
+                  <a href="{{action('AdminStudentExchangeTestimonialController@index')}}" class="list-group-item @if($nav == 'studentExchangeTestimonial') active  @endif">Paroles d'Anciens à l'étranger</a>
+                  <a href="{{action('AdminStaffController@index')}}" class="list-group-item @if($nav == 'staff') active  @endif">Staff</a>
+                  <a href="{{action('AdminPartnershipController@index')}}" class="list-group-item @if($nav == 'partnership') active  @endif">Partenariats</a>
+                  <a href="{{action('AdminOthersController@index')}}" class="list-group-item @if($nav == 'others') active  @endif">Autres</a>
                   <a href="{{action('AdminPagesController@logout')}}" class="list-group-item">Se déconnecter</a>
                   <a href="{{action('PagesController@index')}}" class="list-group-item">Retour au site</a>
                 </div>
