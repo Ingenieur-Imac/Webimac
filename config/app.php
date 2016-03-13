@@ -156,7 +156,10 @@ return [
         Imac\Providers\AuthServiceProvider::class,
         Imac\Providers\EventServiceProvider::class,
         Imac\Providers\RouteServiceProvider::class,
-
+        /*
+         *  Slugify
+         */
+        Cocur\Slugify\Bridge\Laravel\SlugifyServiceProvider::class,
     ],
 
     /*
@@ -204,6 +207,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
+        'Slugify'   => Cocur\Slugify\Bridge\Laravel\SlugifyFacade::class,
     ],
 
 ];

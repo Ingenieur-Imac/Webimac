@@ -1,0 +1,61 @@
+// =============================================================================
+// Basic elements definition and mixins
+// =============================================================================
+
+// Body fonts
+$body-font: 'Open Sans Pro'; // Name only
+$body-font-path: '../fonts/sourcesanspro-regular-webfont'; // File name without extention
+$body-font-light-path: '../fonts/sourcesanspro-light-webfont';
+$body-font-bold-path: '../fonts/sourcesanspro-bold-webfont';
+$body-font-italic-path: '../fonts/sourcesanspro-it-webfont';
+$body-font-light-italic-path: '../fonts/sourcesanspro-lightit-webfont';
+$body-font-semi-bold-italic-path: '../sourcesanspro-semiboldit-webfont';
+
+// Title fonts
+$title-font: Bebas;
+$title-font-path: '../fonts/bebasneue_regular-webfont';
+$title-font-light-path: '../fonts/bebasneue_book-webfont';
+$title-font-bold-path: '../fonts/bebasneue_bold-webfont';
+
+// Fonts stacks
+$body-font-stack: $body-font, sans-serif;
+$title-font-stack: $title-font, sans-serif;
+
+// Shades of grey
+$main-color: #fff;
+$extra-light-color: #f7f7f7;
+$light-color: #dadbd9;
+$medium-color: #848484;
+$dark-color: #333;
+
+// Colors
+$primary-color: #50d33d;
+$secondary-color: #f73c3c;
+$darker-secondary-color: #ed2626;
+
+$main-font-size: 15px;
+
+// Responsive breakpoints definition
+$small-screen: "(min-width: 768px)";
+$medium-screen: "(min-width: 992px)";
+$large-screen: "(min-width: 1200px)";
+
+// Mixins
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+     -moz-box-sizing: $value;
+      -ms-box-sizing: $value;
+          box-sizing: $value;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@viewport {
+   width: device-width; /* largeur du viewport */
+   zoom: 1; /* zoom initial à 1.0 (et clin d'oeil aux fans d'IE6/7) */
+}
