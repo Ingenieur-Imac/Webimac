@@ -1,4 +1,7 @@
 <a href="{{ url('/') }}"><img class="show-menu" src="{{URL::asset('images/logoIMAC.png')}}" alt="Logo IMAC" /></a>
+<div class="header-titles inline-block">
+    <span class="title-2">Ingénieur IMAC</span>
+</div>
 <input type="checkbox" id="show-menu" role="button">
 <label for="show-menu" class="show-menu"><span class="lnr lnr-menu"></span></label>
 

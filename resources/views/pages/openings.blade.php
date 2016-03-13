@@ -117,7 +117,7 @@
             <div class="framed activity-panel" alt="enseignrecherche">
                 <p class="activity-panel-title">Métier de l'Enseignement et de la Recherche</p>
                 <p class="activity-panel-text">
-                    Enseignement<br/>
+                    Enseignant<br/>
                     Chercheur (R&D)<br/>
                     ...
                 </p>

@@ -198,7 +198,7 @@
         </div>
         <div class="col-2 side-padding">
             <h3 class="title-3">Partir à l'étranger</h3>
-            <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid, Tôkyô...</p>
+            <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid, Tokyo...</p>
         </div>
         <!--<p class="center"><a class="primary-btn" href="#">Déposer une offre</a></p>-->
       </div>

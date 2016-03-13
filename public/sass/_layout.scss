@@ -162,6 +162,14 @@ nav {
     height: 100%;
     width: auto;
   }
+
+        .header-titles {
+            display: inline;
+        }
+        span {
+            vertical-align: middle;
+        }
+
   ul {
     @include box-sizing(border-box);
     background: $dark-color;
@@ -224,6 +232,9 @@ nav {
   }
 
   @media #{$small-screen} {
+      .header-titles {
+          display: none;
+      }
     input[type=checkbox]:checked ~ ul {
       display: flex;
     }
