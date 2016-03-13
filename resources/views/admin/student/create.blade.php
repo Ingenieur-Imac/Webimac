@@ -11,6 +11,6 @@
 
     {!! Form::close() !!}
 
-    @include('errors.list');
+    @include('errors.list')
 
 @endsection
