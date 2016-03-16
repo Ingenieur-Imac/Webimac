@@ -11,6 +11,7 @@ When the box is installed
 ```
   composer global require "laravel/installer"
   laravel new site
+  artisan app:name Imac
 ```
 
 Should do it. 
