@@ -54,6 +54,8 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Partnership','AdminPartnershipController');
     //View students
     Route::resource('admin/Student','AdminStudentController');
+    //View tags
+    Route::resource('admin/Tag','AdminTagController');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
