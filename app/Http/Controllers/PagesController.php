@@ -64,8 +64,12 @@ class PagesController extends Controller{
       return view('pages.students',compact('promos','select_year'));
     }
 
+    public function studentLife(){
+        return view('pages.studentLife');
+    }
+
     public function international(){
-      return view('pages.international');
+        return view('pages.international');
     }
 
     public function partnership(){

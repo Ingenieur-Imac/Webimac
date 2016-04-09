@@ -2,6 +2,99 @@
 // Specific to certain pages
 // =============================================================================
 
+
+// STUDENTS PAGE
+.student {
+  display: flex;
+}
+.student-picture {
+  border-radius: 50%;
+  height: 80px;
+  overflow: hidden;
+  width: 80px;
+  img {
+    min-height: 100%;
+    //min-width: 100%;
+    //height: auto;
+    //width: 100%;
+  }
+}
+.student-info {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+
+// STUDENT LIFE PAGE
+.association {
+  .title-3 {
+    margin-bottom: 0;
+  }
+}
+.association:nth-child(even) {
+  background: $light-color;
+}
+
+
+// PARTNERSHIP PAGE
+.grid {
+  margin-top: $spacing-unit;
+}
+.grid-cell {
+  @include box-sizing(border-box);
+  padding: 25px 15px;
+  margin: auto;
+  width: 316px;
+  img {
+    display: block;
+    margin: auto;
+    max-height: 110px;
+    padding-bottom: 15px;
+    width: auto;
+  }
+}
+.grid-cell:nth-child(odd) {
+  background: rgb(247,247,247);
+}
+.grid-cell:nth-child(even) {
+  background: $light-color;
+}
+@media #{$small-screen} {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-cell {
+    margin: 5px;
+    width: -webkit-calc(50% - 10px);
+    width:         calc(50% - 10px);
+  }
+  .grid-cell:nth-child(n) {
+    background: rgb(247,247,247);
+  }
+  .grid-cell:nth-child(4n+2),
+  .grid-cell:nth-child(4n+3){
+    background: $light-color;
+  }
+  .valign-content {
+    @include vertical-align();
+  }
+}
+@media #{$medium-screen} {
+  .grid-cell {
+    width: -webkit-calc(33.33333333% - 10px);
+    width:         calc(33.33333333% - 10px);
+  }
+  .grid-cell:nth-child(odd) {
+    background: rgb(247,247,247);
+  }
+  .grid-cell:nth-child(even) {
+    background: $light-color;
+  }
+}
+
+
 // Timer JPO
 
 .timerjpo {
@@ -12,71 +105,6 @@
 
     p {
         font-size: 1.5em;
-    }
-}
-
-// Erreur 404
-
-.error404 {
-    display: block;
-    text-align: center;
-
-    h1 {
-        font-size: 5em;
-    }
-
-    p {
-        font-size: 2em;
-    }
-
-    .inline-block {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .btn {
-        border: 1px solid black;
-        padding: 10px;
-        font-size: 1.2em;
-        width: 20em;
-        margin: 20px;
-        overflow: hidden;
-        position: relative;
-        transition: 0.5s;
-    }
-
-    .btn::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        background-color: #f73c3c;
-        height: 0;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%) rotate(45deg);
-        transition: 0.5s;
-        opacity: 0;
-    }
-
-    .btn:hover {
-        border : 1px solid #f73c3c;
-        transition: 0.5s;
-    }
-
-    .btn:hover::after {
-        height: 1000%;
-        opacity: 1;
-        transition: 0.5s;
-    }
-
-    .btn-black {
-        color: black;
-    }
-
-    a {
-        color: black;
-        width: 100%;
     }
 }
 
@@ -161,14 +189,6 @@
 
 .activity-panel-text {
     font-size: 1.3em;
-}
-
-.list-puce {
-    color: $primary-color;
-    font-size: 20pt;
-    font-weight: bold;
-    margin-right: 0.5em;
-    vertical-align: middle;
 }
 
 .list-competences {
@@ -639,12 +659,6 @@
 // PROJECTS
 //========================
 
-.ctn-projects {
-    font-size: 0;
-    text-align: center;
-    margin-top: 25px;
-}
-
 .project {
     font-size: $main-font-size;
     box-sizing: border-box;
@@ -706,10 +720,6 @@
     vertical-align: middle;
 }
 
-.home-project {
-    width: 100%;
-}
-
 @media #{$medium-screen} {
     .project {
         width: calc(100%/2);
@@ -743,30 +753,12 @@
   padding: 2px 10px;
 }
 
-.grid-cell {
-  padding: 15px;
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-.grid-cell:nth-child(odd) {
-  background: rgb(247,247,247);
-}
-.grid-cell:nth-child(even) {
-  background: $light-color;
-}
-@media #{$medium-screen} {
-  .grid {
-    flex-wrap: wrap;
-    display: flex;
-  }
-  .grid-cell {
-    @include box-sizing(border-box);
-    margin: 5px;
-    width: 30%;
-  }
-}
+
+
+
+
+
+
 .close {
   background: $main-color;
   border: $light-color 1px solid;

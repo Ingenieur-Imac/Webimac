@@ -548,5 +548,15 @@
 	font-size: 7em;
 }
 .lnr-ul {
-	list-style: none;
+	li {
+		line-height: 2;
+		list-style: none;
+	}
+	.lnr {
+		color: $primary-color;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    vertical-align: middle;
+	}
 }

@@ -17,6 +17,7 @@ Route::get('/formation/admission','PagesController@admission');
 Route::get('/formation/debouches','PagesController@openings');
 Route::get('/realisations','PagesController@projects');
 Route::get('/nos-etudiants','PagesController@students');
+Route::get('/vie-etudiante','PagesController@studentLife');
 Route::get('/international','PagesController@international');
 Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
