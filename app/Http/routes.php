@@ -56,6 +56,10 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Student','AdminStudentController');
     //View tags
     Route::resource('admin/Tag','AdminTagController');
+        //Add Tag to Project
+        Route::get('admin/AddTagToProject/{idTag}/{idProj}','AdminTagController@addTag');
+        //Remove Tag to Project
+        Route::get('admin/RemoveTagToProject/{idTag}/{idProj}','AdminTagController@removeTag');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');

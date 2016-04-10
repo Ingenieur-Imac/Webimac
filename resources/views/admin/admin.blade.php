@@ -33,6 +33,7 @@
         </footer>
         <script src="../../../vendor/jquery/dist/jquery.js"></script>
         <script src="{{URL::asset('js/admin_file_upload.js')}}"></script>
+        <script src="{{URL::asset('js/admin_tags.js')}}"></script>
     </div>
 </body>
 </html>

@@ -5,6 +5,7 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Imac\Tag;
+use Imac\project_tag;
 use Imac\Http\Requests;
 use Imac\Http\Controllers\Controller;
 
@@ -85,5 +86,22 @@ class AdminTagController extends Controller
         $tag = Tag::findOrFail($id);
         $tag->delete();
         return redirect('admin/Tag');
+    }
+
+    public function addTag($idTag,$idProj){
+        $project_tag = project_tag::where('id_tag',$idTag)->where('id_project',$idProj)->first();
+        if(count($project_tag) == 0){
+            $project_tag = new project_tag();
+            $project_tag->id_project = $idProj;
+            $project_tag->id_tag = $idTag;
+            $project_tag->save();
+        }
+    }
+
+    public function removeTag($idTag,$idProj){
+        $project_tag = project_tag::where('id_tag',$idTag)->where('id_project',$idProj)->first();
+        if(count($project_tag) == 1){
+            $project_tag->delete();
+        }
     }
 }
