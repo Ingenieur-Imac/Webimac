@@ -43,6 +43,10 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::delete('admin/project/{id}','AdminProjectController@delete');
     //View Student Testimonial
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
+    //View Student Exchange Testimonial
+    Route::resource('admin/StudentExchangeTestimonial','AdminStudentExchangeTestimonialController');
+    //DESTROYING PIC FOR GALLERY
+    Route::get('admin/DestroyPicTestimonial/{id}','AdminStudentExchangeTestimonialController@destroyPic');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
     //View promotions
@@ -51,6 +55,12 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Partnership','AdminPartnershipController');
     //View students
     Route::resource('admin/Student','AdminStudentController');
+    //View tags
+    Route::resource('admin/Tag','AdminTagController');
+        //Add Tag to Project
+        Route::get('admin/AddTagToProject/{idTag}/{idProj}','AdminTagController@addTag');
+        //Remove Tag to Project
+        Route::get('admin/RemoveTagToProject/{idTag}/{idProj}','AdminTagController@removeTag');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');

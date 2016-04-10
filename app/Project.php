@@ -4,6 +4,7 @@ namespace Imac;
 
 use Cocur\Slugify\Slugify;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 
 class Project extends Model
 {
@@ -19,6 +20,10 @@ class Project extends Model
 
     public function scopeHomePage($query){
       return $query->take(2);
+    }
+
+    public function project_tag(){
+        return $this->hasMany("Imac\project_tag");
     }
 
 

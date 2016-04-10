@@ -18,7 +18,9 @@ class PagesController extends Controller{
     }
 
     public function index(){
-        $projects = Project::HomePage()->get();
+        //Speed modification
+        //$projects = Project::HomePage()->get();
+        $projects = Project::all()->reverse()->take(2);
         $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.home', compact('projects','student_testimonials'));
     }

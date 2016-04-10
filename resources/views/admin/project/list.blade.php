@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'project'])
 
 @section('content')
     <h1> Liste des Projets</h1>

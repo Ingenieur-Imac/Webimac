@@ -1,4 +1,4 @@
-@extends('admin.admin');
+@extends('admin.admin',['nav' => 'others'])
 
 @section('content')
     <h1>Autres éléments du site</h1>

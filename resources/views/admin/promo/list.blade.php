@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'promo'])
 
 @section('content')
     <h1> Liste des promos</h1>
@@ -9,7 +9,7 @@
         Aucun staff à afficher pour le moment
     @else
         @foreach ($promos as $promo)
-            <h3><a href="{{action('AdminPromoController@edit',[$promo->id])}}">{{ $promo->year }}</a></h3>
+            <h3><a href="{{action('AdminPromoController@edit',[$promo->id])}}">{{ $promo->year }} | Nombre d'étudiant : {{$promo->nbStudent}}</a></h3>
         @endforeach
     @endif
 @endsection

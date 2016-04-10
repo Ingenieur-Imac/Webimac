@@ -34,6 +34,27 @@
     {!! Form::text('awards',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- body form input -->
+{{-- <div class="form-group">
+    <label for="">Tags : </label>
+    <input id="add-tag" class="form-control" type="text"/>
+    <div class="tags jumbotron">
+
+    </div>
+</div> --}}
+<!-- tags form input -->
+<div class="form-group">
+    {!! Form::label('tags','tags') !!}
+    {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!}
+    <div class="tags jumbotron">
+        @if(isset($self_tags))
+            @foreach($self_tags as $tag)
+                <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+            @endforeach
+        @endif
+    </div>
+</div>
+
 <!-- contributor form input -->
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
