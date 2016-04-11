@@ -38,7 +38,7 @@ class AdminProjectController extends Controller {
             ->join('projects','projects.id', '=', 'project_tags.id_project')
             ->get();
 
-        $self_tags = DB::table('students')
+        $self_students = DB::table('students')
             ->select('*')
             ->join('project_students','students.id', '=', 'project_students.id_student')
             ->join('projects','projects.id', '=', 'project_students.id_project')
