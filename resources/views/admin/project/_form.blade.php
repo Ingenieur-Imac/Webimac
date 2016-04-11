@@ -61,7 +61,7 @@
     <div class="students jumbotron">
         @if(isset($self_students))
             @foreach($self_students as $student)
-                <button type="button" rel="{{$student->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$student->name}}</button>
+                <button type="button" rel="{{$student->id}}" class="student btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$student->name}} {{$student->year}}</button>
             @endforeach
         @endif
     </div>

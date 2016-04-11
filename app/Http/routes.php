@@ -57,6 +57,10 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Student','AdminStudentController');
         //[AJAX] Search Student
         Route::get('admin/findStudents/{s}','AdminStudentController@search');
+        //[AJAX] Add Student to Project
+        Route::get('admin/AddStudentToProject/{idStudent}/{idProject}','AdminStudentController@addToProject');
+        //[AJAX] Remove Student From Project
+        Route::get('admin/RemoveStudentFromProject/{idStudent}/{idProject}','AdminStudentController@removeFromProject');
     //View tags
     Route::resource('admin/Tag','AdminTagController');
         //[AJAX] Add Tag to Project

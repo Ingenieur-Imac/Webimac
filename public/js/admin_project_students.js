@@ -2,6 +2,13 @@ $(document).ready(function(){
     $('#findStudents').on('keyup',function(){
         searchStudent($(this).val());
     });
+
+    $('.student').click(function(){
+        var idStudent = $(this).attr('rel');
+        var idProject = $("#studentResults").attr('rel');
+        removeStudent(idStudent,idProject);
+        $(this).remove();
+    });
 });
 
 
@@ -17,12 +24,9 @@ function searchStudent(s){
 
             $('#studentResults a').click(function(e){
                 e.preventDefault();
-
                 $('#findStudents').val("");
                 $('#studentResults').html("");
                 addStudent($(this).attr('rel'),$("#studentResults").attr('rel'),$(this).html());
-
-
             });
         });
     } else {
@@ -32,9 +36,10 @@ function searchStudent(s){
 
 function addStudent(idStudent,idProject,name){
     $('.students.jumbotron').append('<button type="button" rel="' + idStudent + '" class="student btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>' + name + '</button>')
+    $.get("/admin/AddStudentToProject/"+idStudent+"/"+idProject);
+}
 
-    $('.student').click(function(){
-        $(this).remove();
-    })
-
+function removeStudent(idStudent, idProject){
+    console.log('Launching removing');
+    $.get("/admin/RemoveStudentFromProject/"+idStudent+"/"+idProject);
 }

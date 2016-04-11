@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log('Hi im admin_tags.js');
     $("#add-tag").on('change',function(e){
         for(var i in $(".tags")){
             if($(".tag:eq("+i+")").attr('rel') == $(this).val()){

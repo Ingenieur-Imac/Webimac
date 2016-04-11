@@ -39,9 +39,10 @@ class AdminProjectController extends Controller {
             ->get();
 
         $self_students = DB::table('students')
-            ->select('*')
+            ->select('students.id','students.name','promos.year')
             ->join('project_students','students.id', '=', 'project_students.id_student')
             ->join('projects','projects.id', '=', 'project_students.id_project')
+            ->join('promos','promos.id', '=', 'students.promo')
             ->get();
 
         $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');

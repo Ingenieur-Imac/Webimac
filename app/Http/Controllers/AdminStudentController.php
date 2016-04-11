@@ -5,6 +5,7 @@ namespace Imac\Http\Controllers;
 use Illuminate\Http\Request;
 
 use DB;
+use Imac\project_student;
 use Imac\Student;
 use Imac\Promo;
 use Imac\Http\Requests;
@@ -134,5 +135,25 @@ class AdminStudentController extends Controller
     public function search($s){
         $students = DB::select("SELECT students.name, promos.year, students.id FROM students, promos WHERE LOWER(name) like '%".$s."%' AND students.promo = promos.id");
         echo(json_encode($students));
+    }
+
+    public function addToProject($idStudent,$idProject){
+        $project_student = project_student::where('id_student',$idStudent)->where('id_project',$idProject)->first();
+        if(count($project_student) == 0){
+            $project_student = new project_student();
+            $project_student->id_student = $idStudent;
+            $project_student->id_project = $idProject;
+            $project_student->save();
+
+            echo("Done !");
+        }
+    }
+
+    public function removeFromProject($idStudent,$idProject){
+        $project_student = project_student::where('id_student',$idStudent)->where('id_project',$idProject)->first();
+        if(count($project_student) == 1){
+            $project_student->delete();
+            echo('Done !');
+        }
     }
 }
