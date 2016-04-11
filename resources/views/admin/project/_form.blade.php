@@ -34,14 +34,6 @@
     {!! Form::text('awards',null,['class' => 'form-control']) !!}
 </div>
 
-<!-- body form input -->
-{{-- <div class="form-group">
-    <label for="">Tags : </label>
-    <input id="add-tag" class="form-control" type="text"/>
-    <div class="tags jumbotron">
-
-    </div>
-</div> --}}
 <!-- tags form input -->
 <div class="form-group">
     {!! Form::label('tags','tags') !!}
@@ -59,6 +51,20 @@
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
     {!! Form::text('contributors',null,['class' => 'form-control']) !!}
+</div>
+
+<!-- student form input -->
+<div class="form-group">
+    {!! Form::label('students','Contributeurs du projet') !!}
+    {!! Form::text(null,null,['id' => 'findStudents','class'=> 'form-control']) !!}
+    <div id="studentResults" rel="{{$project->id}}" class="list-group"></div>
+    <div class="students jumbotron">
+        @if(isset($self_students))
+            @foreach($self_students as $student)
+                <button type="button" rel="{{$student->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$student->name}}</button>
+            @endforeach
+        @endif
+    </div>
 </div>
 
 <!-- name_of_tutors form input -->

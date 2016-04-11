@@ -55,11 +55,13 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Partnership','AdminPartnershipController');
     //View students
     Route::resource('admin/Student','AdminStudentController');
+        //[AJAX] Search Student
+        Route::get('admin/findStudents/{s}','AdminStudentController@search');
     //View tags
     Route::resource('admin/Tag','AdminTagController');
-        //Add Tag to Project
+        //[AJAX] Add Tag to Project
         Route::get('admin/AddTagToProject/{idTag}/{idProj}','AdminTagController@addTag');
-        //Remove Tag to Project
+        //[AJAX] Remove Tag to Project
         Route::get('admin/RemoveTagToProject/{idTag}/{idProj}','AdminTagController@removeTag');
     //View others
     Route::get('admin/others','AdminOthersController@index');

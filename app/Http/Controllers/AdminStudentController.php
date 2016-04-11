@@ -4,6 +4,7 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
 use Imac\Student;
 use Imac\Promo;
 use Imac\Http\Requests;
@@ -128,5 +129,10 @@ class AdminStudentController extends Controller
         $student = Student::findOrFail($id);
         $student->delete();
         return redirect('admin/Student');
+    }
+
+    public function search($s){
+        $students = DB::select("SELECT students.name, promos.year, students.id FROM students, promos WHERE LOWER(name) like '%".$s."%' AND students.promo = promos.id");
+        echo(json_encode($students));
     }
 }

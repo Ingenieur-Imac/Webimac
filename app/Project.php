@@ -26,6 +26,9 @@ class Project extends Model
         return $this->hasMany("Imac\project_tag");
     }
 
+    public function project_student(){
+        return $this->hasMany("Imac\project_student");
+    }
 
     public function getUrl($name){
         $slugify = new Slugify();

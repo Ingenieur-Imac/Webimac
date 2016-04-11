@@ -32,8 +32,9 @@
             @yield('footer')
         </footer>
         <script src="../../../vendor/jquery/dist/jquery.js"></script>
-        <script src="{{URL::asset('js/admin_file_upload.js')}}"></script>
-        <script src="{{URL::asset('js/admin_tags.js')}}"></script>
+        <script src="{{URL::asset('js/admin_file_upload.js')}}" charset="utf-8"></script>
+        <script src="{{URL::asset('js/admin_tags.js')}}" charset="utf-8"></script>
+        <script src="{{URL::asset('js/admin_project_students.js')}}" charset="utf-8"></script>
     </div>
 </body>
 </html>

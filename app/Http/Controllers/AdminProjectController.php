@@ -38,8 +38,14 @@ class AdminProjectController extends Controller {
             ->join('projects','projects.id', '=', 'project_tags.id_project')
             ->get();
 
+        $self_tags = DB::table('students')
+            ->select('*')
+            ->join('project_students','students.id', '=', 'project_students.id_student')
+            ->join('projects','projects.id', '=', 'project_students.id_project')
+            ->get();
+
         $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');
-        return view('admin.project.edit',compact('project','old_date','tags','self_tags'));
+        return view('admin.project.edit',compact('project','old_date','tags','self_tags','self_students'));
     }
 
     // TODO: RETURN ERROR WHEN ELSE CONDITION IS LAUNCH
