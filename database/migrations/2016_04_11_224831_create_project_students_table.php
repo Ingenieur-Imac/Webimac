@@ -14,8 +14,8 @@ class CreateProjectStudentsTable extends Migration
     {
         Schema::create('project_students', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_project')->unsigned()->references('id')->on('projects');
-            $table->integer('id_student')->unsigned()->references('id')->on('students');
+            $table->integer('project_id')->unsigned()->references('id')->on('projects');
+            $table->integer('student_id')->unsigned()->references('id')->on('students');
         });
     }
 

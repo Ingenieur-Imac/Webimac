@@ -89,17 +89,17 @@ class AdminTagController extends Controller
     }
 
     public function addTag($idTag,$idProj){
-        $project_tag = project_tag::where('id_tag',$idTag)->where('id_project',$idProj)->first();
+        $project_tag = project_tag::where('tag_id',$idTag)->where('project_id',$idProj)->first();
         if(count($project_tag) == 0){
             $project_tag = new project_tag();
-            $project_tag->id_project = $idProj;
-            $project_tag->id_tag = $idTag;
+            $project_tag->project_id = $idProj;
+            $project_tag->tag_id = $idTag;
             $project_tag->save();
         }
     }
 
     public function removeTag($idTag,$idProj){
-        $project_tag = project_tag::where('id_tag',$idTag)->where('id_project',$idProj)->first();
+        $project_tag = project_tag::where('tag_id',$idTag)->where('project_id',$idProj)->first();
         if(count($project_tag) == 1){
             $project_tag->delete();
         }

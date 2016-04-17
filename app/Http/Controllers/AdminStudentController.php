@@ -138,11 +138,11 @@ class AdminStudentController extends Controller
     }
 
     public function addToProject($idStudent,$idProject){
-        $project_student = project_student::where('id_student',$idStudent)->where('id_project',$idProject)->first();
+        $project_student = project_student::where('student_id',$idStudent)->where('project_id',$idProject)->first();
         if(count($project_student) == 0){
             $project_student = new project_student();
-            $project_student->id_student = $idStudent;
-            $project_student->id_project = $idProject;
+            $project_student->student_id = $idStudent;
+            $project_student->project_id = $idProject;
             $project_student->save();
 
             echo("Done !");
@@ -150,7 +150,7 @@ class AdminStudentController extends Controller
     }
 
     public function removeFromProject($idStudent,$idProject){
-        $project_student = project_student::where('id_student',$idStudent)->where('id_project',$idProject)->first();
+        $project_student = project_student::where('student_id',$idStudent)->where('project_id',$idProject)->first();
         if(count($project_student) == 1){
             $project_student->delete();
             echo('Done !');

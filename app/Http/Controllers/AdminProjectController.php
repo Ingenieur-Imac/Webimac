@@ -34,14 +34,14 @@ class AdminProjectController extends Controller {
 
         $self_tags = DB::table('tags')
             ->select('tags.id','tags.name')
-            ->join('project_tags','tags.id', '=', 'project_tags.id_tag')
-            ->join('projects','projects.id', '=', 'project_tags.id_project')
+            ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
+            ->join('projects','projects.id', '=', 'project_tags.project_id')
             ->get();
 
         $self_students = DB::table('students')
             ->select('students.id','students.name','promos.year')
-            ->join('project_students','students.id', '=', 'project_students.id_student')
-            ->join('projects','projects.id', '=', 'project_students.id_project')
+            ->join('project_students','students.id', '=', 'project_students.student_id')
+            ->join('projects','projects.id', '=', 'project_students.project_id')
             ->join('promos','promos.id', '=', 'students.promo')
             ->get();
 
