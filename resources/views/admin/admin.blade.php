@@ -26,6 +26,11 @@
             </div>
         </div>
         <section>
+            @if($nav != 'home')
+                <div class="text-center">
+                    <a href="{{action('AdminPagesController@admHome')}}"><img src="{{URL::asset('images/logoIMAC.png')}}" width="40" alt="" /></a>
+                </div>
+            @endif
             @yield('content')
         </section>
         <footer>
