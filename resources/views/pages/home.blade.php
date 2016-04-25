@@ -26,13 +26,13 @@
             <p class="flex-description">La formation IMAC s’articule autour de trois pôles offrant une culture et des compétences à la fois artistiques et scientifiques : sciences & informatique, multimédia & audiovisuel, culture de l’entreprise. En trois ans, les étudiants deviennent des ingénieurs polyvalents.</p>
             <a class="btn filled-btn primary-btn" href="{{action('PagesController@presentation')}}">Découvrir la formation</a>
         </div>
-        <div class="col-4 flex-parent-col">
+        <div class="col-4 flex-parent-col row-offset">
             <span class="lnr lnr-diamond lnr-7x"></span>
             <h2 class="title-3 center">Les <strong>projets</strong> au cœur<br /> de la formation</h2>
             <p class="flex-description">Les projets, variés, permettent une mise en application et un réel approfondissement des connaissances acquises en cours. Ils témoignent des compétences professionnelles des étudiants, de leur personnalité ainsi que de leur capacité à travailler en équipe.</p>
             <a class="btn filled-btn primary-btn" href="{{action('PagesController@projects')}}">Parcourir les projets</a>
         </div>
-        <div class="col-4 flex-parent-col">
+        <div class="col-4 flex-parent-col row-offset">
             <span class="lnr lnr-rocket lnr-7x"></span>
             <h2 class="title-3 center">Une <strong>insertion<br /> professionnelle</strong> assurée</h2>
             <p class="flex-description">Leur profil polyvalent étant un atout considérable dans le monde du travail, les étudiants IMAC sont embauchés dans les six mois suivant l’obtention de leur diplôme, une grande majorité des suites au stage de troisième année. À l’image de la formation, les secteurs d’activité sont multiples.</p>
