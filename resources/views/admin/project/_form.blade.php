@@ -37,7 +37,13 @@
 <!-- tags form input -->
 <div class="form-group">
     {!! Form::label('tags','tags') !!}
-    {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!}
+    <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
+        <option value="0">Tags du projet :</option>
+        @foreach($tags as $key => $value)
+            <option value="{{$key}}">{{$value}}</option>
+        @endforeach
+    </select>
+    {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
     <div class="tags jumbotron">
         @if(isset($self_tags))
             @foreach($self_tags as $tag)
