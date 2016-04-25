@@ -25,7 +25,8 @@ class AdminStudentController extends Controller
     public function index()
     {
         $students = Student::all();
-        return view('admin.student.list',compact('students'));
+        $promos = Promo::orderBy('year')->pluck('year','id');
+        return view('admin.student.list',compact('students','promos'));
     }
 
     /**
