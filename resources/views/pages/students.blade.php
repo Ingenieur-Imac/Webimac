@@ -54,17 +54,23 @@
         </div>
 
         <div class="col-12">
+            @foreach ($students_promo as $students)
             <h2 class="title-2 center">La promotion {{ $promo->year }} en détail</h2>
-            <div class="col-3 student">
-                <div class="student-picture">
-                    <img src="{{URL::asset('images/student/DSC_0035.jpg')}}" alt="">
+            <div class="students">
+                @foreach ($students as $student)
+                <div class="student">
+                    <div class="student-picture" style="background-image: url('{{URL::asset('images/student/DSC_0035.jpg')}}');"></div>
+                    <div class="student-info">
+                        <h3>{{ $student->name }}</h3>
+                        <div>
+                            <a href="#" target="_blank"><span class="lnr lnr-screen"></span></a>
+                            <a href="#" target="_blank"><span class="icon-linkedin-rect"></span></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="student-info">
-                    <h3 class="title-3">Coucou nom</h3>
-                    <a href="#" target="_blank"><span class="lnr lnr-screen"></span></a>
-                    <a href="#" target="_blank"><span class="icon-linkedin-rect"></span></a>
-                </div>
+                @endforeach
             </div>
+            @endforeach
         </div>
 
         <!-- END SLIDER -->
