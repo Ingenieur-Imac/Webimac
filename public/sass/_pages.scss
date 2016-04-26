@@ -311,10 +311,40 @@
     }
 }
 
+
 //========================
 // STUDENTS PAGE
 //========================
-
+.arrow {
+  display: none;
+}
+@media #{$small-screen} {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%;
+  }
+  .arrow-right {
+    right: 0;
+  }
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+.slider-content {
+  //display: flex;
+}
+.slide {
+  float: left;
+  height: 1600px;
+  //width: 100%;
+  .col-9 {
+    margin-bottom: $spacing-unit/1.5;
+  }
+}
 .students {
   display: flex;
   flex-wrap: wrap;

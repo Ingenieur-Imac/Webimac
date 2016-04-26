@@ -239,7 +239,7 @@ ul li {
     margin-left: 8.33333333%; }
 
   .col-offset-2 {
-    margin-left: 16.66666667%; }
+    margin-left: 16.66666667% !important; }
 
   .middle-valign-ib {
     display: inline-block;
@@ -1580,6 +1580,9 @@ p.lead + .frames {
 .media-container + p {
   margin-top: 30px; }
 
+.title-2 ~ .btn {
+  margin-top: 0; }
+
 .subnav {
   background: #dadbd9; }
   .subnav ul {
@@ -1836,6 +1839,29 @@ p.lead + .frames {
 @media (min-width: 992px) {
   .project {
     flex-basis: 32%; } }
+.arrow {
+  display: none; }
+
+@media (min-width: 768px) {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%; }
+
+  .arrow-right {
+    right: 0; } }
+.slider {
+  overflow: hidden;
+  position: relative; }
+
+.slide {
+  float: left;
+  height: 1600px; }
+  .slide .col-9 {
+    margin-bottom: 40px; }
+
 .students {
   display: flex;
   flex-wrap: wrap;
