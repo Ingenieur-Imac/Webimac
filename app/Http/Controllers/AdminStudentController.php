@@ -4,6 +4,8 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
+use Imac\project_student;
 use Imac\Student;
 use Imac\Promo;
 use Imac\Http\Requests;
@@ -23,7 +25,8 @@ class AdminStudentController extends Controller
     public function index()
     {
         $students = Student::all();
-        return view('admin.student.list',compact('students'));
+        $promos = Promo::orderBy('year')->pluck('year','id');
+        return view('admin.student.list',compact('students','promos'));
     }
 
     /**
@@ -128,5 +131,30 @@ class AdminStudentController extends Controller
         $student = Student::findOrFail($id);
         $student->delete();
         return redirect('admin/Student');
+    }
+
+    public function search($s){
+        $students = DB::select("SELECT students.name, promos.year, students.id FROM students, promos WHERE LOWER(name) like '%".$s."%' AND students.promo = promos.id");
+        echo(json_encode($students));
+    }
+
+    public function addToProject($idStudent,$idProject){
+        $project_student = project_student::where('student_id',$idStudent)->where('project_id',$idProject)->first();
+        if(count($project_student) == 0){
+            $project_student = new project_student();
+            $project_student->student_id = $idStudent;
+            $project_student->project_id = $idProject;
+            $project_student->save();
+
+            echo("Done !");
+        }
+    }
+
+    public function removeFromProject($idStudent,$idProject){
+        $project_student = project_student::where('student_id',$idStudent)->where('project_id',$idProject)->first();
+        if(count($project_student) == 1){
+            $project_student->delete();
+            echo('Done !');
+        }
     }
 }

@@ -20,13 +20,13 @@
     @include('includes.banner', array('img' => $img, 'title' => $banner_title))
     @include('includes.subnav', array('img' => $img, 'title' => $title))
     <!-- @include('includes.ariane', array('title' => $title)) -->
-    <div class="container center-content-padding">
-        <div class="side-padding">
+    <div class="container">
+        <div class="col-8 center-block">
             <h1 class="title-1">Après l'IMAC</h1>
             <p class="lead">Les ingénieurs IMAC sont très appréciés pour leurs compétences et leur polyvalence atypique dans les domaines des arts et des sciences.</p>
             <p>Leur immersion dans le monde professionnel et leurs échanges tant avec les techniciens qu’avec les graphistes sont grandement facilités. Les stages et les divers projets réalisés en équipe leur permettent d’intégrer les codes et réflexes du milieu professionnel.</p>
         </div>
-        <div class="frames">
+        <div class="col-11 center-block frames">
             <div class="framed">
                 <p class="big-number">95%</p>
                 <p class="title-4">d'embauches</p>
@@ -46,19 +46,23 @@
     </div>
 
     <div class="light-row">
-      <div class="container center-content-padding center">
-          <h2 class="title-2">Les secteurs d'activité</h2>
-          <p class="lead side-padding">À l’image de la formation pluridisciplinaire, les secteurs de débouchés sont multiples.</p>
-          <span class="secondary-btn activity-sectors-title selected" alt="informatiqueweb">Informatique, web</span>
-          <span class="secondary-btn activity-sectors-title" alt="jeuvideo">Jeux vidéo</span>
-          <span class="secondary-btn activity-sectors-title" alt="multimediaanimation">Multimédia, Animation</span>
-          <span class="secondary-btn activity-sectors-title" alt="commmarketpub">Communication, Marketing, Publicité</span>
-          <span class="secondary-btn activity-sectors-title" alt="audiovisuelspecnum">Audiovisuel, Spectacle numérique</span>
-          <span class="secondary-btn activity-sectors-title" alt="enseignrecherche">Enseignement & Recherche</span>
+        <div class="container center">
+            <div class="col-10 center-block">
+                <h2 class="title-2">Les secteurs d'activité</h2>
+                <p class="lead">À l’image de la formation pluridisciplinaire, les secteurs de débouchés sont multiples.</p>
+                <span class="activity-sectors-title selected" alt="informatiqueweb">Informatique, web</span>
+                <span class="activity-sectors-title" alt="jeuvideo">Jeux vidéo</span>
+                <span class="activity-sectors-title" alt="multimediaanimation">Multimédia, Animation</span>
+                <span class="activity-sectors-title" alt="commmarketpub">Communication, Marketing, Publicité</span>
+                <span class="activity-sectors-title" alt="audiovisuelspecnum">Audiovisuel, Spectacle numérique</span>
+                <span class="activity-sectors-title" alt="enseignrecherche">Enseignement &amp; Recherche</span>
+            </div>
       </div>
     </div>
     <div class="arrow-bottom"></div>
-        <div class="container center-content-padding activity-panel-container">
+
+    <div class="container">
+        <div class="col-7 center-block">
             <div class="framed activity-panel selected" alt="informatiqueweb">
                 <p class="activity-panel-title">Métier de l'informatique et du Web</p>
                 <p class="activity-panel-text">
@@ -79,7 +83,7 @@
                 <p class="activity-panel-text">
                     Ingénieur informaticien<br/>
                     Chef de projet web<br/>
-                    Développeur R&D en post-production<br/>
+                    Développeur R&amp;D en post-production<br/>
                     Directeur technique en post-production<br/>
                     ...
                 </p>
@@ -118,20 +122,20 @@
                 <p class="activity-panel-title">Métier de l'Enseignement et de la Recherche</p>
                 <p class="activity-panel-text">
                     Enseignant<br/>
-                    Chercheur (R&D)<br/>
+                    Chercheur (R&amp;D)<br/>
                     ...
                 </p>
             </div>
         </div>
+    </div>
+
     <div class="light-row">
-        <div class="container center-content-padding">
-            <h2 class="title-2">Les compétences reconnues en entreprise</h2>
-        </div>
-        <div class="container center-content-padding center ctn-inline-middle">
-            <div class="col-2 side-padding inline-middle">
+        <div class="container">
+            <h2 class="title-2 center">Les compétences reconnues en entreprise</h2>
+            <div class="col-4 col-offset-2 middle-valign-ib">
                 <img src="{{URL::asset('images/banners/Groupe_PostIt-7131.jpg')}}" alt="Des ingénieurs Imac" />
             </div>
-            <div class="col-2 side-padding inline-middle">
+            <div class="col-4 row-offset middle-valign-ib">
                 <ul class="lnr-ul">
                     <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Profil pluridisciplinaire</li>
                     <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Forte capacité d'adaptation</li>

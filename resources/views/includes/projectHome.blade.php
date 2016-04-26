@@ -4,6 +4,6 @@
         <h3 class="title-4">{{$project->name}}</h3>
         <!--<p><span class="tag">#projet tuteuré</span> <span class="tag">#ananas</span></p>-->
         <p class="flex-description">{{ $project->excerpt }}</p>
-        <a class="btn filled-btn primary-btn" href="{{ action('PagesController@projects') }}/{{ $project->url_page }}">Voir le projet</a>
+        <p class="center"><a class="btn filled-btn primary-btn" href="{{ action('PagesController@projects') }}/{{ $project->url_page }}">Voir le projet</a></p>
     </div>
 @endforeach

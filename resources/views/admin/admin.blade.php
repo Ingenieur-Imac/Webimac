@@ -26,14 +26,21 @@
             </div>
         </div>
         <section>
+            @if($nav != 'home')
+                <div class="text-center">
+                    <a href="{{action('AdminPagesController@admHome')}}"><img src="{{URL::asset('images/logoIMAC.png')}}" width="40" alt="" /></a>
+                </div>
+            @endif
             @yield('content')
         </section>
         <footer>
             @yield('footer')
         </footer>
         <script src="../../../vendor/jquery/dist/jquery.js"></script>
-        <script src="{{URL::asset('js/admin_file_upload.js')}}"></script>
-        <script src="{{URL::asset('js/admin_tags.js')}}"></script>
+        <script src="{{URL::asset('js/admin_file_upload.js')}}" charset="utf-8"></script>
+        <script src="{{URL::asset('js/admin_tags.js')}}" charset="utf-8"></script>
+        <script src="{{URL::asset('js/admin_project_students.js')}}" charset="utf-8"></script>
+        @yield('script')
     </div>
 </body>
 </html>

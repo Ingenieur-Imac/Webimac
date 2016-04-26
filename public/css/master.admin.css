@@ -40,6 +40,10 @@ section {
     margin-top: 5px;
 }
 
-.tag {
+.tag,.student {
     margin-left: 5px;
+}
+
+.pointer {
+    cursor: pointer;
 }

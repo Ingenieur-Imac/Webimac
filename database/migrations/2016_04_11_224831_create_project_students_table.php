@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectTagsTable extends Migration
+class CreateProjectStudentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateProjectTagsTable extends Migration
      */
     public function up()
     {
-        Schema::create('project_tags', function (Blueprint $table) {
+        Schema::create('project_students', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('project_id')->unsigned()->references('id')->on('projects');
-            $table->integer('tag_id')->unsigned()->references('id')->on('tags');
+            $table->integer('student_id')->unsigned()->references('id')->on('students');
         });
     }
 
@@ -26,6 +26,6 @@ class CreateProjectTagsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('project_tags');
+        Schema::drop('project_students');
     }
 }

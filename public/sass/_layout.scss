@@ -8,6 +8,7 @@
   @include box-sizing(border-box);
   margin: auto;
   padding: $spacing-unit 15px $spacing-unit 15px;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -37,6 +38,9 @@
 .clearfix:after,
 .container:after {
   clear: both;
+}
+.row-offset {
+  margin-top: $spacing-unit/2;
 }
 
 // RESPONSIVE
@@ -107,6 +111,9 @@
   .flex-description {
     flex-grow: 1;
     text-align: left;
+  }
+  .row-offset {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {

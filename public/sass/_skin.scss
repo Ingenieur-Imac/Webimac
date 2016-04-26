@@ -61,7 +61,6 @@ strong {
   font-size: 0.93em;
   padding: 30px 15px 10px 15px;
   position: relative;
-  margin: auto;
   width: 235px;
   z-index: 1;
   p {
@@ -72,7 +71,6 @@ strong {
     background: $main-color;
     display: inline-block;
     font: bold 4.2em $title-font-stack;
-    margin: auto;
     left: 50%;
     padding: 0 10px;
     position: absolute;
@@ -90,26 +88,25 @@ strong {
 .framed + .framed {
   margin-top: 50px;
 }
-
 .frames {
-  margin-top: 40px;
-  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit/2;
+}
+
+@media #{$medium-screen} {
+  .frames {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 p.lead + .frames {
   margin-bottom: 30px;
 }
 @media #{$medium-screen} {
-  .framed:first-child {
-    position: absolute;
-      top: 0;
-      left: 0;
-  }
-  .framed:last-child {
-    position: absolute;
-      top: 0;
-      right: 0;
-  }
   .framed + .framed {
     margin-top: 0;
   }
