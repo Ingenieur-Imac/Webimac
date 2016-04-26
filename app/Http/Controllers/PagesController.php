@@ -8,6 +8,7 @@ use Imac\Project;
 use Imac\Promo;
 use Imac\Partnership;
 use Imac\StudentTestimonial;
+use Imac\Tag;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
 
@@ -18,7 +19,9 @@ class PagesController extends Controller{
     }
 
     public function index(){
-        $projects = Project::HomePage()->get();
+        //Speed modification
+        //$projects = Project::HomePage()->get();
+        $projects = Project::all()->reverse()->take(2);
         $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.home', compact('projects','student_testimonials'));
     }
@@ -42,9 +45,20 @@ class PagesController extends Controller{
 
     public function projects(){
         $projects = Project::all();
+        $tags = Tag::orderBy('name', 'asc')->get();
+        $years = Project::getArrayDates();
+        //Get projects tag
+        foreach($projects as &$project){
+            $link_tags = Project::findOrFail($project->id)->project_tag;
+            $project_self_tags = array();
+            foreach($link_tags as $link_tag){
+                array_push($project_self_tags,Tag::findOrFail($link_tag->tag_id));
+            }
+            $project->tags = $project_self_tags;
+        }
         //$project = $project->first();
         //$project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
-        return view('pages.projects', compact('projects'));
+        return view('pages.projects', compact('projects', 'tags', 'years'));
     }
 
     public function project($url){
@@ -64,8 +78,12 @@ class PagesController extends Controller{
       return view('pages.students',compact('promos','select_year'));
     }
 
+    public function studentLife(){
+        return view('pages.studentLife');
+    }
+
     public function international(){
-      return view('pages.international');
+        return view('pages.international');
     }
 
     public function partnership(){

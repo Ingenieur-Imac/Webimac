@@ -17,6 +17,7 @@ Route::get('/formation/admission','PagesController@admission');
 Route::get('/formation/debouches','PagesController@openings');
 Route::get('/realisations','PagesController@projects');
 Route::get('/nos-etudiants','PagesController@students');
+Route::get('/vie-etudiante','PagesController@studentLife');
 Route::get('/international','PagesController@international');
 Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
@@ -42,6 +43,10 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::delete('admin/project/{id}','AdminProjectController@delete');
     //View Student Testimonial
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
+    //View Student Exchange Testimonial
+    Route::resource('admin/StudentExchangeTestimonial','AdminStudentExchangeTestimonialController');
+    //DESTROYING PIC FOR GALLERY
+    Route::get('admin/DestroyPicTestimonial/{id}','AdminStudentExchangeTestimonialController@destroyPic');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
     //View promotions
@@ -50,6 +55,18 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Partnership','AdminPartnershipController');
     //View students
     Route::resource('admin/Student','AdminStudentController');
+        //[AJAX] Search Student
+        Route::get('admin/findStudents/{s}','AdminStudentController@search');
+        //[AJAX] Add Student to Project
+        Route::get('admin/AddStudentToProject/{idStudent}/{idProject}','AdminStudentController@addToProject');
+        //[AJAX] Remove Student From Project
+        Route::get('admin/RemoveStudentFromProject/{idStudent}/{idProject}','AdminStudentController@removeFromProject');
+    //View tags
+    Route::resource('admin/Tag','AdminTagController');
+        //[AJAX] Add Tag to Project
+        Route::get('admin/AddTagToProject/{idTag}/{idProj}','AdminTagController@addTag');
+        //[AJAX] Remove Tag to Project
+        Route::get('admin/RemoveTagToProject/{idTag}/{idProj}','AdminTagController@removeTag');
     //View others
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');

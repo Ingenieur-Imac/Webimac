@@ -4,7 +4,9 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
 use Imac\Project;
+use Imac\Tag;
 use Imac\Http\Requests;
 use Carbon\Carbon;
 use Imac\Http\Requests\ProjectRequest;
@@ -21,14 +23,30 @@ class AdminProjectController extends Controller {
         return view('admin.project.list',compact('projects'));
     }
 
-    public function edit($id){
-        $project = Project::findOrFail($id);
-        $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');
-        return view('admin.project.edit',compact('project','old_date'));
+    public function create(){
+        $tags = Tag::all();
+        return view('admin.project.create',compact('tags'));
     }
 
-    public function create(){
-        return view('admin.project.create');
+    public function edit($id){
+        $project = Project::findOrFail($id);
+        $tags = Tag::all()->pluck('name','id');
+
+        $self_tags = DB::table('tags')
+            ->select('tags.id','tags.name')
+            ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
+            ->join('projects','projects.id', '=', 'project_tags.project_id')
+            ->get();
+
+        $self_students = DB::table('students')
+            ->select('students.id','students.name','promos.year')
+            ->join('project_students','students.id', '=', 'project_students.student_id')
+            ->join('projects','projects.id', '=', 'project_students.project_id')
+            ->join('promos','promos.id', '=', 'students.promo')
+            ->get();
+
+        $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');
+        return view('admin.project.edit',compact('project','old_date','tags','self_tags','self_students'));
     }
 
     // TODO: RETURN ERROR WHEN ELSE CONDITION IS LAUNCH

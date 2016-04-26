@@ -36,25 +36,19 @@
         </div>
     </div>
 
-    <div class="col-x">
+    <div class="col-3">
         <img class="logo-imac" src="{{URL::asset('images/logoIMACblanc.png')}}" alt="Logo IMAC" />
         <h2 class="title-2">Formation d'ingénieur Imac</h2>
         <p>La seule formation publique d'ingénieur alliant arts et sciences</p>
-        <div class="col-3">
             <a href="http://www.u-pem.fr/" target="_blank">
                 <img src="{{URL::asset('images/UPEM_LOGO_EDITION_BLANC72DPI.png')}}" alt="Logo UPEM" />
             </a>
-        </div>
-        <div class="col-3">
             <a href="http://esipe.u-pem.fr/" target="_blank">
                 <img src="{{URL::asset('images/UPEM-ESIPE-V2-BLANC72DPI.png')}}" alt="Logo ESIPE" />
             </a>
-        </div>
-        <div class="col-3">
             <a href="http://www.cti-commission.fr/" target="_blank">
                 <img src="{{URL::asset('images/cti_logo_gris.png')}}" alt="Logo CTI" />
             </a>
-        </div>
     </div>
 </div>
 

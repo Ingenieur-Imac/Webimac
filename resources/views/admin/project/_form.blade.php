@@ -34,10 +34,43 @@
     {!! Form::text('awards',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- tags form input -->
+<div class="form-group">
+    {!! Form::label('tags','tags') !!}
+    <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
+        <option value="0">Tags du projet :</option>
+        @foreach($tags as $key => $value)
+            <option value="{{$key}}">{{$value}}</option>
+        @endforeach
+    </select>
+    {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
+    <div class="tags jumbotron">
+        @if(isset($self_tags))
+            @foreach($self_tags as $tag)
+                <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+            @endforeach
+        @endif
+    </div>
+</div>
+
 <!-- contributor form input -->
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
     {!! Form::text('contributors',null,['class' => 'form-control']) !!}
+</div>
+
+<!-- student form input -->
+<div class="form-group">
+    {!! Form::label('students','Contributeurs du projet') !!}
+    {!! Form::text(null,null,['id' => 'findStudents','class'=> 'form-control']) !!}
+    <div id="studentResults" rel="{{$project->id}}" class="list-group"></div>
+    <div class="students jumbotron">
+        @if(isset($self_students))
+            @foreach($self_students as $student)
+                <button type="button" rel="{{$student->id}}" class="student btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$student->name}} {{$student->year}}</button>
+            @endforeach
+        @endif
+    </div>
 </div>
 
 <!-- name_of_tutors form input -->

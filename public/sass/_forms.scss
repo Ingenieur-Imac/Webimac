@@ -2,9 +2,7 @@
 // Form elements
 // =============================================================================
 
-.title2 ~ .btn {
-  margin-top: 1000px;
-}
+
 .btn {
   @include box-sizing(border-box);
   border: transparent 1px solid;
@@ -12,61 +10,114 @@
   font-style: italic;
   font-weight: normal;
 	margin: 30px 5px 0 5px;
+  overflow: hidden;
+  position: relative;
 	padding: 10px;
 	text-align: center;
-	// transition: all 0.5s ease-out;
   width: 225px;
 }
-.primary-btn {
-    @extend .btn;
-    //background: $main-color;
-    color: $main-color;
-    overflow: hidden;
-    transition: all 0.3s ease-in;
-    position: relative;
-    border: solid 1px $primary-color;
-}
-
-.primary-btn:hover {
-    color: $primary-color;
-}
-
-.primary-btn::after {
-    position: absolute;
-    z-index: -1;
-    content:'';
-    width: 100%;
-    height: 1000%;
+.btn:after {
+  content:'';
+  height: 1000%;
+  position: absolute;
     top: 50%;
     left: 50%;
-    background: $primary-color;
-    opacity: 1;
-    transition-duration: 0.5s;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition-duration: 0.5s;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  width: 100%;
+  z-index: -1;
 }
 
-.primary-btn:hover:after {
-    height: 0;
-    opacity: 0;
+// FILLED BTN
+.filled-btn {
+  color: $main-color;
+}
+.filled-btn::after {
+  opacity: 1;
+}
+.filled-btn:hover:after {
+  height: 0;
+  opacity: 0;
 }
 
+// FILLING BTN
+.filling-btn::after {
+  height: 0;
+  opacity: 0;
+}
+.filling-btn:hover:after {
+  height: 1000%;
+  opacity: 1;
+}
+
+// PRIMARY BTN
+.primary-btn {
+  color: $main-color;
+  border-color: $primary-color;
+}
+.primary-btn::after {
+  background: $primary-color;
+}
+.primary-btn:hover {
+  color: $primary-color;
+}
+
+// WHITE PRIMARY BTN
+.white-primary-btn {
+  border-color: $main-color;
+  color: $primary-color;
+}
+.white-primary-btn::after {
+  background: $main-color;
+}
+.white-primary-btn:hover {
+  color: $main-color;
+}
+
+// SIMPLE PRIMARY BTN
 .simple-primary-btn {
-  @extend .btn;
   border-color: $primary-color;
   color: $primary-color;
 }
-.secondary-btn {
-  @extend .btn;
-	background: $main-color;
+.simple-primary-btn::after {
+  background: $main-color;
+}
+.simple-primary-btn:hover {
+  color: $primary-color;
+}
+
+// WHITE SECONDARY BTN
+.white-secondary-btn {
+  border-color: $main-color;
   color: $secondary-color;
 }
-.simple-btn {
-  @extend .btn;
+.white-secondary-btn::after {
+  background: $main-color;
+}
+.white-secondary-btn:hover {
+  color: $main-color;
+}
+
+// SIMPLE SECONDARY BTN
+.simple-secondary-btn {
   border-color: $main-color;
   color: $main-color;
 }
-@media #{$large-screen} {
-  .btn + .btn {
-    margin-left: 70px;
-  }
+.simple-secondary-btn::after {
+  background: $main-color;
+}
+.simple-secondary-btn:hover {
+  color: $secondary-color;
+}
+
+// DARK BTN
+.dark-btn {
+  border-color: $dark-color;
+  color: $dark-color;
+}
+.dark-btn::after {
+  background: $dark-color;
+}
+.dark-btn:hover {
+  color: $main-color;
 }

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Imac\Http\Requests;
 use Imac\Promo;
+use Imac\Student;
 use Imac\Http\Controllers\Controller;
 
 class AdminPromoController extends Controller
@@ -22,6 +23,9 @@ class AdminPromoController extends Controller
     public function index()
     {
         $promos = Promo::all();
+        foreach($promos as $promo){
+            $promo->nbStudent = count(Student::where('promo',$promo->id)->get());
+        }
         return view('admin.promo.list',compact('promos'));
     }
 

@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'studentTestimonial'])
 
 @section('content')
     <h2>Vous êtes en train le Témoigne de : {{$studentTestimonial->name}}</h2>

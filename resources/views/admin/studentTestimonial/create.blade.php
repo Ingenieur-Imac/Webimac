@@ -1,4 +1,4 @@
-@extends('admin.admin')
+@extends('admin.admin',['nav' => 'studentTestimonial'])
 
 @section('content')
     <h1>Créer une nouvelle parole d'ancien</h1>

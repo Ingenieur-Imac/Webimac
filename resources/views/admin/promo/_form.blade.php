@@ -6,7 +6,7 @@
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo du staff | Fichier Actuel : '.$old_url_image) !!}
+        {!! Form::label('url_image','URL de la photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
