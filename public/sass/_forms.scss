@@ -3,6 +3,18 @@
 // =============================================================================
 
 
+input[type="text"],
+input[type="email"],
+textarea {
+  border: $dark-color 1px solid;
+  padding: 5px 10px;
+  width: 100%;
+}
+input + input {
+  margin-bottom: 10px;
+}
+
+
 .btn {
   @include box-sizing(border-box);
   border: transparent 1px solid;

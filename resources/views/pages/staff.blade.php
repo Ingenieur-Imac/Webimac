@@ -1,6 +1,6 @@
 <?php
   $banner_title = 'La formation IMAC';
-  $img = 'Groupe_Chill.jpg';
+  $img = 'Maths.jpg';
 ?>
 
 

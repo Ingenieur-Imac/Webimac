@@ -551,6 +551,16 @@ footer {
 @media (min-width: 768px) {
   footer {
     background-color: rgba(0, 0, 0, 0.5); } }
+input[type="text"],
+input[type="email"],
+textarea {
+  border: #333 1px solid;
+  padding: 5px 10px;
+  width: 100%; }
+
+input + input {
+  margin-bottom: 10px; }
+
 .btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
