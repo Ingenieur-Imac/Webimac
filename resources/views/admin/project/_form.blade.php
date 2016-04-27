@@ -35,31 +35,34 @@
 </div>
 
 <!-- tags form input -->
-<div class="form-group">
-    {!! Form::label('tags','tags') !!}
-    <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
-        <option value="0">Tags du projet :</option>
-        @foreach($tags as $key => $value)
-            <option value="{{$key}}">{{$value}}</option>
-        @endforeach
-    </select>
-    {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
-    <div class="tags jumbotron">
-        @if(isset($self_tags))
-            @foreach($self_tags as $tag)
-                <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+@if(isset($project))
+    <div class="form-group">
+        {!! Form::label('tags','tags') !!}
+        <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
+            <option value="0">Tags du projet :</option>
+            @foreach($tags as $key => $value)
+                <option value="{{$key}}">{{$value}}</option>
             @endforeach
-        @endif
+        </select>
+        {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
+        <div class="tags jumbotron">
+            @if(isset($self_tags))
+                @foreach($self_tags as $tag)
+                    <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+                @endforeach
+            @endif
+        </div>
     </div>
-</div>
+@endif
 
-<!-- contributor form input -->
+{{-- <!-- contributor form input -->
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
     {!! Form::text('contributors',null,['class' => 'form-control']) !!}
-</div>
+</div> --}}
 
 <!-- student form input -->
+@if(isset($project))
 <div class="form-group">
     {!! Form::label('students','Contributeurs du projet') !!}
     {!! Form::text(null,null,['id' => 'findStudents','class'=> 'form-control']) !!}
@@ -72,6 +75,7 @@
         @endif
     </div>
 </div>
+@endif
 
 <!-- name_of_tutors form input -->
 <div class="form-group">

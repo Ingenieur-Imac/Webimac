@@ -53,6 +53,8 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/Promo','AdminPromoController');
     //View partnership
     Route::resource('admin/Partnership','AdminPartnershipController');
+        //[AJAX] Change order of display
+        Route::get('admin/orderPartnership/{data}','AdminPartnershipController@order');
     //View students
     Route::resource('admin/Student','AdminStudentController');
         //[AJAX] Search Student

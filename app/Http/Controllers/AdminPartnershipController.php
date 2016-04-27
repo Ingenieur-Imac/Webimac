@@ -4,6 +4,8 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Input;
+
 use Imac\Http\Requests;
 use Imac\Partnership;
 use Imac\Http\Controllers\Controller;
@@ -17,7 +19,7 @@ class AdminPartnershipController extends Controller
      */
     public function index()
     {
-        $partnerships = Partnership::all();
+        $partnerships = Partnership::orderBy("order")->get();
         return view('admin.partnership.list',compact('partnerships'));
     }
 
@@ -115,5 +117,17 @@ class AdminPartnershipController extends Controller
         $partnership = Partnership::findOrFail($id);
         $partnership->delete();
         return redirect('admin/Partnership');
+    }
+
+    public function order($data){
+        $orders = json_decode($data);
+        if($orders != null){
+            //0 - id Partnership | 1 - ordre
+            foreach ($orders as $order) {
+                $partnership = Partnership::findOrFail($order[0]);
+                $partnership->order = $order[1];
+                $partnership->update();
+            }
+        }
     }
 }
