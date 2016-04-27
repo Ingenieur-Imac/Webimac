@@ -15,6 +15,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students',function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
+            $table->string('surname');
             $table->integer('promo')->unsigned();
             $table->string('url_image');
             $table->string('url_web');
