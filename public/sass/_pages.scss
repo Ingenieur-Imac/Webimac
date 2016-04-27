@@ -223,6 +223,81 @@
 
 
 //========================
+// STAFF
+//========================
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & + .title-2 {
+    margin-top: $spacing-unit;
+  }
+  h3 {
+    font: 1.3em $title-font-stack;
+  }
+  .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative;
+  }
+  .icon-linkedin-rect {
+    font-size: 0.8em;
+  }
+}
+.people-picture {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 10px;
+  width: 80px;
+}
+.people-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% - 90px);
+  justify-content: space-between;
+  text-align: right;
+}
+.staff-member {
+  align-items: center;
+  background: $light-color;
+  @include box-sizing(border-box);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0 10px;
+  padding: 20px;
+  width: 250px;
+  h3 {
+    margin-top: 20px;
+  }
+  .people-picture {
+    height: 110px;
+    width: 110px;
+  }
+  .role {
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+@media #{$small-screen} {
+  .people:after {
+    content: "";
+    flex: auto;
+  }
+  .staff-member {
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
+    width: calc(33.33333333% - 13.33333333px);
+  }
+  .staff-member:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+
+//========================
 // PROJECTS
 //========================
 .main-filter {
@@ -344,11 +419,6 @@
   .col-9 {
     margin-bottom: $spacing-unit/1.5;
   }
-}
-.students {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .student {
   background: $light-color;

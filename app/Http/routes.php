@@ -15,6 +15,7 @@ Route::get('/','PagesController@index');
 Route::get('/formation/presentation','PagesController@presentation');
 Route::get('/formation/admission','PagesController@admission');
 Route::get('/formation/debouches','PagesController@openings');
+Route::get('/formation/equipe','PagesController@staff');
 Route::get('/realisations','PagesController@projects');
 Route::get('/nos-etudiants','PagesController@students');
 Route::get('/vie-etudiante','PagesController@studentLife');

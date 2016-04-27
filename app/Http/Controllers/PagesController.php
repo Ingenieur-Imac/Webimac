@@ -7,6 +7,7 @@ use Imac\Http\Requests;
 use Imac\Project;
 use Imac\Promo;
 use Imac\Partnership;
+use Imac\Staff;
 use Imac\Student;
 use Imac\StudentTestimonial;
 use Imac\Tag;
@@ -42,6 +43,12 @@ class PagesController extends Controller{
     public function openings(){
         $student_testimonials = StudentTestimonial::all()->random(3);
         return view('pages.openings', compact('student_testimonials'));
+    }
+
+    public function staff(){
+        $main_staff = Staff::where('main', '=', true)->orderBy('name', 'asc')->get();
+        $staff = Staff::where('main', '=', false)->orderBy('name', 'asc')->get();
+        return view('pages.staff', compact('main_staff', 'staff'));
     }
 
     public function projects(){

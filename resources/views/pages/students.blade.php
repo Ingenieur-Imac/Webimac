@@ -46,11 +46,11 @@
                                     <!-- STUDENTS -->
                                     @if (!empty($students_promo[$promo->year][0]))
                                         <h2 class="title-2 center">La promotion {{ $promo->year }} en détail</h2>
-                                        <div class="students">
+                                        <div class="people">
                                             @foreach ($students_promo[$promo->year] as $student)
                                                 <div class="student">
-                                                    <div class="student-picture" style="background-image: url('{{ $student->photo }}');"></div>
-                                                    <div class="student-info">
+                                                    <div class="people-picture" style="background-image: url('{{ $student->photo }}');"></div>
+                                                    <div class="people-info">
                                                         <h3>{{ $student->name }}</h3>
                                                         <div>
                                                             @if (!empty($student->url_web))
