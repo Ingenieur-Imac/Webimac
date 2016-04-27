@@ -45,6 +45,8 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
     //View Student Exchange Testimonial
     Route::resource('admin/StudentExchangeTestimonial','AdminStudentExchangeTestimonialController');
+    //View Enterprise Testimonial
+    Route::resource('admin/EnterpriseTestimonial','AdminEnterpriseTestimonialController');
     //DESTROYING PIC FOR GALLERY
     Route::get('admin/DestroyPicTestimonial/{id}','AdminStudentExchangeTestimonialController@destroyPic');
     //View staff

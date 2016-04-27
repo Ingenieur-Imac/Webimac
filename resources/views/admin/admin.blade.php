@@ -19,6 +19,7 @@
                 <a href="{{action('AdminTagController@index')}}" class="list-group-item @if($nav == 'tag') active @endif">Tags</a>
                 <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item @if($nav == 'studentTestimonial') active  @endif">Paroles d'Anciens</a>
                 <a href="{{action('AdminStudentExchangeTestimonialController@index')}}" class="list-group-item @if($nav == 'studentExchangeTestimonial') active  @endif">Paroles d'Anciens à l'étranger</a>
+                <a href="{{action('AdminEnterpriseTestimonialController@index')}}" class="list-group-item @if($nav == 'enterpriseTestimonialController') active  @endif">Paroles d'Entreprises</a>
                 <a href="{{action('AdminStaffController@index')}}" class="list-group-item @if($nav == 'staff') active  @endif">Staff</a>
                 <a href="{{action('AdminPartnershipController@index')}}" class="list-group-item @if($nav == 'partnership') active  @endif">Partenariats</a>
                 <a href="{{action('AdminOthersController@index')}}" class="list-group-item @if($nav == 'others') active  @endif">Autres</a>

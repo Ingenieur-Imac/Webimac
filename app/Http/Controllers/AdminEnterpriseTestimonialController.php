@@ -4,13 +4,12 @@ namespace Imac\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Imac\StudentTestimonial;
+use Imac\EnterpriseTestimonial;
 use Imac\Http\Requests;
 use Imac\Http\Controllers\Controller;
 
-class AdminStudentTestimonialController extends Controller
+class AdminEnterpriseTestimonialController extends Controller
 {
-
     public function __construct(){
         $this->middleware('auth');
     }
@@ -20,9 +19,10 @@ class AdminStudentTestimonialController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        $studentTestimonials = StudentTestimonial::All();
-        return view('admin.studentTestimonial.list',compact('studentTestimonials'));
+    public function index()
+    {
+        $enterpriseTestimonials = EnterpriseTestimonial::all();
+        return view('admin.EnterpriseTestimonial.list',compact("enterpriseTestimonials"));
     }
 
     /**
@@ -30,8 +30,9 @@ class AdminStudentTestimonialController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(){
-        return view('admin.studentTestimonial.create');
+    public function create()
+    {
+        return view("admin.enterpriseTestimonial.create");
     }
 
     /**
@@ -40,20 +41,21 @@ class AdminStudentTestimonialController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request){
-        $studentTestimonial = new StudentTestimonial($request->all());
+    public function store(Request $request)
+    {
+        $enterpriseTestimonial = new EnterpriseTestimonial($request->all());
         $name = null;
         if($request->hasFile('url_image')){
             $file = $request->file('url_image');
             if($file->isValid()){
                 $name = $file->getClientOriginalName();
-                $file->move(public_path().'/images/studentTestimonial/',$name);
+                $file->move(public_path().'/images/EnterpriseTestimonial/',$name);
             }
         }
 
-        $studentTestimonial->url_image = $name;
-        $studentTestimonial->save();
-        return redirect('admin/StudentTestimonial/');
+        $enterpriseTestimonial->url_image = $name;
+        $enterpriseTestimonial->save();
+        return redirect('admin/EnterpriseTestimonial/');
     }
 
     /**
@@ -62,7 +64,8 @@ class AdminStudentTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id){
+    public function show($id)
+    {
         //
     }
 
@@ -72,9 +75,10 @@ class AdminStudentTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id){
-        $studentTestimonial = StudentTestimonial::findOrFail($id);
-        return view('admin.studentTestimonial.edit',compact('studentTestimonial'));
+    public function edit($id)
+    {
+        $enterpriseTestimonial = EnterpriseTestimonial::findOrFail($id);
+        return view("admin.enterpriseTestimonial.edit",compact("enterpriseTestimonial"));
     }
 
     /**
@@ -84,14 +88,15 @@ class AdminStudentTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id){
-        $studentTestimonial = StudentTestimonial::findOrFail($id);
+    public function update(Request $request, $id)
+    {
+        $enterpriseTestimonial = EnterpriseTestimonial::findOrFail($id);
         $name = null;
         if($request->hasFile('url_image')){
             $file = $request->file('url_image');
             if($file->isValid()){
                 $name = $file->getClientOriginalName();
-                $file->move(public_path().'/images/studentTestimonial/',$name);
+                $file->move(public_path().'/images/EnterpriseTestimonial/',$name);
             } else {
                 echo('Fichier non valide');
             }
@@ -99,11 +104,11 @@ class AdminStudentTestimonialController extends Controller
             echo('Request don\'t have file !');
         }
 
-        $studentTestimonial->update($request->all());
+        $enterpriseTestimonial->update($request->all());
         if($name != null)
-            $studentTestimonial->url_image = $name;
-        $studentTestimonial->update();
-        return redirect('admin/StudentTestimonial');
+            $enterpriseTestimonial->url_image = $name;
+        $enterpriseTestimonial->update();
+        return redirect('admin/EnterpriseTestimonial');
     }
 
     /**
@@ -112,9 +117,10 @@ class AdminStudentTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id){
-        $studentTestimonial = StudentTestimonial::findOrFail($id);
-        $studentTestimonial->delete();
-        return redirect('admin/StudentTestimonial');
+    public function destroy($id)
+    {
+        $enterpriseTestimonial = EnterpriseTestimonial::findOrFail($id);
+        $enterpriseTestimonial->delete();
+        return redirect('admin/EnterpriseTestimonial');
     }
 }
