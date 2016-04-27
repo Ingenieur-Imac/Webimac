@@ -24,8 +24,8 @@
 
 <!-- mail form input -->
 <div class="form-group">
-    {!! Form::label('mail','Adresse e-mail') !!}
-    {!! Form::text('mail',null,['class' => 'form-control']) !!}
+    {!! Form::label('linkedin','Linkedin') !!}
+    {!! Form::text('linkedin',null,['class' => 'form-control']) !!}
 </div>
 
 <!-- web_link form input -->
@@ -37,12 +37,12 @@
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo du staff | Fichier Actuel : '.$old_url_image) !!}
+        {!! Form::label('url_image','Photo du staff | Fichier Actuel : '.$old_url_image) !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo du staff') !!}
+        {!! Form::label('url_image','Photo du staff') !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif
