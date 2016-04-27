@@ -87,7 +87,7 @@ class PagesController extends Controller{
     }
 
     public function partnership(){
-        $partnerships = Partnership::all();
+        $partnerships = Partnership::orderBy('order')->get();
         return view('pages.partnership',compact('partnerships'));
     }
 

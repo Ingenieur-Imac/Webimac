@@ -36,6 +36,7 @@ class AdminProjectController extends Controller {
             ->select('tags.id','tags.name')
             ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
             ->join('projects','projects.id', '=', 'project_tags.project_id')
+            ->where('projects.id', '=', $id)
             ->get();
 
         $self_students = DB::table('students')
@@ -43,6 +44,7 @@ class AdminProjectController extends Controller {
             ->join('project_students','students.id', '=', 'project_students.student_id')
             ->join('projects','projects.id', '=', 'project_students.project_id')
             ->join('promos','promos.id', '=', 'students.promo')
+            ->where('projects.id', '=', $id)
             ->get();
 
         $old_date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y-m-d');

@@ -22,7 +22,7 @@ class AdminEnterpriseTestimonialController extends Controller
     public function index()
     {
         $enterpriseTestimonials = EnterpriseTestimonial::all();
-        return view('admin.EnterpriseTestimonial.list',compact("enterpriseTestimonials"));
+        return view('admin.enterpriseTestimonial.list',compact("enterpriseTestimonials"));
     }
 
     /**
