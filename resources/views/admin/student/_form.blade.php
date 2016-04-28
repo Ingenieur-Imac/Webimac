@@ -1,7 +1,12 @@
 <!-- name form input -->
 <div class="form-group">
-    {!! Form::label('name','Prénom + Nom') !!}
+    {!! Form::label('name','Nom :') !!}
     {!! Form::text('name',null,['class' => 'form-control']) !!}
+</div>
+<!-- name form input -->
+<div class="form-group">
+    {!! Form::label('surname','Prénom :') !!}
+    {!! Form::text('surname',null,['class' => 'form-control']) !!}
 </div>
 <!-- promo form input -->
 <div class="form-group">
