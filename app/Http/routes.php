@@ -51,6 +51,8 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::get('admin/DestroyPicTestimonial/{id}','AdminStudentExchangeTestimonialController@destroyPic');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
+        //[AJAX] Change order of display
+        Route::get('admin/orderStaffs/{data}','AdminStaffController@order');
     //View promotions
     Route::resource('admin/Promo','AdminPromoController');
     //View partnership

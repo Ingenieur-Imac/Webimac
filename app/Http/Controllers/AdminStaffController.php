@@ -17,7 +17,7 @@ class AdminStaffController extends Controller
      */
     public function index()
     {
-        $staffs_main = Staff::where('main',1)->get();
+        $staffs_main = Staff::where('main',1)->orderBy("order")->get();
         $staffs = Staff::where('main',0)->get();
         return view('admin.staff.list',compact('staffs_main','staffs'));
     }
@@ -141,5 +141,17 @@ class AdminStaffController extends Controller
         $staff = Staff::findOrFail($id);
         $staff->delete();
         return redirect('admin/Staff');
+    }
+
+    public function order($data){
+        $orders = json_decode($data);
+        if($orders != null){
+            //0 - id Partnership | 1 - ordre
+            foreach ($orders as $order) {
+                $staff = Staff::findOrFail($order[0]);
+                $staff->order = $order[1];
+                $staff->update();
+            }
+        }
     }
 }
