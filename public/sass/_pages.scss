@@ -223,6 +223,81 @@
 
 
 //========================
+// STAFF
+//========================
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & + .title-2 {
+    margin-top: $spacing-unit;
+  }
+  h3 {
+    font: 1.3em $title-font-stack;
+  }
+  .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative;
+  }
+  .icon-linkedin-rect {
+    font-size: 0.8em;
+  }
+}
+.people-picture {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 10px;
+  width: 80px;
+}
+.people-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% - 90px);
+  justify-content: space-between;
+  text-align: right;
+}
+.staff-member {
+  align-items: center;
+  background: $light-color;
+  @include box-sizing(border-box);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0 10px;
+  padding: 20px;
+  width: 250px;
+  h3 {
+    margin-top: 20px;
+  }
+  .people-picture {
+    height: 110px;
+    width: 110px;
+  }
+  .role {
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+@media #{$small-screen} {
+  .people:after {
+    content: "";
+    flex: auto;
+  }
+  .staff-member {
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
+    width: calc(33.33333333% - 13.33333333px);
+  }
+  .staff-member:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+
+//========================
 // PROJECTS
 //========================
 .main-filter {
@@ -311,28 +386,103 @@
     }
 }
 
+
 //========================
 // STUDENTS PAGE
 //========================
+.arrow {
+  display: none;
+}
+@media #{$small-screen} {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%;
+  }
+  .arrow-right {
+    right: 0;
+  }
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+.slider-content {
+  //display: flex;
+}
+.slide {
+  float: left;
+  height: 1600px;
+  //width: 100%;
+  .col-9 {
+    margin-bottom: $spacing-unit/1.5;
+  }
+}
 .student {
+  background: $light-color;
+  @include box-sizing(border-box);
   display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 0 10px;
+  padding: 10px;
+  width: 250px;
 }
 .student-picture {
+  background-size: cover;
+  background-position: center center;
   border-radius: 50%;
   height: 80px;
-  overflow: hidden;
+  margin-right: 10px;
   width: 80px;
-  img {
-    min-height: 100%;
-    //min-width: 100%;
-    //height: auto;
-    //width: 100%;
-  }
 }
 .student-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: calc(100% - 90px);
+  justify-content: space-between;
   text-align: right;
+  h3 {
+    font: 1.3em $title-font-stack;
+  }
+  .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative;
+  }
+  .icon-linkedin-rect {
+    font-size: 0.8em;
+  }
+}
+@media #{$small-screen} {
+  .students:after {
+    content: "";
+    flex: auto;
+  }
+  .student {
+    background: $light-color;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
+    padding: 10px;
+    width: calc(33.33333333% - 13.33333333px);
+  }
+  .student:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media #{$medium-screen} {
+  .student {
+    width: calc(25% - 15px);
+  }
+  .student:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .student:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 

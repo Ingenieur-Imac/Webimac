@@ -8,6 +8,8 @@ use Imac\Http\Requests;
 use Imac\Project;
 use Imac\Promo;
 use Imac\Partnership;
+use Imac\Staff;
+use Imac\Student;
 use Imac\StudentTestimonial;
 use Imac\Tag;
 use Carbon\Carbon;
@@ -44,6 +46,12 @@ class PagesController extends Controller{
         return view('pages.openings', compact('student_testimonials'));
     }
 
+    public function staff(){
+        $main_staff = Staff::where('main', '=', true)->orderBy('name', 'asc')->get();
+        $staff = Staff::where('main', '=', false)->orderBy('name', 'asc')->get();
+        return view('pages.staff', compact('main_staff', 'staff'));
+    }
+
     public function projects(){
         $projects = Project::all();
         $tags = Tag::orderBy('name', 'asc')->get();
@@ -75,10 +83,12 @@ class PagesController extends Controller{
         $promos = Promo::all();
         //Table input
         $select_year = array();
+        $students = array();
         foreach($promos as $promo){
             $select_year[$promo->year] = 'Promotion '.$promo->year;
+            $students_promo[$promo->year] = Student::where('promo', '=', $promo->id)->get();
         }
-      return view('pages.students',compact('promos','select_year'));
+        return view('pages.students', compact('promos', 'select_year', 'students_promo'));
     }
 
     public function studentLife(){
@@ -100,14 +110,6 @@ class PagesController extends Controller{
 
     public function legalNotice(){
       return view('pages.legalNotice');
-    }
-
-    public function about(){
-        $name = "Julien Rousset";
-        return view('about')->with([
-            'first' => 'Julien',
-            'last' => 'Rousset'
-        ]);
     }
 
     public function timer(){

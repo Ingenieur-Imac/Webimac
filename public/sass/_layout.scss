@@ -91,7 +91,7 @@
     margin-left: 8.33333333%;
   }
   .col-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 16.66666667% !important;
   }
   .middle-valign-ib {
     display: inline-block;
@@ -111,6 +111,7 @@
   .flex-description {
     flex-grow: 1;
     text-align: left;
+    width: 100%;
   }
   .row-offset {
     margin-top: 0;

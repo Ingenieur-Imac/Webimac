@@ -239,7 +239,7 @@ ul li {
     margin-left: 8.33333333%; }
 
   .col-offset-2 {
-    margin-left: 16.66666667%; }
+    margin-left: 16.66666667% !important; }
 
   .middle-valign-ib {
     display: inline-block;
@@ -258,7 +258,8 @@ ul li {
 
   .flex-description {
     flex-grow: 1;
-    text-align: left; }
+    text-align: left;
+    width: 100%; }
 
   .row-offset {
     margin-top: 0; } }
@@ -550,6 +551,16 @@ footer {
 @media (min-width: 768px) {
   footer {
     background-color: rgba(0, 0, 0, 0.5); } }
+input[type="text"],
+input[type="email"],
+textarea {
+  border: #333 1px solid;
+  padding: 5px 10px;
+  width: 100%; }
+
+input + input {
+  margin-bottom: 10px; }
+
 .btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1580,6 +1591,9 @@ p.lead + .frames {
 .media-container + p {
   margin-top: 30px; }
 
+.title-2 ~ .btn {
+  margin-top: 0; }
+
 .subnav {
   background: #dadbd9; }
   .subnav ul {
@@ -1757,6 +1771,70 @@ p.lead + .frames {
 .activity-panel-text {
   font-size: 1.3em; }
 
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .people + .title-2 {
+    margin-top: 60px; }
+  .people h3 {
+    font: 1.3em Bebas, sans-serif; }
+  .people .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative; }
+  .people .icon-linkedin-rect {
+    font-size: 0.8em; }
+
+.people-picture {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 10px;
+  width: 80px; }
+
+.people-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% - 90px);
+  justify-content: space-between;
+  text-align: right; }
+
+.staff-member {
+  align-items: center;
+  background: #dadbd9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0 10px;
+  padding: 20px;
+  width: 250px; }
+  .staff-member h3 {
+    margin-top: 20px; }
+  .staff-member .people-picture {
+    height: 110px;
+    width: 110px; }
+  .staff-member .role {
+    font-size: 1.1em;
+    text-align: center; }
+
+@media (min-width: 768px) {
+  .people:after {
+    content: "";
+    flex: auto; }
+
+  .staff-member {
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
+    width: calc(33.33333333% - 13.33333333px); }
+
+  .staff-member:nth-child(3n) {
+    margin-right: 0; } }
 .main-filter {
   border: #50d33d 1px solid;
   display: inline-block;
@@ -1836,22 +1914,89 @@ p.lead + .frames {
 @media (min-width: 992px) {
   .project {
     flex-basis: 32%; } }
+.arrow {
+  display: none; }
+
+@media (min-width: 768px) {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%; }
+
+  .arrow-right {
+    right: 0; } }
+.slider {
+  overflow: hidden;
+  position: relative; }
+
+.slide {
+  float: left;
+  height: 1600px; }
+  .slide .col-9 {
+    margin-bottom: 40px; }
+
 .student {
-  display: flex; }
+  background: #dadbd9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 0 10px;
+  padding: 10px;
+  width: 250px; }
 
 .student-picture {
+  background-size: cover;
+  background-position: center center;
   border-radius: 50%;
   height: 80px;
-  overflow: hidden;
+  margin-right: 10px;
   width: 80px; }
-  .student-picture img {
-    min-height: 100%; }
 
 .student-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: calc(100% - 90px);
+  justify-content: space-between;
   text-align: right; }
+  .student-info h3 {
+    font: 1.3em Bebas, sans-serif; }
+  .student-info .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative; }
+  .student-info .icon-linkedin-rect {
+    font-size: 0.8em; }
 
+@media (min-width: 768px) {
+  .students:after {
+    content: "";
+    flex: auto; }
+
+  .student {
+    background: #dadbd9;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
+    padding: 10px;
+    width: calc(33.33333333% - 13.33333333px); }
+
+  .student:nth-child(3n) {
+    margin-right: 0; } }
+@media (min-width: 992px) {
+  .student {
+    width: calc(25% - 15px); }
+
+  .student:nth-child(3n) {
+    margin-right: 20px; }
+
+  .student:nth-child(4n) {
+    margin-right: 0; } }
 .association .title-3 {
   margin-bottom: 0; }
 
