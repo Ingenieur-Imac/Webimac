@@ -44,7 +44,7 @@
             @endif
         </div>
         <div class="form-group">
-            {!! Form::label('first_session','Fin de la première session') !!}
+            {!! Form::label('first_session','Première session') !!}
             @if ($application_date['first_session'] != null)
                 {!! Form::text('first_session',$application_date['first_session'],['class' => 'form-control']) !!}
             @else
@@ -52,13 +52,13 @@
             @endif
         </div>
         <div class="form-group">
-            {!! Form::label('second_session','Fin de la deuxième session') !!}
+            {!! Form::label('second_session','Deuxième session') !!}
             @if ($application_date['second_session'] != null)
                 {!! Form::text('second_session',$application_date['second_session'],['class' => 'form-control']) !!}
             @else
                 {!! Form::text('second_session',null,['class' => 'form-control']) !!}
             @endif
         </div>
-        {!! Form::submit('Enregistrer les dates de candidature',['class' => 'btn btn-primary form-control']) !!}
+        {!! Form::submit('Enregistrer les dates de candidatures',['class' => 'btn btn-primary form-control']) !!}
     {!! Form::close() !!}
 @endsection

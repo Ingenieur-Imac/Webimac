@@ -46,14 +46,20 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::resource('admin/StudentTestimonial','AdminStudentTestimonialController');
     //View Student Exchange Testimonial
     Route::resource('admin/StudentExchangeTestimonial','AdminStudentExchangeTestimonialController');
+    //View Enterprise Testimonial
+    Route::resource('admin/EnterpriseTestimonial','AdminEnterpriseTestimonialController');
     //DESTROYING PIC FOR GALLERY
     Route::get('admin/DestroyPicTestimonial/{id}','AdminStudentExchangeTestimonialController@destroyPic');
     //View staff
     Route::resource('admin/Staff','AdminStaffController');
+        //[AJAX] Change order of display
+        Route::get('admin/orderStaffs/{data}','AdminStaffController@order');
     //View promotions
     Route::resource('admin/Promo','AdminPromoController');
     //View partnership
     Route::resource('admin/Partnership','AdminPartnershipController');
+        //[AJAX] Change order of display
+        Route::get('admin/orderPartnership/{data}','AdminPartnershipController@order');
     //View students
     Route::resource('admin/Student','AdminStudentController');
         //[AJAX] Search Student

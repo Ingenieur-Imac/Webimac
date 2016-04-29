@@ -73,7 +73,7 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id){
-        $studentTestimonial = studentTestimonial::findOrFail($id);
+        $studentTestimonial = StudentTestimonial::findOrFail($id);
         return view('admin.studentTestimonial.edit',compact('studentTestimonial'));
     }
 
@@ -85,7 +85,7 @@ class AdminStudentTestimonialController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id){
-        $studentTestimonial = studentTestimonial::findOrFail($id);
+        $studentTestimonial = StudentTestimonial::findOrFail($id);
         $name = null;
         if($request->hasFile('url_image')){
             $file = $request->file('url_image');

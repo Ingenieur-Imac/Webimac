@@ -2,6 +2,7 @@
 
 namespace Imac\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
@@ -57,12 +58,14 @@ class PagesController extends Controller{
         $years = Project::getArrayDates();
         //Get projects tag
         foreach($projects as &$project){
-            $link_tags = Project::findOrFail($project->id)->project_tag;
-            $project_self_tags = array();
-            foreach($link_tags as $link_tag){
-                array_push($project_self_tags,Tag::findOrFail($link_tag->tag_id));
-            }
+            $project_self_tags = DB::table('tags')
+                ->select('tags.id','tags.name')
+                ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
+                ->join('projects','projects.id', '=', 'project_tags.project_id')
+                ->where('projects.id', '=', $project->id)
+                ->get();
             $project->tags = $project_self_tags;
+            $project->date = Carbon::parse($project->date)->year;
         }
         //$project = $project->first();
         //$project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
@@ -97,7 +100,7 @@ class PagesController extends Controller{
     }
 
     public function partnership(){
-        $partnerships = Partnership::all();
+        $partnerships = Partnership::orderBy('order')->get();
         return view('pages.partnership',compact('partnerships'));
     }
 

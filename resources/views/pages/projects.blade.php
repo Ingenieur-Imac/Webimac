@@ -14,15 +14,15 @@
         </div>
         <div class="col-8 center-block">
             <p>Filtrer :
-                <span class="main-filter">Tout</span>
-                <span class="main-filter main-selected-filter">Coup de cœur</span>
+                <span rel="all" class="main-filter main-selected-filter">Tout</span>
+                <span rel="heart" class="main-filter">Coup de cœur</span>
                 {!! Form::open(array('class'=>'project-main-filters')) !!}
                     {{ Form::select('year', $years) }}
                 {!! Form::close() !!}
             </p>
             {!! Form::open(array('class'=>'project-filters')) !!}
             @foreach ($tags as $tag)
-                <div class="filter">{!! Form::checkbox('filter', $tag->name) !!} {!! $tag->name !!}</div>
+                <div class="filter">{!! Form::checkbox('filter', $tag->name,false,["rel" => $tag->id]) !!} {!! $tag->name !!}</div>
             @endforeach
             {!! Form::close() !!}
 
@@ -31,4 +31,9 @@
             @include('includes.project', $projects)
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('js/filter-projects.js')}}" charset="utf-8"></script>
 @endsection

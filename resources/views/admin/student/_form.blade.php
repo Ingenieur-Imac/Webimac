@@ -1,7 +1,12 @@
 <!-- name form input -->
 <div class="form-group">
-    {!! Form::label('name','Nom') !!}
+    {!! Form::label('name','Nom :') !!}
     {!! Form::text('name',null,['class' => 'form-control']) !!}
+</div>
+<!-- name form input -->
+<div class="form-group">
+    {!! Form::label('surname','Prénom :') !!}
+    {!! Form::text('surname',null,['class' => 'form-control']) !!}
 </div>
 <!-- promo form input -->
 <div class="form-group">
@@ -21,12 +26,12 @@
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
+        {!! Form::label('url_image','Photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo de l\'étudiant') !!}
+        {!! Form::label('url_image','Photo de l\'étudiant') !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif

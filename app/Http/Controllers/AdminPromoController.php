@@ -22,7 +22,7 @@ class AdminPromoController extends Controller
      */
     public function index()
     {
-        $promos = Promo::all();
+        $promos = Promo::orderBy('year','DESC')->get();
         foreach($promos as $promo){
             $promo->nbStudent = count(Student::where('promo',$promo->id)->get());
         }

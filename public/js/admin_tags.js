@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $("#add-tag").on('change',function(e){
+        if($(this).val() == 0)
+            return false;
         for(var i in $(".tags")){
-            if($(".tag:eq("+i+")").attr('rel') == $(this).val()){
+            if($(".tags:eq("+i+")").attr('rel') == $(this).val()){
                 return false;
             }
         }

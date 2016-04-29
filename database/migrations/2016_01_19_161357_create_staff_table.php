@@ -16,6 +16,7 @@ class CreateStaffTable extends Migration
             $table->increments('id');
             $table->boolean('main');
             $table->string('name');
+            $table->string('surname');
             $table->string('role');
             $table->string('description');
             $table->string('mail')->nullable();

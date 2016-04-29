@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Imac | Accueil</title>
+    @yield('meta')
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen" title="bootstrap" charset="utf-8">
     <link rel="stylesheet" href="{{URL::asset('css/master.admin.css')}}" media="screen" title ="bootstrap" charset="utf-8">
 </head>
@@ -18,6 +19,7 @@
                 <a href="{{action('AdminTagController@index')}}" class="list-group-item @if($nav == 'tag') active @endif">Tags</a>
                 <a href="{{action('AdminStudentTestimonialController@index')}}" class="list-group-item @if($nav == 'studentTestimonial') active  @endif">Paroles d'Anciens</a>
                 <a href="{{action('AdminStudentExchangeTestimonialController@index')}}" class="list-group-item @if($nav == 'studentExchangeTestimonial') active  @endif">Paroles d'Anciens à l'étranger</a>
+                <a href="{{action('AdminEnterpriseTestimonialController@index')}}" class="list-group-item @if($nav == 'enterpriseTestimonial') active  @endif">Paroles d'Entreprises</a>
                 <a href="{{action('AdminStaffController@index')}}" class="list-group-item @if($nav == 'staff') active  @endif">Staff</a>
                 <a href="{{action('AdminPartnershipController@index')}}" class="list-group-item @if($nav == 'partnership') active  @endif">Partenariats</a>
                 <a href="{{action('AdminOthersController@index')}}" class="list-group-item @if($nav == 'others') active  @endif">Autres</a>
