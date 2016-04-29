@@ -80,7 +80,7 @@ class PagesController extends Controller{
     }
 
     public function students(){
-        $promos = Promo::all();
+        $promos = Promo::orderBy("year","DESC")->get();
         //Table input
         $select_year = array();
         $students = array();

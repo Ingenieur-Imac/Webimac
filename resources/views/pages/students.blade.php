@@ -39,7 +39,7 @@
                 <span class="arrow arrow-right lnr lnr-chevron-right"></span>
                   <div class="slider-content" style="width: <?php echo count($promos)*100 ?>%">
                         @foreach ($promos as $promo)
-                            <div class="slide" style="width: <?php echo 100/count($promos) ?>%">
+                            <div class="slide" rel="{{$promo->year}}" style="width: <?php echo 100/count($promos) ?>%">
                                 <div class="col-9 center-block">
                                     <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
                                 </div>
