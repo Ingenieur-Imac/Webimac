@@ -47,7 +47,7 @@ class PagesController extends Controller{
     }
 
     public function staff(){
-        $main_staff = Staff::where('main', '=', true)->orderBy('name', 'asc')->get();
+        $main_staff = Staff::where('main', '=', true)->orderBy('order', 'desc')->get();
         $staff = Staff::where('main', '=', false)->orderBy('name', 'asc')->get();
         return view('pages.staff', compact('main_staff', 'staff'));
     }

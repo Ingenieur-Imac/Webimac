@@ -2,7 +2,7 @@
     @foreach ($staff as $staff_member)
         <div class="staff-member">
             <div class="people-picture" style="background-image: url('{{ URL::asset('images/staff/'.$staff_member->url_image) }}');"></div>
-                <h3>{{ $staff_member->name }}</h3>
+                <h3>{{ $staff_member->surname }} {{ $staff_member->name }}</h3>
                 <p class="role">{{ $staff_member->role }}</p>
                 <p class="flex-description">{{ $staff_member->description }}</p>
                 <p>
