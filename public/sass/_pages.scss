@@ -249,16 +249,6 @@
   background-size: cover;
   background-position: center center;
   border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px;
-}
-.people-info {
-  display: flex;
-  flex-direction: column;
-  flex-basis: calc(100% - 90px);
-  justify-content: space-between;
-  text-align: right;
 }
 .staff-member {
   align-items: center;
@@ -393,18 +383,6 @@
 .arrow {
   display: none;
 }
-@media #{$small-screen} {
-  .arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 12%;
-  }
-  .arrow-right {
-    right: 0;
-  }
-}
 .slider {
   overflow: hidden;
   position: relative;
@@ -415,7 +393,6 @@
 .slide {
   float: left;
   height: 1600px;
-  //width: 100%;
   .col-9 {
     margin-bottom: $spacing-unit/1.5;
   }
@@ -428,14 +405,11 @@
   margin: 20px 10px 0 10px;
   padding: 10px;
   width: 250px;
-}
-.student-picture {
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px;
+  .people-picture {
+    height: 80px;
+    margin-right: 10px;
+    width: 80px;
+  }
 }
 .student-info {
   display: flex;
@@ -457,16 +431,25 @@
   }
 }
 @media #{$small-screen} {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%;
+  }
+  .arrow-right {
+    right: 0;
+  }
+  .blank {
+    height: 150px;
+  }
   .students:after {
     content: "";
     flex: auto;
   }
   .student {
-    background: $light-color;
-    display: flex;
-    justify-content: space-between;
     margin: 20px 20px 0 0;
-    padding: 10px;
     width: calc(33.33333333% - 13.33333333px);
   }
   .student:nth-child(3n) {

@@ -86,7 +86,7 @@ class PagesController extends Controller{
         $students = array();
         foreach($promos as $promo){
             $select_year[$promo->year] = 'Promotion '.$promo->year;
-            $students_promo[$promo->year] = Student::where('promo', '=', $promo->id)->get();
+            $students_promo[$promo->year] = Student::where('promo', '=', $promo->id)->orderBy('name', 'asc')->get();
         }
         return view('pages.students', compact('promos', 'select_year', 'students_promo'));
     }

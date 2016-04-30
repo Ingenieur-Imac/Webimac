@@ -1790,17 +1790,7 @@ p.lead + .frames {
 .people-picture {
   background-size: cover;
   background-position: center center;
-  border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px; }
-
-.people-info {
-  display: flex;
-  flex-direction: column;
-  flex-basis: calc(100% - 90px);
-  justify-content: space-between;
-  text-align: right; }
+  border-radius: 50%; }
 
 .staff-member {
   align-items: center;
@@ -1917,16 +1907,6 @@ p.lead + .frames {
 .arrow {
   display: none; }
 
-@media (min-width: 768px) {
-  .arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 12%; }
-
-  .arrow-right {
-    right: 0; } }
 .slider {
   overflow: hidden;
   position: relative; }
@@ -1948,14 +1928,10 @@ p.lead + .frames {
   margin: 20px 10px 0 10px;
   padding: 10px;
   width: 250px; }
-
-.student-picture {
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px; }
+  .student .people-picture {
+    height: 80px;
+    margin-right: 10px;
+    width: 80px; }
 
 .student-info {
   display: flex;
@@ -1974,16 +1950,25 @@ p.lead + .frames {
     font-size: 0.8em; }
 
 @media (min-width: 768px) {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 12%; }
+
+  .arrow-right {
+    right: 0; }
+
+  .blank {
+    height: 150px; }
+
   .students:after {
     content: "";
     flex: auto; }
 
   .student {
-    background: #dadbd9;
-    display: flex;
-    justify-content: space-between;
     margin: 20px 20px 0 0;
-    padding: 10px;
     width: calc(33.33333333% - 13.33333333px); }
 
   .student:nth-child(3n) {
