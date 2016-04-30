@@ -8,7 +8,7 @@
                         <img src="{{URL::asset('images/studentTestimonial/'.$student_testimonial->url_image)}}" alt="{{$student_testimonial->name}}" />
                     </div>
                     <div class="testi-body">
-                        <h3 class="title-4">{{$student_testimonial->name}}</h3>
+                        <h3 class="title-4">{{$student_testimonial->name}} @if ($student_testimonial->year > 0) (IMAC {{$student_testimonial->year}}) @endif</h3>
                         <p class="testi-role">{{$student_testimonial->job}}</p>
                         <blockquote>
                           <p>{{$student_testimonial->overview}}</p>
