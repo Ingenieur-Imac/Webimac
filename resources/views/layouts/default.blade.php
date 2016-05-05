@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="{{URL::asset('css/master.css')}}" media="screen" title="no title" charset="utf-8">
         <link rel="icon" href="{{URL::asset('images/favicon.ico')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        @yield('script')
+
     </head>
     <body>
         <header>
@@ -23,5 +23,6 @@
         <footer>
             @include('layouts.footer')
         </footer>
+        @yield('script')
     </body>
 </html>

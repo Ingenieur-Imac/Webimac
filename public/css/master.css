@@ -135,7 +135,8 @@ h1 {
   text-align: left; }
 
 .title-5 {
-  font: 300 1.5em Bebas, sans-serif; }
+  font: 300 1.5em Bebas, sans-serif;
+  margin-bottom: 5px; }
 
 .lnr + .title-3 {
   margin-top: 30px; }
@@ -554,12 +555,46 @@ footer {
 input[type="text"],
 input[type="email"],
 textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
   border: #333 1px solid;
   padding: 5px 10px;
+  transition: border-color 0.5s;
   width: 100%; }
 
-input + input {
+input + input,
+input + textarea {
   margin-bottom: 10px; }
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #50d33d; }
+
+input[type="submit"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #50d33d;
+  border: 0;
+  display: inline-block;
+  font: 1.5em Bebas, sans-serif;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  width: 225px;
+  cursor: pointer;
+  float: right;
+  color: #fff; }
+
+.antispam {
+  width: 50px !important; }
 
 .btn {
   -webkit-box-sizing: border-box;
@@ -591,7 +626,7 @@ input + input {
 .filled-btn {
   color: #fff; }
 
-.filled-btn::after {
+.filled-btn:after {
   opacity: 1; }
 
 .filled-btn:hover:after {
@@ -607,7 +642,6 @@ input + input {
   opacity: 1; }
 
 .primary-btn {
-  color: #fff;
   border-color: #50d33d; }
 
 .primary-btn::after {
@@ -1458,14 +1492,13 @@ img {
   height: auto;
   width: 100%; }
 
-p + p {
+p + form,
+p + p,
+ul + p {
   margin-top: 10px; }
 
 p + ul {
   margin-top: 0; }
-
-ul + p {
-  margin-top: 10px; }
 
 strong {
   font-weight: bold; }
@@ -1547,6 +1580,10 @@ p.lead + .frames {
 .primary-row {
   background: #50d33d;
   color: #fff; }
+
+.light-text {
+  color: #848484;
+  font-size: 0.8em; }
 
 .circle {
   background: #dadbd9;
@@ -1912,8 +1949,7 @@ p.lead + .frames {
   position: relative; }
 
 .slide {
-  float: left;
-  height: 1600px; }
+  float: left; }
   .slide .col-9 {
     margin-bottom: 40px; }
 
@@ -1955,13 +1991,17 @@ p.lead + .frames {
     display: inline;
     font-size: 3em;
     position: absolute;
-    top: 12%; }
+    top: 5%;
+    transition: 0.2s; }
+
+  .arrow:hover {
+    color: #50d33d; }
 
   .arrow-right {
     right: 0; }
 
   .blank {
-    height: 150px; }
+    height: 200px; }
 
   .students:after {
     content: "";
@@ -1974,6 +2014,9 @@ p.lead + .frames {
   .student:nth-child(3n) {
     margin-right: 0; } }
 @media (min-width: 992px) {
+  .arrow {
+    top: 10%; }
+
   .student {
     width: calc(25% - 15px); }
 
@@ -2048,6 +2091,13 @@ p.lead + .frames {
 
   .grid-cell:nth-child(even) {
     background: #dadbd9; } }
+.social-icons {
+  margin-top: 10px; }
+
+#map {
+  width: 100%;
+  height: 500px; }
+
 .timerjpo {
   padding: 2em;
   background-color: #f73c3c;
@@ -2075,48 +2125,6 @@ p.lead + .frames {
     .select-year select {
       margin: 0 auto;
       width: 350px; } }
-
-.promo-arrow {
-  display: none; }
-
-@media (min-width: 768px) {
-  .promo-arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 45%; }
-
-  .promo-arrow-left {
-    left: -60px; }
-
-  .promo-arrow-right {
-    right: -60px; } }
-@media (min-width: 992px) {
-  .promo-arrow-left {
-    left: -75px; }
-
-  .promo-arrow-right {
-    right: -75px; } }
-.master-promo {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  margin: 0 auto; }
-  .master-promo .content-promo {
-    overflow: hidden;
-    margin: 0 auto;
-    font-size: 0;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left; }
-
-.inner-promo {
-  display: inline-block;
-  height: auto;
-  float: left; }
 
 .color-banner {
   background: #848484; }
@@ -2178,7 +2186,8 @@ p.lead + .frames {
     font-size: 3em;
     position: absolute;
     top: calc(50% - 22px); }
-  .testimonial .slider-arrow:hover {
+  .testimonial .slider-arrow:hover,
+  .testimonial .arrow:hover {
     color: #50d33d; }
   .testimonial .testi-picture {
     border-radius: 50%;

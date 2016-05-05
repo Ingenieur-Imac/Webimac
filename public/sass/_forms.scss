@@ -6,14 +6,41 @@
 input[type="text"],
 input[type="email"],
 textarea {
+  @include box-sizing(border-box);
   border: $dark-color 1px solid;
   padding: 5px 10px;
+  transition: border-color 0.5s;
   width: 100%;
 }
-input + input {
+input + input,
+input + textarea {
   margin-bottom: 10px;
 }
-
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: $primary-color;
+}
+input[type="submit"] {
+  @include box-sizing(border-box);
+  background: $primary-color;
+  border: 0;
+	display: inline-block;
+  font: 1.5em $title-font-stack;
+	margin-top: 30px;
+	padding: 10px;
+	text-align: center;
+  width: 225px;
+  cursor: pointer;
+  float: right;
+  color: $main-color;
+}
+.antispam {
+  width: 50px !important;
+}
 
 .btn {
   @include box-sizing(border-box);
@@ -44,7 +71,7 @@ input + input {
 .filled-btn {
   color: $main-color;
 }
-.filled-btn::after {
+.filled-btn:after {
   opacity: 1;
 }
 .filled-btn:hover:after {
@@ -64,7 +91,6 @@ input + input {
 
 // PRIMARY BTN
 .primary-btn {
-  color: $main-color;
   border-color: $primary-color;
 }
 .primary-btn::after {

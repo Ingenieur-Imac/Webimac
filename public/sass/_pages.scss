@@ -387,12 +387,8 @@
   overflow: hidden;
   position: relative;
 }
-.slider-content {
-  //display: flex;
-}
 .slide {
   float: left;
-  height: 1600px;
   .col-9 {
     margin-bottom: $spacing-unit/1.5;
   }
@@ -436,13 +432,17 @@
     display: inline;
     font-size: 3em;
     position: absolute;
-    top: 12%;
+    top: 5%;
+    transition: 0.2s;
+  }
+  .arrow:hover {
+    color: $primary-color;
   }
   .arrow-right {
     right: 0;
   }
   .blank {
-    height: 150px;
+    height: 200px;
   }
   .students:after {
     content: "";
@@ -457,6 +457,9 @@
   }
 }
 @media #{$medium-screen} {
+  .arrow {
+    top: 10%;
+  }
   .student {
     width: calc(25% - 15px);
   }
@@ -546,6 +549,18 @@
 }
 
 
+//========================
+// CONTACT PAGE
+//========================
+.social-icons {
+  margin-top: 10px;
+}
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+
 
 // Timer JPO
 
@@ -587,86 +602,6 @@
   }
 }
 
-// FUCKING PROMOTION SLIDER
-.promo-arrow {
-  display: none;
-}
-@media #{$small-screen} {
-  .promo-arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 45%;
-  }
-  .promo-arrow-left {
-    left: -60px;
-  }
-  .promo-arrow-right {
-    right: -60px;
-  }
-}
-@media #{$medium-screen} {
-  .promo-arrow-left {
-    left: -75px;
-  }
-  .promo-arrow-right {
-    right: -75px;
-  }
-}
-
-.master-promo {
-    // display: inline-flex;
-    // //flex-wrap: wrap;
-    // //position: relative;
-    // vertical-align: middle;
-    // width: 100%;
-
-}
-.master-promo {
-  @include box-sizing(border-box);
-  //overflow: hidden;
-  //width: 100%;
-  //padding: 30px 0;
-  position: relative;
-  margin: 0 auto;
-  //height: 500px;
-  //overflow: hidden;
-
-  .content-promo {
-    overflow: hidden;
-    margin: 0 auto;
-    font-size: 0;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
-  }
-}
-.inner-promo {
-  display: inline-block;
-  height: auto;
-  float: left;
-}
-// .ctn-img-promo img {
-//     position: relative;
-// }
-
-// .inner-promo {
-//     display: inline-block;
-//     width: 100%;
-// }
-
-// .ctn-img-promo {
-//     text-align: center;
-// }
-//
-// .ctn-img-promo img {
-//     display: inline-block;
-//     vertical-align: middle;
-// }
-
-
-//TODO : IL VA FALLOIR CLEAN CETTE FEUILLE A UN MOMENT
 
 
 // BANNER WITH IMAGE
@@ -741,7 +676,8 @@
     position: absolute;
     top: calc(50% - 22px);
   }
-  .slider-arrow:hover {
+  .slider-arrow:hover,
+  .arrow:hover {
     color: $primary-color;
   }
   .testi-picture {

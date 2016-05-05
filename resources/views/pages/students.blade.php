@@ -37,26 +37,26 @@
             <div class="slider">
                 <span class="arrow arrow-left lnr lnr-chevron-left"></span>
                 <span class="arrow arrow-right lnr lnr-chevron-right"></span>
-                  <div class="slider-content" style="width: <?php echo count($promos)*100 ?>%">
-                        @foreach ($promos as $promo)
-                            <div class="slide" style="width: <?php echo 100/count($promos) ?>%">
-                                <div class="col-9 center-block">
-                                    @if (!empty($promo->url_image))
-                                        <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
-                                    @else
-                                        <div class="blank"></div>
-                                    @endif
-                                </div>
-                                    <!-- STUDENTS -->
-                                    @if (!empty($students_promo[$promo->year][0]))
-                                        <h2 class="title-2 center">La promotion {{ $promo->year }} en détail</h2>
-                                        @include('includes.student', array('students' => $students_promo[$promo->year]))
-                                    @endif
+                <div class="slider-content" style="width: <?php echo count($promos)*100 ?>%; height: auto;">
+                    @foreach ($promos as $promo)
+                        <div class="slide" style="width: <?php echo 100/count($promos) ?>%">
+                            <div class="col-9 center-block">
+                                @if (!empty($promo->url_image))
+                                    <img src="{{URL::asset('images/promo/'.$promo->url_image)}}" alt="{{$promo->year}}" />
+                                @else
+                                    <div class="blank"></div>
+                                @endif
                             </div>
-                        @endforeach
-                    </div>
+                                <!-- STUDENTS -->
+                                @if (!empty($students_promo[$promo->year][0]))
+                                    <h2 class="title-2 center">La promotion {{ $promo->year }} en détail</h2>
+                                    @include('includes.student', array('students' => $students_promo[$promo->year]))
+                                @endif
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
+    </div>
 
 @endsection
