@@ -166,7 +166,7 @@
                 <li>un fond vert et un drône, Kinect, GoPro2, écran 3D stéréoscopique, Quadrotor, Camsmart, un casque de Réalité Virtuelle Oculus Rift...</li>
             </ul>
         </div>
-        <p class="center"><a class="btn filled-btn primary-btn" href="{{action('PagesController@projects')}}">Découvrir les projets</a></p>
+        <p class="center"><a class="btn filled-btn primary-btn" href="{{ action('PagesController@projects') }}">Découvrir les projets</a></p>
     </div>
 
     <div class="light-row">
@@ -205,7 +205,7 @@
             <h3 class="title-3">Partir à l'étranger</h3>
             <p>Les étudiants sont encouragés à effectuer un de leur stage à l'étranger. Certains sont par exemple partis à Londres, Los Angeles, Madrid, Tokyo...</p>
         </div>
-        <p class="center"><a class="btn filled-btn primary-btn" href="#">Déposer une offre</a></p>
+        <p class="center"><a class="btn filled-btn primary-btn" href="{{ action('PagesController@internshipOffer') }}">Déposer une offre</a></p>
       </div>
     </div>
 

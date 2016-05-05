@@ -26,7 +26,7 @@
             <div class="grid-cell center">
                 <div class="valign-content">
                     <p class="title-2">Et vous ?</p>
-                    <a class="btn filling-btn dark-btn" href="#">Devenir partenaires</a>
+                    <a class="btn filling-btn dark-btn" href="{{ action('PagesController@newPartnership') }}">Devenir partenaire</a>
                 </div>
             </div>
         </div>

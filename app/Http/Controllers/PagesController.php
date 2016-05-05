@@ -105,11 +105,19 @@ class PagesController extends Controller{
     }
 
     public function contact(){
-      return view('pages.contact');
+        return view('pages.contact');
+    }
+
+    public function newPartnership(){
+        return view('pages.newPartnership');
+    }
+
+    public function internshipOffer(){
+        return view('pages.internshipOffer');
     }
 
     public function legalNotice(){
-      return view('pages.legalNotice');
+        return view('pages.legalNotice');
     }
 
     public function timer(){

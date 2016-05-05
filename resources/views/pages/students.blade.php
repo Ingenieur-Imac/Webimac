@@ -25,7 +25,7 @@
     <div class="primary-row">
         <div class="container-fluid center">
             <h2 class="title-2">Envie de travailler avec des IMAC ?</h2>
-            <a class="btn filled-btn white-primary-btn" target="_blank" href="#">Déposer une offre</a>
+            <a class="btn filled-btn white-primary-btn" href="{{ action('PagesController@internshipOffer') }}">Déposer une offre</a>
         </div>
     </div>
 
