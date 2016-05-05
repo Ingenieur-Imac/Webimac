@@ -131,16 +131,16 @@
 
     <div class="light-row">
         <div class="container">
-            <h2 class="title-2 center">Les compétences reconnues en entreprise</h2>
+            <h2 class="title-2">Les compétences reconnues en entreprise</h2>
             <div class="col-4 col-offset-2 middle-valign-ib">
                 <img src="{{URL::asset('images/banners/Groupe_PostIt-7131.jpg')}}" alt="Des ingénieurs Imac" />
             </div>
             <div class="col-4 row-offset middle-valign-ib">
                 <ul class="lnr-ul">
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Profil pluridisciplinaire</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Forte capacité d'adaptation</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Vision globale d'un projet</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>Apprentissage rapide</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>Profil pluridisciplinaire</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>Forte capacité d'adaptation</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>Vision globale d'un projet</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>Apprentissage rapide</li>
                 </ul>
             </div>
         </div>
@@ -148,7 +148,7 @@
 
     <div>
         <div class="container">
-            <h2 class="title-2 center">Paroles d'anciens</h2>
+            <h2 class="title-2">Paroles d'anciens</h2>
             @include('includes.testimonial', $student_testimonials)
         </div>
     </div>

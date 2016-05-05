@@ -123,7 +123,8 @@ h1 {
 
 .title-2 {
   font: 300 2em Bebas, sans-serif;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-align: center; }
 
 .title-3 {
   font: 300 1.5em Bebas, sans-serif;
@@ -1236,13 +1237,16 @@ input[type="submit"] {
   font-size: 7em; }
 
 .lnr-ul li {
-  line-height: 2;
-  list-style: none; }
+  list-style: none;
+  position: relative; }
+.lnr-ul li + li {
+  margin-top: 10px; }
 .lnr-ul .lnr {
   color: #50d33d;
   font-size: 1.3em;
   font-weight: bold;
-  margin-right: 0.5em;
+  left: -2em;
+  position: absolute;
   vertical-align: middle; }
 
 @font-face {
@@ -2031,6 +2035,10 @@ p.lead + .frames {
 
 .association:nth-child(even) {
   background: #dadbd9; }
+
+.full-framed {
+  margin: 60px 0;
+  width: 100%; }
 
 .grid {
   margin-top: 60px; }
