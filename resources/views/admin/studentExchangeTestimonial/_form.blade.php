@@ -6,7 +6,7 @@
 
 <!-- job form input -->
 <div class="form-group">
-    {!! Form::label('job','Emploi :') !!}
+    {!! Form::label('job','Autres informations :') !!}
     {!! Form::text('job',null,['class' => 'form-control']) !!}
 </div>
 

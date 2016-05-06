@@ -1,7 +1,7 @@
 @extends('admin.admin',['nav' => 'student'])
 
 @section('content')
-    <h2>Vous êtes en train de modifier : {{$student->name}}</h2>
+    <h2>Vous êtes en train de modifier : {{ucwords($student->surname) . " " . ucwords($student->name)}}</h2>
 
     {!! Form::model($student, ['method' => 'PATCH',"enctype" => "multipart/form-data", 'action' => ['AdminStudentController@update',$student->id]]) !!}
 

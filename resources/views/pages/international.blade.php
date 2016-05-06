@@ -110,6 +110,5 @@
                 <li><span class="lnr lnr-checkmark-circle list-puce"></span><strong>Se démarquer</strong> auprès des entreprises</li>
             </ul>
         </div>
->>>>>>> dev-front
     </div>
 @endsection

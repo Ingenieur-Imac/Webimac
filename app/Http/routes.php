@@ -80,6 +80,7 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::get('admin/others','AdminOthersController@index');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
     Route::post('admin/others/application','AdminOthersController@updateApplicationDates');
+    Route::post('admin/others/openning-application','AdminOthersController@updateDisplayOpenningBanners');
 
 //TEST
 Route::get('timer','PagesController@timer');

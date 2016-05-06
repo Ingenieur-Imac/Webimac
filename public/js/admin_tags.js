@@ -2,8 +2,10 @@ $(document).ready(function(){
     $("#add-tag").on('change',function(e){
         if($(this).val() == 0)
             return false;
-        for(var i in $(".tags")){
-            if($(".tags:eq("+i+")").attr('rel') == $(this).val()){
+
+        //Vérification que le tag est pas présent
+        for(var i in $(".tag")){
+            if($(".tag:eq("+i+")").attr('rel') == $(this).val()){
                 return false;
             }
         }
