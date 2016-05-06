@@ -1,21 +1,21 @@
 @extends('layouts.default')
 
 @section('title')
-    Réalisations | IMAC ingénieur
+    {{trans("messages.title-pros")}}
 @endsection
 
 @section('content')
     <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">Les réalisations</h1>
-            <p class="lead">Les enseignements de la formation IMAC sont centrés autour de projets, tous <strong>très variés et pluridisciplinaires</strong>.</p>
-            <p>Ils révèlent les compétences et la polyvalence acquises par les étudiants au cours des trois années de formation. La créativité et les profils complémentaires de ces derniers rendent leurs projets uniques et témoins de leur savoir-faire. Jugez par vous-mêmes !</p>
+            <h1 class="title-1">{{trans("messages.pros-t")}}</h1>
+            <p class="lead">{{trans("messages.pros-st")}}</p>
+            <p>{{trans("messages.pros-c")}}</p>
         </div>
         <div class="col-8 center-block">
-            <p>Filtrer :
-                <span rel="all" class="main-filter main-selected-filter">Tout</span>
-                <span rel="heart" class="main-filter">Coup de cœur</span>
+            <p>{{trans("messages.pros-filter-c-3")}}
+                <span rel="all" class="main-filter main-selected-filter">{{trans("messages.pros-filter-c-1")}}</span>
+                <span rel="heart" class="main-filter">{{trans("messages.pros-filter-c-2")}}</span>
                 {!! Form::open(array('class'=>'project-main-filters')) !!}
                     {{ Form::select('year', $years) }}
                 {!! Form::close() !!}

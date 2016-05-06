@@ -1,32 +1,44 @@
 @extends('layouts.default')
 
 @section('title')
-    Partir à l’étranger | IMAC ingénieur
+    {{trans("messages.title-int")}}
 @endsection
 
 @section('content')
     <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
+    {{-- <div class="container center-content-padding">
+        <h1 class="title-1">{{trans("messages.int-title")}}</h1>
+        <h2 class="title-2">{{trans("messages.int-subtitle")}}</h2>
+        <img src="{{URL::asset('images/international/map.png')}}" alt="Des ingénieurs IMAC" />
+    </div>
+
+    <div class="light-row">
+      <div class="container center-content-padding">
+          <p class="lead center side-padding">{{trans("messages.int-container-1-title")}}</p>
+          <p class="side-padding">{{trans("messages.int-container-1-content")}}</p>
+
+      </div> --}}
     <div class="container">
         <div class="col-8 center-block">
             <h1 class="title-1">Partir à l'étranger</h1>
             <p class="lead center">L'expérience d'un séjour à l'étranger est forcément enrichissante :</p>
             <p>L'immersion dans une culture différente ouvre de nouveaux horizons, tant sur le plan personnel que professionnel. <cite>"Sur terre, ce ne sont pas les occasions de s'émerveiller qui manquent, mais les émerveillés."</cite> - Éric-Emmanuel Schmitt</p>
         </div>
-        <div class="col-11 center-block frames">
+        <div class="frames">
             <div class="framed">
-                <p class="big-number">36</p>
-                <p class="title-4">pays</p>
-                <p>à découvrir un peu partout dans le monde</p>
+                <p class="big-number">{{trans("messages.int-framed-1-a")}}</p>
+                <p class="title-4">{{trans("messages.int-framed-1-b")}}</p>
+                <p>{{trans("messages.int-framed-1-c")}}</p>
             </div>
             <div class="framed">
-                <p class="big-number">+110</p>
-                <p class="title-4">universités</p>
-                <p>partenaires avec l'UPEM peuvent accueillir les étudiants</p>
+                <p class="big-number">{{trans("messages.int-framed-2-a")}}</p>
+                <p class="title-4">{{trans("messages.int-framed-2-b")}}</p>
+                <p>{{trans("messages.int-framed-2-c")}}</p>
             </div>
             <div class="framed">
-                <p class="big-number">100%</p>
-                <p class="title-4">des étudiants</p>
-                <p>reviennent satisfaits et recommandent de partir</p>
+                <p class="big-number">{{trans("messages.int-framed-3-a")}}</p>
+                <p class="title-4">{{trans("messages.int-framed-3-b")}}</p>
+                <p>{{trans("messages.int-framed-3-c")}}</p>
             </div>
         </div>
     </div>
@@ -98,5 +110,6 @@
                 <li><span class="lnr lnr-checkmark-circle list-puce"></span><strong>Se démarquer</strong> auprès des entreprises</li>
             </ul>
         </div>
+>>>>>>> dev-front
     </div>
 @endsection

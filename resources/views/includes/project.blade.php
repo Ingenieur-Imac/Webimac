@@ -10,7 +10,7 @@
         <p>{{$project->excerpt}}</p>
         <p class="ctn-tags">
             @foreach ($project->tags as $tag)
-                <span rel="{{$tag->id}}" class="tag {{ ($tag->name == 'Coup de cœur') ? "important-tag" : '' }}">{{$tag->name}}</span>
+                <span rel="{{$tag->id}}" class="tag {{ ($tag->id == 1) ? "important-tag" : '' }}">{{$tag->name}}</span>
             @endforeach
         </p>
     </div>
