@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    Autour de la formation | IMAC ingénieur
+    {{trans("messages.title-sl")}}
 @endsection
 
 @section('content')
@@ -9,9 +9,9 @@
 
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">La vie étudiante sur le campus</h1>
-            <p class="lead">La vie associative ainsi que les conférences et ateliers artistiques et culturels sont des points forts que l'UPEM prône et valorise.</p>
-            <p>Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href="http://bde.ingenieur-imac.fr/" target="_blank">sur la page dédiée du site de l'UPEM</a> pour plus d'informations.</p>
+            <h1 class="title-1">{{trans("messages.sl-ctn-1-t")}}</h1>
+            <p class="lead">{{trans("messages.sl-ctn-1-st")}}</p>
+            <p>{{trans("messages.sl-ctn-1-c")}}</p>
         </div>
     </div>
 

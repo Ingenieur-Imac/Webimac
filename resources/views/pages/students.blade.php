@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    Les IMAC | IMAC ingénieur
+    {{trans("messages.title-sts")}}
 @endsection
 
 @section('script')
@@ -15,17 +15,17 @@
     <!-- text -->
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">Qu'est-ce qu'un ou une IMAC ?</h1>
-            <p class="lead">Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille ! Avec des promotions de maximum cinquante étudiants où la parité filles/garçons règne, les liens se créent en effet très naturellement.</p>
-            <p>Tout au long de l’année, <a href="http://bde.ingenieur-imac.fr/" target="_blank">le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !</p>
-            <p>À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les IMAC !</p>
+            <h1 class="title-1">{{trans("messages.sts-ctn-1-t")}}</h1>
+            <p class="lead">{{trans("messages.sts-ctn-1-st")}}</p>
+            <p>{{trans("messages.sts-ctn-1-c-1")}}</p>
+            <p>{{trans("messages.sts-ctn-1-c-2")}}</p>
         </div>
     </div>
 
     <div class="primary-row">
         <div class="container-fluid center">
-            <h2 class="title-2">Vous voulez recruter un IMAC ?</h2>
-            <a class="btn filled-btn white-primary-btn" target="_blank" href="#">Déposer une offre</a>
+            <h2 class="title-2">{{trans("messages.sts-ctn-2-t")}}</h2>
+            <a class="btn filled-btn white-primary-btn" target="_blank" href="#">{{trans("messages.sts-ctn-2-l")}}</a>
         </div>
     </div>
 
@@ -45,7 +45,7 @@
                                 </div>
                                     <!-- STUDENTS -->
                                     @if (!empty($students_promo[$promo->year][0]))
-                                        <h2 class="title-2 center">La promotion {{ $promo->year }} en détail</h2>
+                                        <h2 class="title-2 center">{{trans("messages.sts-ctn-t-1")}} {{ $promo->year }} {{trans("messages.sts-ctn-t-2")}}</h2>
                                         <div class="people">
                                             @foreach ($students_promo[$promo->year] as $student)
                                                 <div class="student">

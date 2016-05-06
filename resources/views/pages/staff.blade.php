@@ -1,5 +1,5 @@
 <?php
-  $banner_title = 'La formation IMAC';
+  $banner_title = trans("messages.stf-title");
   $img = 'Maths.jpg';
 ?>
 
@@ -7,7 +7,7 @@
 @extends('layouts.default')
 
 @section('title')
-    L'équipe pédagogique de l'IMAC | IMAC ingénieur
+    {{trans("messages.title-stf")}}
 @endsection
 
 @section('content')
@@ -17,12 +17,12 @@
 
     <div class="container">
         <div class="col-10 center-block">
-            <h1 class="title-1">L'équipe</h1>
+            <h1 class="title-1">{{trans("messages.stf-c-1")}}</h1>
 
-            <h2 class="title-2 center">L'équipe dirigeante</h2>
+            <h2 class="title-2 center">{{trans("messages.stf-c-2")}}</h2>
             @include('includes.staffMember', array('staff' => $main_staff))
 
-            <h2 class="title-2 center">Quelques intervenants de l'IMAC</h2>
+            <h2 class="title-2 center">{{trans("messages.stf-c-3")}}</h2>
             @include('includes.staffMember', array('staff' => $staff))
         </div>
     </div>
