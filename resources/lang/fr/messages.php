@@ -66,12 +66,12 @@
         "title-contact" => "Nous contacter | IMAC ingénieur",
             //CONTACT FORM
         "contact-form-title" => "Nous contacter",
-        "contact-input-ph-1" => "Votre e-mail",
+        "contact-input-ph-1" => "Votre e-mail*",
         "contact-input-ph-2" => "Nom, nom d'entreprise",
-        "contact-input-ph-3" => "Objet de l'e-mail",
-        "contact-input-ph-4" => "Message",
-        "contact-input-ph-5" => "Complétez l'opération à trou : ",
-        "contact-input-ph-6" => "Antispam",
+        "contact-input-ph-3" => "Objet de l'e-mail*",
+        "contact-input-ph-4" => "Message*",
+        "contact-input-ph-5" => "Complétez l'opération à trou : 1 + ",
+        "contact-input-ph-6" => "?*",
         "contact-input-ph-7" => "Envoyer",
             //CONTACT INFORMATION
         "contact-info-1" => "Adresse",
@@ -323,7 +323,7 @@
         //STUDENT LIFE :: REFERS TO pages.studentLife.blade.php
         "title-sl" => "Autour de la formation | IMAC ingénieur",
         "sl-ctn-1-t" => "La vie étudiante sur le campus",
-        "sl-ctn-1-st" => "La vie associative ainsi que les conférences et ateliers artistiques et culturels sont des points forts que l'UPEM prône et valorise.",
+        "sl-ctn-1-st" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations. Voici quelques associations :",
         "sl-ctn-1-c" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://bde.ingenieur-imac.fr/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations.",
             // TODO MANQUE LA FIN DE L'INTEGRATION
 
@@ -382,7 +382,7 @@
 
         //TIMERJPO :: REFERS TO includes.timerjpo.blade.php
         "jpo-1" => "La Journée Portes Ouvertes de l'IMAC c'est le 13 Février de 9h à 17h",
-        
+
     ]
 
 ?>

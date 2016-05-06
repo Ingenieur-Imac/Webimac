@@ -23,6 +23,8 @@ Route::get('/international','PagesController@international');
 Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{url}','PagesController@project');
+Route::get('/devenir-partenaires','PagesController@newPartnership');
+Route::get('/deposer-offre-stage','PagesController@internshipOffer');
 Route::get('/mentions-legales','PagesController@legalNotice');
 
 

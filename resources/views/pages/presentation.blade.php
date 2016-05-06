@@ -166,7 +166,7 @@
                 <li>{{trans("messages.prs-ctn-3-c-2-c-3")}}</li>
             </ul>
         </div>
-        <p class="center"><a class="btn filled-btn primary-btn" href="{{action('PagesController@projects')}}">{{trans("messages.prs-ctn-3-c-3-c")}}</a></p>
+        <p class="center"><a class="btn filled-btn primary-btn" href="{{ action('PagesController@projects') }}">{{trans("messages.prs-ctn-3-c-3-c")}}</a></p>
     </div>
 
     <div class="light-row">
@@ -205,7 +205,7 @@
             <h3 class="title-3">{{trans("messages.prs-ctn-4-c-2-t")}}</h3>
             <p>{{trans("messages.prs-ctn-4-c-2-c-1")}}</p>
         </div>
-        <p class="center"><a class="btn filled-btn primary-btn" href="#">{{trans("messages.prs-ctn-4-c-2-l-1")}}</a></p>
+        <p class="center"><a class="btn filled-btn primary-btn" href="{{ action('PagesController@internshipOffer') }}">{{trans("messages.prs-ctn-4-c-2-l-1")}}</a></p>
       </div>
     </div>
 

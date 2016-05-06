@@ -249,16 +249,6 @@
   background-size: cover;
   background-position: center center;
   border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px;
-}
-.people-info {
-  display: flex;
-  flex-direction: column;
-  flex-basis: calc(100% - 90px);
-  justify-content: space-between;
-  text-align: right;
 }
 .staff-member {
   align-items: center;
@@ -393,29 +383,12 @@
 .arrow {
   display: none;
 }
-@media #{$small-screen} {
-  .arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 12%;
-  }
-  .arrow-right {
-    right: 0;
-  }
-}
 .slider {
   overflow: hidden;
   position: relative;
 }
-.slider-content {
-  //display: flex;
-}
 .slide {
   float: left;
-  height: 1600px;
-  //width: 100%;
   .col-9 {
     margin-bottom: $spacing-unit/1.5;
   }
@@ -428,14 +401,11 @@
   margin: 20px 10px 0 10px;
   padding: 10px;
   width: 250px;
-}
-.student-picture {
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-  height: 80px;
-  margin-right: 10px;
-  width: 80px;
+  .people-picture {
+    height: 80px;
+    margin-right: 10px;
+    width: 80px;
+  }
 }
 .student-info {
   display: flex;
@@ -457,16 +427,29 @@
   }
 }
 @media #{$small-screen} {
+  .arrow {
+    cursor: pointer;
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    top: 5%;
+    transition: 0.2s;
+  }
+  .arrow:hover {
+    color: $primary-color;
+  }
+  .arrow-right {
+    right: 0;
+  }
+  .blank {
+    height: 200px;
+  }
   .students:after {
     content: "";
     flex: auto;
   }
   .student {
-    background: $light-color;
-    display: flex;
-    justify-content: space-between;
     margin: 20px 20px 0 0;
-    padding: 10px;
     width: calc(33.33333333% - 13.33333333px);
   }
   .student:nth-child(3n) {
@@ -474,6 +457,9 @@
   }
 }
 @media #{$medium-screen} {
+  .arrow {
+    top: 10%;
+  }
   .student {
     width: calc(25% - 15px);
   }
@@ -493,11 +479,23 @@
   .title-3 {
     margin-bottom: 0;
   }
+  img {
+    max-width: 100%;
+    width: initial;
+  }
 }
 .association:nth-child(even) {
   background: $light-color;
 }
 
+
+//========================
+// INTERNATIONAL PAGE
+//========================
+.full-framed {
+  margin: $spacing-unit 0;
+  width: 100%;
+}
 
 //========================
 // PARTNERSHIP PAGE
@@ -559,6 +557,18 @@
 }
 
 
+//========================
+// CONTACT PAGE
+//========================
+.social-icons {
+  margin-top: 10px;
+}
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+
 
 // Timer JPO
 
@@ -600,86 +610,6 @@
   }
 }
 
-// FUCKING PROMOTION SLIDER
-.promo-arrow {
-  display: none;
-}
-@media #{$small-screen} {
-  .promo-arrow {
-    cursor: pointer;
-    display: inline;
-    font-size: 3em;
-    position: absolute;
-    top: 45%;
-  }
-  .promo-arrow-left {
-    left: -60px;
-  }
-  .promo-arrow-right {
-    right: -60px;
-  }
-}
-@media #{$medium-screen} {
-  .promo-arrow-left {
-    left: -75px;
-  }
-  .promo-arrow-right {
-    right: -75px;
-  }
-}
-
-.master-promo {
-    // display: inline-flex;
-    // //flex-wrap: wrap;
-    // //position: relative;
-    // vertical-align: middle;
-    // width: 100%;
-
-}
-.master-promo {
-  @include box-sizing(border-box);
-  //overflow: hidden;
-  //width: 100%;
-  //padding: 30px 0;
-  position: relative;
-  margin: 0 auto;
-  //height: 500px;
-  //overflow: hidden;
-
-  .content-promo {
-    overflow: hidden;
-    margin: 0 auto;
-    font-size: 0;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
-  }
-}
-.inner-promo {
-  display: inline-block;
-  height: auto;
-  float: left;
-}
-// .ctn-img-promo img {
-//     position: relative;
-// }
-
-// .inner-promo {
-//     display: inline-block;
-//     width: 100%;
-// }
-
-// .ctn-img-promo {
-//     text-align: center;
-// }
-//
-// .ctn-img-promo img {
-//     display: inline-block;
-//     vertical-align: middle;
-// }
-
-
-//TODO : IL VA FALLOIR CLEAN CETTE FEUILLE A UN MOMENT
 
 
 // BANNER WITH IMAGE
@@ -754,7 +684,8 @@
     position: absolute;
     top: calc(50% - 22px);
   }
-  .slider-arrow:hover {
+  .slider-arrow:hover,
+  .arrow:hover {
     color: $primary-color;
   }
   .testi-picture {

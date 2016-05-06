@@ -117,6 +117,7 @@ h1 {
 .title-2 {
   font: 300 2em $title-font-stack;
   margin-bottom: 15px;
+  text-align: center;
 }
 .title-3 {
   font: 300 1.5em $title-font-stack;
@@ -129,6 +130,7 @@ h1 {
 }
 .title-5 {
   font: 300 1.5em $title-font-stack;
+  margin-bottom: 5px;
 }
 .lnr + .title-3 {
   margin-top: 30px;

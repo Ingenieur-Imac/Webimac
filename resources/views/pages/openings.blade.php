@@ -92,16 +92,16 @@
 
     <div class="light-row">
         <div class="container">
-            <h2 class="title-2 center">{{trans("messages.op-ctn-4-t")}}</h2>
+            <h2 class="title-2">{{trans("messages.op-ctn-4-t")}}</h2>
             <div class="col-4 col-offset-2 middle-valign-ib">
                 <img src="{{URL::asset('images/banners/Groupe_PostIt-7131.jpg')}}" alt="Des ingénieurs Imac" />
             </div>
             <div class="col-4 row-offset middle-valign-ib">
                 <ul class="lnr-ul">
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-1")}}</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-2")}}</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-3")}}</li>
-                    <li class="list-competences"><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-4")}}</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-1")}}</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-2")}}</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-3")}}</li>
+                    <li><span class="lnr lnr-checkmark-circle list-puce"></span>{{trans("messages.op-ctn-4-c-4")}}</li>
                 </ul>
             </div>
         </div>
@@ -109,7 +109,7 @@
 
     <div>
         <div class="container">
-            <h2 class="title-2 center">{{trans("messages.home-testimonial")}}</h2>
+            <h2 class="title-2">{{trans("messages.home-testimonial")}}</h2>
             @include('includes.testimonial', $student_testimonials)
         </div>
     </div>

@@ -26,7 +26,7 @@
             <div class="grid-cell center">
                 <div class="valign-content">
                     <p class="title-2">{{trans("messages.ptn-ctn-2-st")}}</p>
-                    <a class="btn filling-btn dark-btn" href="#">{{trans("messages.ptn-ctn-2-l")}}</a>
+                    <a class="btn filling-btn dark-btn" href="{{ action('PagesController@newPartnership') }}">{{trans("messages.ptn-ctn-2-l")}}</a>
                 </div>
             </div>
         </div>

@@ -25,29 +25,29 @@ class PagesController extends Controller{
         //Speed modification
         //$projects = Project::HomePage()->get();
         $projects = Project::all()->reverse()->take(2);
-        $student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all();
         return view('pages.home', compact('projects','student_testimonials'));
     }
 
     public function presentation(){
-        $student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all();
         return view('pages.presentation', compact('student_testimonials'));
     }
 
     public function admission(){
-        $student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all();
         $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
         $dates = $dates['application'];
         return view('pages.admission',compact('student_testimonials','dates'));
     }
 
     public function openings(){
-        $student_testimonials = StudentTestimonial::all()->random(3);
+        $student_testimonials = StudentTestimonial::all();
         return view('pages.openings', compact('student_testimonials'));
     }
 
     public function staff(){
-        $main_staff = Staff::where('main', '=', true)->orderBy('name', 'asc')->get();
+        $main_staff = Staff::where('main', '=', true)->orderBy('order', 'desc')->get();
         $staff = Staff::where('main', '=', false)->orderBy('name', 'asc')->get();
         return view('pages.staff', compact('main_staff', 'staff'));
     }
@@ -86,7 +86,7 @@ class PagesController extends Controller{
         $students = array();
         foreach($promos as $promo){
             $select_year[$promo->year] = 'Promotion '.$promo->year;
-            $students_promo[$promo->year] = Student::where('promo', '=', $promo->id)->get();
+            $students_promo[$promo->year] = Student::where('promo', '=', $promo->id)->orderBy('name', 'asc')->get();
         }
         return view('pages.students', compact('promos', 'select_year', 'students_promo'));
     }
@@ -105,11 +105,19 @@ class PagesController extends Controller{
     }
 
     public function contact(){
-      return view('pages.contact');
+        return view('pages.contact');
+    }
+
+    public function newPartnership(){
+        return view('pages.newPartnership');
+    }
+
+    public function internshipOffer(){
+        return view('pages.internshipOffer');
     }
 
     public function legalNotice(){
-      return view('pages.legalNotice');
+        return view('pages.legalNotice');
     }
 
     public function timer(){
