@@ -84,12 +84,15 @@
 $(document).ready(function(){
     var isInActivity = false;
     var nbSlides = $('.slide').length;
+    var numericMargin = -100/nbSlides*(nbSlides-1);
     var neededMargin = -100/nbSlides*(nbSlides-1)+'%';
     var margin = {marginLeft: neededMargin};
     $('.arrow-right').click(function(){
         if(!isInActivity){
             isInActivity = true;
             var current = $('.slide:eq(0)');
+            var year = $('.slide:eq(1)').attr('rel');
+            $('.select-year select').val(year);
             current.animate(margin,1000,function(){
                 var next = $('.slide:eq(1)');
                 current.parent().append(current);
@@ -106,13 +109,42 @@ $(document).ready(function(){
             var last = $('.slide:eq('+($('.slide').length - 1)+')');
             last.parent().prepend(last);
             last.css('marginLeft',neededMargin);
+            var year = $('.slide:eq(0)').attr('rel');
+            $('.select-year select').val(year);
             last.animate({
                 marginLeft:"0"
             },1000,function(){
                 isInActivity = false;
             });
         }
-    })
+    });
+
+    $('.select-year select').on('change',function(){
+        if(!isInActivity){
+            isInActivity = true;
+            var target = $(".slide[rel='"+$(this).val()+"']");
+            var pos_of_target = target.index();
+            if(pos_of_target < nbSlides/2){
+                //On va à droite
+                var current = $('.slide:eq(0)');
+                for($i = 0; $i < pos_of_target; $i++){
+                    var next = $('.slide:eq(1)');
+                    current.parent().append(current);
+                    current = $('.slide:eq(0)');
+                }
+                isInActivity = false;
+            } else {
+                //On va à gauche
+                var last = null;
+                for(var i = 0; i < (nbSlides - pos_of_target); i++){
+                    var current = $('.slide:eq(0)');
+                    last = $('.slide:eq('+($('.slide').length - 1)+')');
+                    last.parent().prepend(last);
+                }
+                isInActivity = false;
+            }
+        }
+    });
 });
 
 

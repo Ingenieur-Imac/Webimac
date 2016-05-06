@@ -2,10 +2,10 @@
 
 <div class="container">
     <div class="useful-informations clearfix">
-        <p class="title-2">Vous avez des questions ?</p>
+        <p class="title-2">{{trans("messages.ftr-t")}}</p>
         <div class="useful-links">
             <!-- <a class="simple-primary-btn" href="#">FAQ</a> -->
-            <a class="simple-primary-btn" href="{{action('PagesController@contact')}}">Contact</a>
+            <a class="simple-primary-btn" href="{{action('PagesController@contact')}}">{{trans("messages.ftr-contact")}}</a>
             <div class="social-media">
                 <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
                     <span class="icon-linkedin color"></span>
@@ -38,8 +38,8 @@
 
     <div class="col-3">
         <img class="logo-imac" src="{{URL::asset('images/logoIMACblanc.png')}}" alt="Logo IMAC" />
-        <h2 class="title-2">Formation d'ingénieur Imac</h2>
-        <p>La seule formation publique d'ingénieur alliant arts et sciences</p>
+        <h2 class="title-2">{{trans("messages.ftr-ctn-2-t")}}</h2>
+        <p>{{trans("messages.ftr-ctn-2-c")}}</p>
             <a href="http://www.u-pem.fr/" target="_blank">
                 <img src="{{URL::asset('images/UPEM_LOGO_EDITION_BLANC72DPI.png')}}" alt="Logo UPEM" />
             </a>
@@ -55,6 +55,6 @@
 <div class="end-footer">
     <p>&copy; IMAC <?php echo date('Y'); ?> |
         <!--<a href="#">Plan du site</a> |-->
-        <a href="{{action('PagesController@legalNotice')}}">Mentions légales</a>
+        <a href="{{action('PagesController@legalNotice')}}">{{trans("messages.ftr-ctn-3-c")}}</a>
     </p>
 </div>
