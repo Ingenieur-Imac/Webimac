@@ -493,8 +493,17 @@
 // INTERNATIONAL PAGE
 //========================
 .full-framed {
+  display: none;
   margin: $spacing-unit 0;
   width: 100%;
+}
+.full-framed.selected {
+  display: block;
+}
+#vmap {
+  width: 100%;
+  height: auto;
+  height: 500px;
 }
 
 //========================

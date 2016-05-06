@@ -2037,8 +2037,17 @@ p.lead + .frames {
   background: #dadbd9; }
 
 .full-framed {
+  display: none;
   margin: 60px 0;
   width: 100%; }
+
+.full-framed.selected {
+  display: block; }
+
+#vmap {
+  width: 100%;
+  height: auto;
+  height: 500px; }
 
 .grid {
   margin-top: 60px; }
@@ -2262,3 +2271,46 @@ p.lead + .frames {
 .project-item-content {
   display: inline-block;
   vertical-align: top; }
+
+.jqvmap-label {
+  position: absolute;
+  display: none;
+  color: #333;
+  font: 2em Bebas, sans-serif;
+  pointer-events: none;
+  z-index: 10; }
+
+.jqvmap-pin {
+  pointer-events: none; }
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+  position: absolute;
+  left: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #000000;
+  padding: 3px;
+  color: white;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  line-height: 10px;
+  text-align: center; }
+
+.jqvmap-zoomin {
+  top: 10px; }
+
+.jqvmap-zoomout {
+  top: 30px; }
+
+.jqvmap-region {
+  cursor: pointer; }
+
+.jqvmap-ajax_response {
+  width: 100%;
+  height: 500px; }
+
+#jqvmap1_world,
+#jqvmap1_imac {
+  cursor: default; }

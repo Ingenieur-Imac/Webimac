@@ -1,6 +1,6 @@
 <?php
   $title = 'La seule formation <strong>publique d\'ingénieur</strong> alliant <strong>arts et sciences</strong>';
-  $img = 'Table_work2.jpg';
+  $img = 'Home_banner.jpg';
   $text = '<p>Associant esprit créatif à compétences scientifiques, l’IMAC forme des professionnels dans les domaines du web, du multimédia, de l’audiovisuel, de la communication.</p>
   <p>Vous aussi, devenez ingénieur créatif !</p>'
 ?>
