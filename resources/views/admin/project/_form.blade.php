@@ -15,6 +15,12 @@
     {!! Form::textarea('description',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- english description form input -->
+<div class="form-group">
+    {!! Form::label('description','Description Anglaise :') !!}
+    {!! Form::textarea('en_description',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">

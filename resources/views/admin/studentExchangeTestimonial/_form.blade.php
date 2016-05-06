@@ -22,6 +22,12 @@
     {!! Form::textarea('overview',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- english overview form input -->
+<div class="form-group">
+    {!! Form::label('en_overview','Témoignages en Anglais :') !!}
+    {!! Form::textarea('en_overview',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">
