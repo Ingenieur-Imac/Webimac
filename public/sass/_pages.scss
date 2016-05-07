@@ -175,12 +175,6 @@
 //========================
 // OPENINGS
 //========================
-.arrow-bottom {
-    width: 0;
-    border: 20px solid transparent;
-    border-top: 20px solid $light-color;
-    margin: auto;
-}
 .activity-sectors-title {
     background: $main-color;
     border: 1px solid $secondary-color;
@@ -207,10 +201,11 @@
 }
 .activity-panel.selected {
     display: block;
+    margin-top: $spacing-unit/2;
     transition: 0.5s;
 }
 .activity-panel-title {
-    background: $main-color;
+    background: $light-color;
     color: $secondary-color;
     display: block;
     font: 1.5em $title-font-stack;
@@ -672,57 +667,28 @@
 }
 
 
-.people {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  & + .title-2 {
-    margin-top: $spacing-unit;
-  }
-  h3 {
-    font: 1.3em $title-font-stack;
-  }
-  .lnr {
-    bottom: -5px;
-    font-size: 1.5em;
-    margin-right: 10px;
-    position: relative;
-  }
-  .icon-linkedin-rect {
-    font-size: 0.8em;
-  }
-}
-.people-picture {
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-}
-.staff-member {
-  align-items: center;
-  background: $light-color;
-  @include box-sizing(border-box);
-  display: flex;
-  flex-direction: column;
-  margin: 20px 10px 0 10px;
-  padding: 20px;
-  width: 250px;
-}
 
+
+//========================
 // TESTIMONIALS
+//========================
 .slider-arrow {
   color: $medium-color;
   cursor: pointer;
-  display: none;
   font-size: 3em;
   position: absolute;
-  top: calc(50% - 22px);
+  top: 100px;
 }
 .slider-arrow:hover,
 .arrow:hover {
   color: $primary-color;
 }
-
-
+.slider-arrow-left {
+  left: 0;
+}
+.slider-arrow-right {
+  right: 0;
+}
 .testimonial {
   position: relative;
   ul {
@@ -731,37 +697,37 @@
     li {
       list-style: none;
       margin: 0;
-      //overflow: hidden;
+      overflow: hidden;
+      //padding: 0 10px;
       .title-4, .testi-role {
         text-align: center;
       }
+      .people-picture {
+        flex-basis: 160px;
+        height: 160px;
+        margin: 0 auto;
+        min-width: 160px;
+        width: 160px;
+      }
+      .testi-role {
+         font-weight: normal;
+      }
+      .testi-show {
+        margin: auto;
+        overflow: hidden !important;
+      }
     }
   }
-  .people-picture {
-    flex-basis: 160px;
-    height: 160px;
-    margin: 0 auto;
-    min-width: 160px;
-    width: 160px;
-  }
-  .testi-role {
-     font-weight: normal;
-  }
-  .testi-show {
-    margin: auto;
-    overflow: hidden;
-  }
   .gallery {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width: calc(100% - 20px);
-    overflow: hidden;
     img {
-      height: 100%;
-      margin-top: $spacing-unit/4;
-      padding: 0 10px;
-      width: auto;
+      @include box-sizing(border-box);
+      margin: $spacing-unit/4 5px 0 5px;
+    }
+    .slider-arrow-left {
+      left: -8.33333333%;
+    }
+    .slider-arrow-right {
+      right: -8.33333333%;
     }
   }
   @media #{$small-screen} {
@@ -771,26 +737,48 @@
         align-items: center;
         flex-wrap: wrap;
         list-style: none;
+        justify-content: center;
         margin: 0;
         .title-4, .testi-role {
           text-align: left;
         }
       }
     }
-    .slider-arrow {
-      display: inline;
+    .gallery {
+      display: flex;
+      justify-content: center;
+      height: 125px;
+      width: calc(100% - 20px);
+      overflow: hidden;
+      img {
+        height: 100%;
+        margin-top: $spacing-unit/4;
+        width: auto;
+      }
     }
     .slider-arrow-left {
       left: -8.33333333%;
+      top: calc(50% - 22px);
     }
     .slider-arrow-right {
       right: -8.33333333%;
+      top: calc(50% - 22px);
     }
     .testi-body {
       width: calc(100% - 8.33333333% - 160px);
     }
     .testi-picture {
       vertical-align: middle;
+    }
+  }
+  @media #{$medium-screen} {
+    .gallery {
+      height: 150px;
+    }
+  }
+  @media #{$large-screen} {
+    .gallery {
+      height: 200px;
     }
   }
 }

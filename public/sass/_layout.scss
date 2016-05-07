@@ -224,16 +224,15 @@
 }
 
 // Header
-// Comments = former header with former logo
 header {
   display: none;
 }
+
 @media #{$small-screen} {
   header {
     background: $extra-light-color;
     display: block;
     position: relative;
-
     a {
       color: $dark-color;
       z-index: 1000;
@@ -256,6 +255,14 @@ header {
       vertical-align: middle;
       p {
         margin-top: 0;
+        text-align: left;
+      }
+    }
+    .lang {
+      float: right;
+      font-size: 1.4em;
+      a:hover {
+        color: $primary-color;
       }
     }
     .title-2 {
@@ -275,38 +282,43 @@ nav {
     height: 100%;
     width: auto;
   }
-
-        .header-titles {
-            display: inline;
-        }
-        span {
-            vertical-align: middle;
-        }
-
+  .header-titles {
+      display: inline;
+  }
+  span {
+      vertical-align: middle;
+  }
   ul {
     @include box-sizing(border-box);
     background: $dark-color;
     display: none;
     padding: 0 15px;
     position: static;
-
+    li {
+      font: bold 1.6em $title-font-stack;
+      list-style: none;
+      margin: 0 20px;
+    }
     a {
     	color: $main-color;
     	border-bottom: transparent 3px solid;
     	@include box-sizing(border-box);
     	display: inline-block;
-    	font: bold 1.6em $title-font-stack;
     	height: 60px;
       letter-spacing: 0.04em;
     	line-height: 2.9;
       width: 100%;
     }
     a:hover, .active {
-    	border-color: $primary-color;
     	color: $primary-color;
     }
-    li {
-      width: 100%;
+    .lang {
+      border-top: $medium-color 1px solid;
+      color: $main-color;
+      margin-top: 10px;
+      a {
+        display: inline;
+      }
     }
     .lnr {
       display: none;
@@ -358,14 +370,20 @@ nav {
       width: 750px;
 
       a {
-        font-size: 1.2em;
         height: 60px;
         line-height: 3.5;
         width: auto;
       }
+      a:hover, .active {
+      	border-color: $primary-color;
+      }
       li {
-        margin-left: 0;
+        font-size: 1.2em;
+        margin: 0;
         width: auto;
+      }
+      .lang {
+        display: none;
       }
       .lnr {
         display: inline;
@@ -381,10 +399,11 @@ nav {
   @media #{$medium-screen} {
     ul {
       width: 970px;
-
       a {
-        font-size: 1.6em;
         line-height: 2.6;
+      }
+      li {
+        font-size: 1.6em;
       }
     }
   }

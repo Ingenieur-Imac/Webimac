@@ -6,4 +6,7 @@
             <p><em>{{trans("messages.hdr-motto")}}</em></p>
         </div>
     </a>
+    <div class="lang">
+        <p><a href="#">EN</a> | <a href="#" class="color">FR</a></p>
+    </div>
 </div>
