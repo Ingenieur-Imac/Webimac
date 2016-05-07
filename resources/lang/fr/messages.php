@@ -100,6 +100,21 @@
         "int-framed-3-a" => "100%",
         "int-framed-3-b" => "des étudiants",
         "int-framed-3-c" => "reviennent satisfaits et recommandent de partir",
+            //MAP
+        "int-cliquez" => "Cliquez sur les destinations !",
+        "int-m-1-t" => "Allemagne",
+        "int-m-1-u-1" => "Stuttgart Media University - Stuttgart",
+        "int-m-1-u-2" => "Bauhaus-Universität Weimar - Weimar",
+        "int-m-1-c" => "Ces universités répondront aux attentes des passionnés de l’audiovisuel ou du design, en plus de leur ouvrir les portes des mœurs germaniques.",
+        "int-m-2-t" => "Canada",
+        "int-m-2-c" => "Grâce au programme BCI, de nombreuses universités sont accessibles pour 1 ou 2 semestre(s). Une infinité de formations peuvent être choisies en corrélation avec les attentes des étudiants de l’IMAC.",
+        "int-m-3-t" => "Corée du Sud",
+        "int-m-3-u-1" => "Chonbuk National University - Chonbuk",
+        "int-m-3-c-1" => "L'Université nationale Chonbuk est une université nationale de Corée du Sud située à Jeonju dans le Jeolla du Nord (c’est à la montagne !)",
+        "int-m-3-u-2" => "Ewha Womans University - Séoul",
+        "int-m-3-c-2" => "C’est une université très sélective avec un gros département en programmation !",
+        "int-m-4-t" => "Écosse",
+        "int-m-4-c" => "Elles sont toutes envisageables à condition que le diplôme soit de niveau undergraduate (bachelor). Les futurs webmasters trouveront de quoi ravir leur orientation à l’international.",
 
         //MENTIONS LEGALES :: REFERS TO pages.legalNotice.blade.php
         "title-ml" => "Mentions légales | Ingénieur IMAC",
@@ -383,6 +398,18 @@
         //TIMERJPO :: REFERS TO includes.timerjpo.blade.php
         "jpo-1" => "La Journée Portes Ouvertes de l'IMAC c'est le 13 Février de 9h à 17h",
 
+        //FORM PARTNERSHIP :: REFERS TO pages.newPartnership.blade.php
+        "title-fptn" => "Devenir partenaire | IMAC ingénieur",
+        "fptn-t" => "Devenir partenaire",
+        "fptn-st" => "Si vous êtes intéressé pour devenir partenaire de la formation IMAC, veuillez remplir le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.",
+        "fptn-c-0" => "(Les champs indiqués par une * sont obligatoires.)",
+        "fptn-f-ph-1" => "Votre e-mail*",
+        "fptn-f-ph-2" => "Nom, nom d\'entreprise",
+        "fptn-f-ph-3" => "Objet de l\'e-mail*",
+        "fptn-f-ph-4" => "Message*",
+        "fptn-f-ph-5" => "Complétez l\'opération à trou : 1 + ",
+        "fptn-f-ph-6" => "?*",
+        "fptn-f-ph-7" => "Envoyer",
     ]
 
 ?>

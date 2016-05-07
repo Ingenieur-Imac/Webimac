@@ -15,6 +15,12 @@
     {!! Form::textarea('description',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- english description form input -->
+<div class="form-group">
+    {!! Form::label('description','Description Anglaise :') !!}
+    {!! Form::textarea('en_description',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- url_image form input -->
 @if (isset($old_url_image))
     <div class="form-group">
@@ -77,9 +83,9 @@
 </div>
 @endif
 
-<!-- name_of_tutors form input -->
+<!-- name_of_tutors form input :: -->
 <div class="form-group">
-    {!! Form::label('name_of_tutors','Nom des tuteurs') !!}
+    {!! Form::label('name_of_tutors','Nom des tuteurs (à séparer par des <br/>)') !!}
     {!! Form::text('name_of_tutors',null,['class' => 'form-control']) !!}
 </div>
 
@@ -114,7 +120,7 @@
 
 <!-- url_video form input -->
 <div class="form-group">
-    {!! Form::label('url_video','Url de la vidéo de présentation') !!}
+    {!! Form::label('url_video','Url de la vidéo de présentation (juste la clef à la fin de l\'URL)') !!}
     {!! Form::text('url_video',null,['class' => 'form-control']) !!}
 </div>
 

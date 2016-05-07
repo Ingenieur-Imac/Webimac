@@ -19,7 +19,7 @@ function searchStudent(s){
             $('#studentResults').html("");
             result  = JSON.parse(result);
             for(var i in result){
-                $('#studentResults').append("<a href='#' rel='" + result[i]["id"] + "'class='list-group-item pointer'>" + result[i]["name"] + " " + result[i]["year"] + "</a>");
+                $('#studentResults').append("<a href='#' rel='" + result[i]["id"] + "'class='list-group-item pointer'>" + result[i]["name"] + " " + result[i]["surname"] + " " + result[i]["year"] + "</a>");
             }
 
             $('#studentResults a').click(function(e){

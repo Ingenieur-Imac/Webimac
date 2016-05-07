@@ -86,6 +86,8 @@ class AdminStudentController extends Controller
     {
         $promos = Promo::orderBy('year')->pluck('year','id');
         $student = Student::findOrFail($id);
+        $student->name = ucfirst($student->name);
+        $student->surname = ucfirst($student->surname);
         return view('admin.student.edit',compact('student','promos'));
     }
 
@@ -134,7 +136,11 @@ class AdminStudentController extends Controller
     }
 
     public function search($s){
-        $students = DB::select("SELECT students.name, promos.year, students.id FROM students, promos WHERE LOWER(name) like '%".$s."%' AND students.promo = promos.id");
+        $students = DB::select("SELECT students.name, students.surname, promos.year, students.id FROM students, promos WHERE LOWER(name) like '%".$s."%' AND students.promo = promos.id");
+        foreach ($students as &$student) {
+            $student->name = ucfirst($student->name);
+            $student->surname = ucfirst($student->surname);
+        }
         echo(json_encode($students));
     }
 

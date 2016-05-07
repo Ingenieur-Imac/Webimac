@@ -61,4 +61,12 @@
         </div>
         {!! Form::submit('Enregistrer les dates de candidatures',['class' => 'btn btn-primary form-control']) !!}
     {!! Form::close() !!}
+    <hr/>
+    {!! Form::open(['url' => 'admin/others/openning-application']) !!}
+        <!-- afficher form input -->
+        <div class="form-group">
+            {!! Form::label('openning-application','Afficher le bandeau de candidatures :') !!}
+            {!! Form::checkbox('openning-application',null,$displayOpenning) !!}
+            {!! Form::submit('Enregistrer',['class' => 'btn btn-primary form-control']) !!}
+        </div>
 @endsection

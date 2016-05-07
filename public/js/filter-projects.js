@@ -34,6 +34,8 @@ function updateDisplayOfProject(){
         tags.push($(this).attr("rel"));
     });
 
+    console.log(tags);
+
     // Remise à Zéro
     if(tags.length == 0 && yearvalue == 0 && !heart){
         $(".project").css("display","block");
@@ -52,13 +54,19 @@ function updateDisplayOfProject(){
             });
         }
 
-        //Check for tag
+        //Check for tags
         if(tags.length != 0 && display){
-            display = false;
-            $(".project:eq("+key+") .ctn-tags .tag").each(function(){
-                if(tags.indexOf($(this).attr("rel")) > -1)
-                    display = true;
-            });
+            display = true;
+            for (var i in tags) {
+                var tmptag = false;
+                $(".project:eq("+key+") .ctn-tags .tag").each(function(){
+                    if($(this).attr("rel") == tags[i]){
+                        tmptag = true;
+                    }
+                });
+                if(!tmptag)
+                    display = false;
+            }
         }
 
         //Check for year

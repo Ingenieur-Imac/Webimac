@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    {{trans("messages.title-sl")}}
+    {!! trans("messages.title-sl") !!}
 @endsection
 
 @section('content')
@@ -9,9 +9,9 @@
 
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">{{trans("messages.sl-ctn-1-t")}}</h1>
-            <p class="lead">{{trans("messages.sl-ctn-1-st")}}</p>
-            <p>{{trans("messages.sl-ctn-1-c")}}</p>
+            <h1 class="title-1">{!! trans("messages.sl-ctn-1-t") !!}</h1>
+            <p class="lead">{!! trans("messages.sl-ctn-1-st") !!}</p>
+            <p>{!! trans("messages.sl-ctn-1-c") !!}</p>
         </div>
     </div>
 

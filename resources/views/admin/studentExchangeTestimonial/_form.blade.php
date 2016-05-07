@@ -6,7 +6,7 @@
 
 <!-- job form input -->
 <div class="form-group">
-    {!! Form::label('job','Emploi :') !!}
+    {!! Form::label('job','Autres informations :') !!}
     {!! Form::text('job',null,['class' => 'form-control']) !!}
 </div>
 
@@ -20,6 +20,12 @@
 <div class="form-group">
     {!! Form::label('overview','Témoignages :') !!}
     {!! Form::textarea('overview',null,['class' => 'form-control']) !!}
+</div>
+
+<!-- english overview form input -->
+<div class="form-group">
+    {!! Form::label('en_overview','Témoignages en Anglais :') !!}
+    {!! Form::textarea('en_overview',null,['class' => 'form-control']) !!}
 </div>
 
 <!-- url_image form input -->

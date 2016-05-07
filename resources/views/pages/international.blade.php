@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    {{trans("messages.title-int")}}
+    {!! trans("messages.title-int") !!}
 @endsection
 
 @section('script')
@@ -85,25 +85,25 @@
       </div> --}}
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">Partir à l'étranger</h1>
-            <p class="lead center">L'expérience d'un séjour à l'étranger est forcément enrichissante :</p>
-            <p>L'immersion dans une culture différente ouvre de nouveaux horizons, tant sur le plan personnel que professionnel. <cite>"Sur terre, ce ne sont pas les occasions de s'émerveiller qui manquent, mais les émerveillés."</cite> - Éric-Emmanuel Schmitt</p>
+            <h1 class="title-1">{!! trans("messages.int-title") !!}</h1>
+            <p class="lead center">{!! trans("messages.int-container-1-title") !!}</p>
+            <p>{!! trans("messages.int-container-1-content") !!}</p>
         </div>
         <div class="frames">
             <div class="framed">
-                <p class="big-number">{{trans("messages.int-framed-1-a")}}</p>
-                <p class="title-4">{{trans("messages.int-framed-1-b")}}</p>
-                <p>{{trans("messages.int-framed-1-c")}}</p>
+                <p class="big-number">{!! trans("messages.int-framed-1-a") !!}</p>
+                <p class="title-4">{!! trans("messages.int-framed-1-b") !!}</p>
+                <p>{!! trans("messages.int-framed-1-c") !!}</p>
             </div>
             <div class="framed">
-                <p class="big-number">{{trans("messages.int-framed-2-a")}}</p>
-                <p class="title-4">{{trans("messages.int-framed-2-b")}}</p>
-                <p>{{trans("messages.int-framed-2-c")}}</p>
+                <p class="big-number">{!! trans("messages.int-framed-2-a") !!}</p>
+                <p class="title-4">{!! trans("messages.int-framed-2-b") !!}</p>
+                <p>{!! trans("messages.int-framed-2-c") !!}</p>
             </div>
             <div class="framed">
-                <p class="big-number">{{trans("messages.int-framed-3-a")}}</p>
-                <p class="title-4">{{trans("messages.int-framed-3-b")}}</p>
-                <p>{{trans("messages.int-framed-3-c")}}</p>
+                <p class="big-number">{!! trans("messages.int-framed-3-a") !!}</p>
+                <p class="title-4">{!! trans("messages.int-framed-3-b") !!}</p>
+                <p>{!! trans("messages.int-framed-3-c") !!}</p>
             </div>
         </div>
     </div>
@@ -111,31 +111,31 @@
     <div class="light-row">
         <div class="container">
             <div class="col-10 center-block">
-                <h2 class="title-2">Les destinations préférées des IMAC</h2>
-                <p class="lead center">Cliquez sur les destinations !</p>
+                <h2 class="title-2">{!! trans("messages.int-subtitle") !!}</h2>
+                <p class="lead center">{!! trans("messages.int-cliquez") !!}</p>
                 <div id="vmap"></div>
             </div>
             <div class="col-8 center-block">
                 <div class="framed full-framed" alt="de">
-                    <p class="big-number">Allemagne</p>
-                    <p class="title-4">Stuttgart Media University - Stuttgart</p>
-                    <p class="title-4">Bauhaus-Universität Weimar - Weimar</p>
-                    <p>Ces universités répondront aux attentes des passionnés de l’audiovisuel ou du design, en plus de leur ouvrir les portes des mœurs germaniques.</p>
+                    <p class="big-number">{!! trans("messages.int-m-1-t") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-1-u-1") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-1-u-2") !!}</p>
+                    <p>{!! trans("messages.int-m-1-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="ca">
-                    <p class="big-number">Canada</p>
-                    <p>Grâce au programme BCI, de nombreuses universités sont accessibles pour 1 ou 2 semestre(s). Une infinité de formations peuvent être choisies en corrélation avec les attentes des étudiants de l’IMAC.</p>
+                    <p class="big-number">{!! trans("messages.int-m-2-t") !!}</p>
+                    <p>{!! trans("messages.int-m-2-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="kr">
-                    <p class="big-number">Corée du Sud</p>
-                    <p class="title-4">Chonbuk National University - Chonbuk</p>
-                    <p>L'Université nationale Chonbuk est une université nationale de Corée du Sud située à Jeonju dans le Jeolla du Nord (c’est à la montagne !)</p>
-                    <p class="title-4">Ewha Womans University - Séoul</p>
-                    <p>C’est une université très sélective avec un gros département en programmation !</p>
+                    <p class="big-number">{!! trans("messages.int-m-3-t") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-3-u-1") !!}</p>
+                    <p>{!! trans("messages.int-m-3-c-1") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-3-u-2") !!}</p>
+                    <p>{!! trans("messages.int-m-3-c-2") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="gb">
-                    <p class="big-number">Écosse</p>
-                    <p>Elles sont toutes envisageables pour y partir un an, à condition que le diplôme soit de niveau undergraduate (bachelor). Les futurs webmasters trouveront de quoi ravir leur orientation à l’international.</p>
+                    <p class="big-number">{!! trans("messages.int-m-4-t") !!}</p>
+                    <p>{!! trans("messages.int-m-4-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="es">
                     <p class="big-number">Espagne</p>
