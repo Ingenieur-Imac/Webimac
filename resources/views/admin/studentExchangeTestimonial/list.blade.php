@@ -3,7 +3,7 @@
 @section('content')
     <h1> Liste des Paroles d'’Étudiants partis à l’étranger</h1>
     <hr/>
-    <a href="{{action('AdminStudentExchangeTestimonialController@create')}}"><button class="btn btn-primary">Créer une nouvelle Parole d'Étudiant partit à l'étranger</button></a>
+    <a href="{{action('AdminStudentExchangeTestimonialController@create')}}"><button class="btn btn-primary">Créer une nouvelle Parole d'Étudiant parti à l'étranger</button></a>
     <hr/>
     @if (count($studentExchangeTestimonials) == 0)
         Aucune parole d'étudiant partit à l'étranger à afficher pour le moment

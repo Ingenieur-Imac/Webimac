@@ -27,12 +27,12 @@
             <div class="project-item">
                 <span class="lnr lnr-users lnr-2x"></span>
                 <div class="project-item-content">
-                    <p class="title-3">{{trans("messages.pro-c-2")}}</p>
+                    <p class="title-3">{!! trans("messages.pro-c-2") !!}</p>
                     <p>{!! $project->contributors !!}</p>
                 </div>
 
                 <div class="project-item-content">
-                    <p class="title-3">{{trans("messages.pro-c-3")}}</p>
+                    <p class="title-3">{!! trans("messages.pro-c-3") !!}</p>
                     <p>{!! $project->name_of_tutors !!}</p>
                 </div>
             </div>
@@ -44,13 +44,13 @@
             @endif
             <div class="center">
                 @if(!empty($project->web_link))
-                    <a class="primary-btn" target="_BLANK" href="{{ $project->web_link }}">{{trans("messages.pro-c-4")}}</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->web_link }}">{!! trans("messages.pro-c-4") !!}</a>
                 @endif
                 @if(!empty($project->github_link))
-                    <a class="primary-btn" target="_BLANK" href="{{ $project->github_link }}">{{trans("messages.pro-c-5")}}</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->github_link }}">{!! trans("messages.pro-c-5") !!}</a>
                 @endif
                 @if(!empty($project->vimeo_link))
-                    <a class="primary-btn" target="_BLANK" href="{{ $project->vimeo_link }}">{{trans("messages.pro-c-6")}}</a>
+                    <a class="primary-btn" target="_BLANK" href="{{ $project->vimeo_link }}">{!! trans("messages.pro-c-6") !!}</a>
                 @endif
             </div>
         </div>

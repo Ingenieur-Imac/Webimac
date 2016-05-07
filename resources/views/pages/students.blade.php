@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    {{trans("messages.title-sts")}}
+    {!! trans("messages.title-sts") !!}
 @endsection
 
 @section('script')
@@ -15,17 +15,17 @@
     <!-- text -->
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">{{trans("messages.sts-ctn-1-t")}}</h1>
-            <p class="lead">{{trans("messages.sts-ctn-1-st")}}</p>
-            <p>{{trans("messages.sts-ctn-1-c-1")}}</p>
-            <p>{{trans("messages.sts-ctn-1-c-2")}}</p>
+            <h1 class="title-1">{!! trans("messages.sts-ctn-1-t") !!}</h1>
+            <p class="lead">{!! trans("messages.sts-ctn-1-st") !!}</p>
+            <p>{!! trans("messages.sts-ctn-1-c-1") !!}</p>
+            <p>{!! trans("messages.sts-ctn-1-c-2") !!}</p>
         </div>
     </div>
 
     <div class="primary-row">
         <div class="container-fluid center">
-            <h2 class="title-2">{{trans("messages.sts-ctn-2-t")}}</h2>
-            <a class="btn filled-btn white-primary-btn" href="{{ action('PagesController@internshipOffer') }}">{{trans("messages.sts-ctn-2-l")}}</a>
+            <h2 class="title-2">{!! trans("messages.sts-ctn-2-t") !!}</h2>
+            <a class="btn filled-btn white-primary-btn" href="{{ action('PagesController@internshipOffer') }}">{!! trans("messages.sts-ctn-2-l") !!}</a>
         </div>
     </div>
 
