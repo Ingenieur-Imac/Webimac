@@ -493,8 +493,17 @@
 // INTERNATIONAL PAGE
 //========================
 .full-framed {
+  display: none;
   margin: $spacing-unit 0;
   width: 100%;
+}
+.full-framed.selected {
+  display: block;
+}
+#vmap {
+  width: 100%;
+  height: auto;
+  height: 500px;
 }
 
 //========================
@@ -662,42 +671,78 @@
   }
 }
 
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & + .title-2 {
+    margin-top: $spacing-unit;
+  }
+  h3 {
+    font: 1.3em $title-font-stack;
+  }
+  .lnr {
+    bottom: -5px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: relative;
+  }
+  .icon-linkedin-rect {
+    font-size: 0.8em;
+  }
+}
+.people-picture {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}
+.staff-member {
+  align-items: center;
+  background: $light-color;
+  @include box-sizing(border-box);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px 0 10px;
+  padding: 20px;
+  width: 250px;
+}
+
 // TESTIMONIALS
+.slider-arrow {
+  color: $medium-color;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  position: absolute;
+  top: calc(50% - 22px);
+}
+.slider-arrow:hover,
+.arrow:hover {
+  color: $primary-color;
+}
+
+
 .testimonial {
   position: relative;
-  text-align: center;
-  width: 100%;
   ul {
     align-items: center;
     display: flex;
-    justify-content: center;
     li {
       list-style: none;
       margin: 0;
+      //overflow: hidden;
+      .title-4, .testi-role {
+        text-align: center;
+      }
     }
   }
-  .slider-arrow {
-    color: $medium-color;
-    cursor: pointer;
-    display: none;
-    font-size: 3em;
-    position: absolute;
-    top: calc(50% - 22px);
-  }
-  .slider-arrow:hover,
-  .arrow:hover {
-    color: $primary-color;
-  }
-  .testi-picture {
-    border-radius: 50%;
-    display: inline-block;
+  .people-picture {
+    flex-basis: 160px;
     height: 160px;
-    overflow: hidden;
+    margin: 0 auto;
+    min-width: 160px;
     width: 160px;
-    img {
-      min-height: 100%;
-      min-width: 100%;
-    }
   }
   .testi-role {
      font-weight: normal;
@@ -705,140 +750,50 @@
   .testi-show {
     margin: auto;
     overflow: hidden;
-    width: 90%;
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: calc(100% - 20px);
+    overflow: hidden;
+    img {
+      height: 100%;
+      margin-top: $spacing-unit/4;
+      padding: 0 10px;
+      width: auto;
+    }
   }
   @media #{$small-screen} {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        .title-4, .testi-role {
+          text-align: left;
+        }
+      }
+    }
     .slider-arrow {
       display: inline;
     }
     .slider-arrow-left {
-      left: -20px;
+      left: -8.33333333%;
     }
     .slider-arrow-right {
-      right: -20px;
+      right: -8.33333333%;
     }
     .testi-body {
-      display: inline-block;
-      margin-left: 40px;
-      text-align: left;
-      vertical-align: middle;
-      width: 440px;
+      width: calc(100% - 8.33333333% - 160px);
     }
     .testi-picture {
       vertical-align: middle;
     }
   }
-  @media #{$medium-screen} {
-    .slider-arrow-left {
-      left: 0;
-    }
-    .slider-arrow-right {
-      right: 0;
-    }
-    .testi-body {
-      width: 550px;
-    }
-  }
 }
-
-// .testi-picture {
-//   border-radius: 50%;
-//   height: 160px;
-//   width: auto;
-// }
-// .testimonial {
-//   text-align: center;
-// }
-// .testi-arrow {
-//     font-size: 5em;
-//     display: table-cell;
-//     vertical-align: middle;
-//     cursor: pointer;
-// }
-// .testi-arrow-left {
-//     padding-right: 50px;
-// }
-// .testi-arrow-right {
-//     padding-left: 50px;
-// }
-//
-// .ctn-testimonial {
-//   @include box-sizing(border-box);
-//     //min-width: 920px;
-//     //width: 100%;
-//     //display: inline-flex;
-//     vertical-align: top;
-// }
-//
-// .inner-testimonial {
-//   @include box-sizing(border-box);
-//     display: table;
-//     //width: 100%;
-// }
-//
-// .master-testimonial {
-//     //width: 920px;
-//     //display:flex;
-//     overflow: hidden;
-// }
-//
-// @media #{$small-screen} {
-//   .testi-picture {
-//     display: table-cell;
-//   }
-//   .testi-body {
-//     display: table-cell;
-//     padding-left: 70px;
-//     vertical-align: middle;
-//   }
-//
-//   .testi-role {
-//     font-weight: normal;
-//   }
-//   .testimonial {
-//     @include box-sizing(border-box);
-//     display: table;
-//     margin: 15px auto 0 auto;
-//     text-align: left;
-//     width: 720px;
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// .tag {
-//   border: $medium-color 1px solid;
-//   color: $medium-color;
-//   display: inline-block;
-//   font-size: 0.8em;
-//   font-weight: normal;
-//   margin: 10px 0;
-//   padding: 2px 4px;
-// }
-// .tag {
-//   background: $main-color;
-//   color: $medium-color;
-//   display: inline-block;
-//   font-size: 0.8em;
-//   font-weight: normal;
-//   margin: 5px 10px 5px 0;
-//   padding: 2px 10px;
-// }
-
-
-
-
-
-
 
 .close {
   background: $main-color;

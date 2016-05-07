@@ -11,6 +11,8 @@ use Imac\Partnership;
 use Imac\Staff;
 use Imac\Student;
 use Imac\StudentTestimonial;
+use Imac\StudentExchangeTestimonial;
+use Imac\GalleryStudentExchangeTestimonial;
 use Imac\Tag;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
@@ -96,7 +98,12 @@ class PagesController extends Controller{
     }
 
     public function international(){
-        return view('pages.international');
+        $student_testimonials = StudentExchangeTestimonial::all();
+        $gallery = array();
+        foreach ($student_testimonials as $student) {
+          $gallery[$student->id] = GalleryStudentExchangeTestimonial::where('id_testimonial', '=', $student->id)->get();
+        }
+        return view('pages.international', compact('student_testimonials', 'gallery'));
     }
 
     public function partnership(){

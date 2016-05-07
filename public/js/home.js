@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var isInActivity = false;
     var nbSlides = $('.testimonial li').length;
-    var neededMargin = -100/nbSlides*(nbSlides-1)+'%';
+    var neededMargin = -100/nbSlides+'%';
     var margin = {marginLeft: neededMargin};
     $('.slider-arrow-right').click(function(){
         if(!isInActivity){

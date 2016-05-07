@@ -1,6 +1,6 @@
 <?php
   $title = trans("messages.banner-home-title-1");
-  $img = 'Table_work2.jpg';
+  $img = 'Home_banner.jpg';
   $text = trans("messages.banner-home-content");
 ?>
 
