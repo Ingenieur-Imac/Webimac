@@ -105,8 +105,10 @@
 
     <div class="light-row">
         <div class="container">
-            <h2 class="title-2">{!! trans("messages.home-testimonial") !!}</h2>
-            @include('includes.testimonial', $student_testimonials)
+            <div class="col-10 center-block">
+                <h2 class="title-2">{!! trans("messages.home-testimonial") !!}</h2>
+                @include('includes.testimonial', array('testimonials' => $student_testimonials, 'folder' => 'studentTestimonial'))
+            </div>
         </div>
     </div>
 @endsection

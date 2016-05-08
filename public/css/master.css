@@ -1804,15 +1804,11 @@ p.lead + .frames {
     z-index: -50; }
   .strong-framed .framed-3 {
     border: #848484 1px solid; }
-
-.tag {
-  background: #fff;
-  color: #848484;
-  display: inline-block;
-  font-size: 0.8em;
-  font-weight: normal;
-  margin: 5px 10px 5px 0;
-  padding: 2px 10px; }
+  .strong-framed .tag {
+    background: #fff;
+    border: none;
+    margin: 5px 10px 5px 0;
+    padding: 2px 10px; }
 
 @media (min-width: 768px) {
   .strong-framed {
@@ -2023,16 +2019,18 @@ p.lead + .frames {
         font-size: 2.5em; }
   .project .img-project:hover .hover-img-project {
     opacity: 1; }
-  .project .tag {
-    border: #848484 1px solid;
-    color: #848484;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: normal;
-    padding: 2px 4px; }
-  .project .important-tag {
-    border: #f73c3c 1px solid;
-    color: #f73c3c; }
+
+.tag {
+  border: #848484 1px solid;
+  color: #848484;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 2px 4px; }
+
+.important-tag {
+  border: #f73c3c 1px solid;
+  color: #f73c3c; }
 
 @media (min-width: 768px) {
   .project {
@@ -2073,7 +2071,7 @@ p.lead + .frames {
     margin-bottom: 40px; }
 
 .student {
-  background: #f7f7f7;
+  background: #dadbd9;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2151,7 +2149,7 @@ p.lead + .frames {
   width: initial; }
 
 .association:nth-child(even) {
-  background: #f7f7f7; }
+  background: #dadbd9; }
 
 .full-framed {
   display: none;

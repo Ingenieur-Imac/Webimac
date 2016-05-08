@@ -78,7 +78,20 @@ class PagesController extends Controller{
     public function project($url){
         $project = Project::where('url_page','=',$url)->get();
         $project = $project->first();
+        $project->tags = DB::table('tags')
+            ->select('tags.id','tags.name')
+            ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
+            ->join('projects','projects.id', '=', 'project_tags.project_id')
+            ->where('projects.id', '=', $project->id)
+            ->get();
         $project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
+        $project->contributors = DB::table('students')
+            ->select('students.id','students.name','students.surname','students.url_image','students.url_web','students.url_linkedin')
+            ->join('project_students','students.id', '=', 'project_students.student_id')
+            ->join('projects','projects.id', '=', 'project_students.project_id')
+            ->where('projects.id', '=', $project->id)
+            ->orderBy('name', 'asc')
+            ->get();
         return view('pages.project', compact('project'));
     }
 
