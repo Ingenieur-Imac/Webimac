@@ -4,6 +4,11 @@
     {!! trans("messages.title-ptn") !!}
 @endsection
 
+@section('script')
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="{{URL::asset('js/home.js')}}"></script>
+@endsection
+
 @section('content')
     <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container">
@@ -56,6 +61,13 @@
                   <li><span class="lnr lnr-checkmark-circle"></span> <strong>{!! trans("messages.ptn-ctn-3-c-3-c-4") !!}</strong></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-10 center-block">
+            <h2 class="title-2">{!! trans("messages.home-testimonial") !!}</h2>
+            @include('includes.testimonial', array('testimonials' => $partner_testimonials, 'folder' => 'EnterpriseTestimonial'))
         </div>
     </div>
 @endsection

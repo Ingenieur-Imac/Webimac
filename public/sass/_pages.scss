@@ -4,6 +4,120 @@
 
 
 //========================
+// TESTIMONIALS
+//========================
+.slider-arrow {
+  color: $medium-color;
+  cursor: pointer;
+  font-size: 3em;
+  position: absolute;
+  top: 100px;
+}
+.slider-arrow:hover,
+.arrow:hover {
+  color: $primary-color;
+}
+.slider-arrow-left {
+  left: 0;
+}
+.slider-arrow-right {
+  right: 0;
+}
+.testimonial {
+  position: relative;
+  ul {
+    align-items: center;
+    display: flex;
+    li {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      //padding: 0 10px;
+      .title-4, .testi-role {
+        text-align: center;
+      }
+      .people-picture {
+        flex-basis: 160px;
+        height: 160px;
+        margin: 0 auto;
+        min-width: 160px;
+        width: 160px;
+      }
+      .testi-role {
+         font-weight: normal;
+      }
+    }
+  }
+  .testi-show {
+    overflow: hidden !important;
+  }
+  .gallery {
+    img {
+      @include box-sizing(border-box);
+      margin: $spacing-unit/4 5px 0 5px;
+    }
+    .slider-arrow-left {
+      left: -8.33333333%;
+    }
+    .slider-arrow-right {
+      right: -8.33333333%;
+    }
+  }
+  @media #{$small-screen} {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        .title-4, .testi-role {
+          text-align: left;
+        }
+      }
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      height: 125px;
+      width: calc(100% - 20px);
+      overflow: hidden;
+      img {
+        height: 100%;
+        margin-top: $spacing-unit/4;
+        width: auto;
+      }
+    }
+    .slider-arrow-left {
+      left: -8.33333333%;
+      top: calc(50% - 22px);
+    }
+    .slider-arrow-right {
+      right: -8.33333333%;
+      top: calc(50% - 22px);
+    }
+    .testi-body {
+      width: calc(100% - 8.33333333% - 160px);
+    }
+    .testi-picture {
+      vertical-align: middle;
+    }
+  }
+  @media #{$medium-screen} {
+    .gallery {
+      height: 150px;
+    }
+  }
+  @media #{$large-screen} {
+    .gallery {
+      height: 200px;
+    }
+  }
+}
+
+
+//========================
 // SUBNAV
 //========================
 .subnav {
@@ -375,6 +489,26 @@
 //========================
 // STUDENTS PAGE
 //========================
+.select-year {
+  margin: 20px 0;
+  select {
+    @include box-sizing(border-box);
+    border: 1px $primary-color solid;
+    border-radius: 0;
+    display: block;
+    font: 1.8em $title-font-stack;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  @media #{$small-screen} {
+    select {
+      margin: 0 auto;
+      width: 350px;
+    }
+  }
+}
 .arrow {
   display: none;
 }
@@ -389,7 +523,7 @@
   }
 }
 .student {
-  background: $light-color;
+  background: $extra-light-color;
   @include box-sizing(border-box);
   display: flex;
   justify-content: space-between;
@@ -480,7 +614,7 @@
   }
 }
 .association:nth-child(even) {
-  background: $light-color;
+  background: $extra-light-color;
 }
 
 
@@ -590,30 +724,6 @@
 
 
 
-// SLIDER PROMOTION
-//TODO : RESPONSIVE
-
-.select-year {
-  margin: 20px 0;
-  select {
-    @include box-sizing(border-box);
-    border: 1px $primary-color solid;
-    border-radius: 0;
-    display: block;
-    font: 1.8em $title-font-stack;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-  }
-  @media #{$small-screen} {
-    select {
-      margin: 0 auto;
-      width: 350px;
-    }
-  }
-}
-
 
 
 // BANNER WITH IMAGE
@@ -669,119 +779,7 @@
 
 
 
-//========================
-// TESTIMONIALS
-//========================
-.slider-arrow {
-  color: $medium-color;
-  cursor: pointer;
-  font-size: 3em;
-  position: absolute;
-  top: 100px;
-}
-.slider-arrow:hover,
-.arrow:hover {
-  color: $primary-color;
-}
-.slider-arrow-left {
-  left: 0;
-}
-.slider-arrow-right {
-  right: 0;
-}
-.testimonial {
-  position: relative;
-  ul {
-    align-items: center;
-    display: flex;
-    li {
-      list-style: none;
-      margin: 0;
-      overflow: hidden;
-      //padding: 0 10px;
-      .title-4, .testi-role {
-        text-align: center;
-      }
-      .people-picture {
-        flex-basis: 160px;
-        height: 160px;
-        margin: 0 auto;
-        min-width: 160px;
-        width: 160px;
-      }
-      .testi-role {
-         font-weight: normal;
-      }
-      .testi-show {
-        margin: auto;
-        overflow: hidden !important;
-      }
-    }
-  }
-  .gallery {
-    img {
-      @include box-sizing(border-box);
-      margin: $spacing-unit/4 5px 0 5px;
-    }
-    .slider-arrow-left {
-      left: -8.33333333%;
-    }
-    .slider-arrow-right {
-      right: -8.33333333%;
-    }
-  }
-  @media #{$small-screen} {
-    ul {
-      li {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        list-style: none;
-        justify-content: center;
-        margin: 0;
-        .title-4, .testi-role {
-          text-align: left;
-        }
-      }
-    }
-    .gallery {
-      display: flex;
-      justify-content: center;
-      height: 125px;
-      width: calc(100% - 20px);
-      overflow: hidden;
-      img {
-        height: 100%;
-        margin-top: $spacing-unit/4;
-        width: auto;
-      }
-    }
-    .slider-arrow-left {
-      left: -8.33333333%;
-      top: calc(50% - 22px);
-    }
-    .slider-arrow-right {
-      right: -8.33333333%;
-      top: calc(50% - 22px);
-    }
-    .testi-body {
-      width: calc(100% - 8.33333333% - 160px);
-    }
-    .testi-picture {
-      vertical-align: middle;
-    }
-  }
-  @media #{$medium-screen} {
-    .gallery {
-      height: 150px;
-    }
-  }
-  @media #{$large-screen} {
-    .gallery {
-      height: 200px;
-    }
-  }
-}
+
 
 .close {
   background: $main-color;

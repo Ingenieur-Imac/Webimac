@@ -5,6 +5,8 @@ namespace Imac\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
+use Imac\EnterpriseTestimonial;
+use Imac\GalleryStudentExchangeTestimonial;
 use Imac\Project;
 use Imac\Promo;
 use Imac\Partnership;
@@ -12,7 +14,6 @@ use Imac\Staff;
 use Imac\Student;
 use Imac\StudentTestimonial;
 use Imac\StudentExchangeTestimonial;
-use Imac\GalleryStudentExchangeTestimonial;
 use Imac\Tag;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
@@ -108,7 +109,8 @@ class PagesController extends Controller{
 
     public function partnership(){
         $partnerships = Partnership::orderBy('order')->get();
-        return view('pages.partnership',compact('partnerships'));
+        $partner_testimonials = EnterpriseTestimonial::all();
+        return view('pages.partnership',compact('partnerships', 'partner_testimonials'));
     }
 
     public function contact(){

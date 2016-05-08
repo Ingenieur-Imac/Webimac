@@ -180,32 +180,8 @@
     <div class="light-row">
         <div class="container">
             <div class="col-10 center-block">
-                <h2 class="title-2 center">Paroles d'étudiants partis en échange</h2>
-                <div class="testimonial">
-                    <span class="slider-arrow slider-arrow-left lnr lnr-chevron-left"></span>
-                    <div class="testi-show">
-                        <ul style="width: {{ count($student_testimonials)*100 }}%">
-                            @foreach ($student_testimonials as $student_testimonial)
-                                <li style="width: {{ 100/count($student_testimonials) }}%">
-                                    <div class="people-picture" style="background-image: url('{{URL::asset('images/studentExchangeTestimonial/'.$student_testimonial->url_image)}}');"></div>
-                                    <div class="testi-body col-offset-1">
-                                        <h3 class="title-4">{{$student_testimonial->name}} @if ($student_testimonial->year > 0) - Promo {{$student_testimonial->year}} @endif</h3>
-                                        <p class="testi-role">{{$student_testimonial->job}}</p>
-                                        <blockquote>
-                                            <p>{{$student_testimonial->overview}}</p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="gallery">
-                                        @foreach ($gallery[$student_testimonial->id] as $picture)
-                                            <img src="{{URL::asset('images/gallery/'.$picture->url)}}" alt="Photo - {{$student_testimonial->name}}">
-                                        @endforeach
-                                    </div>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <span class="slider-arrow slider-arrow-right lnr lnr-chevron-right"></span>
-                </div>
+                <h2 class="title-2">Paroles d'étudiants partis en échange</h2>
+                @include('includes.testimonial', array('testimonials' => $student_testimonials, 'folder' => 'studentExchangeTestimonial', 'gallery' => $gallery))
             </div>
         </div>
     </div>
