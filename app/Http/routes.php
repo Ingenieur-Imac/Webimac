@@ -24,7 +24,10 @@ Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{url}','PagesController@project');
 Route::get('/devenir-partenaires','PagesController@newPartnership');
+    //Envoie du Mail
 Route::get('/deposer-offre-stage','PagesController@internshipOffer');
+    //Envoie du Mail
+Route::post('/mail/internship','MailController@internshipOffer');
 Route::get('/mentions-legales','PagesController@legalNotice');
 
 
@@ -84,5 +87,5 @@ Route::get('admin/logout','AdminPagesController@logout');
 
 //TEST
 Route::get('timer','PagesController@timer');
-
+Route::get('setLang/{lang}','PagesController@changeLang');
 ?>

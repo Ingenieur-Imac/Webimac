@@ -3,6 +3,10 @@
 namespace Imac\Http\Controllers;
 
 use DB;
+use Validator;
+use Session;
+use App;
+use Redirect;
 use Illuminate\Http\Request;
 use Imac\Http\Requests;
 use Imac\Project;
@@ -20,7 +24,7 @@ use Imac\Http\Controllers\Controller;
 class PagesController extends Controller{
 
     public function __construct(){
-        //$this->middleware('auth');
+        $this->middleware('lang');
     }
 
     public function index(){
@@ -138,5 +142,21 @@ class PagesController extends Controller{
         return view('timer',compact('ts'));
     }
 
+    public function changeLang($lang){
+        $rules = [
+        'language' => 'in:en,fr' //list of supported languages of your application.
+        ];
 
+        $language = $lang; //lang is name of form select field.
+
+        $validator = Validator::make(compact($language),$rules);
+
+        if($validator->passes())
+        {
+            Session::put('language',$language);
+            App::setLocale($language);
+        }
+
+        return Redirect::back();
+    }
 }

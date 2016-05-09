@@ -41,9 +41,9 @@
         "admission-container-1-content-1" => "Les IMAC possèdent une imagination et un désir de créer qui dépassent le clivage arts/sciences.",
         "admission-container-1-content-2" => "En effet, leur ouverture d’esprit leur permet d’avoir un intérêt aussi bien pour les arts (arts graphiques, cinéma, musique, arts numériques...) que les sciences (programmation, mathématiques, traitement du signal…) sans pour autant être spécialiste de chacun de ces domaines. En suivant la formation IMAC, ils élargissent leur champ de compétences.",
         "admission-container-1-content-3" => "Dans une volonté de recrutement hétérogène, l'école est accessible sur dossier à tout étudiant disposant d'un niveau BAC+2.",
-        "admission-container-1-content-4-t" => "Formations scientifiques",
+        "admission-container-1-content-4-t" => "Profils scientifiques",
         "admission-container-1-content-4-c" => "Classes préparatoires, DUT Informatique, DUT MMI (anciennement SRC), Licence Maths et Informatique, Licence Physique…",
-        "admission-container-1-content-5-t" => "Formations artistiques",
+        "admission-container-1-content-5-t" => "Profils artistiques",
         "admission-container-1-content-5-c" => "BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…",
         "admisssion-container-1-content-6" => "Les IMAC",
             //SECOND CONTAINER
@@ -126,7 +126,7 @@
         "int-m-8-t" => "Taïwan",
         "int-m-8-c" => "Plusieurs universités sont proposées sur cette magnifique île arborant la côté chinoise, permettant de bénéficier d’un cadre de vue exotique.",
 
-        "int-c-1" => "Pour plus d'informations, visitez <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target="_blank">la page dédiée sur le site de l'UPEM</a>.",
+        "int-c-1" => "Pour plus d'informations, visitez <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.",
             //LES AVANTAGES
         "int-ctn-2-t" => "Les avantages",
         "int-ctn-2-st" => "Profitez du fait d'être étudiant pour partir plus facilement à l'international avant vos débuts dans la vie active !",
@@ -340,7 +340,7 @@
         "pro-c-3" => "Tuteur(s)",
         "pro-c-4" => "Voir le projet en ligne",
         "pro-c-5" => "Voir le projet sur Github",
-        "pro-c-6" => "Voir le projet sur Viméo",
+        "pro-c-6" => "Voir le projet sur Vimeo",
 
         //PROJECTS :: REFERS TO pages.projects.blade.php
         "title-pros" => "Réalisations | IMAC ingénieur",
@@ -361,8 +361,9 @@
         //STUDENT LIFE :: REFERS TO pages.studentLife.blade.php
         "title-sl" => "Autour de la formation | IMAC ingénieur",
         "sl-ctn-1-t" => "La vie étudiante sur le campus",
-        "sl-ctn-1-st" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations. Voici quelques associations :",
-        "sl-ctn-1-c" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://bde.ingenieur-imac.fr/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations.",
+        "sl-ctn-1-st" => "La vie associative ainsi que les conférences et ateliers artistiques et culturels sont les points forts que l’université UPEM tient à proner et valoriser. Ainsi, les étudiants de l’IMAC bénéficie de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l’eau au FDK (Fond Du Kouloir)",
+        "sl-ctn-1-c" => "Vous pouvez vous rendre sur<a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'> le site de l'UPEM</a> pour plus d’information.",
+
             //ASSOCIATIONS LIST
         "sl-ctn-2-a-1-t" => "BDI",
         "sl-ctn-2-a-1-st" => "Bureau Des Imacs",
@@ -405,7 +406,7 @@
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "Les IMAC | IMAC ingénieur",
         "sts-ctn-1-t" => "Qu'est-ce qu'un ou une IMAC ?",
-        "sts-ctn-1-st" => "Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille ! Avec des promotions de maximum cinquante étudiants où la parité filles/garçons règne, les liens se créent en effet très naturellement.",
+        "sts-ctn-1-st" => "Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille. Les liens se créent en effet très naturellement ! L'IMAC, c'est aussi des promotions de maximum cinquante étudiants où la parité règne.",
         "sts-ctn-1-c-1" => "Tout au long de l’année, <a href='http://bde.ingenieur-imac.fr/' target='_blank'>le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !",
         "sts-ctn-1-c-2" => "À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les IMAC !",
         "sts-ctn-2-t" => "Vous voulez recruter un IMAC ?",

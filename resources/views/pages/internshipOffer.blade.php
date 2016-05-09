@@ -11,7 +11,7 @@
             <h1 class="title-1">{!! trans("messages.finsp-t") !!}</h1>
             <p class="lead">{!! trans("messages.finsp-st") !!}</p>
             <p class="light-text">{!! trans("messages.finsp-c") !!}</p>
-            {{ Form::open(['url' => 'foo/bar']) }}
+            {{ Form::open(['url' => 'mail/internship',"enctype" => "multipart/form-data"]) }}
                 {!! Form::email('email', null, ['placeholder' => trans("messages.finsp-ph-1"), 'required' => 'required']) !!}
                 {!! Form::text('name', null, ['placeholder' => trans("messages.finsp-ph-2"), 'required' => 'required']) !!}
                 {!! Form::text('position', null, ['placeholder' => trans("messages.finsp-ph-3")]) !!}
