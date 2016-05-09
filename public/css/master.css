@@ -2038,6 +2038,56 @@ p.lead + .frames {
 @media (min-width: 992px) {
   .project {
     flex-basis: 32%; } }
+.close {
+  background: #fff;
+  border: #dadbd9 1px solid;
+  color: #50d33d;
+  display: inline-block;
+  font-size: 3em;
+  padding: 10px; }
+
+.project-item .lnr {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  top: -5px;
+  text-align: center;
+  vertical-align: top; }
+
+.project-item {
+  margin-top: 30px; }
+
+.project-item-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 55px); }
+  .project-item-content .people {
+    justify-content: flex-start;
+    margin: -20px -10px 20px -10px; }
+
+@media (min-width: 768px) {
+  .close {
+    position: absolute;
+    top: 60px;
+    left: 15px; }
+
+  .project-item-content .people {
+    margin-left: 0;
+    margin-right: 0; }
+  .project-item-content .student {
+    width: calc(50% - 10px); }
+  .project-item-content .student:nth-child(odd) {
+    margin-right: 20px; }
+  .project-item-content .student:nth-child(even) {
+    margin-right: 0; } }
+@media (min-width: 992px) {
+  .project-item-content .student {
+    margin: 20px 20px 0 0;
+    width: calc(33.33333333% - 13.33333333px); }
+  .project-item-content .student:nth-child(even) {
+    margin-right: 20px; }
+  .project-item-content .student:nth-child(3n) {
+    margin-right: 0; } }
 .select-year {
   margin: 20px 0; }
   .select-year select {
@@ -2278,36 +2328,6 @@ p.lead + .frames {
 @media (min-width: 768px) {
   .color-banner {
     background: none; } }
-.close {
-  background: #fff;
-  border: #dadbd9 1px solid;
-  color: #50d33d;
-  display: inline-block;
-  font-size: 3em;
-  padding: 10px;
-  position: absolute;
-  top: 60px;
-  right: 15px; }
-
-.project-item .lnr {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-  top: -5px;
-  text-align: center;
-  vertical-align: top;
-  width: 30px; }
-
-@media (min-width: 992px) {
-  .project-item-content + .project-item-content {
-    margin-left: 100px; } }
-.project-item {
-  margin-top: 30px; }
-
-.project-item-content {
-  display: inline-block;
-  vertical-align: top; }
-
 .jqvmap-label {
   position: absolute;
   display: none;

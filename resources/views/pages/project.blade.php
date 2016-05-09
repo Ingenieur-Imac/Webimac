@@ -29,20 +29,25 @@
                     @endif
                 </div>
             @endif
-            <p>{{ $project->description }}</p>
+
+            <div class="project-item">
+                <span class="lnr lnr-tag lnr-2x"></span>
+                <p class="project-item-content">{{$project->description}}</p>
+            </div>
 
             <div class="project-item">
                 <span class="lnr lnr-users lnr-2x"></span>
                 <div class="project-item-content">
-                    <p class="title-3">{!! trans("messages.pro-c-2") !!}</p>
-                    @include('includes.student', array('students' => $project->contributors))
-                </div>
+                    @if(!empty($project->contributors))
+                        <p class="title-3">{!! trans("messages.pro-c-2") !!}</p>
+                        @include('includes.student', array('students' => $project->contributors))
+                    @endif
 
-                <div class="project-item-content">
                     <p class="title-3">{!! trans("messages.pro-c-3") !!}</p>
                     <p>{!! $project->name_of_tutors !!}</p>
                 </div>
             </div>
+
             @if(!empty($project->awards))
             <div class="project-item">
                 <span class="lnr lnr-license lnr-2x"></span>

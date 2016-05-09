@@ -485,6 +485,77 @@
 
 
 //========================
+// PROJECT PAGE
+//========================
+.close {
+  background: $main-color;
+  border: $light-color 1px solid;
+  color: $primary-color;
+  display: inline-block;
+  font-size: 3em;
+  padding: 10px;
+}
+.project-item {
+  .lnr {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+    vertical-align: top;
+  }
+}
+.project-item {
+  margin-top: 30px;
+}
+.project-item-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 55px);
+  .people {
+    justify-content: flex-start;
+    margin: -20px -10px 20px -10px;
+  }
+}
+@media #{$small-screen} {
+  .close {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+  .project-item-content {
+    .people {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .student {
+      width: calc(50% - 10px);
+    }
+    .student:nth-child(odd) {
+      margin-right: 20px;
+    }
+    .student:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+@media #{$medium-screen} {
+  .project-item-content {
+    .student {
+      margin: 20px 20px 0 0;
+      width: calc(33.33333333% - 13.33333333px);
+    }
+    .student:nth-child(even) {
+      margin-right: 20px;
+    }
+    .student:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+//========================
 // STUDENTS PAGE
 //========================
 .select-year {
@@ -772,46 +843,4 @@
   .color-banner {
     background: none;
   }
-}
-
-
-
-
-
-
-.close {
-  background: $main-color;
-  border: $light-color 1px solid;
-  color: $primary-color;
-  display: inline-block;
-  font-size: 3em;
-  padding: 10px;
-  position: absolute;
-  top: 60px;
-  right: 15px;
-}
-
-.project-item {
-  .lnr {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    top: -5px;
-    text-align: center;
-    vertical-align: top;
-    width: 30px;
-  }
-}
-@media #{$medium-screen} {
-  .project-item-content + .project-item-content {
-    margin-left: 100px;
-  }
-}
-.project-item {
-  margin-top: 30px;
-}
-
-.project-item-content {
-  display: inline-block;
-  vertical-align: top;
 }
