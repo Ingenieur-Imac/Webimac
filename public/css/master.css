@@ -1957,33 +1957,66 @@ p.lead + .frames {
 
   .staff-member:nth-child(3n) {
     margin-right: 0; } }
-.main-filter {
-  border: #50d33d 1px solid;
-  display: inline-block;
-  text-align: center;
-  padding: 5px;
-  width: 110px; }
-
-.main-filter:hover {
-  cursor: pointer;
-  background: #50d33d;
-  color: #fff;
-  transition: 0.5s; }
-
-.main-selected-filter {
-  background: #50d33d;
-  color: #fff; }
-
-.project-filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+.filters {
+  margin-top: 30px; }
+  .filters input[type="checkbox"] {
+    position: absolute;
+    left: -9999px; }
+  .filters label {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+    cursor: pointer; }
+  .filters label::before, .filters label::after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px; }
+  .filters label::before {
+    background: #dadbd9;
+    display: block; }
+  .filters label::after {
+    background: #50d33d;
+    color: #fff;
+    content: "\e870";
+    font: 1.3em 'Linearicons-Free';
+    display: none; }
+  .filters input[type="checkbox"]:checked + label::after {
+    display: block; }
+  .filters select {
+    padding: 4px !important; }
+  .filters .main-filter, .filters select {
+    border: #50d33d 1px solid;
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    width: 110px; }
+  .filters .main-filter:hover {
+    cursor: pointer;
+    background: #50d33d;
+    color: #fff;
+    transition: 0.5s; }
+  .filters .main-selected-filter {
+    background: #50d33d;
+    color: #fff; }
+  .filters .project-filters {
+    margin: 0 -15px; }
+  .filters .filter {
+    display: inline-block;
+    margin: 0 15px; }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start; }
+  justify-content: space-between; }
+
+.projects:after {
+  content: "";
+  flex: auto; }
 
 .project {
   flex-basis: 100%;
@@ -2033,11 +2066,23 @@ p.lead + .frames {
   color: #f73c3c; }
 
 @media (min-width: 768px) {
+  .filters .project-main-filters, .filters p {
+    display: inline-block; }
+  .filters .main-filter, .filters select {
+    display: inline-block;
+    margin: 0 0 15px 15px; }
+
   .project {
     flex-basis: 48%; } }
 @media (min-width: 992px) {
+  .projects {
+    margin-left: -10px;
+    margin-right: -10px; }
+
   .project {
-    flex-basis: 32%; } }
+    flex-basis: calc(33.33333333% - 20px);
+    margin-left: 10px;
+    margin-right: 10px; } }
 .close {
   background: #fff;
   border: #dadbd9 1px solid;

@@ -397,33 +397,78 @@
 //========================
 // PROJECTS
 //========================
-.main-filter {
-  border: $primary-color 1px solid;
-  display: inline-block;
-  text-align: center;
-  padding: 5px;
-  width: 110px;
-}
-.main-filter:hover {
-  cursor: pointer;
-  background: $primary-color;
-  color: $main-color;
-  transition: 0.5s;
-}
-.main-selected-filter {
-  background: $primary-color;
-  color: $main-color;
-}
-.project-filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.filters {
+  margin-top: $spacing-unit/2;
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  label::before, label::after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+  }
+  label::before {
+    background: $light-color;
+    display: block;
+  }
+  label::after {
+    background: $primary-color;
+    color: $main-color;
+    content: "\e870";
+    font: 1.3em 'Linearicons-Free';
+    display: none;
+  }
+  input[type="checkbox"]:checked + label::after {
+    display: block;
+  }
+  select {
+    padding: 4px !important;
+  }
+  .main-filter, select {
+    border: $primary-color 1px solid;
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    width: 110px;
+  }
+  .main-filter:hover {
+    cursor: pointer;
+    background: $primary-color;
+    color: $main-color;
+    transition: 0.5s;
+  }
+  .main-selected-filter {
+    background: $primary-color;
+    color: $main-color;
+  }
+  .project-filters {
+    margin: 0 -15px;
+  }
+  .filter {
+    display: inline-block;
+    margin: 0 15px;
+  }
 }
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: flex-start;
+}
+.projects:after {
+  content: "";
+  flex: auto;
 }
 .project {
   flex-basis: 100%;
@@ -473,14 +518,29 @@
   color: $secondary-color;
 }
 @media #{$small-screen} {
-    .project {
-        flex-basis: 48%;
+  .filters {
+    .project-main-filters, p {
+      display: inline-block;
     }
+    .main-filter, select {
+      display: inline-block;
+      margin: 0 0 15px 15px;
+    }
+  }
+  .project {
+      flex-basis: 48%;
+  }
 }
 @media #{$medium-screen} {
-    .project {
-        flex-basis: 32%;
-    }
+  .projects {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .project {
+      flex-basis: calc(33.33333333% - 20px);
+      margin-left: 10px;
+      margin-right: 10px;
+  }
 }
 
 
