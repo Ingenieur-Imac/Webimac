@@ -17,9 +17,11 @@
         <div>
             @yield('content')
         </div>
-        <div class="prefooter">
-            @include('layouts.prefooter')
-        </div>
+        @if (isset($display_application) && $display_application)
+            <div class="prefooter">
+                @include('layouts.prefooter')
+            </div>
+        @endif
         <footer>
             @include('layouts.footer')
         </footer>
