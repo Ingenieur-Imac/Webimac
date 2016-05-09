@@ -14,7 +14,7 @@
             <img src="{{URL::asset('images/winInternet.gif')}}" alt="You Win the Internet" />
         </div>
         <div class="col-12 center">
-            <a href="{{ action('PagesController@index') }}" class="btn dark-btn">{{trans("messages.404-4")}}</a>
+            <a href="{{ action('PagesController@index') }}" class="btn filling-btn dark-btn">{{trans("messages.404-4")}}</a>
         </div>
     </div>
 @endsection

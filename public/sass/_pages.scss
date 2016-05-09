@@ -4,6 +4,120 @@
 
 
 //========================
+// TESTIMONIALS
+//========================
+.slider-arrow {
+  color: $medium-color;
+  cursor: pointer;
+  font-size: 3em;
+  position: absolute;
+  top: 100px;
+}
+.slider-arrow:hover,
+.arrow:hover {
+  color: $primary-color;
+}
+.slider-arrow-left {
+  left: 0;
+}
+.slider-arrow-right {
+  right: 0;
+}
+.testimonial {
+  position: relative;
+  ul {
+    align-items: center;
+    display: flex;
+    li {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      //padding: 0 10px;
+      .title-4, .testi-role {
+        text-align: center;
+      }
+      .people-picture {
+        flex-basis: 160px;
+        height: 160px;
+        margin: 0 auto;
+        min-width: 160px;
+        width: 160px;
+      }
+      .testi-role {
+         font-weight: normal;
+      }
+    }
+  }
+  .testi-show {
+    overflow: hidden !important;
+  }
+  .gallery {
+    img {
+      @include box-sizing(border-box);
+      margin: $spacing-unit/4 5px 0 5px;
+    }
+    .slider-arrow-left {
+      left: -8.33333333%;
+    }
+    .slider-arrow-right {
+      right: -8.33333333%;
+    }
+  }
+  @media #{$small-screen} {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        .title-4, .testi-role {
+          text-align: left;
+        }
+      }
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      height: 125px;
+      width: calc(100% - 20px);
+      overflow: hidden;
+      img {
+        height: 100%;
+        margin-top: $spacing-unit/4;
+        width: auto;
+      }
+    }
+    .slider-arrow-left {
+      left: -8.33333333%;
+      top: calc(50% - 22px);
+    }
+    .slider-arrow-right {
+      right: -8.33333333%;
+      top: calc(50% - 22px);
+    }
+    .testi-body {
+      width: calc(100% - 8.33333333% - 160px);
+    }
+    .testi-picture {
+      vertical-align: middle;
+    }
+  }
+  @media #{$medium-screen} {
+    .gallery {
+      height: 150px;
+    }
+  }
+  @media #{$large-screen} {
+    .gallery {
+      height: 200px;
+    }
+  }
+}
+
+
+//========================
 // SUBNAV
 //========================
 .subnav {
@@ -95,16 +209,14 @@
   .framed-3 {
     border: $medium-color 1px solid;
   }
+  .tag {
+    background: $main-color;
+    border: none;
+    margin: 5px 10px 5px 0;
+    padding: 2px 10px;
+  }
 }
-.tag {
-  background: $main-color;
-  color: $medium-color;
-  display: inline-block;
-  font-size: 0.8em;
-  font-weight: normal;
-  margin: 5px 10px 5px 0;
-  padding: 2px 10px;
-}
+
 @media #{$small-screen} {
   .strong-framed {
     display: inline-block;
@@ -175,12 +287,6 @@
 //========================
 // OPENINGS
 //========================
-.arrow-bottom {
-    width: 0;
-    border: 20px solid transparent;
-    border-top: 20px solid $light-color;
-    margin: auto;
-}
 .activity-sectors-title {
     background: $main-color;
     border: 1px solid $secondary-color;
@@ -207,10 +313,11 @@
 }
 .activity-panel.selected {
     display: block;
+    margin-top: $spacing-unit/2;
     transition: 0.5s;
 }
 .activity-panel-title {
-    background: $main-color;
+    background: $light-color;
     color: $secondary-color;
     display: block;
     font: 1.5em $title-font-stack;
@@ -290,33 +397,78 @@
 //========================
 // PROJECTS
 //========================
-.main-filter {
-  border: $primary-color 1px solid;
-  display: inline-block;
-  text-align: center;
-  padding: 5px;
-  width: 110px;
-}
-.main-filter:hover {
-  cursor: pointer;
-  background: $primary-color;
-  color: $main-color;
-  transition: 0.5s;
-}
-.main-selected-filter {
-  background: $primary-color;
-  color: $main-color;
-}
-.project-filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.filters {
+  margin-top: $spacing-unit/2;
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  label::before, label::after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+  }
+  label::before {
+    background: $light-color;
+    display: block;
+  }
+  label::after {
+    background: $primary-color;
+    color: $main-color;
+    content: "\e870";
+    font: 1.3em 'Linearicons-Free';
+    display: none;
+  }
+  input[type="checkbox"]:checked + label::after {
+    display: block;
+  }
+  select {
+    padding: 4px !important;
+  }
+  .main-filter, select {
+    border: $primary-color 1px solid;
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    width: 110px;
+  }
+  .main-filter:hover {
+    cursor: pointer;
+    background: $primary-color;
+    color: $main-color;
+    transition: 0.5s;
+  }
+  .main-selected-filter {
+    background: $primary-color;
+    color: $main-color;
+  }
+  .project-filters {
+    margin: 0 -15px;
+  }
+  .filter {
+    display: inline-block;
+    margin: 0 15px;
+  }
 }
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: flex-start;
+}
+.projects:after {
+  content: "";
+  flex: auto;
 }
 .project {
   flex-basis: 100%;
@@ -352,34 +504,140 @@
   .img-project:hover .hover-img-project {
     opacity: 1;
   }
-  .tag {
-    border: $medium-color 1px solid;
-    color: $medium-color;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: normal;
-    padding: 2px 4px;
+}
+.tag {
+  border: $medium-color 1px solid;
+  color: $medium-color;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 2px 4px;
+}
+.important-tag {
+  border: $secondary-color 1px solid;
+  color: $secondary-color;
+}
+@media #{$small-screen} {
+  .filters {
+    .project-main-filters, p {
+      display: inline-block;
+    }
+    .main-filter, select {
+      display: inline-block;
+      margin: 0 0 15px 15px;
+    }
   }
-  .important-tag {
-    border: $secondary-color 1px solid;
-    color: $secondary-color;
+  .project {
+      flex-basis: 48%;
+  }
+}
+@media #{$medium-screen} {
+  .projects {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .project {
+      flex-basis: calc(33.33333333% - 20px);
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+
+//========================
+// PROJECT PAGE
+//========================
+.close {
+  background: $main-color;
+  border: $light-color 1px solid;
+  color: $primary-color;
+  display: inline-block;
+  font-size: 3em;
+  padding: 10px;
+}
+.project-item {
+  .lnr {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+    vertical-align: top;
+  }
+}
+.project-item {
+  margin-top: 30px;
+}
+.project-item-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 55px);
+  .people {
+    justify-content: flex-start;
+    margin: -20px -10px 20px -10px;
   }
 }
 @media #{$small-screen} {
-    .project {
-        flex-basis: 48%;
+  .close {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
+  .project-item-content {
+    .people {
+      margin-left: 0;
+      margin-right: 0;
     }
+    .student {
+      width: calc(50% - 10px);
+    }
+    .student:nth-child(odd) {
+      margin-right: 20px;
+    }
+    .student:nth-child(even) {
+      margin-right: 0;
+    }
+  }
 }
 @media #{$medium-screen} {
-    .project {
-        flex-basis: 32%;
+  .project-item-content {
+    .student {
+      margin: 20px 20px 0 0;
+      width: calc(33.33333333% - 13.33333333px);
     }
+    .student:nth-child(even) {
+      margin-right: 20px;
+    }
+    .student:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 }
 
 
 //========================
 // STUDENTS PAGE
 //========================
+.select-year {
+  margin: 20px 0;
+  select {
+    @include box-sizing(border-box);
+    border: 1px $primary-color solid;
+    border-radius: 0;
+    display: block;
+    font: 1.8em $title-font-stack;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  @media #{$small-screen} {
+    select {
+      margin: 0 auto;
+      width: 350px;
+    }
+  }
+}
 .arrow {
   display: none;
 }
@@ -595,30 +853,6 @@
 
 
 
-// SLIDER PROMOTION
-//TODO : RESPONSIVE
-
-.select-year {
-  margin: 20px 0;
-  select {
-    @include box-sizing(border-box);
-    border: 1px $primary-color solid;
-    border-radius: 0;
-    display: block;
-    font: 1.8em $title-font-stack;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-  }
-  @media #{$small-screen} {
-    select {
-      margin: 0 auto;
-      width: 350px;
-    }
-  }
-}
-
 
 
 // BANNER WITH IMAGE
@@ -669,165 +903,4 @@
   .color-banner {
     background: none;
   }
-}
-
-
-.people {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  & + .title-2 {
-    margin-top: $spacing-unit;
-  }
-  h3 {
-    font: 1.3em $title-font-stack;
-  }
-  .lnr {
-    bottom: -5px;
-    font-size: 1.5em;
-    margin-right: 10px;
-    position: relative;
-  }
-  .icon-linkedin-rect {
-    font-size: 0.8em;
-  }
-}
-.people-picture {
-  background-size: cover;
-  background-position: center center;
-  border-radius: 50%;
-}
-.staff-member {
-  align-items: center;
-  background: $light-color;
-  @include box-sizing(border-box);
-  display: flex;
-  flex-direction: column;
-  margin: 20px 10px 0 10px;
-  padding: 20px;
-  width: 250px;
-}
-
-// TESTIMONIALS
-.slider-arrow {
-  color: $medium-color;
-  cursor: pointer;
-  display: none;
-  font-size: 3em;
-  position: absolute;
-  top: calc(50% - 22px);
-}
-.slider-arrow:hover,
-.arrow:hover {
-  color: $primary-color;
-}
-
-
-.testimonial {
-  position: relative;
-  ul {
-    align-items: center;
-    display: flex;
-    li {
-      list-style: none;
-      margin: 0;
-      //overflow: hidden;
-      .title-4, .testi-role {
-        text-align: center;
-      }
-    }
-  }
-  .people-picture {
-    flex-basis: 160px;
-    height: 160px;
-    margin: 0 auto;
-    min-width: 160px;
-    width: 160px;
-  }
-  .testi-role {
-     font-weight: normal;
-  }
-  .testi-show {
-    margin: auto;
-    overflow: hidden;
-  }
-  .gallery {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width: calc(100% - 20px);
-    overflow: hidden;
-    img {
-      height: 100%;
-      margin-top: $spacing-unit/4;
-      padding: 0 10px;
-      width: auto;
-    }
-  }
-  @media #{$small-screen} {
-    ul {
-      li {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        .title-4, .testi-role {
-          text-align: left;
-        }
-      }
-    }
-    .slider-arrow {
-      display: inline;
-    }
-    .slider-arrow-left {
-      left: -8.33333333%;
-    }
-    .slider-arrow-right {
-      right: -8.33333333%;
-    }
-    .testi-body {
-      width: calc(100% - 8.33333333% - 160px);
-    }
-    .testi-picture {
-      vertical-align: middle;
-    }
-  }
-}
-
-.close {
-  background: $main-color;
-  border: $light-color 1px solid;
-  color: $primary-color;
-  display: inline-block;
-  font-size: 3em;
-  padding: 10px;
-  position: absolute;
-  top: 60px;
-  right: 15px;
-}
-
-.project-item {
-  .lnr {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    top: -5px;
-    text-align: center;
-    vertical-align: top;
-    width: 30px;
-  }
-}
-@media #{$medium-screen} {
-  .project-item-content + .project-item-content {
-    margin-left: 100px;
-  }
-}
-.project-item {
-  margin-top: 30px;
-}
-
-.project-item-content {
-  display: inline-block;
-  vertical-align: top;
 }

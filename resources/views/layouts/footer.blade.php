@@ -1,11 +1,11 @@
 <!--<div class="slanted"></div>-->
 
 <div class="container">
-    <div class="useful-informations clearfix">
+    <div class="col-7 col-offset-1 useful-informations clearfix">
         <p class="title-2">{{trans("messages.ftr-t")}}</p>
         <div class="useful-links">
             <!-- <a class="simple-primary-btn" href="#">FAQ</a> -->
-            <a class="simple-primary-btn" href="{{action('PagesController@contact')}}">{{trans("messages.ftr-contact")}}</a>
+            <a class="btn filling-btn simple-primary-btn" href="{{action('PagesController@contact')}}">{{trans("messages.ftr-contact")}}</a>
             <div class="social-media">
                 <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
                     <span class="icon-linkedin color"></span>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="col-3">
+    <div class="col-4">
         <img class="logo-imac" src="{{URL::asset('images/logoIMACblanc.png')}}" alt="Logo IMAC" />
         <h2 class="title-2">{{trans("messages.ftr-ctn-2-t")}}</h2>
         <p>{{trans("messages.ftr-ctn-2-c")}}</p>
