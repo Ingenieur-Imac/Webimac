@@ -7,6 +7,6 @@
         </div>
     </a>
     <div class="lang">
-        <p><a href="#">EN</a> | <a href="#" class="color">FR</a></p>
+        <p><a href="{{ url('/setLang/en') }}" {{ Lang::locale() == 'en' ? "class=color" : '' }}>EN</a> | <a href="{{ url('/setLang/fr') }}" {{ Lang::locale() == 'fr' ? "class=color" : '' }}>FR</a></p>
     </div>
 </div>
