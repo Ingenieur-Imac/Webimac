@@ -41,9 +41,9 @@
         "admission-container-1-content-1" => "Les IMAC possèdent une imagination et un désir de créer qui dépassent le clivage arts/sciences.",
         "admission-container-1-content-2" => "En effet, leur ouverture d’esprit leur permet d’avoir un intérêt aussi bien pour les arts (arts graphiques, cinéma, musique, arts numériques...) que les sciences (programmation, mathématiques, traitement du signal…) sans pour autant être spécialiste de chacun de ces domaines. En suivant la formation IMAC, ils élargissent leur champ de compétences.",
         "admission-container-1-content-3" => "Dans une volonté de recrutement hétérogène, l'école est accessible sur dossier à tout étudiant disposant d'un niveau BAC+2.",
-        "admission-container-1-content-4-t" => "Formations scientifiques",
+        "admission-container-1-content-4-t" => "Profils scientifiques",
         "admission-container-1-content-4-c" => "Classes préparatoires, DUT Informatique, DUT MMI (anciennement SRC), Licence Maths et Informatique, Licence Physique…",
-        "admission-container-1-content-5-t" => "Formations artistiques",
+        "admission-container-1-content-5-t" => "Profils artistiques",
         "admission-container-1-content-5-c" => "BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…",
         "admisssion-container-1-content-6" => "Les IMAC",
             //SECOND CONTAINER
@@ -115,6 +115,29 @@
         "int-m-3-c-2" => "C’est une université très sélective avec un gros département en programmation !",
         "int-m-4-t" => "Écosse",
         "int-m-4-c" => "Elles sont toutes envisageables à condition que le diplôme soit de niveau undergraduate (bachelor). Les futurs webmasters trouveront de quoi ravir leur orientation à l’international.",
+        "int-m-5-t" => "Espagne",
+        "int-m-5-c" => "Plusieurs partenaires sont établis en Espagne. Il est possible de suivre, entre autres, des cours  de publicité, de relations publiques, de communication, de design ou de photographie.",
+        "int-m-6-t" => "Japon",
+        "int-m-6-u" => "Future University Hakodate - Hakodate",
+        "int-m-6-c" => "Hakodate est une ville située sur l’île d’Hokkaido, au Nord du Japon (avec de la vraie neige en hiver !). Cette destination apporte non seulement une ouverture sur la culture japonaise mais aussi un cadre d’étude hors du commun autour de la programmation.",
+        "int-m-7-t" => "Suède",
+        "int-m-7-u" => "Malmö University - Malmö",
+        "int-m-7-c" => "Vous pourrez découvrir les joies des pays scandinaves ! Vous rejoindrez l’école d’Art et de Communication pour suivre des cours portés sur les nouvelles technologies.",
+        "int-m-8-t" => "Taïwan",
+        "int-m-8-c" => "Plusieurs universités sont proposées sur cette magnifique île arborant la côté chinoise, permettant de bénéficier d’un cadre de vue exotique.",
+
+        "int-c-1" => "Pour plus d'informations, visitez <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.",
+            //LES AVANTAGES
+        "int-ctn-2-t" => "Les avantages",
+        "int-ctn-2-st" => "Profitez du fait d'être étudiant pour partir plus facilement à l'international avant vos débuts dans la vie active !",
+        "int-ctn-2-c-1" => "S'ouvrir à une <strong>autre culture</strong>",
+        "int-ctn-2-c-2" => "Enrichir son <strong>expérience personnelle</strong>",
+        "int-ctn-2-c-3" => "Exercer ses <strong>facultés d'adaptation</strong>",
+        "int-ctn-2-c-4" => "Améliorer son <strong>niveau de langue</strong>",
+        "int-ctn-2-c-5" => "Travailler avec de <strong>nouvelles méthodologies</strong>",
+        "int-ctn-2-c-6" => "<strong>Se démarquer</strong> auprès des entreprises",
+            //EXCHANGE TESTIMONIAL
+        "int-ctn-3-t" => "Paroles d'étudiants partis en échange",
 
         //MENTIONS LEGALES :: REFERS TO pages.legalNotice.blade.php
         "title-ml" => "Mentions légales | Ingénieur IMAC",
@@ -317,7 +340,7 @@
         "pro-c-3" => "Tuteur(s)",
         "pro-c-4" => "Voir le projet en ligne",
         "pro-c-5" => "Voir le projet sur Github",
-        "pro-c-6" => "Voir le projet sur Viméo",
+        "pro-c-6" => "Voir le projet sur Vimeo",
 
         //PROJECTS :: REFERS TO pages.projects.blade.php
         "title-pros" => "Réalisations | IMAC ingénieur",
@@ -338,14 +361,52 @@
         //STUDENT LIFE :: REFERS TO pages.studentLife.blade.php
         "title-sl" => "Autour de la formation | IMAC ingénieur",
         "sl-ctn-1-t" => "La vie étudiante sur le campus",
-        "sl-ctn-1-st" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations. Voici quelques associations :",
-        "sl-ctn-1-c" => "Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href='http://bde.ingenieur-imac.fr/' target='_blank'>sur la page dédiée du site de l'UPEM</a> pour plus d'informations.",
-            // TODO MANQUE LA FIN DE L'INTEGRATION
+        "sl-ctn-1-st" => "La vie associative ainsi que les conférences et ateliers artistiques et culturels sont les points forts que l’université UPEM tient à proner et valoriser. Ainsi, les étudiants de l’IMAC bénéficie de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l’eau au FDK (Fond Du Kouloir)",
+        "sl-ctn-1-c" => "Vous pouvez vous rendre sur<a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'> le site de l'UPEM</a> pour plus d’information.",
+
+            //ASSOCIATIONS LIST
+        "sl-ctn-2-a-1-t" => "BDI",
+        "sl-ctn-2-a-1-st" => "Bureau Des Imacs",
+        "sl-ctn-2-a-1-loc" => "1B100 - Bâtiment Copernic",
+        "sl-ctn-2-a-1-c" => "Tout au long de l’année, le Bureau des Imac (BDI) s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudImac, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment ! Du week-end d’intégration au Gala en passant par le parrainage et l'élection de nos miss et mister préféré… de vrais moment conviviaux sont créés.",
+
+        "sl-ctn-2-a-2-t" => "803Z - Radio PIMP",
+        "sl-ctn-2-a-2-st" => "Association d’Audiovisuel et de Radio",
+        "sl-ctn-2-a-2-loc" => "Local au RDC du bâtiment Copernic",
+        "sl-ctn-2-a-2-c-1" => "Association audiovisuelle universitaire serait la description solennelle de 803Z. Collectif sympa et uni en serait une plus cool. L'association Cinéma de l'UPEM serait la version arrogante. Le mieux, pour décrire 803Z, c'est 803Z.",
+        "sl-ctn-2-a-2-c-2" => "Radio PIMP, c’est l’association qui présente chaque semaine des sujets en tout genre !",
+
+        "sl-ctn-2-a-3-t" => "SUAPS",
+        "sl-ctn-2-a-3-st" => "Association sportive du campus",
+        "sl-ctn-2-a-3-loc" => "Maison de l’Étudiant",
+        "sl-ctn-2-a-3-c" => "Le SUAPS, c’est l’association qui propose des tournois, compétitions et organise de gros événements sur le campus pour faire bouger tout le monde. Beaucoup d’IMAC profitent de leur jeudi après-midi et autres jours suivant les emplois du temps pour se dépenser et passer de bons moments.",
+
+        "sl-ctn-2-a-4-t" => "BDK",
+        "sl-ctn-2-a-4-st" => "Bruit du Kouloir",
+        "sl-ctn-2-a-4-loc" => "1B99 - Bâtiment Copernic",
+        "sl-ctn-2-a-4-c-1" => "Le BDK, ou Bruit Du Kouloir, est l’unique association de musiciens sur tout le campus ! Le BDK est là pour toi pour jouer pendant les pauses dèj, après les cours, et ce, dans un local doté de 2 basses, 2 batteries, 4 guitares, 2 claviers, 3 micros et, depuis peu, un large panel de matériel d'effets sonores.",
+        "sl-ctn-2-a-4-c-2" => "On est là pour se détendre en musique d’une part, mais faire partie du BDK c’est aussi entrer dans le monde associatif et organiser des événements sur le campus comme des concerts, des jams, de l’animation pour les autres associations....",
+        "sl-ctn-2-a-4-c-3" => "L’entrée dans le BDK se fait après une cotisation de 10€ qui serviront à entretenir le matériel. Si tu es motivé(e) pour mettre de la musique dans les oreilles de l’ESIPE, ou si tu es juste drogué(e) à la musique, viens découvrir le Bruit Du Kouloir du 1er étage de Copernic, salle 1B90 (ouvert entre 12h45 et 13h45, tu n’as qu’à te laisser guider par le bruit) !",
+
+        "sl-ctn-2-a-5-t" => "FDK",
+        "sl-ctn-2-a-5-st" => "Fond du Kouloir",
+        "sl-ctn-2-a-5-loc" => "Au fond du couloir du 1e étage - Bâtiment Copernic",
+        "sl-ctn-2-a-5-c-1" => "Le FDK, ou Fond Du Kouloir, est la cafétéria étudiante... au fond du couloir. 104m2 de détente, d’espace libre, et de bonheur. Oui, être ingénieur c’est travailler dur. Mais débranche donc tes neurones quelques minutes pour jouer au babyfoot, ou pour profiter d’une boisson chaude accoudé à notre bar ! Les serveurs distribuent des sourires et des cafés ; les serveuses offrent des clins d’oeil et des grenadines.",
+        "sl-ctn-2-a-5-c-2" => "Sache qu’être Staff FDK, c’est peser dans le game. Tout le monde te dit bonjour, tu as toujours un canapé réservé, et le café est gratuit. Allez, passe derrière le comptoir !",
+
+        "sl-ctn-2-a-6-t" => "Virtual Association",
+        "sl-ctn-2-a-6-st" => "Association de jeux vidéo orienté Réalité Virtuel",
+        "sl-ctn-2-a-6-loc" => "Maison de l'Étudiant",
+        "sl-ctn-2-a-6-c" => "Virtual Association est la première association étudiante dédiée au partage de connaissances et à l’organisation d’évènements autour de la réalité virtuelle pour tous.",
+
+        "sl-ctn-2-a-7-t" => "Wings of Games",
+        "sl-ctn-2-a-7-loc" => "1B86 - Bâtiment Copernic",
+        "sl-ctn-2-a-7-c" => "Dans cette association, vous pourrez retrouver vos amis pour jouer à des jeux de plateaux pendant les pauses.",
 
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "Les IMAC | IMAC ingénieur",
         "sts-ctn-1-t" => "Qu'est-ce qu'un ou une IMAC ?",
-        "sts-ctn-1-st" => "Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille ! Avec des promotions de maximum cinquante étudiants où la parité filles/garçons règne, les liens se créent en effet très naturellement.",
+        "sts-ctn-1-st" => "Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille. Les liens se créent en effet très naturellement ! L'IMAC, c'est aussi des promotions de maximum cinquante étudiants où la parité règne.",
         "sts-ctn-1-c-1" => "Tout au long de l’année, <a href='http://bde.ingenieur-imac.fr/' target='_blank'>le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !",
         "sts-ctn-1-c-2" => "À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les IMAC !",
         "sts-ctn-2-t" => "Vous voulez recruter un IMAC ?",
@@ -410,6 +471,22 @@
         "fptn-f-ph-5" => "Complétez l\'opération à trou : 1 + ",
         "fptn-f-ph-6" => "?*",
         "fptn-f-ph-7" => "Envoyer",
+
+        //FORM INTERNSHIP :: REFERS TO pages.internshipOffer.blade.php
+        "title-finsp" => "Déposer une offre de stage | IMAC ingénieur",
+        "finsp-t" => "Déposer une offre de stage",
+        "finsp-st" => "Nos étudiants effectuent des stages afin de se spécialiser (2 à 4 mois à partir de juin en IMAC2 et 4 à 6 mois à partir d’avril en IMAC3). Si vous êtes intéressé par leur profil, vous pouvez remplir ce formulaire ou joindre un fichier pdf et, après validation par le corps enseignant, nous leur transmettons votre offre.",
+        "finsp-c" => "(Les champs indiqués par une * sont obligatoires.)",
+        "finsp-ph-1" => "Votre e-mail*",
+        "finsp-ph-2" => "Nom, nom d\'entreprise*",
+        "finsp-ph-3" => "Intitulé du poste",
+        "finsp-ph-4" => "Lieu et durée",
+        "finsp-ph-5" => "Profil et mission",
+        "finsp-ph-6" => "Uploader un fichier pdf (maximum 25 Mo)",
+        "finsp-ph-7" => "Complément d\'information",
+        "finsp-ph-8" => "Complétez l\'opération à trou : 1 + ",
+        "finsp-ph-9" => "?*",
+        "finsp-ph-10" => "Envoyer",
     ]
 
 ?>

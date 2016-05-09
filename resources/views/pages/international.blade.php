@@ -138,41 +138,41 @@
                     <p>{!! trans("messages.int-m-4-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="es">
-                    <p class="big-number">Espagne</p>
-                    <p>Plusieurs partenaires sont établis en Espagne. Il est possible de suivre, entre autres, des cours  de publicité, de relations publiques, de communication, de design ou de photographie.</p>
+                    <p class="big-number">{!! trans("messages.int-m-5-t") !!}</p>
+                    <p>{!! trans("messages.int-m-5-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="jp">
-                    <p class="big-number">Japon</p>
-                    <p class="title-4">Future University Hakodate - Hakodate</p>
-                    <p>Hakodate est une ville située sur l’île d’Hokkaido, au Nord du Japon (avec de la vraie neige en hiver !). Cette destination apporte non seulement une ouverture sur la culture japonaise mais aussi un cadre d’étude hors du commun autour de la programmation.</p>
+                    <p class="big-number">{!! trans("messages.int-m-6-t") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-6-u") !!}</p>
+                    <p>{!! trans("messages.int-m-6-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="se">
-                    <p class="big-number">Suède</p>
-                    <p class="title-4">Malmö University - Malmö</p>
-                    <p>Vous pourrez découvrir les joies des pays scandinaves ! Vous rejoindrez l’école d’Art et de Communication pour suivre des cours portés sur les nouvelles technologies.</p>
+                    <p class="big-number">{!! trans("messages.int-m-7-t") !!}</p>
+                    <p class="title-4">{!! trans("messages.int-m-7-u") !!}</p>
+                    <p>{!! trans("messages.int-m-7-c") !!}</p>
                 </div>
                 <div class="framed full-framed" alt="tw">
-                    <p class="big-number">Taïwan</p>
-                    <p>Plusieurs universités sont proposées sur cette magnifique île arborant la côté chinoise, permettant de bénéficier d’un cadre de vue exotique.</p>
+                    <p class="big-number">{!! trans("messages.int-m-8-t") !!}</p>
+                    <p>{!! trans("messages.int-m-8-c") !!}</p>
                 </div>
-                <p class="center">Pour plus d'informations, visitez <a href="http://www.u-pem.fr/international/etudes-a-letranger-sortants/" target="_blank">la page dédiée sur le site de l'UPEM</a>.</p>
+                <p class="center">{!! trans("messages.int-c-1") !!}</p>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="col-8 center-block">
-            <h2 class="title-2">Les avantages</h2>
-            <p class="lead">Profitez du fait d'être étudiant pour partir plus facilement à l'international avant vos débuts dans la vie active !</p>
+            <h2 class="title-2">{!! trans("messages.int-ctn-2-t") !!}</h2>
+            <p class="lead">{!! trans("messages.int-ctn-2-st") !!}</p>
         </div>
         <div class="col-5 center-block">
             <ul class="lnr-ul">
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span>S'ouvrir à une <strong>autre culture</strong></li>
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span>Enrichir son <strong>expérience personnelle</strong></li>
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span>Exercer ses <strong>facultés d'adaptation</strong></li>
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span>Améliorer son <strong>niveau de langue</strong></li>
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span>Travailler avec de <strong>nouvelles méthodologies</strong></li>
-                <li><span class="lnr lnr-checkmark-circle list-puce"></span><strong>Se démarquer</strong> auprès des entreprises</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-1") !!}</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-2") !!}</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-3") !!}</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-4") !!}</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-5") !!}</li>
+                <li><span class="lnr lnr-checkmark-circle list-puce"></span>{!! trans("messages.int-ctn-2-c-6") !!}</li>
             </ul>
         </div>
     </div>
@@ -180,8 +180,9 @@
     <div class="light-row">
         <div class="container">
             <div class="col-10 center-block">
-                <h2 class="title-2">Paroles d'étudiants partis en échange</h2>
+                <h2 class="title-2 center">{!! trans("messages.int-ctn-3-t") !!}</h2>
                 @include('includes.testimonial', array('testimonials' => $student_testimonials, 'folder' => 'studentExchangeTestimonial', 'gallery' => $gallery))
+                <h2 class="title-2">Paroles d'étudiants partis en échange</h2>
             </div>
         </div>
     </div>

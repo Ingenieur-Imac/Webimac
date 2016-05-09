@@ -21,7 +21,6 @@ class Authenticate
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
             } else {
-                //return "Bonjour la page Home ne vous ai pas accessible";
                 return redirect()->guest('admin');
             }
         }
