@@ -16,6 +16,7 @@ class AdminOthersController extends Controller
         $this->pathToTimerJson = public_path().'/json/timer.json';
         $this->pathToApplicationJson = public_path().'/json/application.json';
         $this->pathToDisplayOpenning = public_path().'/json/updateDisplayOpenningBanner.json';
+        $this->pathToMail = public_path().'/json/mailingList.json';
     }
 
     function index(){
@@ -45,7 +46,17 @@ class AdminOthersController extends Controller
         if(isset($applicationDisplayOpenning["openning-application"]))
             $displayOpenning = $applicationDisplayOpenning["openning-application"];
 
-        return view('admin.others.index',compact('date','application_date','displayOpenning'));
+        //Mailing List
+        $mailingListJson = json_decode(file_get_contents($this->pathToMail),TRUE);
+        $mailingList = ['IMAC1' => null,'IMAC2' => null,'IMAC3' => null];
+        if(isset($mailingListJson['IMAC1']))
+            $mailingList['IMAC1'] = $mailingListJson['IMAC1'];
+        if(isset($mailingListJson['IMAC2']))
+            $mailingList['IMAC2'] = $mailingListJson['IMAC2'];
+        if(isset($mailingListJson['IMAC3']))
+            $mailingList['IMAC3'] = $mailingListJson['IMAC3'];
+
+        return view('admin.others.index',compact('date','application_date','displayOpenning','mailingList'));
     }
 
     function updateTimer(Request $request){
@@ -85,6 +96,17 @@ class AdminOthersController extends Controller
             $json["openning-application"] = false;
         }
         file_put_contents($this->pathToDisplayOpenning,json_encode($json),TRUE);
+        return redirect('admin/others');
+    }
+
+    function updateMaillingList(Request $request){
+        $result = $request->all();
+        $json = json_decode(file_get_contents($this->pathToMail),TRUE);
+        foreach($result as $key => $value){
+            if($key != "_token")
+                $json[$key] = $value;
+        }
+        file_put_contents($this->pathToMail,json_encode($json),TRUE);
         return redirect('admin/others');
     }
 }

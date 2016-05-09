@@ -84,6 +84,7 @@ Route::get('admin/logout','AdminPagesController@logout');
     Route::post('admin/others/timer','AdminOthersController@updateTimer');
     Route::post('admin/others/application','AdminOthersController@updateApplicationDates');
     Route::post('admin/others/openning-application','AdminOthersController@updateDisplayOpenningBanners');
+    Route::post('admin/others/mailing-list','AdminOthersController@updateMaillingList');
 
 //TEST
 Route::get('timer','PagesController@timer');

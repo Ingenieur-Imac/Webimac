@@ -69,4 +69,23 @@
             {!! Form::checkbox('openning-application',null,$displayOpenning) !!}
             {!! Form::submit('Enregistrer',['class' => 'btn btn-primary form-control']) !!}
         </div>
+    {!! Form::close() !!}
+    <hr/>
+    {!! Form::open(['url' => 'admin/others/mailing-list']) !!}
+        <!-- afficher form input -->
+        <div class="form-group">
+            {!! Form::label('IMAC1','Mailing liste des IMAC1 :') !!}
+            {!! Form::text('IMAC1',$mailingList["IMAC1"],['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::label('IMAC2','Mailing liste des IMAC2 :') !!}
+            {!! Form::text('IMAC2',$mailingList["IMAC2"],['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::label('IMAC3','Mailing liste des IMAC3 :') !!}
+            {!! Form::text('IMAC3',$mailingList["IMAC3"],['class' => 'form-control']) !!}
+        </div>
+        {!! Form::submit('Enregistrer',['class' => 'btn btn-primary form-control']) !!}
+    {!! Form::close() !!}
+    <p><br/><br/></p>
 @endsection
