@@ -149,7 +149,7 @@ class PagesController extends Controller{
 
     public function contact(){
         $display_application = PagesController::displayApplication();
-        return view('pages.contact','display_application');
+        return view('pages.contact',compact('display_application'));
     }
 
     public function newPartnership(){

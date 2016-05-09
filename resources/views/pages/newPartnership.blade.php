@@ -11,7 +11,7 @@
             <h1 class="title-1">{!! trans("messages.fptn-t") !!}</h1>
             <p class="lead">{!! trans("messages.fptn-st") !!}</p>
             <p class="light-text">{!! trans("messages.fptn-c-0") !!}</p>
-            {{ Form::open(['url' => 'foo/bar']) }}
+            {{ Form::open(['url' => '/mail/partnership']) }}
                 {!! Form::email('email', null, ['placeholder' => trans("messages.fptn-f-ph-1"), 'required' => 'required']) !!}
                 {!! Form::text('name', null, ['placeholder' => trans("messages.fptn-f-ph-2")]) !!}
                 {!! Form::text('subject', null, ['placeholder' =>  trans("messages.fptn-f-ph-3"), 'required' => 'required']) !!}

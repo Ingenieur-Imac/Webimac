@@ -24,12 +24,12 @@ Route::get('/partenaires','PagesController@partnership');
 Route::get('/contact','PagesController@contact');
 Route::get('/realisations/{url}','PagesController@project');
 Route::get('/devenir-partenaires','PagesController@newPartnership');
-    //Envoie du Mail
 Route::get('/deposer-offre-stage','PagesController@internshipOffer');
-    //Envoie du Mail
-Route::post('/mail/internship','MailController@internshipOffer');
 Route::get('/mentions-legales','PagesController@legalNotice');
-
+//ENVOIE DES MAILS
+Route::post('/mail/internship','MailController@internshipOffer');
+Route::post('/mail/partnership','MailController@partnershipOffer');
+Route::post('/mail/contact','MailController@contact');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
