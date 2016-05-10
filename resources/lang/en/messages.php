@@ -30,6 +30,7 @@
             //\//
         "home-project" => "Coursework Highlights",
         "home-testimonial" => "Testimonial",
+        "home-partnership" => "Enterprise Testimonial",
 
         //ADMISSION :: REFERS TO pages.admission.blade.php
         "banner-admission-title" => "Admissions",
@@ -130,12 +131,12 @@
             //LES AVANTAGES
         "int-ctn-2-t" => "Benefits",
         "int-ctn-2-st" => "So, why leave?",
-        "int-ctn-2-c-1" => "Opening themselves to another culture",
-        "int-ctn-2-c-2" => "Gain personal experience",
-        "int-ctn-2-c-3" => "Improve capacity to adapt",
-        "int-ctn-2-c-4" => "Improve your language abilities",
-        "int-ctn-2-c-5" => "Work with new tools",
-        "int-ctn-2-c-6" => "",
+        "int-ctn-2-c-1" => "Opening themselves to <strong>another culture</strong>",
+        "int-ctn-2-c-2" => "Gain <strong>personal experience</strong>",
+        "int-ctn-2-c-3" => "Improve <strong>capacity to adapt</strong>",
+        "int-ctn-2-c-4" => "Improve your <strong>language abilities</strong>",
+        "int-ctn-2-c-5" => "Work with <strong>new tools</strong>",
+        "int-ctn-2-c-6" => "<strong>Stand out</strong> among businesses",
             //EXCHANGE TESTIMONIAL
         "int-ctn-3-t" => "Students Testimonials",
         //MENTIONS LEGALES :: REFERS TO pages.legalNotice.blade.php
@@ -437,7 +438,7 @@
         //PREFOOTER :: REFERS TO layout.prefooter.blade.php
         "pfr-1" => "Would you like to integrate the <strong>engineering training IMAC</strong> ?",
         "pfr-2" => "Submit your application",
-        "pfr-3" => "Discover the eligibility conditions",
+        "pfr-3" => "Eligibility conditions",
 
         //404 :: REFERS TO errors.404.blade.php
         "404-1" => "Error 404 :'(",

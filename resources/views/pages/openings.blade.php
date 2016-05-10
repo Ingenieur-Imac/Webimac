@@ -48,8 +48,8 @@
     <div class="light-row">
         <div class="container">
             <div class="col-10 center-block center">
-                <h2 class="title-2"></h2>
-                <p class="lead"></p>
+                <h2 class="title-2">{!! trans("messages.op-ctn-2-t") !!}</h2>
+                <p class="lead">{!! trans("messages.op-ctn-2-st") !!}</p>
                 <span class="activity-sectors-title selected" alt="informatiqueweb">{!! trans("messages.op-ctn-2-c-1") !!}</span>
                 <span class="activity-sectors-title" alt="jeuvideo">{!! trans("messages.op-ctn-2-c-2") !!}</span>
                 <span class="activity-sectors-title" alt="multimediaanimation">{!! trans("messages.op-ctn-2-c-3") !!}</span>
