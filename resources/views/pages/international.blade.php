@@ -182,7 +182,6 @@
             <div class="col-10 center-block">
                 <h2 class="title-2 center">{!! trans("messages.int-ctn-3-t") !!}</h2>
                 @include('includes.testimonial', array('testimonials' => $student_testimonials, 'folder' => 'studentExchangeTestimonial', 'gallery' => $gallery))
-                <h2 class="title-2">Paroles d'étudiants partis en échange</h2>
             </div>
         </div>
     </div>

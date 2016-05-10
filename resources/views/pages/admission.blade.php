@@ -7,7 +7,7 @@
 @extends('layouts.default')
 
 @section('title')
-    {{!! trans("messages.title-admission") !!}}
+    {!! trans("messages.title-admission") !!}
 @endsection
 
 @section('script')
@@ -49,11 +49,11 @@
             </div>
             <div class="col-4 col-offset-2">
                 <h3 class="title-3"><span class="lnr lnr-pencil lnr-bigger"></span>{!! trans("messages.admission-container-2-content-1-t") !!}</h3>
-                <p>{!! trans("messages.admission-container-2-content-1-c1-1") !!} {$dates['year'] !!} {!! trans("messages.admission-container-2-content-1-c1-2") !!} {$dates['openning'] !!}{!! trans("messages.admission-container-2-content-1-c1-3") !!}</p>
+                <p>{!! trans("messages.admission-container-2-content-1-c1-1") !!} {{$dates['year']}} {!! trans("messages.admission-container-2-content-1-c1-2") !!} {{$dates['openning']}}{!! trans("messages.admission-container-2-content-1-c1-3") !!}</p>
                 <p>{!! trans("messages.admission-container-2-content-1-c2") !!}</p>
       	        <ul>
-                    <li>{!! trans("messages.admission-container-2-content-1-c3") !!}{$dates['first_session'] !!}</li>
-                    <li>{!! trans("messages.admission-container-2-content-1-c4") !!}{$dates['second_session'] !!}</li>
+                    <li>{!! trans("messages.admission-container-2-content-1-c3") !!}{{$dates['first_session']}}</li>
+                    <li>{!! trans("messages.admission-container-2-content-1-c4") !!}{{$dates['second_session']}}</li>
             </div>
             <div class="col-4 row-offset">
                 <h3 class="title-3"><span class="lnr lnr-paperclip lnr-bigger"></span>{!! trans("messages.admission-container-2-content-2-t") !!}</h3>

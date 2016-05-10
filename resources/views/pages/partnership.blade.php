@@ -66,7 +66,7 @@
 
     <div class="container">
         <div class="col-10 center-block">
-            <h2 class="title-2">{!! trans("messages.home-testimonial") !!}</h2>
+            <h2 class="title-2">{!! trans("messages.home-partnership") !!}</h2>
             @include('includes.testimonial', array('testimonials' => $partner_testimonials, 'folder' => 'EnterpriseTestimonial'))
         </div>
     </div>

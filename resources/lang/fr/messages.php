@@ -30,6 +30,7 @@
             //\//
         "home-project" => "Les <strong>projets</strong> à la une",
         "home-testimonial" => "Paroles d'anciens",
+        "home-partnership" => "Paroles d'entreprises",
 
         //ADMISSION :: REFERS TO pages.admission.blade.php
         "banner-admission-title" => "Admission",
@@ -40,12 +41,12 @@
         "admission-container-1-subtitle" => "Le profil des IMAC",
         "admission-container-1-content-1" => "Les IMAC possèdent une imagination et un désir de créer qui dépassent le clivage arts/sciences.",
         "admission-container-1-content-2" => "En effet, leur ouverture d’esprit leur permet d’avoir un intérêt aussi bien pour les arts (arts graphiques, cinéma, musique, arts numériques...) que les sciences (programmation, mathématiques, traitement du signal…) sans pour autant être spécialiste de chacun de ces domaines. En suivant la formation IMAC, ils élargissent leur champ de compétences.",
-        "admission-container-1-content-3" => "Dans une volonté de recrutement hétérogène, l'école est accessible sur dossier à tout étudiant disposant d'un niveau BAC+2.",
+        "admission-container-1-content-3" => "Dans une volonté de recrutement hétérogène, la formation est accessible sur dossier à tout étudiant disposant d'un niveau BAC+2.",
         "admission-container-1-content-4-t" => "Profils scientifiques",
         "admission-container-1-content-4-c" => "Classes préparatoires, DUT Informatique, DUT MMI (anciennement SRC), Licence Maths et Informatique, Licence Physique…",
         "admission-container-1-content-5-t" => "Profils artistiques",
         "admission-container-1-content-5-c" => "BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…",
-        "admisssion-container-1-content-6" => "Les IMAC",
+        "admission-container-1-content-6" => "Les IMAC",
             //SECOND CONTAINER
         "admission-container-2-title" => "Candidatures",
         "admission-container-2-subtitle" => "L'admission repose sur une évaluation du dossier et éventuellement un entretien individuel. Le jury s'intéresse aux connaissances acquises dans différents domaines : sciences (informatique et mathématiques) et aux créations artistiques diverses (multimédia, audiovisuel, créations plastiques...).",
@@ -181,22 +182,22 @@
         "op-ctn-2-c-5" => "Audiovisuel, Spectacle numérique",
         "op-ctn-2-c-6" => "Enseignement &amp; Recherche",
                 //web
-        "op-ctn-3-c-1-t" => "Métier de l'informatique et du Web",
+        "op-ctn-3-c-1-t" => "Métiers de l'informatique et du Web",
         "op-ctn-3-c-1-c" => "Chef de projet web<br/>Développeur web<br/>Consultant web<br/>Programmeur \"full stack\"<br/>UX designer<br/>Développeur BDD<br/>Ingénieur informaticien<br/>Chargé de production<br/>Développeur d'application embarqués et mobile<br/>...",
                 //video games
-        "op-ctn-3-c-2-t" => "Métier du Jeu Vidéo",
+        "op-ctn-3-c-2-t" => "Métiers du Jeu Vidéo",
         "op-ctn-3-c-2-c" => "Ingénieur informaticien<br/>Chef de projet web<br/>Développeur R&amp;D en post-production<br/>Directeur technique en post-production<br/>...",
                 //multimedia and animation
-        "op-ctn-3-c-3-t" => "Métier du Multimédia et de l'Animation",
+        "op-ctn-3-c-3-t" => "Métiers du Multimédia et de l'Animation",
         "op-ctn-3-c-3-c" => "Réalisateur multimédia<br/>Directeur artistique<br/>Directeur technique en post-production<br/>Chargé de production<br/>...",
                 //Communication, marketing and publicist
-        "op-ctn-3-c-4-t" => "Métier de la Communication, du Marketing et de la Publicité",
+        "op-ctn-3-c-4-t" => "Métiers de la Communication, du Marketing et de la Publicité",
         "op-ctn-3-c-4-c" => "Directeur de la communication<br/>Cadre de l’événementiel<br/>Consultant e-busines<br/>Consultant en SSII<br/>Chargé de production<br/>...",
                 //audiovisuel, digital
-        "op-ctn-3-c-5-t" => "Métier de l'Audiovisuel et du Spectacle Numérique",
+        "op-ctn-3-c-5-t" => "Métiers de l'Audiovisuel et du Spectacle Numérique",
         "op-ctn-3-c-5-c" => "Ingénieur artistique<br/>Intermittent du spectacle<br/>Directeur artistique<br/>...",
                 //teaching and searching
-        "op-ctn-3-c-6-t" => "Métier de l'Enseignement et de la Recherche",
+        "op-ctn-3-c-6-t" => "Métiers de l'Enseignement et de la Recherche",
         "op-ctn-3-c-6-c" => "Enseignant<br/>Chercheur (R&amp;D)<br/>...",
             //COMPETENCES
         "op-ctn-4-t" => "Les compétences reconnues en entreprise",
@@ -262,7 +263,7 @@
         "prs-ctn-2-c-3-t" => "Troisième année",
         "prs-ctn-2-c-3-st" => "Se spécialiser",
         "prs-ctn-2-c-3-sst-1" => "C’est en troisième année que les étudiants s’orientent vers le domaine qui les passionnent. Trois thèmes principaux sont proposés, les enseignements peuvent être combinés.",
-        "prs-ctn-2-c-3-sst-2" => "En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double diplôme cinéma ou un double diplôme informatique option image. Certains étudiants effectuent leur dernière année <a href='{{ url('/international') }}'>à l’étranger</a>.",
+        "prs-ctn-2-c-3-sst-2" => "En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa formation en effectuant un double master cinéma ou un double master informatique option image. Certains étudiants effectuent leur dernière année <a href='{{ url('/international') }}'>à l’étranger</a>.",
         "prs-ctn-2-c-3-sst-3" => "Pour terminer leur spécialisation, les étudiants partent en stage à partir d’avril.",
                 //FIRST SPECIALITY
         "prs-ctn-2-c-3-c-1-t" => "Web",
@@ -465,10 +466,10 @@
         "fptn-st" => "Si vous êtes intéressé pour devenir partenaire de la formation IMAC, veuillez remplir le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.",
         "fptn-c-0" => "(Les champs indiqués par une * sont obligatoires.)",
         "fptn-f-ph-1" => "Votre e-mail*",
-        "fptn-f-ph-2" => "Nom, nom d\'entreprise",
-        "fptn-f-ph-3" => "Objet de l\'e-mail*",
+        "fptn-f-ph-2" => "Nom, nom d'entreprise",
+        "fptn-f-ph-3" => "Objet de l'e-mail*",
         "fptn-f-ph-4" => "Message*",
-        "fptn-f-ph-5" => "Complétez l\'opération à trou : 1 + ",
+        "fptn-f-ph-5" => "Complétez l'opération à trou : 1 + ",
         "fptn-f-ph-6" => "?*",
         "fptn-f-ph-7" => "Envoyer",
 
