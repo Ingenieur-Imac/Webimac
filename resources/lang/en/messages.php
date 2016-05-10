@@ -45,7 +45,7 @@
         "admission-container-1-content-4-c" => "Preparatory classes, Computing DUT, MMI DUT (formerly CBC) , Maths and Computing Licence, Physics Licence…",
         "admission-container-1-content-5-t" => "Artistic background",
         "admission-container-1-content-5-c" => "Visual Communication BTS, Audiovisual BTS, Cinema Licence ...",
-        "admisssion-container-1-content-6" => "IMAC",
+        "admission-container-1-content-6" => "IMAC",
             //SECOND CONTAINER
         "admission-container-2-title" => "Application",
         "admission-container-2-subtitle" => "To achieve admission, a portfolio and a sometimes a meeting is required. The jury is looking for candidates with knowledge on various fields : Sciences (Computer Science and Mathematics, ...) and some Artwork (multimedia, audiovisual, visual arts, ...)",
@@ -261,8 +261,7 @@
         "prs-ctn-2-c-3-t" => "Third year",
         "prs-ctn-2-c-3-st" => "Specialize",
         "prs-ctn-2-c-3-sst-1" => "At this level, students can major in the field of their choice. Three main themes are offered and courses can be combined.",
-        "prs-ctn-2-c-3-sst-2" => "At the same time, students follow common classes and “discovery lessons”.
-        It is also possible to carry out a double-master in cinema or in computer science.",
+        "prs-ctn-2-c-3-sst-2" => "At the same time, students follow common classes and “discovery lessons”. It is also possible to carry out a double-master in cinema or in computer science.",
         "prs-ctn-2-c-3-sst-3" => "From April, students leave the school to complete internships.",
                 //FIRST SPECIALITY
         "prs-ctn-2-c-3-c-1-t" => "Web",

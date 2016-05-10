@@ -45,7 +45,7 @@
         "admission-container-1-content-4-c" => "Classes préparatoires, DUT Informatique, DUT MMI (anciennement SRC), Licence Maths et Informatique, Licence Physique…",
         "admission-container-1-content-5-t" => "Profils artistiques",
         "admission-container-1-content-5-c" => "BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…",
-        "admisssion-container-1-content-6" => "Les IMAC",
+        "admission-container-1-content-6" => "Les IMAC",
             //SECOND CONTAINER
         "admission-container-2-title" => "Candidatures",
         "admission-container-2-subtitle" => "L'admission repose sur une évaluation du dossier et éventuellement un entretien individuel. Le jury s'intéresse aux connaissances acquises dans différents domaines : sciences (informatique et mathématiques) et aux créations artistiques diverses (multimédia, audiovisuel, créations plastiques...).",
@@ -262,7 +262,8 @@
         "prs-ctn-2-c-3-t" => "Troisième année",
         "prs-ctn-2-c-3-st" => "Se spécialiser",
         "prs-ctn-2-c-3-sst-1" => "C’est en troisième année que les étudiants s’orientent vers le domaine qui les passionnent. Trois thèmes principaux sont proposés, les enseignements peuvent être combinés.",
-        "prs-ctn-2-c-3-sst-2" => "En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double diplôme cinéma ou un double diplôme informatique option image. Certains étudiants effectuent leur dernière année <a href='{{ url('/international') }}'>à l’étranger</a>.",
+        "prs-ctn-2-c-3-sst-2" => "En parallèle, les étudiants suivent un tronc commun d’enseignements et des cours de découverte. Il est possible de compléter sa  formation en effectuant un double diplôme cinéma ou un double diplôme informatique option image. Certains étudiants effectuent leur dernière année",
+        "prs-ctn-2-c-3-sst-link" => "à l’étranger",
         "prs-ctn-2-c-3-sst-3" => "Pour terminer leur spécialisation, les étudiants partent en stage à partir d’avril.",
                 //FIRST SPECIALITY
         "prs-ctn-2-c-3-c-1-t" => "Web",

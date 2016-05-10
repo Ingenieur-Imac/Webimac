@@ -1994,12 +1994,17 @@ p.lead + .frames {
     margin: 15px auto;
     padding: 5px;
     text-align: center;
+    transition: 0.5s;
     width: 110px; }
+  .filters .main-filter:nth-child(2) {
+    border-color: #f73c3c; }
   .filters .main-filter:hover {
     cursor: pointer;
     background: #50d33d;
-    color: #fff;
-    transition: 0.5s; }
+    color: #fff; }
+  .filters .main-filter:nth-child(2):hover,
+  .filters .main-filter:nth-child(2).main-selected-filter {
+    background: #f73c3c; }
   .filters .main-selected-filter {
     background: #50d33d;
     color: #fff; }
@@ -2091,7 +2096,7 @@ p.lead + .frames {
   font-size: 3em;
   padding: 10px; }
 
-.project-item .lnr {
+.project-item > .lnr {
   display: inline-block;
   margin-right: 20px;
   position: relative;
@@ -2110,11 +2115,12 @@ p.lead + .frames {
     justify-content: flex-start;
     margin: -20px -10px 20px -10px; }
 
+.relative {
+  position: relative; }
+
 @media (min-width: 768px) {
   .close {
-    position: absolute;
-    top: 60px;
-    left: 15px; }
+    position: absolute; }
 
   .project-item-content .people {
     margin-left: 0;

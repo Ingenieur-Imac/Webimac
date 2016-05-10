@@ -127,7 +127,7 @@ class PagesController extends Controller{
 
     public function studentLife(){
         $display_application = PagesController::displayApplication();
-        return view('pages.studentLife','display_application');
+        return view('pages.studentLife',compact('display_application'));
     }
 
     public function international(){

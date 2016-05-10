@@ -441,13 +441,20 @@
     margin: 15px auto;
     padding: 5px;
     text-align: center;
+    transition: 0.5s;
     width: 110px;
+  }
+  .main-filter:nth-child(2) {
+    border-color: $secondary-color;
   }
   .main-filter:hover {
     cursor: pointer;
     background: $primary-color;
     color: $main-color;
-    transition: 0.5s;
+  }
+  .main-filter:nth-child(2):hover,
+  .main-filter:nth-child(2).main-selected-filter {
+    background: $secondary-color;
   }
   .main-selected-filter {
     background: $primary-color;
@@ -555,15 +562,13 @@
   font-size: 3em;
   padding: 10px;
 }
-.project-item {
-  .lnr {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    top: -5px;
-    text-align: center;
-    vertical-align: top;
-  }
+.project-item > .lnr {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  top: -5px;
+  text-align: center;
+  vertical-align: top;
 }
 .project-item {
   margin-top: 30px;
@@ -577,11 +582,14 @@
     margin: -20px -10px 20px -10px;
   }
 }
+.relative {
+  position: relative;
+}
 @media #{$small-screen} {
   .close {
     position: absolute;
-    top: 60px;
-    left: 15px;
+    // top: 60px;
+    // left: 8.33333333%;
   }
   .project-item-content {
     .people {
@@ -679,6 +687,7 @@
     font-size: 1.5em;
     margin-right: 10px;
     position: relative;
+    //top: 0;
   }
   .icon-linkedin-rect {
     font-size: 0.8em;

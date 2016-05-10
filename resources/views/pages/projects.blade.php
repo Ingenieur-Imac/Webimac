@@ -11,7 +11,8 @@
             <h1 class="title-1">{!! trans("messages.pros-t") !!}</h1>
             <p class="lead">{!! trans("messages.pros-st") !!}</p>
             <p>{!! trans("messages.pros-c") !!}</p>
-
+        </div>
+        <div class="col-12">
             <div class="filters">
                 <p>{!! trans("messages.pros-filter-c-3") !!}
                     <span rel="all" class="main-filter main-selected-filter">{!! trans("messages.pros-filter-c-1") !!}</span><span rel="heart" class="main-filter">{!! trans("messages.pros-filter-c-2") !!}</span>
