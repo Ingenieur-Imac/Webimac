@@ -262,8 +262,7 @@
         "prs-ctn-2-c-3-t" => "Third year",
         "prs-ctn-2-c-3-st" => "Specialize",
         "prs-ctn-2-c-3-sst-1" => "At this level, students can major in the field of their choice. Three main themes are offered and courses can be combined.",
-        "prs-ctn-2-c-3-sst-2" => "At the same time, students follow common classes and “discovery lessons”.
-        It is also possible to carry out a double-master in cinema or in computer science.",
+        "prs-ctn-2-c-3-sst-2" => "At the same time, students follow common classes and “discovery lessons”. It is also possible to carry out a double-master in cinema or in computer science.",
         "prs-ctn-2-c-3-sst-3" => "From April, students leave the school to complete internships.",
                 //FIRST SPECIALITY
         "prs-ctn-2-c-3-c-1-t" => "Web",

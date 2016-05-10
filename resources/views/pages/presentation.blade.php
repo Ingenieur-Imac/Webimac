@@ -82,7 +82,7 @@
                     <p class="title-2 color">{!! trans("messages.prs-ctn-2-c-3-st") !!}</p>
                     <div class="framed-content">
                         <p class="lead">{!! trans("messages.prs-ctn-2-c-3-sst-1") !!}</p>
-                        <p>{!! trans("messages.prs-ctn-2-c-3-sst-2") !!}</p>
+                        <p>{!! trans("messages.prs-ctn-2-c-3-sst-2") !!} <a href="{{ action('PagesController@international') }}">{!! trans("messages.prs-ctn-2-c-3-sst-link") !!}</a>.</p>
                         <p>{!! trans("messages.prs-ctn-2-c-3-sst-3") !!}</p>
                     </div>
 
