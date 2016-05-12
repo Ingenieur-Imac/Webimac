@@ -26,7 +26,10 @@ Route::get('/realisations/{url}','PagesController@project');
 Route::get('/devenir-partenaires','PagesController@newPartnership');
 Route::get('/deposer-offre-stage','PagesController@internshipOffer');
 Route::get('/mentions-legales','PagesController@legalNotice');
-//ENVOIE DES MAILS
+Route::get('/faq','PagesController@faq');
+Route::get('/ressources-graphiques','PagesController@graphicResources');
+
+//ENVOI DES MAILS
 Route::post('/mail/internship','MailController@internshipOffer');
 Route::post('/mail/partnership','MailController@partnershipOffer');
 Route::post('/mail/contact','MailController@contact');

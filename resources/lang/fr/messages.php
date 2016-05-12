@@ -422,6 +422,7 @@
         "ftr-ctn-2-t" => "Formation d'ingénieur Imac",
         "ftr-ctn-2-c" => "La seule formation publique d'ingénieur alliant arts et sciences",
         "ftr-ctn-3-c" => "Mentions légales",
+        "ftr-ctn-4-c" => "Ressources graphiques",
 
         //HEADER :: REFERS TO layout.header.blade.php
         "hdr-title" => "Formation d'ingénieur IMAC",
@@ -489,6 +490,33 @@
         "finsp-ph-8" => "Complétez l\'opération à trou : 1 + ",
         "finsp-ph-9" => "?*",
         "finsp-ph-10" => "Envoyer",
+
+        //FAQ :: REFERS TO pages.faq.blade.php
+        "title-faq" => "Foire aux questions | IMAC ingénieur",
+        "faq-ctn-t" => "Foire aux questions",
+        "faq-ctn-st" => "Intéressé(e) par la formation ? Vous trouverez ici les réponses aux questions courantes. Si vous avez besoin d'autres informations, n'hésitez pas à ",
+        "faq-ctn-link" => "nous contacter",
+        "faq-ctn-q1" => "Y a-t-il des journées portes ouvertes à l’IMAC&nbsp;?",
+        "faq-ctn-a1" => "<p>Une journée portes ouvertes est organisée chaque année sur le campus de la cité Descartes. À l’IMAC les étudiants présentent la formation ainsi que leurs projets aux intéressés. Cette journée se déroule en général au mois de février. La date précise est communiquée sur <a href='http://www.u-pem.fr/' target='_blank'>le site de l’UPEM</a>.</p>",
+        "faq-ctn-q2" => "Comment se passe la sélection à l’IMAC&nbsp;?",
+        "faq-ctn-a2" => "<p>Pour postuler à l’IMAC, il faut faire une demande de candidature sur le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend. Le candidat doit fournir obligatoirement son dossier scolaire (relevé de notes), une lettre de motivation et son CV. Il est également conseillé de joindre un portfolio détaillé regroupant ses créations ou bien de justifier de ses sensibilités artistiques.</p><p>Un entretien peut être éventuellement demandé au candidat. Ces entretiens se font à Champs-sur-Marne. Des entretiens en ligne sont accordés en cas exceptionnels (étudiant à l’étranger...).</p>",
+        "faq-ctn-q3" => "Quels sont les frais d’inscription à l’IMAC&nbsp;?",
+        "faq-ctn-a3" => "<p>L’IMAC est une formation d’ingénieur publique, agréée par la CTI. Lors de l'inscription, vous payez des droits de scolarité à hauteur de 800 euros (montant indicatif pour l’année 2015-1016). Les étudiants boursiers sont exonérés des frais d’inscription.</p>",
+        "faq-ctn-q4" => "Où se loger à proximité de la formation&nbsp;?",
+        "faq-ctn-a4" => "<p>Il existe de nombreuses résidences étudiantes dépendant ou non du <a href='http://www.crous-creteil.fr/logements/' target='_blank'>CROUS de Créteil</a> à Champs-sur-Marne et dans les villes à proximité. Certains étudiants choisissent aussi d’habiter en colocation dans des logements privés. Pour plus d'informations, vous pouvez consulter <a href='http://www.u-pem.fr/vie-du-campus/vie-etudiante/se-loger/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.</p>",
+
+        //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
+        "title-grsc" => "Ressources graphiques | IMAC ingénieur",
+        "grsc-ctn-t" => "Ressources graphiques",
+        "grsc-ctn-st-1" => "Logo pour fond clair",
+        "grsc-ctn-st-2" => "Logo pour fond foncé",
+        "grsc-ctn-st-3" => "Crédits animation vidéo",
+        "grsc-ctn-st-4" => "Télécharger l'ensemble des ressources",
+        "grsc-ctn-btn-1" => "Format web",
+        "grsc-ctn-btn-2" => "Format print",
+        "grsc-ctn-btn-3" => "Format vectoriel",
+        "grsc-ctn-btn-4" => "Format vidéo (mp4)",
+        "grsc-ctn-btn-5" => "Télécharger tout (4.5 Mo)",
     ]
 
 ?>

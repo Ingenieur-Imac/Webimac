@@ -7,7 +7,7 @@
 @section('content')
     <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container">
-        <div class="col-8 center-block">
+        <div class="col-12 center-block">
             <h1 class="title-1">{!! trans("messages.pros-t") !!}</h1>
             <p class="lead">{!! trans("messages.pros-st") !!}</p>
             <p>{!! trans("messages.pros-c") !!}</p>
