@@ -211,7 +211,7 @@
         "ptn-ctn-1-st" => "Incorporated into the business world, IMAC has relationship with majors players of multimedia.",
         "ptn-ctn-1-c" => "",
         "ptn-ctn-2-c" => "Visit website",
-        "ptn-ctn-2-st" => "Whay about vous ?",
+        "ptn-ctn-2-st" => "What about you?",
         "ptn-ctn-2-l" => "Become Partners",
         "ptn-ctn-3-c-1-t" => "Les jeudis de l'entreprise",
         "ptn-ctn-3-c-1-st" => "During the year, some compagnies present their work to ours students.",
