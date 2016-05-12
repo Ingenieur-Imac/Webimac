@@ -8,7 +8,8 @@ function initMap() {
       scrollwheel: false,
       navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
     });
-    var image = {url: "http://chart.apis.google.com/chart?chst=d_map_spin&chld=1.3|0|f73c3c|13|b|IMAC"};
+    var image = "../images/map-marker.png";
+    //var image = {url: "http://chart.apis.google.com/chart?chst=d_map_spin&chld=1.3|0|f73c3c|13|b|IMAC"};
     var marker = new google.maps.Marker({
         position: {lat: 48.8392, lng: 2.58692},
         icon: image,

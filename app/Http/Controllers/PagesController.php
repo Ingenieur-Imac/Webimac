@@ -38,6 +38,15 @@ class PagesController extends Controller{
         //Speed modification
         //$projects = Project::HomePage()->get();
         $projects = Project::all()->take(2);
+        foreach($projects as &$project){
+            $project_self_tags = DB::table('tags')
+                ->select('tags.id','tags.name')
+                ->join('project_tags','tags.id', '=', 'project_tags.tag_id')
+                ->join('projects','projects.id', '=', 'project_tags.project_id')
+                ->where('projects.id', '=', $project->id)
+                ->get();
+            $project->tags = $project_self_tags;
+        }
         $student_testimonials = StudentTestimonial::all();
         $display_application = PagesController::displayApplication();
         return view('pages.home', compact('projects','student_testimonials','display_application'));
@@ -162,6 +171,14 @@ class PagesController extends Controller{
 
     public function legalNotice(){
         return view('pages.legalNotice');
+    }
+
+    public function faq(){
+        return view('pages.faq');
+    }
+
+    public function graphicResources(){
+        return view('pages.graphicResources');
     }
 
     public function timer(){

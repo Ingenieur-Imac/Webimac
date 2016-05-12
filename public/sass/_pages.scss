@@ -480,37 +480,36 @@
 .project {
   flex-basis: 100%;
   margin-top: $spacing-unit/2;
-
-  .img-project {
-    position: relative;
-    img {
-      @include box-sizing(border-box);
-      border: 1px solid $light-color;
-      display: block;
-    }
-    .hover-img-project {
-      display: flex;
-      @include box-sizing(border-box);
-      background-color: rgba(0,0,0,0.5);
-      border: 1px solid $light-color;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      opacity: 0;
-      position: absolute;
-        top: 0;
-        left: 0;
-      text-align: center;
-      transition-duration: 0.5s;
-      width: 100%;
-      span {
-        font-size: 2.5em;
-      }
+}
+.img-project {
+  position: relative;
+  img {
+    @include box-sizing(border-box);
+    border: 1px solid $light-color;
+    display: block;
+  }
+  .hover-img-project {
+    display: flex;
+    @include box-sizing(border-box);
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid $light-color;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    text-align: center;
+    transition-duration: 0.5s;
+    width: 100%;
+    span {
+      font-size: 2.5em;
     }
   }
-  .img-project:hover .hover-img-project {
-    opacity: 1;
-  }
+}
+.img-project:hover .hover-img-project {
+  opacity: 1;
 }
 .tag {
   border: $medium-color 1px solid;
@@ -588,8 +587,6 @@
 @media #{$small-screen} {
   .close {
     position: absolute;
-    // top: 60px;
-    // left: 8.33333333%;
   }
   .project-item-content {
     .people {
@@ -761,7 +758,7 @@
 //========================
 .full-framed {
   display: none;
-  margin: $spacing-unit 0;
+  margin-bottom: $spacing-unit;
   width: 100%;
 }
 .full-framed.selected {
@@ -845,6 +842,72 @@
 }
 
 
+//========================
+// FAQ
+//========================
+.question {
+  border-top: 1px $medium-color solid;
+  label {
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 5px 40px 5px 0;
+    position: relative;
+  }
+  label::after {
+    @include vertical-align();
+    content: "\e881";
+    color: $primary-color;
+    display: block;
+    font-family: 'Linearicons-Free';
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  input[type="checkbox"] {
+    display: none;
+    position: absolute;
+    left: -9999px;
+  }
+  input[type="checkbox"]:checked + label::after {
+    content: "\e882";
+  }
+  input[type="checkbox"]:checked + label + .answer {
+    display: block;
+  }
+  .answer {
+    display: none;
+    padding: 0 40px 10px 30px;
+  }
+}
+.question:last-child {
+  border-bottom: 1px $medium-color solid;
+}
+
+
+//========================
+// GRAPHIC RESOURCES
+//========================
+.resources {
+  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 170px;
+  }
+  video {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.resources + .resources {
+  margin-top: $spacing-unit/2;
+}
 
 // Timer JPO
 
