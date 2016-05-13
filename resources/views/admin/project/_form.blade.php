@@ -9,6 +9,12 @@
     {!! Form::text('excerpt',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- english excerpt form input -->
+<div class="form-group">
+    {!! Form::label('en_excerpt','Extrait en anglais : ') !!}
+    {!! Form::text('en_excerpt',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- description form input -->
 <div class="form-group">
     {!! Form::label('description','Description :') !!}

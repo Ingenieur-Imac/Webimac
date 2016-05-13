@@ -46,20 +46,35 @@ class PagesController extends Controller{
                 ->where('projects.id', '=', $project->id)
                 ->get();
             $project->tags = $project_self_tags;
+            if($project->en_excerpt == "")
+                $project->en_excerpt = $project->excerpt;
         }
+
         $student_testimonials = StudentTestimonial::all();
+        foreach ($student_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $display_application = PagesController::displayApplication();
         return view('pages.home', compact('projects','student_testimonials','display_application'));
     }
 
     public function presentation(){
         $student_testimonials = StudentTestimonial::all();
+        foreach ($student_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $display_application = PagesController::displayApplication();
         return view('pages.presentation', compact('student_testimonials','display_application'));
     }
 
     public function admission(){
         $student_testimonials = StudentTestimonial::all();
+        foreach ($student_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $dates = json_decode(file_get_contents(public_path().'/json/application.json'),TRUE);
         $dates = $dates['application'];
         $display_application = PagesController::displayApplication();
@@ -68,6 +83,10 @@ class PagesController extends Controller{
 
     public function openings(){
         $student_testimonials = StudentTestimonial::all();
+        foreach ($student_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $display_application = PagesController::displayApplication();
         return view('pages.openings', compact('student_testimonials','display_application'));
     }
@@ -93,6 +112,8 @@ class PagesController extends Controller{
                 ->get();
             $project->tags = $project_self_tags;
             $project->date = Carbon::parse($project->date)->year;
+            if($project->en_excerpt == "")
+                $project->en_excerpt = $project->excerpt;
         }
         //$project = $project->first();
         //$project->date = Carbon::createFromFormat('Y-m-d H:i:s',$project->date)->format('Y');
@@ -117,6 +138,11 @@ class PagesController extends Controller{
             ->where('projects.id', '=', $project->id)
             ->orderBy('name', 'asc')
             ->get();
+
+        if($project->en_excerpt == "")
+            $project->en_excerpt = $project->excerpt;
+        if($project->en_description == "")
+            $project->en_description = $project->description;
         $display_application = PagesController::displayApplication();
         return view('pages.project', compact('project','display_application'));
     }
@@ -141,6 +167,10 @@ class PagesController extends Controller{
 
     public function international(){
         $student_testimonials = StudentExchangeTestimonial::all();
+        foreach ($student_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $gallery = array();
         foreach ($student_testimonials as $student) {
           $gallery[$student->id] = GalleryStudentExchangeTestimonial::where('id_testimonial', '=', $student->id)->get();
@@ -152,6 +182,10 @@ class PagesController extends Controller{
     public function partnership(){
         $partnerships = Partnership::orderBy('order')->get();
         $partner_testimonials = EnterpriseTestimonial::all();
+        foreach ($partner_testimonials as &$item) {
+            if($item->en_overview == "")
+                $item->en_overview = $item->overview;
+        }
         $display_application = PagesController::displayApplication();
         return view('pages.partnership',compact('partnerships', 'partner_testimonials','display_application'));
     }

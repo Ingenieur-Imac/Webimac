@@ -45,7 +45,7 @@
 
             <div class="project-item">
                 <span class="lnr lnr-tag lnr-2x"></span>
-                <p class="project-item-content">{{$project->description}}</p>
+                <p class="project-item-content">{!! (Lang::locale() == "en") ? $project->en_description : $project->description !!}</p>
             </div>
 
             @if(!empty($project->awards))

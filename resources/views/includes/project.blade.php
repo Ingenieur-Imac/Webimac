@@ -7,7 +7,7 @@
             </div>
         </a>
         <h3 class="title-4">{{$project->name}}</h3>
-        <p>{{$project->excerpt}}</p>
+        <p>{{Lang::locale() == 'en' ? $project->en_excerpt : $project->excerpt}}</p>
         <p class="ctn-tags">
             @foreach ($project->tags as $tag)
                 <span rel="{{$tag->id}}" class="tag {{ ($tag->id == 1) ? "important-tag" : '' }}">{{$tag->name}}</span>

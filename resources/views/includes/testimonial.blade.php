@@ -11,7 +11,7 @@
                             <p class="testi-role">{{$testimonial->job}}</p>
                         @endif
                         <blockquote>
-                            <p>{{$testimonial->overview}}</p>
+                            <p>{{(Lang::locale() == "en") ? $testimonial->en_overview : $testimonial->overview}}</p>
                         </blockquote>
                     </div>
                     @if(isset($gallery))
