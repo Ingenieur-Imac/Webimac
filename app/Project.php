@@ -11,7 +11,7 @@ use Illuminate\Support\Collection;
 class Project extends Model
 {
     protected $fillable = [
-        'name','description','date','excerpt','contributors','awards','name_of_tutors',
+        'name','description','en_description','date','excerpt','en_excerpt','contributors','awards','name_of_tutors',
         'github_link','vimeo_link','web_link','platform','url_video','url_image','url_page'
     ];
 
