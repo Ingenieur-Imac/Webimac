@@ -30,8 +30,8 @@ class MailController extends Controller
         //
         $mailingList = json_decode(file_get_contents(public_path().'/json/mailingList.json'),TRUE);
         //TODO : à tester en live
-        //$to = $mailingList["IMAC1"].','.$mailingList["IMAC2"].','.$mailingList["IMAC3"];
-        $to = "julien.rousset01@gmail.com";
+        $to = $mailingList["IMAC1"].','.$mailingList["IMAC2"].','.$mailingList["IMAC3"];
+        //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
         Mail::send('emails.internshipOffering', ['datas' => $datas], function ($m) use ($path,$to){
@@ -45,8 +45,8 @@ class MailController extends Controller
     }
 
     public function partnershipOffer(Request $request){
-        //$to = "sylvie.donard@u-pem.fr";
-        $to = "julien.rousset01@gmail.com";
+        $to = "sylvie.donard@u-pem.fr";
+        //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
         Mail::send('emails.partnershipOffering', ['datas' => $datas], function ($m) use ($to){
@@ -58,8 +58,8 @@ class MailController extends Controller
     }
 
     public function contact(Request $request){
-        //$to = "sylvie.donard@u-pem.fr";
-        $to = "julien.rousset01@gmail.com";
+        $to = "sylvie.donard@u-pem.fr";
+        //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
         Mail::send('emails.contactForm', ['datas' => $datas], function ($m) use ($to){
