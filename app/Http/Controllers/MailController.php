@@ -30,13 +30,16 @@ class MailController extends Controller
         //
         $mailingList = json_decode(file_get_contents(public_path().'/json/mailingList.json'),TRUE);
         //TODO : à tester en live
-        $to = $mailingList["IMAC1"].','.$mailingList["IMAC2"].','.$mailingList["IMAC3"];
+        //$to = $mailingList["IMAC1"].','.$mailingList["IMAC2"].','.$mailingList["IMAC3"];
         //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
-        Mail::send('emails.internshipOffering', ['datas' => $datas], function ($m) use ($path,$to){
+        Mail::send('emails.internshipOffering', ['datas' => $datas], function ($m) use ($path,$mailingList){
             $m->from('webimac2016@gmail.com', 'Site Web de l\'Imac');
-            $m->to($to, "Julien Rousset")->subject('Proposition de stage déposé sur Ingenieur-Imac.fr');
+            // FOREACH ALL MAIL
+            foreach ($mailingList as $mail) {
+                $m->to($mail)->subject('Proposition de stage déposé sur Ingenieur-Imac.fr');
+            }
             if($path !== null)
                 $m->attach($path);
         });
