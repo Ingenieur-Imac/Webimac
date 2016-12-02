@@ -37,7 +37,6 @@ class PagesController extends Controller{
     public function index(){
         //Speed modification
         //$projects = Project::HomePage()->get();
-        //$projects = Project::all()->take(2);
         $projects = Project::all()->reverse()->take(2);
         foreach($projects as &$project){
             $project_self_tags = DB::table('tags')
@@ -100,7 +99,7 @@ class PagesController extends Controller{
     }
 
     public function projects(){
-        $projects = Project::orderBy('date','desc')->get();
+        $projects = Project::orderBy('date','DESC')->get();
         $tags = Tag::orderBy('name', 'asc')->get();
         $years = Project::getArrayDates();
         //Get projects tag

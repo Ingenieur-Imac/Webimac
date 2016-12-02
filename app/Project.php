@@ -2,7 +2,6 @@
 
 namespace Imac;
 
-use Lang;
 use Carbon\Carbon;
 use Cocur\Slugify\Slugify;
 use Illuminate\Database\Eloquent\Model;
@@ -41,14 +40,12 @@ class Project extends Model
     static function getArrayDates(){
         $projects = Project::all();
         $array_dates = array();
+        $array_dates[0] = 'Année';
         foreach ($projects as $project) {
             $dt = Carbon::parse($project->date);
             if(!in_array($dt->year, $array_dates) && $dt->year > 0)
                 array_push($array_dates, $dt->year);
         }
-
-        arsort($array_dates);
-        array_unshift($array_dates,(Lang::locale() == "fr") ? "Année : " : "Year : ");
         return $array_dates;
     }
 }
