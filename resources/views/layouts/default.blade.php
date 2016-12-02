@@ -14,6 +14,7 @@
         <nav>
             @include('layouts.nav')
         </nav>
+        @include('timer')
         <div>
             @yield('content')
         </div>

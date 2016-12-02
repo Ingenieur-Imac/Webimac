@@ -2444,3 +2444,19 @@ p.lead + .frames {
 #jqvmap1_world,
 #jqvmap1_imac {
   cursor: default; }
+
+#timer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  background-color: #f73c3c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Bebas;
+  font-size: 2rem;
+  text-align: center; }
+
+/*# sourceMappingURL=master.css.map */

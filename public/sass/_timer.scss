@@ -1,0 +1,14 @@
+#timer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+    background-color: $secondary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: 2rem;
+    text-align: center;
+}
