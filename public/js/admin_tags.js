@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $("#add-tag").on('change',function(e){
-        for(var i in $(".tags")){
+        if($(this).val() == 0)
+            return false;
+
+        //Vérification que le tag est pas présent
+        for(var i in $(".tag")){
             if($(".tag:eq("+i+")").attr('rel') == $(this).val()){
                 return false;
             }

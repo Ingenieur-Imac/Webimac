@@ -11,7 +11,7 @@
     </div>
 @else
     <div class="form-group">
-        {!! Form::label('url_image','URL de la photo de l\'étudiant') !!}
+        {!! Form::label('url_image','URL de la photo de classe') !!}
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif

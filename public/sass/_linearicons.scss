@@ -549,14 +549,18 @@
 }
 .lnr-ul {
 	li {
-		line-height: 2;
 		list-style: none;
+		position: relative;
+	}
+	li + li {
+		margin-top: 10px;
 	}
 	.lnr {
 		color: $primary-color;
     font-size: 1.3em;
     font-weight: bold;
-    margin-right: 0.5em;
+    left: -2em;
+		position: absolute;
     vertical-align: middle;
 	}
 }

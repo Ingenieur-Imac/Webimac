@@ -1,13 +1,13 @@
 <?php
-  $title = 'Admission';
-  $banner_title = 'La formation IMAC';
+  $title = trans("messages.banner-admission-title");
+  $banner_title = trans("messages.banner-admission-subtitle");
   $img = 'DSC00034.jpg';
 ?>
 
 @extends('layouts.default')
 
 @section('title')
-    Être admis à l’IMAC | IMAC ingénieur
+    {!! trans("messages.title-admission") !!}
 @endsection
 
 @section('script')
@@ -21,22 +21,22 @@
     <!-- @include('includes.ariane', array('title' => 'Youpi')) -->
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">Les conditions d'admission</h1>
-            <h2 class="title-2 center">Le profil des IMAC</h2>
-            <p class="lead">Les IMAC possèdent une imagination et un désir de créer qui dépassent le clivage arts/sciences.</p>
-            <p>En effet, leur ouverture d’esprit leur permet d’avoir un intérêt aussi bien pour les arts (arts graphiques, cinéma, musique, arts numériques...) que les sciences (programmation, mathématiques, traitement du signal…) sans pour autant être spécialiste de chacun de ces domaines. En suivant la formation IMAC, ils élargissent leur champ de compétences.</p>
-            <p>Dans une volonté de recrutement hétérogène, l'école est accessible sur dossier à tout étudiant disposant d'un niveau BAC+2.</p>
+            <h1 class="title-1">{!! trans("messages.admission-container-1-title") !!}</h1>
+            <h2 class="title-2 center">{!! trans("messages.admission-container-1-subtitle") !!}</h2>
+            <p class="lead">{!! trans("messages.admission-container-1-content-1") !!}</p>
+            <p>{!! trans("messages.admission-container-1-content-2") !!}</p>
+            <p>{!! trans("messages.admission-container-1-content-3") !!}</p>
 
             <div class="secondary-color-framed">
                 <div class="secondary-color-framed">
-                    <p class="secondary-color-framed-title">Formations scientifiques</p>
-                    <p>Classes préparatoires, DUT Informatique, DUT MMI (anciennement SRC), Licence Maths et Informatique, Licence Physique…</p>
+                    <p class="secondary-color-framed-title">{!! trans("messages.admission-container-1-content-4-t") !!}</p>
+                    <p>{!! trans("messages.admission-container-1-content-4-c") !!}</p>
                 </div>
                 <div class="secondary-color-framed">
-                    <p class="secondary-color-framed-title">Formations artistiques</p>
-                    <p>BTS Communication Visuelle, BTS Audiovisuel, Licence Cinéma…</p>
+                    <p class="secondary-color-framed-title">{!! trans("messages.admission-container-1-content-5-t") !!}</p>
+                    <p>{!! trans("messages.admission-container-1-content-5-c") !!}</p>
                 </div>
-                <p class="secondary-color-framed-title bottom">Les IMAC<br /><span class="lnr lnr-heart"></span></p>
+                <p class="secondary-color-framed-title bottom">{!! trans("messages.admission-container-1-content-6") !!}<br /><span class="lnr lnr-heart"></span></p>
             </div>
         </div>
     </div>
@@ -44,30 +44,32 @@
     <div class="light-row">
         <div class="container">
             <div class="col-8 center-block">
-                <h2 class="title-2 center">Candidatures</h2>
-                <p class="lead side-padding">L'admission repose sur une évaluation du dossier et éventuellement un entretien individuel. Le jury s'intéresse aux connaissances acquises dans différents domaines : sciences (informatique et mathématiques) et aux créations artistiques diverses (multimédia, audiovisuel, créations plastiques...).</p>
+                <h2 class="title-2 center">{!! trans("messages.admission-container-2-title") !!}</h2>
+                <p class="lead side-padding">{!! trans("messages.admission-container-2-subtitle") !!}</p>
             </div>
             <div class="col-4 col-offset-2">
-                <h3 class="title-3"><span class="lnr lnr-pencil lnr-bigger"></span> La procédure de candidature</h3>
-                <p>Les candidatures pour la rentrée {{$dates['year']}} seront ouvertes à partir du {{$dates['openning']}}. Les candidatures s'effectuent depuis le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend (<a href="http://candidatures.univ-mlv.fr" target="_blank">http://candidatures.univ-mlv.fr</a>).
-                <p>Date limite de dépôt des dossiers :</p>
-      	        <ul>
-                    <li>1ère session : {{$dates['first_session']}}</li>
-                    <li>2ème session : {{$dates['second_session']}}</li>
+                <h3 class="title-3"><span class="lnr lnr-paperclip lnr-bigger"></span>{!! trans("messages.admission-container-2-content-2-t") !!}</h3>
+                <p>{!! trans("messages.admission-container-2-content-2-c1") !!}</p>
+                <p>{!! trans("messages.admission-container-2-content-2-c1") !!}</p>
             </div>
             <div class="col-4 row-offset">
-                <h3 class="title-3"><span class="lnr lnr-paperclip lnr-bigger"></span> Le dossier à préparer</h3>
-                <p>Le candidat doit fournir obligatoirement son dossier scolaire (relevés de notes), une lettre de motivation et son CV. Il est également fortement conseillé de joindre un portfolio détaillé regroupant des créations ou bien de justifier de sa sensibilité artistique.</p>
-                <p>Il est possible d'intégrer la formation directement en deuxième année si les diplômes attestent du niveau requis (Bac+3).</p>
+                <h3 class="title-3"><span class="lnr lnr-pencil lnr-bigger"></span>{!! trans("messages.admission-container-2-content-1-t") !!}</h3>
+                <p>{!! trans("messages.admission-container-2-content-1-c1-1") !!} {!! $dates['year'] !!} {!! trans("messages.admission-container-2-content-1-c1-2") !!} {!! $dates['openning'] !!}{!! trans("messages.admission-container-2-content-1-c1-3") !!}</p>
+                <p>{!! trans("messages.admission-container-2-content-1-c2") !!}</p>
+      	        <ul>
+                    <li>{!! trans("messages.admission-container-2-content-1-c3") !!}{!! $dates['first_session'] !!}</li>
+                    <li>{!! trans("messages.admission-container-2-content-1-c4") !!}{!! $dates['second_session'] !!}</li>
             </div>
-                <p class="center"><a class="btn filled-btn primary-btn" target="_BLANK" href="https://candidatures.u-pem.fr/">Déposer votre candidature</a></p>
+            @if ($display_application)
+                <p class="center"><a class="btn filled-btn primary-btn" target="_BLANK" href="https://candidatures.u-pem.fr/">{!! trans("messages.admission-container-2-content-2-l") !!}</a></p>
+            @endif
         </div>
     </div>
 
-    <div>
-        <div class="container">
-            <h2 class="title-2 center">Paroles d'anciens</h2>
-            @include('includes.testimonial', $student_testimonials)
+    <div class="container">
+        <div class="col-10 center-block">
+            <h2 class="title-2">{!! trans("messages.home-testimonial") !!}</h2>
+            @include('includes.testimonial', array('testimonials' => $student_testimonials, 'folder' => 'studentTestimonial'))
         </div>
     </div>
 @endsection

@@ -15,6 +15,8 @@ class AdminOthersController extends Controller
     function __construct(){
         $this->pathToTimerJson = public_path().'/json/timer.json';
         $this->pathToApplicationJson = public_path().'/json/application.json';
+        $this->pathToDisplayOpenning = public_path().'/json/updateDisplayOpenningBanner.json';
+        $this->pathToMail = public_path().'/json/mailingList.json';
     }
 
     function index(){
@@ -38,7 +40,23 @@ class AdminOthersController extends Controller
         if(isset($applicationJson['application']['year']))
             $application_date['year'] = $applicationJson['application']['year'];
 
-        return view('admin.others.index',compact('date','application_date'));
+        //Boolean DisplayOpenning
+        $displayOpenning = false;
+        $applicationDisplayOpenning = json_decode(file_get_contents($this->pathToDisplayOpenning),TRUE);
+        if(isset($applicationDisplayOpenning["openning-application"]))
+            $displayOpenning = $applicationDisplayOpenning["openning-application"];
+
+        //Mailing List
+        $mailingListJson = json_decode(file_get_contents($this->pathToMail),TRUE);
+        $mailingList = ['IMAC1' => null,'IMAC2' => null,'IMAC3' => null];
+        if(isset($mailingListJson['IMAC1']))
+            $mailingList['IMAC1'] = $mailingListJson['IMAC1'];
+        if(isset($mailingListJson['IMAC2']))
+            $mailingList['IMAC2'] = $mailingListJson['IMAC2'];
+        if(isset($mailingListJson['IMAC3']))
+            $mailingList['IMAC3'] = $mailingListJson['IMAC3'];
+
+        return view('admin.others.index',compact('date','application_date','displayOpenning','mailingList'));
     }
 
     function updateTimer(Request $request){
@@ -62,6 +80,33 @@ class AdminOthersController extends Controller
         $json['application'] = $application_date;
         file_put_contents($this->pathToApplicationJson,json_encode($json,TRUE));
 
+        return redirect('admin/others');
+    }
+
+    function updateDisplayOpenningBanners(Request $request){
+        $result = $request->all();
+        $json = json_decode(file_get_contents($this->pathToDisplayOpenning),TRUE);
+        if(isset($result['openning-application'])){
+            if($result['openning-application'] == "on"){
+                $json["openning-application"] = true;
+            } else {
+                $json["openning-application"] = false;
+            }
+        } else {
+            $json["openning-application"] = false;
+        }
+        file_put_contents($this->pathToDisplayOpenning,json_encode($json),TRUE);
+        return redirect('admin/others');
+    }
+
+    function updateMaillingList(Request $request){
+        $result = $request->all();
+        $json = json_decode(file_get_contents($this->pathToMail),TRUE);
+        foreach($result as $key => $value){
+            if($key != "_token")
+                $json[$key] = $value;
+        }
+        file_put_contents($this->pathToMail,json_encode($json),TRUE);
         return redirect('admin/others');
     }
 }

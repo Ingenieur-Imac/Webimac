@@ -9,10 +9,22 @@
     {!! Form::text('excerpt',null,['class' => 'form-control']) !!}
 </div>
 
+<!-- english excerpt form input -->
+<div class="form-group">
+    {!! Form::label('en_excerpt','Extrait en anglais : ') !!}
+    {!! Form::text('en_excerpt',null,['class' => 'form-control']) !!}
+</div>
+
 <!-- description form input -->
 <div class="form-group">
     {!! Form::label('description','Description :') !!}
     {!! Form::textarea('description',null,['class' => 'form-control']) !!}
+</div>
+
+<!-- english description form input -->
+<div class="form-group">
+    {!! Form::label('description','Description Anglaise :') !!}
+    {!! Form::textarea('en_description',null,['class' => 'form-control']) !!}
 </div>
 
 <!-- url_image form input -->
@@ -35,31 +47,34 @@
 </div>
 
 <!-- tags form input -->
-<div class="form-group">
-    {!! Form::label('tags','tags') !!}
-    <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
-        <option value="0">Tags du projet :</option>
-        @foreach($tags as $key => $value)
-            <option value="{{$key}}">{{$value}}</option>
-        @endforeach
-    </select>
-    {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
-    <div class="tags jumbotron">
-        @if(isset($self_tags))
-            @foreach($self_tags as $tag)
-                <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+@if(isset($project))
+    <div class="form-group">
+        {!! Form::label('tags','tags') !!}
+        <select id="add-tag" rel="{{$project->id}}" class="form-control" name="">
+            <option value="0">Tags du projet :</option>
+            @foreach($tags as $key => $value)
+                <option value="{{$key}}">{{$value}}</option>
             @endforeach
-        @endif
+        </select>
+        {{-- {!! Form::select(null,$tags,null,['class' => 'form-control','id' => 'add-tag','rel' => $project->id]) !!} --}}
+        <div class="tags jumbotron">
+            @if(isset($self_tags))
+                @foreach($self_tags as $tag)
+                    <button type="button" rel="{{$tag->id}}" class="tag btn btn-primary"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{$tag->name}}</button>
+                @endforeach
+            @endif
+        </div>
     </div>
-</div>
+@endif
 
-<!-- contributor form input -->
+{{-- <!-- contributor form input -->
 <div class="form-group">
     {!! Form::label('contributors','Contributeurs du projet : (séparez les noms par un <br/>)') !!}
     {!! Form::text('contributors',null,['class' => 'form-control']) !!}
-</div>
+</div> --}}
 
 <!-- student form input -->
+@if(isset($project))
 <div class="form-group">
     {!! Form::label('students','Contributeurs du projet') !!}
     {!! Form::text(null,null,['id' => 'findStudents','class'=> 'form-control']) !!}
@@ -72,10 +87,11 @@
         @endif
     </div>
 </div>
+@endif
 
-<!-- name_of_tutors form input -->
+<!-- name_of_tutors form input :: -->
 <div class="form-group">
-    {!! Form::label('name_of_tutors','Nom des tuteurs') !!}
+    {!! Form::label('name_of_tutors','Nom des tuteurs (à séparer par des <br/>)') !!}
     {!! Form::text('name_of_tutors',null,['class' => 'form-control']) !!}
 </div>
 
@@ -110,7 +126,7 @@
 
 <!-- url_video form input -->
 <div class="form-group">
-    {!! Form::label('url_video','Url de la vidéo de présentation') !!}
+    {!! Form::label('url_video','Url de la vidéo de présentation (juste la clef à la fin de l\'URL)') !!}
     {!! Form::text('url_video',null,['class' => 'form-control']) !!}
 </div>
 

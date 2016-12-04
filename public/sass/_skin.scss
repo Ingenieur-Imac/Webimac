@@ -36,14 +36,13 @@ img {
   height: auto;
   width: 100%;
 }
-p + p {
+p + form,
+p + p,
+ul + p {
   margin-top: 10px;
 }
 p + ul {
   margin-top: 0;
-}
-ul + p {
-  margin-top: 10px;
 }
 strong {
   font-weight: bold;
@@ -135,6 +134,10 @@ p.lead + .frames {
   background: $primary-color;
   color: $main-color;
 }
+.light-text {
+  color: $medium-color;
+  font-size: 0.8em;
+}
 .circle {
   background: $light-color;
   border-radius: 50%;
@@ -179,4 +182,7 @@ p.lead + .frames {
 }
 .media-container + p {
   margin-top: 30px;
+}
+.title-2 ~ .btn {
+  margin-top: 0;
 }

@@ -22,7 +22,7 @@
         Aucun étudiant à afficher pour le moment
     @else
         @foreach ($students as $student)
-            <h3><a rel="{{$student->promo}}" href="{{action('AdminStudentController@edit',[$student->id])}}">{{ ucwords($student->name) }}</a></h3>
+            <h3><a rel="{{$student->promo}}" href="{{action('AdminStudentController@edit',[$student->id])}}">{{ ucwords($student->name) }} {{ ucwords($student->surname)}}</a></h3>
         @endforeach
     @endif
 @endsection

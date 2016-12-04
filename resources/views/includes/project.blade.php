@@ -1,5 +1,5 @@
 @foreach ($projects as $project)
-    <div class="project">
+    <div rel="{{$project->date}}" class="project">
         <a href="{{action('PagesController@projects')}}/{{$project->url_page}}">
             <div class="img-project">
                 <img src="{{URL::asset('images/projects/'.$project->url_image)}}" alt="{{$project->name}}" />
@@ -7,10 +7,10 @@
             </div>
         </a>
         <h3 class="title-4">{{$project->name}}</h3>
-        <p>{{$project->excerpt}}</p>
-        <p>
+        <p>{{Lang::locale() == 'en' ? $project->en_excerpt : $project->excerpt}}</p>
+        <p class="ctn-tags">
             @foreach ($project->tags as $tag)
-                <span class="tag {{ ($tag->name == 'Coup de cœur') ? "important-tag" : '' }}">{{$tag->name}}</span>
+                <span rel="{{$tag->id}}" class="tag {{ ($tag->id == 1) ? "important-tag" : '' }}">{{$tag->name}}</span>
             @endforeach
         </p>
     </div>

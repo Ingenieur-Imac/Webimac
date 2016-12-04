@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-    Autour de la formation | IMAC ingénieur
+    {!! trans("messages.title-sl") !!}
 @endsection
 
 @section('content')
@@ -9,27 +9,130 @@
 
     <div class="container">
         <div class="col-8 center-block">
-            <h1 class="title-1">La vie étudiante sur le campus</h1>
-            <p class="lead">La vie associative ainsi que les conférences et ateliers artistiques et culturels sont des points forts que l'UPEM prône et valorise.</p>
-            <p>Les étudiants de l'IMAC bénéficient ainsi de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l'eau. Vous pouvez vous rendre <a href="http://bde.ingenieur-imac.fr/" target="_blank">sur la page dédiée du site de l'UPEM</a> pour plus d'informations.</p>
+            <h1 class="title-1">{!! trans("messages.sl-ctn-1-t") !!}</h1>
+            <p class="lead">{!! trans("messages.sl-ctn-1-st") !!}</p>
+            <p>{!! trans("messages.sl-ctn-1-c") !!}</p>
         </div>
     </div>
 
-    <!-- Boucle for à faire ici avec toutes les associations -->
-    <!-- Mettre les bons noms de variables + tests pour liens existants -->
     <div class="association">
         <div class="container">
-            <div class="col-2 col-offset-1 middle-valign-ib">
-                <img src="{{URL::asset('images/student/DSC_0035.jpg')}}" alt="">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/BDI.png')}}" alt="BDI">
             </div>
             <div class="col-7 col-offset-1 middle-valign-ib">
-                <h2 class="title-3">Nom de l'association</h2>
-                <p>Salle blabla</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-1-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-1-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-1-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-1-c") !!}</p>
                 <p class="links">
-                        <a href="#" target="_blank"><span class="lnr lnr-map-marker"></span></a>
-                        <a href="#" target="_blank"><span class="icon-facebook"></span></a>
-                        <a href="#" target="_blank"><span class="lnr lnr-envelope"></span></a>
+                    <a href="http://bde.ingenieur-imac.fr/" target="_blank"><span class="lnr lnr-screen"></span></a>
+                    <a href="https://www.facebook.com/BDE.IMAC?fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/803z.jpg')}}" alt="803Z">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-2-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-2-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-2-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-2-c-1") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-2-c-2") !!}</p>
+                <p class="links">
+                    <a href="http://www.803z.fr/" target="_blank"><span class="lnr lnr-screen"></span></a>
+                    <a href="https://www.facebook.com/803Z.MLV" target="_blank"><span class="icon-facebook"></span></a>
+                    <a href="mailto:contact@803z.fr"><span class="lnr lnr-envelope"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center"></div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-3-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-3-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-3-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-3-c") !!}</p>
+                <p class="links">
+                    <a href="http://www.u-pem.fr/vie-du-campus/vie-sportive/le-service-universitaire-pour-les-activites-physiques-et-sportives-suaps/" target="_blank"><span class="lnr lnr-screen"></span></a>
+                    <a href="mailto:suaps@u-pem.fr"><span class="lnr lnr-envelope"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/BDK.jpg')}}" alt="BDK">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-4-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-4-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-4-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-4-c-1") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-4-c-2") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-4-c-3") !!}</p>
+                <p class="links">
+                        <a href="https://www.facebook.com/bruitdukouloir/" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="mailto:bruitdukouloir@gmail.com"><span class="lnr lnr-envelope"></span></a>
+                        <a href="https://www.instagram.com/bdk_upem/" target="_blank"><span class="icon-instagram-filled"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/FDK.jpg')}}" alt="FDK">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-5-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-5-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-5-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-5-c-1") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-5-c-2") !!}</p>
+                <p class="links">
+                        <a href="https://www.facebook.com/FDK.ESIPE/?fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/Virtual-association.jpg')}}" alt="Virtual Association">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-6-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-6-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-6-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-6-c") !!}</p>
+                <p class="links">
+                    <a href="http://virtualassociation.fr/" target="_blank"><span class="lnr lnr-screen"></span></a>
+                    <a href="https://www.facebook.com/virtualassociation/" target="_blank"><span class="icon-facebook"></span></a>
+                    <a href="mailto:bonjour@virtualassociation.fr"><span class="lnr lnr-envelope"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="{{URL::asset('images/associations/WOG.jpg')}}" alt="Wings of Games">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-7-t") !!}</h2>
+                <p>{!! trans("messages.sl-ctn-2-a-7-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-7-c") !!}</p>
+                <p class="links">
+                    <a href="http://wog.leforum.eu/" target="_blank"><span class="lnr lnr-screen"></span></a>
+                    <a href="mailto:wingsofgames@outlook.com"><span class="lnr lnr-envelope"></span></a>
                 </p>
             </div>
         </div>
