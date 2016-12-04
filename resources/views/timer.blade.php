@@ -1,5 +1,5 @@
 @if($displayjpo)
 <div id="timer">
-    Journées Portes Ouvertes : {{$datejpo}}
+    {{Lang::locale() == 'en' ? $datejpo_en : $datejpo}}
 </div>
 @endif

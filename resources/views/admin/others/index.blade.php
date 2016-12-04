@@ -17,6 +17,14 @@
                 {!! Form::text('date',null,['class' => 'form-control']) !!}
             @endif
         </div>
+        <div class="form-group">
+            {!! Form::label('date_en','Jour de la JPO (anglais)') !!}
+            @if ($date != null)
+                {!! Form::text('date_en',$date_en,['class' => 'form-control']) !!}
+            @else
+                {!! Form::text('date_en',null,['class' => 'form-control']) !!}
+            @endif
+        </div>
         {!! Form::submit('Enregistrer la date des JPO',['class' => 'btn btn-primary form-control']) !!}
     {!! Form::close() !!}
 

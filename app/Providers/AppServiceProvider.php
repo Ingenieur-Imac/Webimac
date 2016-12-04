@@ -18,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
         $json = json_decode(file_get_contents($jsontimer),TRUE);
         View::share("displayjpo",$json["timer"]["display"]);
         View::share("datejpo",$json["timer"]["date"]);
+        View::share("datejpo_en",$json["timer"]["date_en"]);
     }
 
 
