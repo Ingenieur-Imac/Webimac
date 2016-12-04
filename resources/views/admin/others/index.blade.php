@@ -6,19 +6,15 @@
     <h2>Timer JPO</h2>
     {!! Form::open(['url' => 'admin/others/timer']) !!}
         <div class="form-group">
-            {!! Form::label('date','Jour de la JPO') !!}
-            @if ($date != null)
-                {!! Form::date('date',$date->format('Y-m-d'),['class' => 'form-control']) !!}
-            @else
-                {!! Form::date('date',null,['class' => 'form-control']) !!}
-            @endif
+            {!! Form::label('display-date','Afficher le bandeau de portes ouvertes :') !!}
+            {!! Form::checkbox('display-date',null,$displayDate) !!}
         </div>
         <div class="form-group">
-            {!! Form::label('time','Heure de la JPO') !!}
+            {!! Form::label('date','Jour de la JPO') !!}
             @if ($date != null)
-                {!! Form::time('time',$date->format('H:i'),['class' => 'form-control']) !!}
+                {!! Form::text('date',$date,['class' => 'form-control']) !!}
             @else
-                {!! Form::time('time',null,['class' => 'form-control']) !!}
+                {!! Form::text('date',null,['class' => 'form-control']) !!}
             @endif
         </div>
         {!! Form::submit('Enregistrer la date des JPO',['class' => 'btn btn-primary form-control']) !!}
