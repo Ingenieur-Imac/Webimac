@@ -156,6 +156,7 @@
                     <p>{!! trans("messages.int-m-8-c") !!}</p>
                 </div>
                 <p class="center">{!! trans("messages.int-c-1") !!}</p>
+                <p class="center">{!! trans("messages.int-m-insta") !!}</p>
             </div>
         </div>
     </div>
