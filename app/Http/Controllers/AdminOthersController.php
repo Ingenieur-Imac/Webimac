@@ -21,13 +21,16 @@ class AdminOthersController extends Controller
 
     function index(){
         //Timestamp JPO
-        $ts = null;
         $date = null;
+        $date_en = null;
+        $displayDate = null;
         $timerJson = json_decode(file_get_contents($this->pathToTimerJson),TRUE);
-        if(isset($timerJson['timer']['timestamp'])){
-            $ts = $timerJson['timer']['timestamp'];
-            $date = Carbon::createFromTimestamp($ts);
-        }
+        if(isset($timerJson['timer']['date']))
+            $date = $timerJson['timer']['date'];
+        if(isset($timerJson['timer']['display']))
+            $displayDate = $timerJson['timer']['display'];
+        if(isset($timerJson['timer']['date_en']))
+            $date_en = $timerJson['timer']['date_en'];
         //Application to the school
         $applicationJson = json_decode(file_get_contents($this->pathToApplicationJson),TRUE);
         $application_date = ['openning' => null,'first_session' => null,'second_session' => null,'year' => null];
@@ -56,14 +59,22 @@ class AdminOthersController extends Controller
         if(isset($mailingListJson['IMAC3']))
             $mailingList['IMAC3'] = $mailingListJson['IMAC3'];
 
-        return view('admin.others.index',compact('date','application_date','displayOpenning','mailingList'));
+        return view('admin.others.index',compact('date', 'date_en','displayDate','application_date','displayOpenning','mailingList'));
     }
 
     function updateTimer(Request $request){
         $result = $request->all();
-        $date = Carbon::createFromFormat('Y-m-d H:i',$result['date'].' '.$result['time']);
+        $date = $result['date'];
+        $date_en = $result['date_en'];
+        if(isset($result["display-date"])){
+            $display = true;
+        } else {
+            $display = false;
+        }
+
         $json = json_decode(file_get_contents($this->pathToTimerJson),TRUE);
-        $json['timer'] = array('timestamp' => $date->timestamp);
+        $json['timer'] = array('display' => $display, 'date' => $date, 'date_en' => $date_en);
+        var_dump($json);
         file_put_contents($this->pathToTimerJson, json_encode($json,TRUE));
 
         return redirect('admin/others');

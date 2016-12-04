@@ -18,7 +18,6 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (!Auth::guard($guard)->guest()){
-            //return "Bonjour la page login ne vous est pas accessible";
             return redirect('/admin/home');
         }
 
