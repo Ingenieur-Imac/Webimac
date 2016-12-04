@@ -12,7 +12,7 @@
     <script src="{{URL::asset('../js/jquery.vmap.sampledata.js')}}"></script>
     <script>
       jQuery(document).ready(function () {
-        var enabledRegions = ['de', 'ca', 'kr', 'gb', 'es', 'jp', 'se', 'tw'];
+        var enabledRegions = ['de', 'ca', 'kr', /*'gb',*/ 'es', 'jp', 'se', 'tw'];
         jQuery('#vmap').vectorMap({
           map: 'world',
           backgroundColor: null,
@@ -22,7 +22,7 @@
             de: '#f73c3c',
             ca: '#f73c3c',
             kr: '#f73c3c',
-            gb: '#f73c3c',
+            /*gb: '#f73c3c',*/
             es: '#f73c3c',
             jp: '#f73c3c',
             se: '#f73c3c',
@@ -34,7 +34,7 @@
             de: '#ed2626',
             ca: '#ed2626',
             kr: '#ed2626',
-            gb: '#ed2626',
+            /*gb: '#ed2626',*/
             es: '#ed2626',
             jp: '#ed2626',
             se: '#ed2626',
@@ -133,10 +133,10 @@
                     <p class="title-4">{!! trans("messages.int-m-3-u-2") !!}</p>
                     <p>{!! trans("messages.int-m-3-c-2") !!}</p>
                 </div>
-                <div class="framed full-framed" alt="gb">
+                <!--<div class="framed full-framed" alt="gb">
                     <p class="big-number">{!! trans("messages.int-m-4-t") !!}</p>
                     <p>{!! trans("messages.int-m-4-c") !!}</p>
-                </div>
+                </div>-->
                 <div class="framed full-framed" alt="es">
                     <p class="big-number">{!! trans("messages.int-m-5-t") !!}</p>
                     <p>{!! trans("messages.int-m-5-c") !!}</p>
