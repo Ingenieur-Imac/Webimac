@@ -9,4 +9,6 @@ class Partnership extends Model
     protected $fillable = [
         'name','type','url_web','description','url_image'
     ];
+
+    public $timestamps = false;
 }

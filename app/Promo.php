@@ -9,4 +9,6 @@ class Promo extends Model
     protected $fillable = [
         'year','url_image'
     ];
+
+    public $timestamps = false;
 }
