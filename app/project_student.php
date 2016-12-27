@@ -17,4 +17,6 @@ class project_student extends Model
     public function student(){
         return $this->belongsTo('Imac\Student');
     }
+
+    public $timestamps = false;
 }

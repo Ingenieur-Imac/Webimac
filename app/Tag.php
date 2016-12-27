@@ -13,4 +13,6 @@ class tag extends Model
     public function project_tag(){
         return $this->hasMany("Imac\project_tag");
     }
+
+    public $timestamps = false;
 }

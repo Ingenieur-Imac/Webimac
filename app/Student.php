@@ -14,4 +14,6 @@ class Student extends Model
         return $this->hasMany("Imac\project_student");
     }
 
+    public $timestamps = false;
+
 }

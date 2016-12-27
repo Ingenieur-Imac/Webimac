@@ -48,4 +48,6 @@ class Project extends Model
         }
         return $array_dates;
     }
+
+    public $timestamps = false;
 }

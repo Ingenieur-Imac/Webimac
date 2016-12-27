@@ -9,4 +9,6 @@ class Staff extends Model
     protected $fillable = [
         'main','name','role','description','mail','web_link','url_image'
     ];
+
+    public $timestamps = false;
 }

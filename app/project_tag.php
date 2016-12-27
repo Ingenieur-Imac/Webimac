@@ -17,4 +17,6 @@ class project_tag extends Model
     public function tag(){
         return $this->belongsTo('Imac\Tag');
     }
+
+    public $timestamps = false;
 }
