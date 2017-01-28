@@ -215,16 +215,16 @@ class PagesController extends Controller{
         return view('pages.graphicResources');
     }
 
-    public function timer(){
-        $ts = null;
-        $json = json_decode(file_get_contents(public_path().'/json/timer.json'),TRUE);
-        if(isset($json['timer']['timestamp'])){
-            $ts = $json['timer']['timestamp'];
-        } else {
-            abort(404);
-        }
-        return view('timer',compact('ts'));
-    }
+    // public function timer(){
+    //     $ts = null;
+    //     $json = json_decode(file_get_contents(public_path().'/json/timer.json'),TRUE);
+    //     if(isset($json['timer']['timestamp'])){
+    //         $ts = $json['timer']['timestamp'];
+    //     } else {
+    //         abort(404);
+    //     }
+    //     return view('timer',compact('ts'));
+    // }
 
     public function changeLang($lang){
         $rules = [
