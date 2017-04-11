@@ -58,9 +58,11 @@
         "admission-container-2-content-1-c3" => "1ère session : ",
         "admission-container-2-content-1-c4" => "2ème session : ",
         "admission-container-2-content-2-t" => " Le dossier à préparer",
-        "admission-container-2-content-2-c1" => "Le candidat doit fournir obligatoirement son dossier scolaire (relevés de notes), une lettre de motivation et son CV. Il est également fortement conseillé de joindre un portfolio détaillé regroupant des créations ou bien de justifier de sa sensibilité artistique.",
+        "admission-container-2-content-2-c1" => "Le candidat doit fournir obligatoirement son dossier scolaire (relevés de notes), une lettre de motivation et son CV. Il est également fortement conseillé de joindre un portfolio détaillé regroupant des créations ou bien de justifier de sa sensibilité artistique. ",
         "admission-container-2-content-2-c2" => "Il est possible d'intégrer la formation directement en deuxième année si les diplômes attestent du niveau requis (Bac+3).",
         "admission-container-2-content-2-l" => "Déposer votre candidature",
+        "admission-container-2-content-3-t" => "Plus d'information sur le portfolio",
+        "admission-container-2-content-3" => "Le portfolio est un exercice que nous vous demandons afin de mesurer votre sensibilité au monde artistique sous toute ses formes (musique, film, littérature et bande dessinée, graphisme, photographie...). Il s'agit donc de transcrire, sous la forme d'un document \"print\" au format pdf, vos travaux, projets ou sensibilités artistiques en accompagnant vos images ou vos \"graphismes\" d'explications sur la nature des travaux. Si vous présentez des travaux effectués en groupe, précisez votre part d'implication dans le projet en question. Pour les films, vous pouvez spécifier les durées et synopsis.",
 
         //CONTACT :: REFERS TO pages.contact.blade.php
         "banner-contact-title" => "La formation IMAC",
@@ -301,9 +303,9 @@
         "prs-ctn-3-b-2-t" => "1",
         "prs-ctn-3-b-2-st" => "projet tuteuré",
         "prs-ctn-3-b-2-c" => "se déroulant tout au long de la deuxième année",
-        "prs-ctn-3-b-3-t" => "4",
-        "prs-ctn-3-b-3-st" => "heures de sommeil",
-        "prs-ctn-3-b-3-c" => "les nuits précédant les rendus de projet",
+        "prs-ctn-3-b-3-t" => "3",
+        "prs-ctn-3-b-3-st" => "personnes",
+        "prs-ctn-3-b-3-c" => "en moyenne par projet",
                 //REST OF THE CONTAINER
         "prs-ctn-3-c-1-t" => "Les projets à l'IMAC",
         "prs-ctn-3-c-1-c" => "Les projets permettent aux étudiants de gagner en autonomie, d’acquérir de l’expérience en gestion de projet et de se familiariser avec le travail d’équipe. Ils se déroulent sur plusieurs semaines et sont parfois communs à plusieurs matières (OpenGL et C++, bases de données et HTML…).",

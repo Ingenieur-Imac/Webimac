@@ -301,9 +301,9 @@
         "prs-ctn-3-b-2-t" => "1",
         "prs-ctn-3-b-2-st" => "tutored project",
         "prs-ctn-3-b-2-c" => "in second year",
-        "prs-ctn-3-b-3-t" => "4",
-        "prs-ctn-3-b-3-st" => "hours of sleep",
-        "prs-ctn-3-b-3-c" => "the night before a deadline",
+        "prs-ctn-3-b-3-t" => "3",
+        "prs-ctn-3-b-3-st" => "persons",
+        "prs-ctn-3-b-3-c" => "on average per project",
                 //REST OF THE CONTAINER
         "prs-ctn-3-c-1-t" => "Projects at IMAC",
         "prs-ctn-3-c-1-c" => "Projects allow students to  find their own independence. It’s a way to learn how to manage and work in teams.  Some take several weeks and subjects can be combined (C++ and OpenGL, database and HTML, …)",
