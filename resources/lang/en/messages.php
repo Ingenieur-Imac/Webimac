@@ -61,6 +61,8 @@
         "admission-container-2-content-2-c1" => "The candidate has to hand in his school folder (grades level reports), a motivation letter and a resume. He is strongly advised to attach a portfolio with creative work, justifying his artistic sensibility and potential.",
         "admission-container-2-content-2-c2" => "It is possible to enter the programme directly in its second year, but the candidate has to show proof of having previously obtained 180 ECTS credits (or an equivalency).",
         "admission-container-2-content-2-l" => "Apply",
+        "admission-container-2-content-3-t" => "More information on the portfolio",
+        "admission-container-2-content-3" => "The portfolio is an exercise that we ask you in order to measure your sensibility for art in all its form (music, movies, literature, comics, graphism, photography...). The aim is to transcript on a document in pdf format, your works, projects or artistic sensibilities by joining to your images or your \"graphics\" some details on the nature of the work. If you present group projects, please mention your implication in the project. Concerning movies, you can specify the length and the pitch.",
 
         //CONTACT :: REFERS TO pages.contact.blade.php
         "banner-contact-title" => "IMAC training",
