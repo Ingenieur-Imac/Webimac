@@ -57,6 +57,7 @@
 <div class="end-footer">
     <p>&copy; IMAC <?php echo date('Y'); ?> |
         <a href="{{action('PagesController@legalNotice')}}">{{trans("messages.ftr-ctn-3-c")}}</a> |
-        <a href="{{action('PagesController@graphicResources')}}">{{trans("messages.ftr-ctn-4-c")}}</a>
+        <!-- <a href="{{action('PagesController@graphicResources')}}">{{trans("messages.ftr-ctn-4-c")}}</a> -->
+        <a href="http://logo.ingenieur-imac.fr/" target="_blank">{{trans("messages.ftr-ctn-4-c")}}</a>
     </p>
 </div>
