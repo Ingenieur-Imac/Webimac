@@ -128,6 +128,8 @@
         "int-m-7-c" => "Vous pourrez découvrir les joies des pays scandinaves ! Vous rejoindrez l’école d’Art et de Communication pour suivre des cours portés sur les nouvelles technologies.",
         "int-m-8-t" => "Taïwan",
         "int-m-8-c" => "Plusieurs universités sont proposées sur cette magnifique île arborant la côté chinoise, permettant de bénéficier d’un cadre de vue exotique.",
+        "int-m-9-t" => "États-Unis",
+        "int-m-9-c" => "Grâce au programme MICEFA, de nombreuses universités sont accessibles pour 1 ou 2 semestre(s). Une infinité de formations peuvent être choisies en corrélation avec les attentes des étudiants de l’IMAC.",
         "int-m-insta" => "Et découvrez les IMAC à l'étranger en images sur <a href='https://www.instagram.com/imacworldwide/' target='_blank'>le compte Instagram</a> dédié",
         "int-c-1" => "Pour plus d'informations, visitez <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.",
             //LES AVANTAGES

@@ -12,7 +12,7 @@
     <script src="{{URL::asset('../js/jquery.vmap.sampledata.js')}}"></script>
     <script>
       jQuery(document).ready(function () {
-        var enabledRegions = ['de', 'ca', 'kr', /*'gb',*/ 'es', 'jp', 'se', 'tw'];
+        var enabledRegions = ['de', 'ca', 'kr', /*'gb',*/ 'es', 'jp', 'se', 'tw', 'us'];
         jQuery('#vmap').vectorMap({
           map: 'world',
           backgroundColor: null,
@@ -27,6 +27,7 @@
             jp: '#f73c3c',
             se: '#f73c3c',
             tw: '#f73c3c',
+            us: '#f73c3c',
             imac: '#f73c3c'
           },
           hoverColors: {
@@ -39,6 +40,7 @@
             jp: '#ed2626',
             se: '#ed2626',
             tw: '#ed2626',
+            us: '#ed2626',
             imac: '#f73c3c'
           },
           hoverOpacity: 0,
@@ -154,6 +156,10 @@
                 <div class="framed full-framed" alt="tw">
                     <p class="big-number">{!! trans("messages.int-m-8-t") !!}</p>
                     <p>{!! trans("messages.int-m-8-c") !!}</p>
+                </div>
+                <div class="framed full-framed" alt="us">
+                    <p class="big-number">{!! trans("messages.int-m-9-t") !!}</p>
+                    <p>{!! trans("messages.int-m-9-c") !!}</p>
                 </div>
                 <p class="center">{!! trans("messages.int-c-1") !!}</p>
                 <p class="center">{!! trans("messages.int-m-insta") !!}</p>
