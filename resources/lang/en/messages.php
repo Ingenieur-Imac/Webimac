@@ -155,7 +155,7 @@
         "ml-2-c" => "La société ALWAYSDATA, SARL au capital de 5.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 62 rue Tiquetonne – 75002 Paris.",
         "ml-3-title" => "Crédits",
         "ml-3-c-1" => "Crédits photographiques : M. Mehdi-Antoine Mahfoudi",
-        "ml-3-c-2" => "Bebau Neue : Original Designed by Ryoichi Tsunekawa, ",
+        "ml-3-c-2" => "Bebas Neue : Original Designed by Ryoichi Tsunekawa, ",
         "ml-4-title" => "Propriété intellectuelle",
         "ml-4-c" => "L’ensemble des textes et des graphiques, soumis au droit d’auteur, est propriété intellectuelle de la formation ingénieur Imac.",
 
