@@ -353,8 +353,8 @@
         "pros-t" => "IMAC Courseworks",
         "pros-st" => "The IMAC courses are taught around <strong>a variety of multidisciplinary projects,</strong> that will involve the whole student’s skillset.",
         "pros-c" => "These projects highlight the skills and versatility gained by students during the 3 years of the programme. The creativity and complementarity of students make each project unique! There are the witness of their expertise. Judge by yourself ;)",
-        "pros-filter-c-1" => "all",
-        "pros-filter-c-2" => "favorite",
+        "pros-filter-c-1" => "All",
+        "pros-filter-c-2" => "Favorite",
         "pros-filter-c-3" => "Filtered :",
 
         //STAFF :: REFERS TO staff.blade.php
