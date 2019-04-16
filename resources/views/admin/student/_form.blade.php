@@ -27,15 +27,15 @@
 @if (isset($old_url_image))
     <div class="form-group">
         {!! Form::label('url_image','Photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
-        <p>Redimensionner la photo en 300*300px maximum (elle n'est affichée qu'en 80*80px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
-        <p>Pour éviter les conflits avec d'autres photos d'étudiants, merci de nommer les photos ainsi avant de les uploads: prenom_nom_promotion (exemple: sonia_mendes_2021.jpg)</p>
+        <p>Redimensionner la photo en <strong>300*300px maximum</strong> (elle n'est affichée qu'en 80*80px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer les photos avant de les uploads: <strong>prenom_nom_promotion.jpg</strong> (exemple: sonia_mendes_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
         {!! Form::label('url_image','Photo de l\'étudiant') !!}
-        <p>Redimensionner la photo en 300*300px maximum (elle n'est affichée qu'en 80*80px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
-        <p>Pour éviter les conflits avec d'autres photos d'étudiants, merci de nommer les photos ainsi avant de les uploads: prenom_nom_promotion (exemple: sonia_mendes_2021.jpg)</p>
+        <p>Redimensionner la photo en <strong>300*300px maximum</strong> (elle n'est affichée qu'en 80*80px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer les photos avant de les uploads: <strong>prenom_nom_promotion.jpg</strong> (exemple: sonia_mendes_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif
