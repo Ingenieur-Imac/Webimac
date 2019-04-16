@@ -25,7 +25,7 @@ class AdminStudentController extends Controller
     public function index()
     {
         $students = Student::all();
-        $promos = Promo::orderBy('year')->pluck('year','id');
+        $promos = Promo::orderBy('year','DESC')->pluck('year','id');
         return view('admin.student.list',compact('students','promos'));
     }
 
@@ -36,7 +36,7 @@ class AdminStudentController extends Controller
      */
     public function create()
     {
-        $promos = Promo::orderBy('year')->pluck('year','id');
+        $promos = Promo::orderBy('year','DESC')->pluck('year','id');
         return view('admin.student.create',compact('promos'));
     }
 
@@ -84,7 +84,7 @@ class AdminStudentController extends Controller
      */
     public function edit($id)
     {
-        $promos = Promo::orderBy('year')->pluck('year','id');
+        $promos = Promo::orderBy('year','DESC')->pluck('year','id');
         $student = Student::findOrFail($id);
         $student->name = ucfirst($student->name);
         $student->surname = ucfirst($student->surname);
