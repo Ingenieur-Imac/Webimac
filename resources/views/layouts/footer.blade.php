@@ -6,7 +6,7 @@
         <div class="links">
             <a class="btn filling-btn simple-secondary-btn" href="{{action('PagesController@faq')}}">FAQ</a><br>
             <a class="btn filling-btn simple-secondary-btn" href="{{action('PagesController@contact')}}">{{trans("messages.ftr-contact")}}</a><br>
-            <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
+            <a href="https://www.linkedin.com/school/ingenieur-imac/" target="_blank">
                 <span class="icon-linkedin"></span>
             </a>
             <a href="https://www.facebook.com/ingenieur.imac.officiel/" target="_blank">

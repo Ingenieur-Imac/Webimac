@@ -155,7 +155,7 @@
         "ml-2-c" => "La société ALWAYSDATA, SARL au capital de 5.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 62 rue Tiquetonne – 75002 Paris.",
         "ml-3-title" => "Crédits",
         "ml-3-c-1" => "Crédits photographiques : M. Mehdi-Antoine Mahfoudi",
-        "ml-3-c-2" => "Bebau Neue : Original Designed by Ryoichi Tsunekawa, ",
+        "ml-3-c-2" => "Bebas Neue : Original Designed by Ryoichi Tsunekawa, ",
         "ml-4-title" => "Propriété intellectuelle",
         "ml-4-c" => "L’ensemble des textes et des graphiques, soumis au droit d’auteur, est propriété intellectuelle de la formation ingénieur Imac.",
 
@@ -501,13 +501,15 @@
         "faq-ctn-st" => "Intéressé(e) par la formation ? Vous trouverez ici les réponses aux questions courantes. Si vous avez besoin d'autres informations, n'hésitez pas à ",
         "faq-ctn-link" => "nous contacter",
         "faq-ctn-q1" => "Y a-t-il des journées portes ouvertes à l’IMAC&nbsp;?",
-        "faq-ctn-a1" => "<p>Une journée portes ouvertes est organisée chaque année sur le campus de la cité Descartes. À l’IMAC les étudiants présentent la formation ainsi que leurs projets aux intéressés. Cette journée se déroule en général au mois de février. La date précise est communiquée sur <a href='http://www.u-pem.fr/' target='_blank'>le site de l’UPEM</a>.</p>",
+        "faq-ctn-a1" => "<p>Une journée portes ouvertes est organisée chaque année sur le campus de la cité Descartes. À l’IMAC les étudiants présentent la formation ainsi que leurs projets aux intéressés. Cette journée se déroule généralement un samedi au mois de février. La date précise est communiquée sur <a href='http://www.u-pem.fr/' target='_blank'>le site de l’UPEM</a>.</p>",
         "faq-ctn-q2" => "Comment se passe la sélection à l’IMAC&nbsp;?",
-        "faq-ctn-a2" => "<p>Pour postuler à l’IMAC, il faut faire une demande de candidature sur le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend. Le candidat doit fournir obligatoirement son dossier scolaire (relevé de notes), une lettre de motivation et son CV. Il est également conseillé de joindre un portfolio détaillé regroupant ses créations ou bien de justifier de ses sensibilités artistiques.</p><p>Un entretien peut être éventuellement demandé au candidat. Ces entretiens se font à Champs-sur-Marne. Des entretiens en ligne sont accordés en cas exceptionnels (étudiant à l’étranger...).</p>",
+        "faq-ctn-a2" => "<p>Pour postuler à l’IMAC, il faut faire une demande de candidature sur le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend. Le candidat doit fournir obligatoirement son dossier scolaire (relevé de notes), une lettre de motivation et son CV. Il est également conseillé de joindre un portfolio détaillé regroupant ses créations ou bien de justifier de ses sensibilités artistiques.</p><p>Un entretien peut être éventuellement demandé au candidat. Ces entretiens se font à Champs-sur-Marne. Des entretiens en ligne sont accordés en cas exceptionnels (étudiant à l’étranger...).</p>",
         "faq-ctn-q3" => "Quels sont les frais d’inscription à l’IMAC&nbsp;?",
         "faq-ctn-a3" => "<p>L’IMAC est une formation d’ingénieur publique, agréée par la CTI. Lors de l'inscription, vous payez des droits de scolarité à hauteur de 800 euros (montant indicatif pour l’année 2015-1016). Les étudiants boursiers sont exonérés des frais d’inscription.</p>",
         "faq-ctn-q4" => "Où se loger à proximité de la formation&nbsp;?",
         "faq-ctn-a4" => "<p>Il existe de nombreuses résidences étudiantes dépendant ou non du <a href='http://www.crous-creteil.fr/logements/' target='_blank'>CROUS de Créteil</a> à Champs-sur-Marne et dans les villes à proximité. Certains étudiants choisissent aussi d’habiter en colocation dans des logements privés. Pour plus d'informations, vous pouvez consulter <a href='http://www.u-pem.fr/vie-du-campus/vie-etudiante/se-loger/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.</p>",
+        "faq-ctn-q5" => "Combien y a-t-il d'étudiants par promotion&nbsp;?",
+        "faq-ctn-a5" => "En général, il y a environs 45 à 50 étudiants par promotion.",
 
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Ressources graphiques | IMAC ingénieur",

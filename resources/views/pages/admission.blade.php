@@ -68,7 +68,7 @@
               </p>
             </div>
             @if ($display_application)
-                <p class="center"><a class="btn filled-btn primary-btn" target="_BLANK" href="https://candidatures.u-pem.fr/">{!! trans("messages.admission-container-2-content-2-l") !!}</a></p>
+                <p class="center"><a class="btn filled-btn primary-btn" target="_BLANK" href="https://candidatures.u-pem.fr/ecandidat">{!! trans("messages.admission-container-2-content-2-l") !!}</a></p>
             @endif
         </div>
     </div>
