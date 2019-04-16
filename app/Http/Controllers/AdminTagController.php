@@ -23,7 +23,7 @@ class AdminTagController extends Controller
     public function index()
     {
         // $tags = Tag::all();
-        $tags = Tag::orderBy('tag','ASC')->get();
+        $tags = Tag::orderBy('name','ASC')->get();
         return view('admin.tag.list',compact('tags'));
     }
 
