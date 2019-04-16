@@ -48,26 +48,26 @@ class MailController extends Controller
     }
 
     public function partnershipOffer(Request $request){
-        $to = "sylvie.donard@u-pem.fr";
+        $to = "sonia.mendes@u-pem.fr";
         //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
         Mail::send('emails.partnershipOffering', ['datas' => $datas], function ($m) use ($to){
             $m->from('webimac2016@gmail.com', 'Site Web de l\'Imac');
-            $m->to($to, "Sylvie Donnard")->subject('Demande de partenariat déposé sur Ingenieur-Imac.fr');
+            $m->to($to, "Sonia Mendes")->subject('Demande de partenariat déposé sur Ingenieur-Imac.fr');
         });
 
         return Redirect::back();
     }
 
     public function contact(Request $request){
-        $to = "sylvie.donard@u-pem.fr";
+        $to = "sonia.mendes@u-pem.fr";
         //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
         Mail::send('emails.contactForm', ['datas' => $datas], function ($m) use ($to){
             $m->from('webimac2016@gmail.com', 'Site Web de l\'Imac');
-            $m->to($to, "Sylvie Donnard")->subject('Formulaire de contact déposé sur Ingenieur-Imac.fr');
+            $m->to($to, "Sonia Mendes")->subject('Formulaire de contact déposé sur Ingenieur-Imac.fr');
         });
 
         return Redirect::back();

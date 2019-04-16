@@ -155,7 +155,7 @@
         "ml-2-c" => "La société ALWAYSDATA, SARL au capital de 5.000 € immatriculée au RCS de Paris sous le numéro 492 893 490 dont le siège social se trouve 62 rue Tiquetonne – 75002 Paris.",
         "ml-3-title" => "Crédits",
         "ml-3-c-1" => "Crédits photographiques : M. Mehdi-Antoine Mahfoudi",
-        "ml-3-c-2" => "Bebau Neue : Original Designed by Ryoichi Tsunekawa, ",
+        "ml-3-c-2" => "Bebas Neue : Original Designed by Ryoichi Tsunekawa, ",
         "ml-4-title" => "Propriété intellectuelle",
         "ml-4-c" => "L’ensemble des textes et des graphiques, soumis au droit d’auteur, est propriété intellectuelle de la formation ingénieur Imac.",
 
@@ -497,14 +497,15 @@
         "faq-ctn-st" => "Are you interested in the engineering training IMAC? You'll find here the answers to the most frequently asked questions. If you need further informations, please ",
         "faq-ctn-link" => "contact us",
         "faq-ctn-q1" => "Is there an open day at IMAC?",
-        "faq-ctn-a1" => "An open day takes place every year on Descartes campus, usually in February. The IMAC students present the training and their projects. The exact date is displayed on <a href='http://www.u-pem.fr/' target='_blank'>UPEM website</a>.</p>",
-        "faq-ctn-q2" => "How is the selection at IMAC?",
+        "faq-ctn-a1" => "An open day takes place every year on Descartes campus, usually in February on saturday. The IMAC students present the training and their projects. The exact date is displayed on <a href='http://www.u-pem.fr/' target='_blank'>UPEM website</a>.</p>",        "faq-ctn-q2" => "How is the selection at IMAC?",
         "faq-ctn-a2" => "<p>To enter IMAC, you have to apply on the University of Marne la Vallée website. Some documents are requested, such as statement of results, a cover letter and a resumé.  It is advisable to add a book of creations.</p><p>An interview may be requested, on campus or by Skype call.</p>",
         "faq-ctn-q3" => "How much does the IMAC programme cost?",
         "faq-ctn-a3" => "<p>IMAC is a public engineering training. The fee is around 800 euros per year (indicative amount for 2015/2016). Exchange students don't have to pay for fee.</p>",
         "faq-ctn-q4" => "Where to live near campus?",
         "faq-ctn-a4" => "<p>There are plenty of university residences at Champs-sur-Marne, as well as many rentable private flats. For further informations, <a href='http://www.u-pem.fr/vie-du-campus/vie-etudiante/se-loger/' target='_blank'>visit UPEM website</a>.</p>",
-
+        "faq-ctn-q5" => "How many students per promotion &nbsp;",
+        "faq-ctn-a5" => "In general, there are approximately 45 to 50 students per promotion.",
+        
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Graphic resources | IMAC engineer",
         "grsc-ctn-t" => "Graphic resources",
