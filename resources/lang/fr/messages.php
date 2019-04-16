@@ -53,7 +53,7 @@
         "admission-container-2-content-1-t" => " La procédure de candidature",
         "admission-container-2-content-1-c1-1" => "Les candidatures pour la rentrée",
         "admission-container-2-content-1-c1-2" => "seront ouvertes à partir du",
-        "admission-container-2-content-1-c1-3" => ". Les candidatures s'effectuent depuis le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend (<a href=\"http://candidatures.univ-mlv.fr\" target=\"_blank\">http://candidatures.univ-mlv.fr</a>).",
+        "admission-container-2-content-1-c1-3" => ". Les candidatures s'effectuent depuis le site de l'Université Paris-Est Marne-la-Vallée (UPEM), dont la formation dépend (<a href=\"https://candidatures.u-pem.fr/ecandidat\" target=\"_blank\">https://candidatures.u-pem.fr/ecandidat</a>).",
         "admission-container-2-content-1-c2" => "Date limite de dépôt des dossiers :",
         "admission-container-2-content-1-c3" => "1ère session : ",
         "admission-container-2-content-1-c4" => "2ème session : ",

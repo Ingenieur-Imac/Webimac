@@ -53,7 +53,7 @@
         "admission-container-2-content-1-t" => "Process to apply",
         "admission-container-2-content-1-c1-1" => "It is possible to apply for the",
         "admission-container-2-content-1-c1-2" => "Academic year from the",
-        "admission-container-2-content-1-c1-3" => ". The registrations are performed on the university website where the IMAC programme takes place (<a href=\"http://candidatures.univ-mlv.fr\" target=\"_blank\">http://candidatures.univ-mlv.fr</a>).",
+        "admission-container-2-content-1-c1-3" => ". The registrations are performed on the university website where the IMAC programme takes place (<a href=\"https://candidatures.u-pem.fr/ecandidat\" target=\"_blank\">https://candidatures.u-pem.fr/ecandidat</a>).",
         "admission-container-2-content-1-c2" => "Deadline to apply :",
         "admission-container-2-content-1-c3" => "1st session : ",
         "admission-container-2-content-1-c4" => "2nd session : ",
