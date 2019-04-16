@@ -130,7 +130,7 @@
         "int-m-8-c" => "Plusieurs universités sont proposées sur cette magnifique île arborant la côté chinoise, permettant de bénéficier d’un cadre de vue exotique.",
         "int-m-9-t" => "États-Unis",
         "int-m-9-c" => "Grâce au programme MICEFA, de nombreuses universités sont accessibles pour 1 ou 2 semestre(s). Une infinité de formations peuvent être choisies en corrélation avec les attentes des étudiants de l’IMAC.",
-        "int-m-insta" => "Et découvrez les IMAC à l'étranger en images sur <a href='https://www.instagram.com/imacworldwide/' target='_blank'>le compte Instagram</a> dédié",
+        "int-m-insta" => "Et découvrez les IMAC à l'étranger en images sur <a href='https://www.instagram.com/imacworldwide/' target='_blank'>le compte Instagram</a> dédié.",
         "int-c-1" => "Pour plus d'informations, visitez <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.",
             //LES AVANTAGES
         "int-ctn-2-t" => "Les avantages",
@@ -413,7 +413,7 @@
         "title-sts" => "Les IMAC | IMAC ingénieur",
         "sts-ctn-1-t" => "Qu'est-ce qu'un ou une IMAC ?",
         "sts-ctn-1-st" => "Une abondance de personnalités, de l’entraide, du fun : l’IMAC, c’est un peu comme une deuxième famille. Les liens se créent en effet très naturellement ! L'IMAC, c'est aussi des promotions de maximum cinquante étudiants où la parité règne.",
-        "sts-ctn-1-c-1" => "Tout au long de l’année, <a href='http://bde.ingenieur-imac.fr/' target='_blank'>le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !",
+        "sts-ctn-1-c-1" => "Tout au long de l’année, <a href=\"https://www.facebook.com/BDE.IMAC\" target='_blank'>le Bureau des IMAC (BDI)</a> s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudIMAC, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment !",
         "sts-ctn-1-c-2" => "À l’heure des partiels, tout le monde s’accroche et s’entraide, l’hétérogénéité des parcours se montrant profitable à tous. Bienvenue chez les IMAC !",
         "sts-ctn-2-t" => "Vous voulez recruter un IMAC ?",
         "sts-ctn-2-l" => "Déposer une offre",

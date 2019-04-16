@@ -412,7 +412,7 @@
         "title-sts" => "IMAC | IMAC engineer",
         "sts-ctn-1-t" => "Who are IMAC students ?",
         "sts-ctn-1-st" => "A wide variety of personalities, caring, fun: IMAC is like a second family where gender parity is key ! With more than fifty students promotions links in the community get created in a very natural way.",
-        "sts-ctn-1-c-1" => "Throughout the year, <a href='http://bde.ingenieur-imac.fr/' target='_blank'>the student union (BDI)</a> aims to cultivate this friendly spirit by organizing many events, including the must-attend JeudIMAC, convivial evenings with a drink in Paris. It also gives the opportunity to meet people or expand your address book as alumnis, but above all: have a good time !",
+        "sts-ctn-1-c-1" => "Throughout the year, <a href=\"https://www.facebook.com/BDE.IMAC\" target='_blank'>the student union (BDI)</a> aims to cultivate this friendly spirit by organizing many events, including the must-attend JeudIMAC, convivial evenings with a drink in Paris. It also gives the opportunity to meet people or expand your address book as alumnis, but above all: have a good time !",
         "sts-ctn-1-c-2" => "At the time of the midyear exam, as specialists of an area will help others, you will find assistance if you seek it and see the heterogeneity of the recruitement proves to be beneficial to all. Welcome to IMAC !",
         "sts-ctn-2-t" => "Hire an IMAC ?",
         "sts-ctn-2-l" => "Submit an offer",
