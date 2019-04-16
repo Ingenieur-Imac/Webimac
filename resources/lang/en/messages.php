@@ -130,7 +130,7 @@
         "int-m-8-c" => "Beautiful island bearing the Chinese side, you can enjoy an exotic view frame. Several universities are proposed.",
         "int-m-9-t" => "United States",
         "int-m-9-c" => "With the MICEFA program , many universities are available for 1 or 2 semesters. A wide range of training courses can be chosen in correlation with the expectations of students.",
-        "int-m-insta" => "And discover the imac abroad in pictures on the dedicated <a href='https://www.instagram.com/imacworldwide/' target='_blank'>Instagram account</a>",
+        "int-m-insta" => "And discover the imac abroad in pictures on the dedicated <a href='https://www.instagram.com/imacworldwide/' target='_blank'>Instagram account</a>.",
 
             //LES AVANTAGES
         "int-c-1" => "For further informations, <a href='http://www.u-pem.fr/international/etudes-a-letranger-sortants/' target='_blank'>visit UPEM website</a>.",
