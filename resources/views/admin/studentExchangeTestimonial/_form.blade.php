@@ -34,7 +34,7 @@
         {!! Form::label('url_image','Photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
         <p>Recadrer la photo sur le buste et visage</p>
         <p>Redimensionner la photo en <strong>320*320px maximum</strong> (elle est affichée qu'en 160*160px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
-        <p>Renommer les photos avant de les uploads: <strong>prenom_nom_promotion_temoignage.jpg</strong> (exemple: sonia_mendes_2021_temoignage_etranger.jpg)</p>
+        <p>Renommer les photos avant de les uploads: <strong>prenom_nom_promotion_temoignage_etranger.jpg</strong> (exemple: sonia_mendes_2021_temoignage_etranger.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
