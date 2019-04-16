@@ -32,11 +32,17 @@
 @if (isset($old_url_image))
     <div class="form-group">
         {!! Form::label('url_image','Photo de l\'étudiant | Fichier Actuel : '.$old_url_image) !!}
+        <p>Recadrer la photo sur le buste et visage</p>
+        <p>Redimensionner la photo en 320*320px maximum (elle est affichée qu'en 160*160px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Pour éviter les conflits avec d'autres photos d'étudiants, merci de nommer les photos ainsi avant de les uploads: prenom_nom_promotion_temoignage (exemple: sonia_mendes_2021_temoignage.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
         {!! Form::label('url_image','Photo de l\'étudiant') !!}
+        <p>Recadrer la photo sur le buste et visage</p>
+        <p>Redimensionner la photo en 320*320px maximum (elle est affichée qu'en 160*160px sur le site) et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Pour éviter les conflits avec d'autres photos d'étudiants, merci de nommer les photos ainsi avant de les uploads: prenom_nom_promotion_temoignage (exemple: sonia_mendes_2021_temoignage.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control','id' => 'url_image']) !!}
     </div>
 @endif
