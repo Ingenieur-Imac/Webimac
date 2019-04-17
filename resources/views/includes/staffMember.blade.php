@@ -1,7 +1,7 @@
 <div class="people">
     @foreach ($staff as $staff_member)
         <div class="staff-member">
-            @if (isset($staff_member->url_image))
+            @if (!empty($staff_member->url_image))
             <div class="people-picture" style="background-image: url('{{  URL::asset('images/staff/'.$staff_member->url_image) }}');"></div>
             @else 
             <div class="people-picture" style="background-image: url('{{  URL::asset('images/staff/avatar.png') }}');"></div>            
