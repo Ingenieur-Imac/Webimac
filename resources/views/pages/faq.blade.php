@@ -36,6 +36,12 @@
                     {!! trans("messages.faq-ctn-a4") !!}
                 </div>
             </div>
+            <div class="question">
+                {!! Form::checkbox("question", "q5", false, ["id" => "q5"]) !!} {!! Form::label("q5", trans("messages.faq-ctn-q5")) !!}
+                <div class="answer">
+                    {!! trans("messages.faq-ctn-a5") !!}
+                </div>
+            </div>
         </div>
     </div>
 @endsection
