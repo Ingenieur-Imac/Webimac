@@ -82,7 +82,7 @@
         "contact-info-3" => "Mail",
         "contact-info-4" => "Phone number",
         "contact-info-5" => "Administration",
-        "contact-info-6" => "Batiment Copernic - Bureau 1B025",
+        "contact-info-6" => "Batiment Copernic - Bureau 0B140N",
         "contact-info-7" => "Monday to Thursday : 7h45 - 12h45 et 13h45 - 16h",
         "contact-info-8" => "Friday: 7:45 - 12h45",
         "contact-info-9" => "Follow us",
