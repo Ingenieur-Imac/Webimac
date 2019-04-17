@@ -57,7 +57,7 @@
         "admission-container-2-content-1-c2" => "Date limite de dépôt des dossiers :",
         "admission-container-2-content-1-c3" => "1ère session : ",
         "admission-container-2-content-1-c4" => "2ème session : ",
-        "admission-container-2-content-2-t" => " Le dossier à préparer",
+        "admission-container-2-content-2-t" => "Le dossier à préparer",
         "admission-container-2-content-2-c1" => "Le candidat doit fournir obligatoirement son dossier scolaire (relevés de notes), une lettre de motivation et son CV. Il est également fortement conseillé de joindre un portfolio détaillé regroupant des créations ou bien de justifier de sa sensibilité artistique. ",
         "admission-container-2-content-2-c2" => "Il est possible d'intégrer la formation directement en deuxième année si les diplômes attestent du niveau requis (Bac+3).",
         "admission-container-2-content-2-l" => "Déposer votre candidature",
@@ -157,7 +157,7 @@
         "ml-3-c-1" => "Crédits photographiques : M. Mehdi-Antoine Mahfoudi",
         "ml-3-c-2" => "Bebas Neue : Original Designed by Ryoichi Tsunekawa, ",
         "ml-4-title" => "Propriété intellectuelle",
-        "ml-4-c" => "L’ensemble des textes et des graphiques, soumis au droit d’auteur, est propriété intellectuelle de la formation ingénieur Imac.",
+        "ml-4-c" => "L’ensemble des textes et des graphiques, soumis au droit d’auteur, est propriété intellectuelle de la formation ingénieur IMAC.",
 
         //OPENINGS :: REFERS TO pages.openings.blade.php
         "title-op" => "Débouchés",
@@ -221,10 +221,10 @@
         "ptn-ctn-3-c-1-t" => "Les jeudis de l'entreprise",
         "ptn-ctn-3-c-1-st" => "Tout au long de l’année, nos partenaires viennent présenter leurs entreprises et leur travail à nos étudiants lors des traditionnels « jeudis de l’entreprises ».",
         "ptn-ctn-3-c-2-t" => "De nombreuses opportunités",
-        "ptn-ctn-3-c-2-c-1" => " Rencontrer des professionnels du milieu",
-        "ptn-ctn-3-c-2-c-2" => " Partager des savoir-faire",
-        "ptn-ctn-3-c-2-c-3" => " Découvrir des méthodes de travail",
-        "ptn-ctn-3-c-2-c-4" => " Connaitre les opportunités qui s'offrent aux étudiants",
+        "ptn-ctn-3-c-2-c-1" => "Rencontrer des professionnels du milieu",
+        "ptn-ctn-3-c-2-c-2" => "Partager des savoir-faire",
+        "ptn-ctn-3-c-2-c-3" => "Découvrir des méthodes de travail",
+        "ptn-ctn-3-c-2-c-4" => "Connaitre les opportunités qui s'offrent aux étudiants",
         "ptn-ctn-3-c-3-t" => "Les participants",
         "ptn-ctn-3-c-3-c-1" => "Ubisoft",
         "ptn-ctn-3-c-3-c-2" => "Mikros Image",
@@ -373,12 +373,12 @@
             //ASSOCIATIONS LIST
         "sl-ctn-2-a-1-t" => "BDI",
         "sl-ctn-2-a-1-st" => "Bureau Des Imacs",
-        "sl-ctn-2-a-1-loc" => "1B100 - Bâtiment Copernic",
+        "sl-ctn-2-a-1-loc" => "Premier étage - Bâtiment Copernic",
         "sl-ctn-2-a-1-c" => "Tout au long de l’année, le Bureau des Imac (BDI) s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudImac, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment ! Du week-end d’intégration au Gala en passant par le parrainage et l'élection de nos miss et mister préféré… de vrais moment conviviaux sont créés.",
 
         "sl-ctn-2-a-2-t" => "803Z - Radio PIMP",
         "sl-ctn-2-a-2-st" => "Association d’Audiovisuel et de Radio",
-        "sl-ctn-2-a-2-loc" => "Local au RDC du bâtiment Copernic",
+        "sl-ctn-2-a-2-loc" => "Maison de l'Étudiant",
         "sl-ctn-2-a-2-c-1" => "Association audiovisuelle universitaire serait la description solennelle de 803Z. Collectif sympa et uni en serait une plus cool. L'association Cinéma de l'UPEM serait la version arrogante. Le mieux, pour décrire 803Z, c'est 803Z.",
         "sl-ctn-2-a-2-c-2" => "Radio PIMP, c’est l’association qui présente chaque semaine des sujets en tout genre !",
 
@@ -389,14 +389,14 @@
 
         "sl-ctn-2-a-4-t" => "BDK",
         "sl-ctn-2-a-4-st" => "Bruit du Kouloir",
-        "sl-ctn-2-a-4-loc" => "1B99 - Bâtiment Copernic",
+        "sl-ctn-2-a-4-loc" => "Bâtiment Copernic",
         "sl-ctn-2-a-4-c-1" => "Le BDK, ou Bruit Du Kouloir, est l’unique association de musiciens sur tout le campus ! Le BDK est là pour toi pour jouer pendant les pauses dèj, après les cours, et ce, dans un local doté de 2 basses, 2 batteries, 4 guitares, 2 claviers, 3 micros et, depuis peu, un large panel de matériel d'effets sonores.",
         "sl-ctn-2-a-4-c-2" => "On est là pour se détendre en musique d’une part, mais faire partie du BDK c’est aussi entrer dans le monde associatif et organiser des événements sur le campus comme des concerts, des jams, de l’animation pour les autres associations....",
         "sl-ctn-2-a-4-c-3" => "L’entrée dans le BDK se fait après une cotisation de 10€ qui serviront à entretenir le matériel. Si tu es motivé(e) pour mettre de la musique dans les oreilles de l’ESIPE, ou si tu es juste drogué(e) à la musique, viens découvrir le Bruit Du Kouloir du 1er étage de Copernic, salle 1B90 (ouvert entre 12h45 et 13h45, tu n’as qu’à te laisser guider par le bruit) !",
 
         "sl-ctn-2-a-5-t" => "FDK",
         "sl-ctn-2-a-5-st" => "Fond du Kouloir",
-        "sl-ctn-2-a-5-loc" => "Au fond du couloir du 1e étage - Bâtiment Copernic",
+        "sl-ctn-2-a-5-loc" => "Premier étage - Bâtiment Copernic",
         "sl-ctn-2-a-5-c-1" => "Le FDK, ou Fond Du Kouloir, est la cafétéria étudiante... au fond du couloir. 104m2 de détente, d’espace libre, et de bonheur. Oui, être ingénieur c’est travailler dur. Mais débranche donc tes neurones quelques minutes pour jouer au babyfoot, ou pour profiter d’une boisson chaude accoudé à notre bar ! Les serveurs distribuent des sourires et des cafés ; les serveuses offrent des clins d’oeil et des grenadines.",
         "sl-ctn-2-a-5-c-2" => "Sache qu’être Staff FDK, c’est peser dans le game. Tout le monde te dit bonjour, tu as toujours un canapé réservé, et le café est gratuit. Allez, passe derrière le comptoir !",
 
@@ -406,7 +406,7 @@
         "sl-ctn-2-a-6-c" => "Virtual Association est la première association étudiante dédiée au partage de connaissances et à l’organisation d’évènements autour de la réalité virtuelle pour tous.",
 
         "sl-ctn-2-a-7-t" => "Wings of Games",
-        "sl-ctn-2-a-7-loc" => "1B86 - Bâtiment Copernic",
+        "sl-ctn-2-a-7-loc" => "Bâtiment Copernic",
         "sl-ctn-2-a-7-c" => "Dans cette association, vous pourrez retrouver vos amis pour jouer à des jeux de plateaux pendant les pauses.",
 
         //STUDENTS :: REFERS TO pages.students.blade.php
