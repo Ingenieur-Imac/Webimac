@@ -1,7 +1,11 @@
 <div class="people">
     @foreach ($staff as $staff_member)
         <div class="staff-member">
-            <div class="people-picture" style="background-image: url('{{ @if (isset($staff_member->url_image)) URL::asset('images/staff/'.$staff_member->url_image) @else URL::asset('images/staff/avatar.png') @endif}}');"></div>
+            @if (isset($staff_member->url_image))
+            <div class="people-picture" style="background-image: url('{{  URL::asset('images/staff/'.$staff_member->url_image) }}');"></div>
+            @else 
+            <div class="people-picture" style="background-image: url('{{  URL::asset('images/staff/avatar.png') }}');"></div>            
+            @endif
                 <h3>{{ $staff_member->surname }} {{ $staff_member->name }}</h3>
                 <p class="role">{{ $staff_member->role }}</p>
                 <p class="flex-description">{{ $staff_member->description }}</p>
