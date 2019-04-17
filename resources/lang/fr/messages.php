@@ -510,6 +510,10 @@
         "faq-ctn-a4" => "<p>Il existe de nombreuses résidences étudiantes dépendant ou non du <a href='http://www.crous-creteil.fr/logements/' target='_blank'>CROUS de Créteil</a> à Champs-sur-Marne et dans les villes à proximité. Certains étudiants choisissent aussi d’habiter en colocation dans des logements privés. Pour plus d'informations, vous pouvez consulter <a href='http://www.u-pem.fr/vie-du-campus/vie-etudiante/se-loger/' target='_blank'>la page dédiée sur le site de l'UPEM</a>.</p>",
         "faq-ctn-q5" => "Combien y a-t-il d'étudiants par promotion&nbsp;?",
         "faq-ctn-a5" => "En général, il y a environs 45 à 50 étudiants par promotion.",
+        "faq-ctn-q6" => "Quelle formation faut-il suivre pour intégrer l'IMAC&nbsp;?",
+        "faq-ctn-a6" => "Il n'y a pas de formation précise pour intégrer l'IMAC. En effet, nous recrutons des étudiants de divers univers: scientifiques (prépa, licenses math-infos, DUT info...), artistiques (BTS audiovisuel, école d'art ou de cinéma...) ou encore des deux (DUT MMI).",
+        "faq-ctn-q7" => "Comment contacter des Imaciens pour avoir leur point de vue ?",
+        "faq-ctn-a7" => "Vous pouvez trouver divers moyens de contacter les étudiants sur <a href=\"http://ingenieur-imac.fr/nos-etudiants\">la page de présentation des promotions</a> mais sachez aussi que <a href=\"https://www.facebook.com/ingenieur.imac.officiel/\">la page Facebook de l'IMAC</a> est gérée par des étudiants ! Sinon, nous vous invitons aussi à venir aux journées portes ouvertes (JPO) qui ont lieu généralement au mois de février chaque année.",
 
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Ressources graphiques | IMAC ingénieur",

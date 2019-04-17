@@ -503,8 +503,12 @@
         "faq-ctn-a3" => "<p>IMAC is a public engineering training. The fee is around 800 euros per year (indicative amount for 2015/2016). Exchange students don't have to pay for fee.</p>",
         "faq-ctn-q4" => "Where to live near campus?",
         "faq-ctn-a4" => "<p>There are plenty of university residences at Champs-sur-Marne, as well as many rentable private flats. For further informations, <a href='http://www.u-pem.fr/vie-du-campus/vie-etudiante/se-loger/' target='_blank'>visit UPEM website</a>.</p>",
-        "faq-ctn-q5" => "How many students per promotion &nbsp;",
+        "faq-ctn-q5" => "How many students per promotion&nbsp;?",
         "faq-ctn-a5" => "In general, there are approximately 45 to 50 students per promotion.",
+        "faq-ctn-q6" => "What training is required to integrate the IMAC&nbsp;?",
+        "faq-ctn-a6" => "There is no specific training to integrate the IMAC. In fact, we recruit students from various worlds: scientific (prepa, licenses math-info, DUT info...), artistic (BTS audiovisual, school of art or cinema...) or both (DUT MMI).",
+        "faq-ctn-q7" => "How to contact Imacians to get their point of view ?",
+        "faq-ctn-a7" => "You can find various ways to contact students on <a href=\"http://ingenieur-imac.fr/nos-etudiants\">the promotion presentation page</a> but also know that <a href=\"https://www.facebook.com/ingenieur.imac.officiel/\">the IMAC Facebook page</a> is managed by students! If not, you are also invited to attend the Open Day (JPO) which is usually held in February each year.",
         
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Graphic resources | IMAC engineer",
