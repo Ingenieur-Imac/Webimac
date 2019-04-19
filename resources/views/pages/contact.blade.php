@@ -42,7 +42,7 @@
             </p>
             <h2 class="title-5">{!! trans("messages.contact-info-9") !!}</h2>
             <p class="social-icons">
-                <a href="https://www.linkedin.com/grps/Ing%C3%A9nieur-IMAC-3693605/about?" target="_blank">
+                <a href="https://www.linkedin.com/school/ingenieur-imac/" target="_blank">
                     <span class="icon-linkedin color"></span>
                 </a>
                 <a href="https://www.facebook.com/ingenieur.imac.officiel/" target="_blank">

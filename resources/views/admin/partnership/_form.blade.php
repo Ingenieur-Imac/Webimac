@@ -17,11 +17,15 @@
 @if (isset($old_url_image))
     <div class="form-group">
         {!! Form::label('url_image','Logo du partenaire | Fichier Actuel : '.$old_url_image) !!}
+        <p>Optimiser l'image via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer les photos avant de les uploads: <strong>logo_nomentreprise_annee.jpg</strong> (exemple: logo_ubisoft_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
         {!! Form::label('url_image','Logo du partenaire') !!}
+        <p>Optimiser l'image via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer les photos avant de les uploads: <strong>logo_nomentreprise_annee.jpg</strong> (exemple: logo_ubisoft_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif

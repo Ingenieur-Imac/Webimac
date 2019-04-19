@@ -88,8 +88,8 @@ table {
   font-style: italic; }
 @font-face {
   font-family: "Open Sans Pro";
-  src: url("../sourcesanspro-semiboldit-webfont.eot");
-  src: url("../sourcesanspro-semiboldit-webfont.eot?#iefix") format("embedded-opentype"), url("../sourcesanspro-semiboldit-webfont.woff2") format("woff2"), url("../sourcesanspro-semiboldit-webfont.woff") format("woff"), url("../sourcesanspro-semiboldit-webfont.ttf") format("truetype"), url("../sourcesanspro-semiboldit-webfont.svg") format("svg");
+  src: url("../fonts/sourcesanspro-semiboldit-webfont.eot");
+  src: url("../fonts/sourcesanspro-semiboldit-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-semiboldit-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-semiboldit-webfont.woff") format("woff"), url("../fonts/sourcesanspro-semiboldit-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-semiboldit-webfont.svg") format("svg");
   font-weight: 500;
   font-style: italic; }
 @font-face {
