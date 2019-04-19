@@ -1,7 +1,7 @@
 @extends('admin.admin',['nav' => 'tag'])
 
 @section('content')
-    <h1> Liste des tags</h1>
+    <h1>Liste des tags</h1>
     <hr/>
     <a href="{{action('AdminTagController@create')}}"><button class="btn btn-primary">Ajouter un Tag</button></a>
     <hr/>

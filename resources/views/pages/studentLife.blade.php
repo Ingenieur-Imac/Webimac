@@ -26,8 +26,9 @@
                 <p>{!! trans("messages.sl-ctn-2-a-1-loc") !!}</p>
                 <p>{!! trans("messages.sl-ctn-2-a-1-c") !!}</p>
                 <p class="links">
-                    <a href="http://bde.ingenieur-imac.fr/" target="_blank"><span class="lnr lnr-screen"></span></a>
-                    <a href="https://www.facebook.com/BDE.IMAC?fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                    <!--<a href="http://bde.ingenieur-imac.fr/" target="_blank"><span class="lnr lnr-screen"></span></a>-->
+                    <a href="https://www.facebook.com/BDE.IMAC" target="_blank"><span class="icon-facebook"></span></a>
+                    <a href="https://www.instagram.com/bdeimac/" target="_blank"><span class="icon-instagram-filled"></span></a>
                 </p>
             </div>
         </div>

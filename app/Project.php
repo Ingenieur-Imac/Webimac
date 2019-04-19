@@ -38,7 +38,7 @@ class Project extends Model
     }
 
     static function getArrayDates(){
-        $projects = Project::all();
+        $projects = Project::orderBy('date','DESC')->get();
         $array_dates = array();
         $array_dates[0] = 'Année';
         foreach ($projects as $project) {

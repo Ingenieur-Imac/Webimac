@@ -31,11 +31,15 @@
 @if (isset($old_url_image))
     <div class="form-group">
         {!! Form::label('url_image','URL de l\'image de présentation | Fichier Actuel : '.$old_url_image) !!}
+        <p>Redimensionner la photo en <strong>600*600px</strong> maximum et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer la photo avant de l'uploads: <strong>nom-du-projet_annee.jpg</strong> (exemple: commimac_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @else
     <div class="form-group">
         {!! Form::label('url_image','URL de l\'image de présentation') !!}
+        <p>Redimensionner la photo en <strong>600*600px</strong> maximum et l'optimiser via un site tel que <a href="https://kraken.io/" target="_blank">Kraken.io</a>.</p>
+        <p>Renommer la photo avant de l'uploads: <strong>nom-du-projet_annee.jpg</strong> (exemple: commimac_2021.jpg)</p>
         {!! Form::file('url_image',['class' => 'form-control']) !!}
     </div>
 @endif
