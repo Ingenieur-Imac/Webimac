@@ -341,7 +341,7 @@
         "prs-ctn-4-c-2-l-1" => "Déposer une offre",
 
         //PROJECT :: REFERS TO pages.project.blade.php
-        "pro-c-1" => "Pas de vidéo à afficher ...",
+        "pro-c-1" => "Pas de vidéo à afficher...",
         "pro-c-2" => "Contributeurs",
         "pro-c-3" => "Tuteur(s)",
         "pro-c-4" => "Voir le projet en ligne",
@@ -391,8 +391,8 @@
         "sl-ctn-2-a-4-st" => "Bruit du Kouloir",
         "sl-ctn-2-a-4-loc" => "Bâtiment Copernic",
         "sl-ctn-2-a-4-c-1" => "Le BDK, ou Bruit Du Kouloir, est l’unique association de musiciens sur tout le campus ! Le BDK est là pour toi pour jouer pendant les pauses dèj, après les cours, et ce, dans un local doté de 2 basses, 2 batteries, 4 guitares, 2 claviers, 3 micros et, depuis peu, un large panel de matériel d'effets sonores.",
-        "sl-ctn-2-a-4-c-2" => "On est là pour se détendre en musique d’une part, mais faire partie du BDK c’est aussi entrer dans le monde associatif et organiser des événements sur le campus comme des concerts, des jams, de l’animation pour les autres associations....",
-        "sl-ctn-2-a-4-c-3" => "L’entrée dans le BDK se fait après une cotisation de 10€ qui serviront à entretenir le matériel. Si tu es motivé(e) pour mettre de la musique dans les oreilles de l’ESIPE, ou si tu es juste drogué(e) à la musique, viens découvrir le Bruit Du Kouloir du 1er étage de Copernic, salle 1B90 (ouvert entre 12h45 et 13h45, tu n’as qu’à te laisser guider par le bruit) !",
+        "sl-ctn-2-a-4-c-2" => "On est là pour se détendre en musique d’une part, mais faire partie du BDK c’est aussi entrer dans le monde associatif et organiser des événements sur le campus comme des concerts, des jams, de l’animation pour les autres associations...",
+        "sl-ctn-2-a-4-c-3" => "L’entrée dans le BDK se fait après une cotisation de 10€ qui serviront à entretenir le matériel. Si tu es motivé(e) pour mettre de la musique dans les oreilles de l’ESIPE, ou si tu es juste drogué(e) à la musique, viens découvrir le Bruit Du Kouloir du 1er étage de Copernic (ouvert entre 12h45 et 13h45, tu n’as qu’à te laisser guider par le bruit) !",
 
         "sl-ctn-2-a-5-t" => "FDK",
         "sl-ctn-2-a-5-st" => "Fond du Kouloir",

@@ -43,7 +43,7 @@
         "admission-container-1-content-2" => "It is a fact their open-mindedness is a great tool to discover as much the Artistic universe (Graphics Arts, Cinema, Music, Numeric Arts, …) as the Scientific one (Computer Sciences, Mathematics, Signal Processing, ...) with no necessary expertise in all of these fields. Applying to the IMAC programme, students grow to enlargen then specialize their skillset.",
         "admission-container-1-content-3" => "To enable diverse recruitment, students from a large variety of backgrounds can apply to IMAC: as long as they obtained 120 ECTS credits and follow the application process.",
         "admission-container-1-content-4-t" => "Scientific background",
-        "admission-container-1-content-4-c" => "Preparatory classes, Computing DUT, MMI DUT (formerly CBC) , Maths and Computing Licence, Physics Licence…",
+        "admission-container-1-content-4-c" => "Preparatory classes, Computing DUT, MMI DUT (formerly CBC), Maths and Computing Licence, Physics Licence…",
         "admission-container-1-content-5-t" => "Artistic background",
         "admission-container-1-content-5-c" => "Visual Communication BTS, Audiovisual BTS, Cinema Licence ...",
         "admission-container-1-content-6" => "IMAC",
@@ -92,7 +92,7 @@
         "int-title" => "From abroad",
         "int-subtitle" => "Destinations for IMAC",
         "int-container-1-title" => "The experience to stay abroad will be necessarily rewarding :",
-        "int-container-1-content" => "The immersion in a different culture opens up new horizons , both personally and professionally.  <cite>\"“One’s destination is never a place, but a new way of seeing things.”\"</cite> - Henry Miller",
+        "int-container-1-content" => "The immersion in a different culture opens up new horizons, both personally and professionally.  <cite>\"“One’s destination is never a place, but a new way of seeing things.”\"</cite> - Henry Miller",
             //FRAMED
         "int-framed-1-a" => "36",
         "int-framed-1-b" => "countries",
@@ -110,7 +110,7 @@
         "int-m-1-u-2" => "Bauhaus-Universität Weimar - Weimar",
         "int-m-1-c" => "Feeling passionate about audiovisual or design and digital communication? These universities will meet your needs in addition to opening up the doors to the German way of life.",
         "int-m-2-t" => "CANADA",
-        "int-m-2-c" => "With the BCI program , many universities are available for 1 or 2 semesters. A wide range of training courses can be chosen in correlation with the expectations of students.",
+        "int-m-2-c" => "With the BCI program, many universities are available for 1 or 2 semesters. A wide range of training courses can be chosen in correlation with the expectations of students.",
         "int-m-3-t" => "SOUTH KOREA",
         "int-m-3-u-1" => "Chonbuk National University - Chonbuk",
         "int-m-3-c-1" => "National University of South Korea located in Jeonju, North Jeolla",
@@ -129,7 +129,7 @@
         "int-m-8-t" => "Taiwan",
         "int-m-8-c" => "Beautiful island bearing the Chinese side, you can enjoy an exotic view frame. Several universities are proposed.",
         "int-m-9-t" => "United States",
-        "int-m-9-c" => "With the MICEFA program , many universities are available for 1 or 2 semesters. A wide range of training courses can be chosen in correlation with the expectations of students.",
+        "int-m-9-c" => "With the MICEFA program, many universities are available for 1 or 2 semesters. A wide range of training courses can be chosen in correlation with the expectations of students.",
         "int-m-insta" => "And discover the imac abroad in pictures on the dedicated <a href='https://www.instagram.com/imacworldwide/' target='_blank'>Instagram account</a>.",
 
             //LES AVANTAGES
@@ -179,11 +179,11 @@
             //TAGS SYSTEM
         "op-ctn-2-t" => "Business sectors",
         "op-ctn-2-st" => "Reflecting the multidisciplinary training, opportunities are found in multiple sectors.",
-        "op-ctn-2-c-1" => "IT , Web",
+        "op-ctn-2-c-1" => "IT, Web",
         "op-ctn-2-c-2" => "Video Games",
         "op-ctn-2-c-3" => "Multimedia, Animation",
         "op-ctn-2-c-4" => "Communication, Marketing, Advertising",
-        "op-ctn-2-c-5" => "Audiovisual ,Digital shows",
+        "op-ctn-2-c-5" => "Audiovisual, Digital shows",
         "op-ctn-2-c-6" => "Research &amp; Teaching",
                 //web
         "op-ctn-3-c-1-t" => "IT Business and Web",
@@ -198,7 +198,7 @@
         "op-ctn-3-c-4-t" => "Communication, Marketing, Advertising",
         "op-ctn-3-c-4-c" => "Media director<br/>Event framework manager<br/>E-business consultant<br/>IT Consultant<br/>...",
                 //audiovisuel, digital
-        "op-ctn-3-c-5-t" => "Audiovisual ,Digital shows",
+        "op-ctn-3-c-5-t" => "Audiovisual, Digital shows",
         "op-ctn-3-c-5-c" => "Production manager<br/>Artistic engineer<br/>Artistic director<br/>...",
                 //teaching and searching
         "op-ctn-3-c-6-t" => "Research &amp; Teaching",
@@ -214,11 +214,11 @@
         "title-ptn" => "Partners | IMAC engineer",
         "ptn-ctn-1-t" => "Partners",
         "ptn-ctn-1-st" => "Incorporated into the business world, IMAC has relationship with majors players of multimedia.",
-        "ptn-ctn-1-c" => "",
+        "ptn-ctn-1-c" => "For example, our students benefit from courses given by professional practitioners, benefiting from their skills and experience. They also have the opportunity to work with these partners on projects.",
         "ptn-ctn-2-c" => "Visit website",
         "ptn-ctn-2-st" => "What about you?",
         "ptn-ctn-2-l" => "Become Partners",
-        "ptn-ctn-3-c-1-t" => "Les jeudis de l'entreprise",
+        "ptn-ctn-3-c-1-t" => "Thursdays of the company",
         "ptn-ctn-3-c-1-st" => "During the year, some compagnies present their work to ours students.",
         "ptn-ctn-3-c-2-t" => "Many possibilities",
         "ptn-ctn-3-c-2-c-1" => "Meet professional",
@@ -262,7 +262,7 @@
         "prs-ctn-2-c-2-c-5" => "web design",
         "prs-ctn-2-c-2-c-6" => "audiovisual",
         "prs-ctn-2-c-2-c-7" => "Tutored projects play a great part of year. It allows students to deal with a long-term project and respond to client’s needs.",
-        "prs-ctn-2-c-2-c-8" => "",
+        "prs-ctn-2-c-2-c-8" => "Supervised by professional tutors, they respond to a customer request.",
             //THIRD YEAR
         "prs-ctn-2-c-3-t" => "Third year",
         "prs-ctn-2-c-3-st" => "Specialize",
@@ -390,8 +390,8 @@
          "sl-ctn-2-a-4-st" => "Bruit du Kouloir",
          "sl-ctn-2-a-4-loc" => "Copernic building",
          "sl-ctn-2-a-4-c-1" => "The BDK, (which stands for Bruit Du Kouloir, “Noise From Korridor”), is the unique combination of musicians across campus! The BDK is there for you to play for the lunch breaks, after school, and in a facility with 2 bass guitars, 4 guitars, 2 drum sets, 2 keyboards, 3 microphones, and a wide range of sound effects material.",
-         "sl-ctn-2-a-4-c-2" => "",
-         "sl-ctn-2-a-4-c-3" => "L’entrée dans le BDK se fait après une cotisation de 10€ qui serviront à entretenir le matériel. Si tu es motivé(e) pour mettre de la musique dans les oreilles de l’ESIPE, ou si tu es juste drogué(e) à la musique, viens découvrir le Bruit Du Kouloir du 1er étage de Copernic, salle 1B90 (ouvert entre 12h45 et 13h45, tu n’as qu’à te laisser guider par le bruit) !",
+         "sl-ctn-2-a-4-c-2" => "We are here to relax in music on the one hand, but to be part of the BDK is also to enter the associative world and organize events on campus like concerts, jams, animation for other associations...",
+         "sl-ctn-2-a-4-c-3" => "The entry into the BDK is made after a contribution of 10€ which will be used to maintain the equipment. If you are motivated to put music in the ears of ESIPE, or if you are just addicted to music, come and discover Le Bruit Du Kouloir of the 1st floor of Copernicus (open between 12h45 and 13h45, just let yourself be guided by the noise)!",
 
          "sl-ctn-2-a-5-t" => "FDK",
          "sl-ctn-2-a-5-st" => "First floor - Fond du Kouloir",
@@ -465,7 +465,7 @@
         //FORM PARTNERSHIP :: REFERS TO pages.newPartnership.blade.php
         "title-fptn" => "Become partner | IMAC engineer",
         "fptn-t" => "Become partner",
-        "fptn-st" => "",
+        "fptn-st" => "If you are interested in becoming an IMAC Training Partner, please complete the form below and we will get back to you as soon as possible.",
         "fptn-c-0" => "Required fields*",
         "fptn-f-ph-1" => "Mail*",
         "fptn-f-ph-2" => "Name*",
