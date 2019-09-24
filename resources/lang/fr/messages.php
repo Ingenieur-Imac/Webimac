@@ -442,6 +442,7 @@
         "nav-c-6" => "International",
         "nav-c-7" => "Partenaires",
         "nav-c-8" => "Contact",
+        "nav-c-9" => "FAQ",
 
         //PREFOOTER :: REFERS TO layout.prefooter.blade.php
         "pfr-1" => "Vous voulez intégrer <strong>la formation Imac</strong> ?",
