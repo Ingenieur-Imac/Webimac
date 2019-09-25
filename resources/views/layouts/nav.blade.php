@@ -14,5 +14,6 @@
     <li><a href="{{ url('/international') }}" {{ Request::is('international') ? "class=active" : '' }}>{{trans("messages.nav-c-6")}}</a></li>
     <li><a href="{{ url('/partenaires') }}" {{ Request::is('partenaires') ? "class=active" : '' }}>{{trans("messages.nav-c-7")}}</a></li>
     <li><a href="{{ url('/contact') }}" {{ Request::is('contact') ? "class=active" : '' }}>{{trans("messages.nav-c-8")}}</a></li>
+    <li><a href="{{ url('/faq') }}" {{ Request::is('faq') ? "class=active" : '' }}>{{trans("messages.nav-c-9")}}</a></li>
     <li class="lang"><a href="{{ url('/setLang/en') }}" {{ Lang::locale() == 'en' ? "class=color" : '' }}>EN</a> | <a href="{{ url('/setLang/fr') }}" {{ Lang::locale() == 'fr' ? "class=color" : '' }}>FR</a></li>
 </ul>

@@ -54,6 +54,30 @@
                     {!! trans("messages.faq-ctn-a7") !!}
                 </div>
             </div>
+            <div class="question">
+                {!! Form::checkbox("question", "q8", false, ["id" => "q8"]) !!} {!! Form::label("q8", trans("messages.faq-ctn-q8")) !!}
+                <div class="answer">
+                    {!! trans("messages.faq-ctn-a8") !!}
+                </div>
+            </div>
+            <div class="question">
+                {!! Form::checkbox("question", "q9", false, ["id" => "q9"]) !!} {!! Form::label("q9", trans("messages.faq-ctn-q9")) !!}
+                <div class="answer">
+                    {!! trans("messages.faq-ctn-a9") !!}
+                </div>
+            </div>
+            <div class="question">
+                {!! Form::checkbox("question", "q10", false, ["id" => "q10"]) !!} {!! Form::label("q10", trans("messages.faq-ctn-q10")) !!}
+                <div class="answer">
+                    {!! trans("messages.faq-ctn-a10") !!}
+                </div>
+            </div>
+            <div class="question">
+                {!! Form::checkbox("question", "q11", false, ["id" => "q11"]) !!} {!! Form::label("q11", trans("messages.faq-ctn-q11")) !!}
+                <div class="answer">
+                    {!! trans("messages.faq-ctn-a11") !!}
+                </div>
+            </div>
         </div>
     </div>
 @endsection
