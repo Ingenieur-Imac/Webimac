@@ -15,6 +15,9 @@
             <a href="https://twitter.com/imac_ingenieur" target="_blank">
                 <span class="icon-twitter-bird"></span>
             </a>
+            <a href="https://www.instagram.com/imacworldwide/" target="_blank">
+                <span class="icon-instagram"></span>
+            </a>
         </div>
         <div class="contact-info">
             <div class="info">
