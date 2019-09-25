@@ -82,9 +82,9 @@
         "contact-info-3" => "Email",
         "contact-info-4" => "Téléphone",
         "contact-info-5" => "Secrétariat",
-        "contact-info-6" => "Bâtiment Copernic - Bureau 1B164",
-        "contact-info-7" => "Du lundi au vendredi : 7h45 - 12h45 et 13h45 - 16h",
-        "contact-info-8" => "Fermé le vendredi après-midi",
+        "contact-info-6" => "Bâtiment Copernic - 1er étage - Bureau 1B164",
+        "contact-info-7" => "Ouvert aux horaires de bureau",
+        "contact-info-8" => "Fermé le mercredi après-midi",
         "contact-info-9" => "Nous suivre",
 
         //INTERNATIONAL :: REFERS TO pages.international.blade.php
