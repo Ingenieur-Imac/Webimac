@@ -522,7 +522,7 @@
         "faq-ctn-q10" => "Quand a lieu la rentrée&nbsp;?",
         "faq-ctn-a10" => "<p>Les dates changent en fonction des années mais elle a généralement lieux le 2ème ou 3ème semaine de septembre.</p>",
         "faq-ctn-q11" => "Peut-on partir à l'étranger avec l'IMAC&nbsp;?",
-        "faq-ctn-a11" => "<p>Oui, vous pouvez partir à l'étranger via votre stage, ou passer votre premier semestre (voire le second) de dernière année à l'étranger également, dans une de nos écoles partenaires. Dans les deux cas, il y a plusieurs critères à remplir qui seront communiqués au cours de l'année.</p>",
+        "faq-ctn-a11" => "<p>Oui, vous pouvez partir à l'étranger via votre stage, ou passer votre premier semestre (voire le second) de dernière année à l'étranger également, dans une de nos écoles partenaires. Dans les deux cas, il y a plusieurs critères à remplir qui vous seront communiqués au cours de l'année.</p>",
 
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Ressources graphiques | IMAC ingénieur",
