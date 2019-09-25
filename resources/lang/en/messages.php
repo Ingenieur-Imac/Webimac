@@ -82,9 +82,9 @@
         "contact-info-3" => "Mail",
         "contact-info-4" => "Phone number",
         "contact-info-5" => "Administration",
-        "contact-info-6" => "Batiment Copernic - Bureau 1B164",
-        "contact-info-7" => "Monday to Thursday : 7h45 - 12h45 et 13h45 - 16h",
-        "contact-info-8" => "Friday: 7:45 - 12h45",
+        "contact-info-6" => "Batiment Copernic - 1st floor - Office 1B164",
+        "contact-info-7" => "open at office hours",
+        "contact-info-8" => "Closed on wednesday afternoon,
         "contact-info-9" => "Follow us",
 
         //INTERNATIONAL :: REFERS TO pages.international.blade.php
