@@ -83,8 +83,8 @@
         "contact-info-4" => "Phone number",
         "contact-info-5" => "Administration",
         "contact-info-6" => "Batiment Copernic - 1st floor - Office 1B164",
-        "contact-info-7" => "open at office hours",
-        "contact-info-8" => "Closed on wednesday afternoon",
+        "contact-info-7" => "Open at office hours",
+        "contact-info-8" => "Closed on Wednesday afternoon",
         "contact-info-9" => "Follow us",
 
         //INTERNATIONAL :: REFERS TO pages.international.blade.php
