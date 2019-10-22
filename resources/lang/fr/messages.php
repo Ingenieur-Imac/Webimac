@@ -376,11 +376,10 @@
         "sl-ctn-2-a-1-loc" => "Premier étage - Bâtiment Copernic",
         "sl-ctn-2-a-1-c" => "Tout au long de l’année, le Bureau des Imac (BDI) s’applique à cultiver cet esprit chaleureux en organisant de nombreux événements, notamment les incontournables JeudImac, soirées conviviales autour d’un verre à Paris. L’occasion de faire des rencontres, d’élargir son carnet d’adresses puisque des anciens IMAC sont aussi de la partie, et surtout de passer un bon moment ! Du week-end d’intégration au Gala en passant par le parrainage et l'élection de nos miss et mister préféré… de vrais moment conviviaux sont créés.",
 
-        "sl-ctn-2-a-2-t" => "803Z - Radio PIMP",
+        "sl-ctn-2-a-2-t" => "803Z",
         "sl-ctn-2-a-2-st" => "Association d’Audiovisuel et de Radio",
-        "sl-ctn-2-a-2-loc" => "Maison de l'Étudiant",
+        "sl-ctn-2-a-2-loc" => "Local A14 de la Maison de l'Étudiant",
         "sl-ctn-2-a-2-c-1" => "Association audiovisuelle universitaire serait la description solennelle de 803Z. Collectif sympa et uni en serait une plus cool. L'association Cinéma de l'UPEM serait la version arrogante. Le mieux, pour décrire 803Z, c'est 803Z.",
-        "sl-ctn-2-a-2-c-2" => "Radio PIMP, c’est l’association qui présente chaque semaine des sujets en tout genre !",
 
         "sl-ctn-2-a-3-t" => "SUAPS",
         "sl-ctn-2-a-3-st" => "Association sportive du campus",
@@ -396,18 +395,53 @@
 
         "sl-ctn-2-a-5-t" => "FDK",
         "sl-ctn-2-a-5-st" => "Fond du Kouloir",
-        "sl-ctn-2-a-5-loc" => "Premier étage - Bâtiment Copernic",
-        "sl-ctn-2-a-5-c-1" => "Le FDK, ou Fond Du Kouloir, est la cafétéria étudiante... au fond du couloir. 104m2 de détente, d’espace libre, et de bonheur. Oui, être ingénieur c’est travailler dur. Mais débranche donc tes neurones quelques minutes pour jouer au babyfoot, ou pour profiter d’une boisson chaude accoudé à notre bar ! Les serveurs distribuent des sourires et des cafés ; les serveuses offrent des clins d’oeil et des grenadines.",
-        "sl-ctn-2-a-5-c-2" => "Sache qu’être Staff FDK, c’est peser dans le game. Tout le monde te dit bonjour, tu as toujours un canapé réservé, et le café est gratuit. Allez, passe derrière le comptoir !",
+        "sl-ctn-2-a-5-loc" => "Local 1B060 du bâtiment Copernic",
+        "sl-ctn-2-a-5-c-1" => "Le FDK, Foyer du Kouloir, c’est le foyer étudiant de l’ESIPE ! Un petit coin sympa où la bonne humeur et la détente sont au rendez-vous.<br>Dure journée en tant qu’étudiant(e) ? No problemo, viens te prendre un bon snack ou une boisson fraîche revigorante. <br>Envie de t’enjailler ? Baby-foot, Canapés, Gamecube, PS4, cartes … Viens t’éclater chez nous !",
 
-        "sl-ctn-2-a-6-t" => "Virtual Association",
-        "sl-ctn-2-a-6-st" => "Association de jeux vidéo orienté Réalité Virtuel",
-        "sl-ctn-2-a-6-loc" => "Maison de l'Étudiant",
-        "sl-ctn-2-a-6-c" => "Virtual Association est la première association étudiante dédiée au partage de connaissances et à l’organisation d’évènements autour de la réalité virtuelle pour tous.",
+        "sl-ctn-2-a-6-t" => "U-Geek",
+        "sl-ctn-2-a-6-st" => "Association de jeux vidéo et pop-culture",
+        "sl-ctn-2-a-6-loc" => "Local A12 de la Maison de l'Étudiant",
+        "sl-ctn-2-a-6-c" => "Cette association a pour objet de jouer à plusieurs jeux vidéos sur des plate formes différentes. Organiser des loisirs et des activités dans l'univers du Jeu Vidéos, jeux de plate-forme, culture Geek et des nouvelles technologies.",
 
-        "sl-ctn-2-a-7-t" => "Wings of Games",
-        "sl-ctn-2-a-7-loc" => "Bâtiment Copernic",
-        "sl-ctn-2-a-7-c" => "Dans cette association, vous pourrez retrouver vos amis pour jouer à des jeux de plateaux pendant les pauses.",
+        "sl-ctn-2-a-7-t" => "Cinéko",
+        "sl-ctn-2-a-7-loc" => "Local A04 de la Maison de l'Étudiant",
+        "sl-ctn-2-a-7-c" => "Association cinéma gérée par les étudiants en cinéma ! Aide à la création, répertoire étudiant, tournages, cours étudiants, débats, ciné-club, diffusion des films, projections en salles etc…",
+
+        "sl-ctn-2-a-8-t" => "BDE ESIPE",
+        "sl-ctn-2-a-8-st" => "Bureau Des Etudiants ESIPE",
+        "sl-ctn-2-a-8-loc" => "Foyer de la Maison de l'Étudiant",
+        "sl-ctn-2-a-8-c" => "Vous avez envie de faire vivre le campus, faire rêver des milliers d'étudiants lors d'évènements exceptionnels ? Le BDE est fait pour vous ! Pour des souvenirs inoubliables : BDE UPEM !",
+
+        "sl-ctn-2-a-9-t" => "BDE UPEM",
+        "sl-ctn-2-a-9-st" => "Bureau Des Etudiants UPEM",
+        "sl-ctn-2-a-9-loc" => "Local 1B033 au bâtiment Copernic",
+        "sl-ctn-2-a-9-c" => "Le BDE ESIPE est une association représentant les étudiants de toutes les filières de l’ESIPE. A travers ses soirées Flam’s, ses afterworks, son gala, ses animations et tous ses autres évènements, son objectif est de maintenir une vraie vie étudiante, de permettre aux « Esipiens » de se sentir part d’un tout, d’assurer la cohésion de chaque promotion et de perpétuer une ambiance de folie au sein de l’école. Bref, vous faire rêver et vous souvenir de votre scolarité toute votre vie.",
+
+        "sl-ctn-2-a-10-t" => "Banzai Japan",
+        "sl-ctn-2-a-10-st" => "Association sur la culture Japonaise",
+        "sl-ctn-2-a-10-loc" => "",
+        "sl-ctn-2-a-10-c" => "Banzai Japan est une association visant à promouvoir la culture japonaise et asiatique. Dans ce sens nous proposons des initiations à la langue chinoise et au dessin. De plus, nous vendons des snacks de provenance japonaise pour les curieux et les weebs. Une grande part de nos activités est centrée sur la culture populaire japonaise (jeux vidéos, manga, etc). Nous organisons des sorties pour les conventions (e.g. Japan Expo, Paris Manga) et nous nous réunissons pour assister aux dernières sorties cinémas.<br>Nous proposons également des évènements dans nos locaux : jeux, ateliers découvertes, projections de films et d’animes, dégustations, échanges et partage. Si vous êtes passionnés par la culture asiatique et que vous souhaitez partager cette passion, rejoignez-nous !",
+
+        "sl-ctn-2-a-11-t" => "As de coeur",
+        "sl-ctn-2-a-11-st" => "Association humanitaire",
+        "sl-ctn-2-a-11-loc" => "Local 1B011 au bâtiment Copernic",
+        "sl-ctn-2-a-11-c" => "L'As de coeur est une association étudiante dont l'objectif est de mettre les moyens et les compétences de ses membres au service de causes humanitaires, d'aide et de développement. Nos projets se déroulent en France et également à l'étranger. Nous participons chaque année, depuis 4 ans à la course humanitaire 4L Trophy et organisons de nombreuses récoltes pour divers projets (vêtements, jouets, bouchons en plastique, etc.)",
+
+        "sl-ctn-2-a-12-t" => "AVED",
+        "sl-ctn-2-a-12-st" => "Association de la Vie Etudiante du campus Descartes",
+        "sl-ctn-2-a-12-loc" => "",
+        "sl-ctn-2-a-12-c" => "Cette association a pour but de rassembler les représentants des étudiants et apprentis des écoles de la Cité Descartes située à Champs sur Marne, dans le but de : - réaliser des soirées - organiser des événements culturels (exposition d'art, concert, conférences, ...) - organiser des événements sportifs - organiser tout type d'événement ou rassemblement pouvant fédérer les étudiants de la Cité Descartes.",
+
+        "sl-ctn-2-a-13-t" => "Le Kartel",
+        "sl-ctn-2-a-13-st" => "",
+        "sl-ctn-2-a-13-loc" => "Local 1B013 du bâtiment Copernic",
+        "sl-ctn-2-a-13-c" => "Le Kartel est une association pour les amateurs de karting, de motos et de sports extrêmes en général. L'association organise des courses d'endurance, des entraînements et, bien sûr, participe aux 24h de karting de l'ESSEC. Créée par les étudiants de l'ESIPE, cette association est ouverte à tous les étudiants de l'UPEM. Elle propose également de pratiquer le karting à des tarifs privilégiés. Toute l'équipe du Kartel espère vous retrouver dans la Team Kartel !",
+
+        "sl-ctn-2-a-14-t" => "ERAA",
+        "sl-ctn-2-a-14-st" => "",
+        "sl-ctn-2-a-14-loc" => "Local 1B130 du Bâtiment Copernic",
+        "sl-ctn-2-a-14-c" => "ERAA a pour objet la promotion et la pratique de la connaissance de la robotique et des sciences afférentes : l'électronique, la mécatronique, la mécanique, l'informatique et l'internet des objets. L'association se propose notamment d'organiser ou de participer à l'organisation d'activités scientifiques et techniques expérimentales. Un format est privilégié : celui des compétitions nationales et/ou internationales par exemple la coupe de France de robotique.",
+
 
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "Les IMAC | IMAC ingénieur",
