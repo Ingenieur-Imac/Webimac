@@ -239,6 +239,8 @@
         "prs-ctn-1-st" => "L’IMAC est une formation d’ingénieur en trois ans certifiée par la <a href='http://www.cti-commission.fr/' target='_blank' >CTI (Commission des Titres d’Ingénieur)</a>. Créée en 1986, c’est la seule formation d’ingénieur publique en France alliant arts et sciences.",
         "prs-ctn-1-c" => "En effet, la pédagogie pluridisciplinaire de la formation associe esprit créatif et savoirs scientifiques. Nous formons des cadres supérieurs évoluant dans les domaines de l’Internet, des jeux vidéo, de l'audiovisuel, de la communication numérique...",
         "prs-ctn-2-t" => "Trois ans pour devenir un ingénieur créatif",
+        "prs-ctn-2-b" => "Télécharger la plaquette",
+
             //FIRST YEAR
         "prs-ctn-2-c-1-t" => "Première année",
         "prs-ctn-2-c-1-st" => "Découvrir",

@@ -29,6 +29,8 @@
         <div class="col-5 col-offset-1 middle-valign-ib row-offset">
             <p class="lead">{!! trans("messages.prs-ctn-1-st") !!}</p>
             <p>{!! trans("messages.prs-ctn-1-c") !!}</p>
+            <p class="center"><a class="btn filled-btn primary-btn" href="/download">{!! trans("messages.prs-ctn-2-b") !!}</a></p>
+
         </div>
     </div>
 
