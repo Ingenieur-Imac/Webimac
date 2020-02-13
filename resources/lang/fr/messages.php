@@ -367,7 +367,7 @@
         //STUDENT LIFE :: REFERS TO pages.studentLife.blade.php
         "title-sl" => "Autour de la formation | IMAC ingénieur",
         "sl-ctn-1-t" => "La vie étudiante sur le campus",
-        "sl-ctn-1-st" => "La vie associative ainsi que les conférences et ateliers artistiques et culturels sont les points forts que l’université UPEM tient à proner et valoriser. Ainsi, les étudiants de l’IMAC bénéficie de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l’eau au FDK (Fond Du Kouloir)",
+        "sl-ctn-1-st" => "La vie associative ainsi que les conférences et ateliers artistiques et culturels sont les points forts que l’université UPEM tient à proner et valoriser. Ainsi, les étudiants de l’IMAC bénéficie de nombreuses associations pour y pratiquer de la musique, créer des événements tout en sirotant une menthe à l’eau au FDK (Fond Du Kouloir).",
         "sl-ctn-1-c" => "Vous pouvez vous rendre sur<a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'> le site de l'UPEM</a> pour plus d’information.",
 
             //ASSOCIATIONS LIST
@@ -410,13 +410,13 @@
         "sl-ctn-2-a-8-t" => "BDE ESIPE",
         "sl-ctn-2-a-8-st" => "Bureau Des Etudiants ESIPE",
         "sl-ctn-2-a-8-loc" => "Foyer de la Maison de l'Étudiant",
-        "sl-ctn-2-a-8-c" => "Vous avez envie de faire vivre le campus, faire rêver des milliers d'étudiants lors d'évènements exceptionnels ? Le BDE est fait pour vous ! Pour des souvenirs inoubliables : BDE UPEM !",
+        "sl-ctn-2-a-8-c" => "Le BDE ESIPE est une association représentant les étudiants de toutes les filières de l’ESIPE. A travers ses soirées Flam’s, ses afterworks, son gala, ses animations et tous ses autres évènements, son objectif est de maintenir une vraie vie étudiante, de permettre aux « Esipiens » de se sentir part d’un tout, d’assurer la cohésion de chaque promotion et de perpétuer une ambiance de folie au sein de l’école. Bref, vous faire rêver et vous souvenir de votre scolarité toute votre vie.",
 
-        "sl-ctn-2-a-9-t" => "BDE UPEM",
-        "sl-ctn-2-a-9-st" => "Bureau Des Etudiants UPEM",
+        "sl-ctn-2-a-9-t" => "BDE Eiffel",
+        "sl-ctn-2-a-9-st" => "Bureau Des Etudiants Eiffel",
         "sl-ctn-2-a-9-loc" => "Local 1B033 au bâtiment Copernic",
-        "sl-ctn-2-a-9-c" => "Le BDE ESIPE est une association représentant les étudiants de toutes les filières de l’ESIPE. A travers ses soirées Flam’s, ses afterworks, son gala, ses animations et tous ses autres évènements, son objectif est de maintenir une vraie vie étudiante, de permettre aux « Esipiens » de se sentir part d’un tout, d’assurer la cohésion de chaque promotion et de perpétuer une ambiance de folie au sein de l’école. Bref, vous faire rêver et vous souvenir de votre scolarité toute votre vie.",
-
+        "sl-ctn-2-a-9-c" => "Vous avez envie de faire vivre le campus, faire rêver des milliers d'étudiants lors d'évènements exceptionnels ? Le BDE est fait pour vous ! Pour des souvenirs inoubliables : BDE Eiffel !",
+       
         "sl-ctn-2-a-10-t" => "Banzai Japan",
         "sl-ctn-2-a-10-st" => "Association sur la culture Japonaise",
         "sl-ctn-2-a-10-loc" => "",
@@ -554,7 +554,7 @@
         "faq-ctn-q9" => "J'ai candidaté pour l'IMAC, quand aurons-nous les résultats&nbsp;? ",
         "faq-ctn-a9" => "<p>Que vous candidatiez à la première ou à la seconde session, nous examinons les dossiers seulement après la fin des candidatures, et les réponses viennent dans les 2-3 semaines suivantes.</p>",
         "faq-ctn-q10" => "Quand a lieu la rentrée&nbsp;?",
-        "faq-ctn-a10" => "<p>Les dates changent en fonction des années mais elle a généralement lieux le 2ème ou 3ème semaine de septembre.</p>",
+        "faq-ctn-a10" => "<p>Les dates changent en fonction des années mais elle a généralement lieu la 2ème ou 3ème semaine de septembre.</p>",
         "faq-ctn-q11" => "Peut-on partir à l'étranger avec l'IMAC&nbsp;?",
         "faq-ctn-a11" => "<p>Oui, vous pouvez partir à l'étranger via votre stage, ou passer votre premier semestre (voire le second) de dernière année à l'étranger également, dans une de nos écoles partenaires. Dans les deux cas, il y a plusieurs critères à remplir qui vous seront communiqués au cours de l'année.</p>",
 
