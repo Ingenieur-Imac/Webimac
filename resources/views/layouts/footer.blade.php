@@ -44,8 +44,8 @@
         <h2 class="title-2">{{trans("messages.ftr-ctn-2-t")}}</h2>
         <p>{{trans("messages.ftr-ctn-2-c")}}</p>
         <div class="links">
-            <a href="http://www.u-pem.fr/" target="_blank">
-                <img src="{{URL::asset('images/UPEM_LOGO_EDITION_BLANC72DPI.png')}}" alt="Logo UPEM" />
+            <a href="https://www.univ-gustave-eiffel.fr/" target="_blank">
+                <img src="{{URL::asset('images/uge-uni-bgdark.png')}}" alt="Logo UGE" />
             </a>
             <a href="http://esipe.u-pem.fr/" target="_blank">
                 <img src="{{URL::asset('images/UPEM-ESIPE-V2-BLANC72DPI.png')}}" alt="Logo ESIPE" />

@@ -22,6 +22,7 @@ use Imac\Tag;
 use Carbon\Carbon;
 use Imac\Http\Controllers\Controller;
 
+
 class PagesController extends Controller{
 
     public function __construct(){
@@ -214,6 +215,12 @@ class PagesController extends Controller{
     public function graphicResources(){
         return view('pages.graphicResources');
     }
+    
+    public function getDownload(){
+        $file= public_path(). "/document/IMAC_plaquette_2020.pdf";
+        $headers = array('Content-Type: application/pdf',);
+        return response()->download($file);
+    }
 
     // public function timer(){
     //     $ts = null;
@@ -243,4 +250,6 @@ class PagesController extends Controller{
 
         return Redirect::back();
     }
+
+    
 }

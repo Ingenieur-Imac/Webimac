@@ -239,6 +239,9 @@
         "prs-ctn-1-st" => "IMAC is an engineering training certified by <a href='http://www.cti-commission.fr/' target='_blank' > CTI </a> (Commission des Titres d’Ingénieur). Created in 1986, it’s the only French public engineering programme mixing art and technology.",
         "prs-ctn-1-c" => "We train students to become seniors executives in multiple fields: the web, video games, audiovisual or digital communication.  ",
         "prs-ctn-2-t" => "Three years to become a creative engineer.",
+        "prs-ctn-2-b" => "Download the brochure",
+
+
             //FIRST YEAR
         "prs-ctn-2-c-1-t" => "First year",
         "prs-ctn-2-c-1-st" => "Discover",
@@ -368,7 +371,7 @@
         "title-sl" => "Around the engineering training | IMAC engineer",
         "sl-ctn-1-t" => "Student life on campus",
         "sl-ctn-1-st" => "The Union activity on campus as well as conferences and artistic, cultural workshops are strong points that UPEM (Université Paris-Est Marne-la-vallée) advocates and values ​​.",
-        "sl-ctn-1-c" => "IMAC are invited to join many societies to enjoy a wide variety of activities, practice music, create events while sipping a mint water. You can visit the dedicated page on <a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'> UPEM 's website</a> for more information",
+        "sl-ctn-1-c" => "IMAC are invited to join many societies to enjoy a wide variety of activities, practice music, create events while sipping a mint water. You can visit the dedicated page on <a href='http://www.u-pem.fr/vie-du-campus/vie-associative-et-culturelle/associations-etudiantes-a-lupem/' target='_blank'> UPEM 's website</a> for more information.",
              //ASSOCIATIONS LIST
          "sl-ctn-2-a-1-t" => "BDI",
          "sl-ctn-2-a-1-st" => "IMAC Student Union",
@@ -399,14 +402,54 @@
          "sl-ctn-2-a-5-c-1" => "The FDK or ”end of the hallway“, is the student cafeteria ... basically the heart of the union. 104m² of relaxation, free space, and happiness. Yes, being an engineer is hard work. But just unplug your neurones a few minutes to play football, or enjoy a hot drink leaning on our bar! The servers deliver smiles and coffees ; waitresses offer winks and grenadines.",
          "sl-ctn-2-a-5-c-2" => "FDK staff members are highly valuated! Everyone says hi, you always have a reserved couch, and coffee is free. Come on, get going behind that counter !",
 
-         "sl-ctn-2-a-6-t" => "Virtual Association",
-         "sl-ctn-2-a-6-st" => "Virtual Reality Society",
-         "sl-ctn-2-a-6-loc" => "Student's house",
-         "sl-ctn-2-a-6-c" => "Virtual Association is the first student society dedicated to knowledge around Virtual Reality for all, it shares the latest news, organizes events and lends the coolest VR tools to challenge your skills!",
+         "sl-ctn-2-a-6-t" => "U-Geek",
+         "sl-ctn-2-a-6-st" => "Association of video games and pop-culture",
+         "sl-ctn-2-a-6-loc" => "A12 - Student's house",
+         "sl-ctn-2-a-6-c" => "The purpose of this association is to play several video games on different platforms. Organize hobbies and activities in the world of Video Games, platform games, Geek culture and new technologies.",
 
-         "sl-ctn-2-a-7-t" => "Wings of Games",
-         "sl-ctn-2-a-7-loc" => "Copernic building",
-         "sl-ctn-2-a-7-c" => "In this society, you can find friends to play board games during breaks.",
+         "sl-ctn-2-a-7-t" => "Cinéko",
+         "sl-ctn-2-a-7-loc" => "A04 - Student's house",
+         "sl-ctn-2-a-7-c" => "Cinema association managed by cinema students! Assistance with creation, student directory, filming, student courses, debates, film club, distribution of films, screenings in cinemas, etc.",
+ 
+         "sl-ctn-2-a-8-t" => "BDE ESIPE",
+         "sl-ctn-2-a-8-st" => "ESIPE Student Union",
+         "sl-ctn-2-a-8-loc" => "Student's house",
+         "sl-ctn-2-a-8-c" => "The BDE ESIPE is an association representing students from all fields of ESIPE. Through its Flam's evenings, its afterworks, its gala, its animations and all its other events, its objective is to maintain a real student life, to allow the 'Esipiens' to feel part of a whole, to ensure cohesion of each promotion and to perpetuate an atmosphere of madness within the school. In short, make you dream and remember your schooling all your life.",
+ 
+         "sl-ctn-2-a-9-t" => "BDE Eiffel",
+         "sl-ctn-2-a-9-st" => "Eiffel Student Union",
+         "sl-ctn-2-a-9-loc" => "1B033 - Copernic building",
+         "sl-ctn-2-a-9-c" => "Do you want to bring the campus to life, to make thousands of students dream during exceptional events? The BDE is made for you! For unforgettable memories: BDE Eiffel!",
+        
+         "sl-ctn-2-a-10-t" => "Banzai Japan",
+         "sl-ctn-2-a-10-st" => "Association on Japanese culture",
+         "sl-ctn-2-a-10-loc" => "",
+         "sl-ctn-2-a-10-c" => "Banzai Japan is an association aimed at promoting Japanese and Asian culture. In this sense we offer initiations to the Chinese language and drawing. In addition, we sell snacks from Japan for the curious and the weebs. A large part of our activities are centered on Japanese popular culture (video games, manga, etc.). We organize outings for conventions (e.g. Japan Expo, Paris Manga) and we meet to attend the latest cinema outings.<br>We also offer events on our premises: games, discovery workshops, film and anime screenings, tastings, exchanges and sharing. If you are passionate about Asian culture and want to share this passion, join us!",
+
+         "sl-ctn-2-a-11-t" => "As de coeur",
+         "sl-ctn-2-a-11-st" => "Humanitarian association",
+         "sl-ctn-2-a-11-loc" => "1B011 - Copernic building",
+         "sl-ctn-2-a-11-c" => "L'As de Coeur is a student association whose objective is to put the means and skills of its members at the service of humanitarian causes, aid and development. Our projects take place in France and also abroad. For the past 4 years, we have participated in the 4L Trophy humanitarian race every year and organize numerous harvests for various projects (clothing, toys, plastic caps, etc.)",
+
+         "sl-ctn-2-a-12-t" => "AVED",
+         "sl-ctn-2-a-12-st" => "Student Life Association of the Descartes campus",
+         "sl-ctn-2-a-12-loc" => "",
+         "sl-ctn-2-a-12-c" => "The aim of this association is to bring together representatives of students and apprentices from the schools of the Cité Descartes located in Champs sur Marne, with the aim of: - organizing evenings - organizing cultural events (art exhibition, concert, conferences,. ..) - organize sporting events - organize any type of event or gathering that can federate the students of the Cité Descartes.",
+
+         "sl-ctn-2-a-13-t" => "Le Kartel",
+         "sl-ctn-2-a-13-st" => "",
+         "sl-ctn-2-a-13-loc" => "1B013 - Copernic building",
+         "sl-ctn-2-a-13-c" => "The Kartel is an association for lovers of karting, motorcycles and extreme sports in general. The association organizes endurance races, training and, of course, participates in the 24h of karting at ESSEC. Created by ESIPE students, this association is open to all UPEM students. It also offers karting at special rates. The whole Kartel team hopes to find you in Team Kartel!",
+
+         "sl-ctn-2-a-14-t" => "ERAA",
+         "sl-ctn-2-a-14-st" => "",
+         "sl-ctn-2-a-14-loc" => "1B130 - Copernic building",
+         "sl-ctn-2-a-14-c" => "ERAA aims to promote and practice knowledge of robotics and related sciences: electronics, mechatronics, mechanics, IT and the Internet of Things. The association intends in particular to organize or participate in the organization of scientific and technical experimental activities. One format is preferred: that of national and / or international competitions, for example the French robotics cup.",
+ 
+         "sl-ctn-2-a-15-t" => "And more ...",
+         "sl-ctn-2-a-15-st" => "",
+         "sl-ctn-2-a-15-loc" => "",
+         "sl-ctn-2-a-15-c" => "",
 
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "IMAC | IMAC engineer",
@@ -498,7 +541,7 @@
         "faq-ctn-st" => "Are you interested in the engineering training IMAC? You'll find here the answers to the most frequently asked questions. If you need further informations, please ",
         "faq-ctn-link" => "contact us",
         "faq-ctn-q1" => "Is there an open day at IMAC?",
-        "faq-ctn-a1" => "An open day takes place every year on Descartes campus, usually in February on saturday. The IMAC students present the training and their projects. The exact date is displayed on <a href='http://www.u-pem.fr/' target='_blank'>UPEM website</a>.</p>",       
+        "faq-ctn-a1" => "<p>An open day takes place every year on Descartes campus, usually in February on saturday. The IMAC students present the training and their projects. The exact date is displayed on <a href='http://www.u-pem.fr/' target='_blank'>UPEM website</a>.</p>",       
         "faq-ctn-q2" => "How is the selection at IMAC?",
         "faq-ctn-a2" => "<p>To enter IMAC, you have to apply on the University of Marne la Vallée website. Some documents are requested, such as statement of results, a cover letter and a resumé.  It is advisable to add a book of creations.</p><p>An interview may be requested, on campus or by Skype call.</p>",
         "faq-ctn-q3" => "How much does the IMAC programme cost?",
@@ -508,17 +551,17 @@
         "faq-ctn-q5" => "How many students per promotion&nbsp;?",
         "faq-ctn-a5" => "<p>In general, there are approximately 45 to 50 students per promotion.</p>",
         "faq-ctn-q6" => "What training is required to integrate the IMAC&nbsp;?",
-        "faq-ctn-a6" => "There is no specific training to integrate the IMAC. In fact, we recruit students from various worlds: scientific (prepa, licenses math-info, DUT info...), artistic (BTS audiovisual, school of art or cinema...) or both (DUT MMI).</p>",
+        "faq-ctn-a6" => "<p>There is no specific training to integrate the IMAC. In fact, we recruit students from various worlds: scientific (prepa, licenses math-info, DUT info...), artistic (BTS audiovisual, school of art or cinema...) or both (DUT MMI).</p>",
         "faq-ctn-q7" => "How to contact Imacians to get their point of view ?",
-        "faq-ctn-a7" => "You can find various ways to contact students on <a href=\"http://ingenieur-imac.fr/nos-etudiants\">the promotion presentation page</a> but also know that <a href=\"https://www.facebook.com/ingenieur.imac.officiel/\">the IMAC Facebook page</a> is managed by students! If not, you are also invited to attend the Open Day (JPO) which is usually held in February each year.",
-        "faq-ctn-q8" => "Que dois-je mettre dans mon portfolio exactement&nbsp;?",
-        "faq-ctn-a8" => "<p>Ce que vous voulez ! Le portfolio sert à justifier votre côté créatif (particulièrement si vous venez d'une formation scientifique). Vous pouvez y mettre des liens vers des courts-métrages, du design, des dessins, des photos, des créations musicales ou toute autre oeuvre moins traditionnelle ! (Certains élèves nous ont montré leurs aptitudes au tricot ).</p>",
-        "faq-ctn-q9" => "J'ai candidaté pour l'IMAC, quand aurons-nous les résultats&nbsp;? ",
-        "faq-ctn-a9" => "<p>Que vous candidatiez à la première ou à la seconde session, nous examinons les dossiers seulement après la fin des candidatures, et les réponses viennent dans les 2-3 semaines suivantes.</p>",
-        "faq-ctn-q10" => "Quand a lieu la rentrée&nbsp;?",
-        "faq-ctn-a10" => "<p>Les dates changent en fonction des années mais elle a généralement lieux le 2ème ou 3ème semaine de septembre.</p>",
-        "faq-ctn-q11" => "Peut-on partir à l'étranger avec l'IMAC&nbsp;?",
-        "faq-ctn-a11" => "<p>Oui, vous pouvez partir à l'étranger via votre stage, ou passer votre premier semestre (voire le second) de dernière année à l'étranger également, dans une de nos écoles partenaires. Dans les deux cas, il y a plusieurs critères à remplir qui vous seront communiqués au cours de l'année.</p>",
+        "faq-ctn-a7" => "<p>You can find various ways to contact students on <a href=\"http://ingenieur-imac.fr/nos-etudiants\">the promotion presentation page</a> but also know that <a href=\"https://www.facebook.com/ingenieur.imac.officiel/\">the IMAC Facebook page</a> is managed by students! If not, you are also invited to attend the Open Day (JPO) which is usually held in February each year.</p>",
+        "faq-ctn-q8" => "What should I put in my portfolio exactly?",
+        "faq-ctn-a8" => "<p>What you want ! The portfolio is used to justify your creative side (especially if you come from a scientific background). You can put links to short films, design, drawings, photos, musical creations or any other less traditional work! (Some students have shown us their knitting skills).</p>",
+        "faq-ctn-q9" => "I applied for IMAC, when will we have the results?",
+        "faq-ctn-a9" => "<p>Whether you are applying for the first or second session, we will only review the applications after the application has ended, and responses are received within 2-3 weeks.</p>",
+        "faq-ctn-q10" => "When does the return to school take place?",
+        "faq-ctn-a10" => "<p>The dates change according to the years but it generally takes place the 2nd or 3rd week of September.</p>",
+        "faq-ctn-q11" => "Can we go abroad with IMAC?",
+        "faq-ctn-a11" => "<p>Yes, you can go abroad via your internship, or spend your first semester (or even the second) of last year abroad in one of our partner schools. In both cases, there are several criteria to be fulfilled which will be communicated to you during the year.</p>",
 
         //GRAPHIC RESOURCES :: REFERS TO pages.graphicResources.blade.php
         "title-grsc" => "Graphic resources | IMAC engineer",

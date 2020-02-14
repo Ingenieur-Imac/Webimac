@@ -34,6 +34,9 @@ Route::post('/mail/internship','MailController@internshipOffer');
 Route::post('/mail/partnership','MailController@partnershipOffer');
 Route::post('/mail/contact','MailController@contact');
 
+Route::get('/download', 'PagesController@getDownload');
+
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
