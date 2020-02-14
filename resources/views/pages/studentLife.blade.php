@@ -265,5 +265,20 @@
         </div>
     </div>
 
+    <div class="association">
+        <div class="container">
+            <div class="col-2 col-offset-1 middle-valign-ib center">
+                <img src="" alt="">
+            </div>
+            <div class="col-7 col-offset-1 middle-valign-ib">
+                <h2 class="title-3">{!! trans("messages.sl-ctn-2-a-15-t") !!}</h2>
+                <h3>{!! trans("messages.sl-ctn-2-a-15-st") !!}</h3>
+                <p>{!! trans("messages.sl-ctn-2-a-15-loc") !!}</p>
+                <p>{!! trans("messages.sl-ctn-2-a-15-c") !!}</p>
+                <p class="links">
+                </p>
+            </div>
+        </div>
+    </div>
   
 @endsection

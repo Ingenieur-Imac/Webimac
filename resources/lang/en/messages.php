@@ -446,6 +446,11 @@
          "sl-ctn-2-a-14-loc" => "1B130 - Copernic building",
          "sl-ctn-2-a-14-c" => "ERAA aims to promote and practice knowledge of robotics and related sciences: electronics, mechatronics, mechanics, IT and the Internet of Things. The association intends in particular to organize or participate in the organization of scientific and technical experimental activities. One format is preferred: that of national and / or international competitions, for example the French robotics cup.",
  
+         "sl-ctn-2-a-15-t" => "And more ...",
+         "sl-ctn-2-a-15-st" => "",
+         "sl-ctn-2-a-15-loc" => "",
+         "sl-ctn-2-a-15-c" => "",
+
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "IMAC | IMAC engineer",
         "sts-ctn-1-t" => "Who are IMAC students ?",

@@ -443,7 +443,11 @@
         "sl-ctn-2-a-14-st" => "",
         "sl-ctn-2-a-14-loc" => "Local 1B130 du Bâtiment Copernic",
         "sl-ctn-2-a-14-c" => "ERAA a pour objet la promotion et la pratique de la connaissance de la robotique et des sciences afférentes : l'électronique, la mécatronique, la mécanique, l'informatique et l'internet des objets. L'association se propose notamment d'organiser ou de participer à l'organisation d'activités scientifiques et techniques expérimentales. Un format est privilégié : celui des compétitions nationales et/ou internationales par exemple la coupe de France de robotique.",
-
+        
+        "sl-ctn-2-a-15-t" => "Et encore plein d'autres ...",
+        "sl-ctn-2-a-15-st" => "",
+        "sl-ctn-2-a-15-loc" => "",
+        "sl-ctn-2-a-15-c" => "",
 
         //STUDENTS :: REFERS TO pages.students.blade.php
         "title-sts" => "Les IMAC | IMAC ingénieur",
