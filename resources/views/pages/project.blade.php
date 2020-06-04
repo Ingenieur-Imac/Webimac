@@ -28,6 +28,10 @@
                         {{trans("messages.pro-c-1")}}
                     @endif
                 </div>
+            @else
+                <div class="media-container">
+                    <img src="{{URL::asset('images/projects/'.$project->url_image)}}" alt="{{$project->name}}" />
+                </div>    
             @endif
 
             <div class="project-item">
