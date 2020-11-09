@@ -236,7 +236,7 @@
         "prs-title" => "Presentation",
         "title-prs" => "Become an creative engineer | IMAC engineer",
         "prs-ctn-1-t" => "What is IMAC ?",
-        "prs-ctn-1-st" => "IMAC is an engineering training certified by <a href='http://www.cti-commission.fr/' target='_blank' > CTI </a> (Commission des Titres d’Ingénieur). Created in 1986, it’s the only French public engineering programme mixing art and technology.",
+        "prs-ctn-1-st" => "IMAC (officially MIT - Multimedia and Information Technology) is an engineering training certified by <a href='http://www.cti-commission.fr/' target='_blank' > CTI </a> (Commission des Titres d’Ingénieur). Created in 1986, it’s the only French public engineering programme mixing art and technology.",
         "prs-ctn-1-c" => "We train students to become seniors executives in multiple fields: the web, video games, audiovisual or digital communication.  ",
         "prs-ctn-2-t" => "Three years to become a creative engineer.",
         "prs-ctn-2-b" => "Download the brochure",
