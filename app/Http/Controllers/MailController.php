@@ -48,7 +48,7 @@ class MailController extends Controller
     }
 
     public function partnershipOffer(Request $request){
-        $to = "sonia.mendes@u-pem.fr";
+        $to = "sonia.mendes@univ-eiffel.fr";
         //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);
@@ -61,7 +61,7 @@ class MailController extends Controller
     }
 
     public function contact(Request $request){
-        $to = "sonia.mendes@u-pem.fr";
+        $to = "sonia.mendes@univ-eiffel.fr";
         //$to = "julien.rousset01@gmail.com";
 
         $datas = json_decode(json_encode($request->all()),FALSE);

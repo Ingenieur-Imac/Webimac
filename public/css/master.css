@@ -2468,3 +2468,14 @@ p.lead + .frames {
   text-align: center; }
 
 /*# sourceMappingURL=master.css.map */
+
+.sm-img{
+  max-width: 150px;
+  height : auto
+}
+
+@media (max-width: 1200px) {
+  footer p + .links {
+    display: inline !important;
+  }
+}

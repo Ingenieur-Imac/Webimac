@@ -45,13 +45,16 @@
         <p>{{trans("messages.ftr-ctn-2-c")}}</p>
         <div class="links">
             <a href="https://www.univ-gustave-eiffel.fr/" target="_blank">
-                <img src="{{URL::asset('images/uge-uni-bgdark.png')}}" alt="Logo UGE" />
+                <img src="{{URL::asset('images/uge-uni-bgdark.png')}}" alt="Logo UGE" class="sm-img"/>
             </a>
             <a href="http://esipe.u-pem.fr/" target="_blank">
                 <img src="{{URL::asset('images/UPEM-ESIPE-V2-BLANC72DPI.png')}}" alt="Logo ESIPE" />
             </a>
             <a href="http://www.cti-commission.fr/" target="_blank">
                 <img src="{{URL::asset('images/cti_logo_gris.png')}}" alt="Logo CTI" />
+            </a>
+            <a href="https://www.enaee.eu/" target="_blank">
+                <img src="{{URL::asset('images/eurace.png')}}" alt="Logo EURACE" class="sm-img" />
             </a>
         </div>
     </div>
